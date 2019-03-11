@@ -34,3 +34,26 @@ class ClassName implements Interface {}
 // 设计的时候，可以将飞机设计一个类为Airplane，将鸟设计为Bird。
 // 但是不能将飞行这个特性也设计为类，因此它是一个行为特性，并不是对一类事物的描述。
 // 此时，可以将飞行设计为一个接口Fly，包含方法fly( )，然后Airplane和Bird分别根据自己的需要实现Fly这个接口。
+// 至于有不同种类的飞机，比如战斗机、民用飞机等直接继承Airplane即可，对于鸟也是类似的，不同种类的鸟直接继承Bird类即可
+// 继承是一个 "是不是"的关系，而 接口 实现则是 "有没有"的关系
+// 如果一个类继承了某个抽象类，则子类必定是抽象类的种类，而接口实现则是有没有、具备不具备的关系
+// 比如鸟是否能飞（或者是否具备飞行这个特点），能飞行则可以实现这个接口，不能飞行就不实现这个接口。
+
+
+// 也就是说对于抽象类，如果需要添加新的方法，可以直接在抽象类中添加具体的实现，子类可以不进行变更；
+// 而对于接口则不行，如果接口进行了变更，则所有实现这个接口的类都必须进行相应的改动。
+
+// 举个例子
+
+/*abstract class Door {
+    public abstract void open();
+    public abstract void close();
+}*/
+
+// or
+
+/*
+interface Door {
+    public abstract void open();
+    public abstract void close();
+}*/
