@@ -54,3 +54,41 @@ public class Circle {
 }
 
 // 成员内部类是依附外部类而存在的，也就是说，如果要创建成员内部类的对象，前提是必须存在一个外部类的对象。创建成员内部类对象的一般方式如下：
+
+class CircleTest {
+    public static void main(String[] args) {
+        // 第一种方式
+        Outter outter = new Outter();
+        Outter.Inner inner = outter.new Inner();
+
+        // 第二种方式
+        Outter.Inner inner1 = outter.getInnerInstance();
+    }
+
+}
+
+class Outter {
+    private Inner inner = null;
+    public Outter() {
+
+    }
+
+    public Inner getInnerInstance() {
+        if(inner == null)
+            inner = new Inner();
+        return inner;
+    }
+
+    class Inner {
+        public Inner() {
+
+        }
+    }
+}
+
+// 内部类可以拥有private访问权限、protected访问权限、public访问权限及包访问权限
+// 如果成员内部类Inner用private修饰，则只能在外部类的内部访问
+// 如果用public修饰，则任何地方都能访问
+// 如果用protected修饰，则只能在同一个包下或者继承外部类的情况下访问
+// 如果是默认访问权限，则只能在同一个包下访问
+// 这一点和外部类有一点不一样，外部类只能被public和包访问两种权限修饰
