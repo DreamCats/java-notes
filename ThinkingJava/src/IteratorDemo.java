@@ -69,7 +69,11 @@ public class IteratorDemo {
             System.out.println(linkedIt.next());
         }
 
-
+        // 使用foreach遍历集合
+        System.out.println("foreach");
+        for (String s : list) {
+            System.out.println(s);
+        }
 
 
     }
