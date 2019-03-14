@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @program JavaBooks
@@ -37,6 +36,39 @@ public class IteratorDemo {
         list.add("张三2");
         list.add("张三3");
         list.add("张三4");
+
+        List<String> linkList = new LinkedList<String>();
+        linkList.add("link1");
+        linkList.add("link2");
+        linkList.add("link3");
+        linkList.add("link4");
+
+        Set<String> set = new HashSet<String>();
+        set.add("set1");
+        set.add("set2");
+        set.add("set3");
+        set.add("set4");
+
+
+        //使用迭代器遍历ArrayList集合
+        System.out.println("ArrayList");
+        Iterator<String> listIt = list.iterator();
+        while (listIt.hasNext()){
+            System.out.println(listIt.next());
+        }
+        // 使用迭代器遍历Set集合
+        System.out.println("Set");
+        Iterator<String> setIt = set.iterator();
+        while (setIt.hasNext()) {
+            System.out.println(setIt.next());
+        }
+        // 使用迭代器遍历LinkedList集合
+        System.out.println("LinkedList");
+        Iterator<String> linkedIt = linkList.iterator();
+        while (linkedIt.hasNext()) {
+            System.out.println(linkedIt.next());
+        }
+
 
 
 
