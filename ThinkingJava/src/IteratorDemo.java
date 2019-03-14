@@ -75,6 +75,11 @@ public class IteratorDemo {
             System.out.println(s);
         }
 
+        // Iterator遍历时不可以删除集合中的元素问题
+        // 迭代器已经被通过list.itertor()创建出来了，如果在迭代的过程中，又对list进行了改变其容器大小的操作，那么Java就会给出异常
+        // for循环于迭代器的对比
+        // 1。 ArrayList对随机访问比较快，而for循环中使用的get()方法，采用的即是随机访问的方法，因此在ArrayList里for循环快。
+        // 2。 LinkedList则是顺序访问比较快，Iterator中的next()方法采用的是顺序访问方法，因此在LinkedList里使用Iterator较快。
 
     }
 }
