@@ -13,6 +13,35 @@ public class Hero {
     float armor; // 护甲
     int moveSpeed; // 移动速度
 
+
+    // 定义一个方法 坑队友
+    void keng() {
+        System.out.println("坑队友");
+    }
+    // 获取护甲值
+    float getArmor() {
+        return armor;
+    }
+    // 增加移动速度
+    void addSpeed(int speed) {
+        moveSpeed = moveSpeed + speed;
+    }
+    // 超神
+    void legendary() {
+        System.out.println("超神");
+    }
+
+    // 获取当前的血量
+
+    float getHp() {
+        return hp;
+    }
+    // 回血
+
+    void recovery(float blood) {
+        hp = hp + blood;
+    }
+
     public static void main(String[] args) {
         // 创建英雄对象
 
@@ -21,6 +50,9 @@ public class Hero {
         garen.hp = 616.28f;
         garen.armor = 27.536f;
         garen.moveSpeed = 35;
+
+        // 给garen增加100的移动速度
+        garen.addSpeed(100);
 
         Hero teemo = new Hero();
         teemo.name = "提莫";
