@@ -12,6 +12,8 @@ public class Hero {
     int moveSpeed; // 移动速度
 
     public static void main(String[] args) {
+        // 创建英雄对象
+
         Hero garen = new Hero();
         garen.name = "盖伦";
         garen.hp = 616.28f;
@@ -24,6 +26,26 @@ public class Hero {
         teemo.armor = 14f;
         teemo.moveSpeed = 330;
 
+
+        // 创建物品对象
+        Item bloodBottle = new Item();
+        bloodBottle.name = "血瓶";
+        bloodBottle.price = 50;
+
+        Item sandlas = new Item();
+        sandlas.name = "草鞋";
+        sandlas.price = 300;
+
+        Item longSword = new Item();
+        longSword.name = "长剑";
+        longSword.price = 350;
+
     }
+}
+
+
+class Item {
+    String name; // 名字
+    int price; // 价格
 }
 
