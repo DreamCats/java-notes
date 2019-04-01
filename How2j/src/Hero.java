@@ -6,6 +6,8 @@
  */
 
 public class Hero {
+
+    // 类的属性
     String name; // 名字
     float hp; // 血量
     float armor; // 护甲
