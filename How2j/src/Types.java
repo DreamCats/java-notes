@@ -43,5 +43,10 @@ public class Types {
         // 但是，不能直接使用0 1 进行赋值
 //        boolean b3 = 1; // 报错
 
+
+        // String 类型
+        // String 类型并不是什么基本类型
+        // String类型是Immutable的，一旦创建就不能够被改变
+
     }
 }
