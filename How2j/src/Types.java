@@ -18,5 +18,30 @@ public class Types {
         // if we assgin b to 300;
 //        b = 300; // 此时编译器就报错
 
+
+        // 字符形
+        // char 是16位
+
+        char c = '中'; // 只能存放一个字符
+
+        // if we assgin c to 2;
+//        c = '中国'; // 报错
+
+        // 浮点类型
+        // float 长度32位
+        // double 长度64位
+        // 默认小树值是double类型的，在数值后面加个f 则是float类型的
+//        float f = 54.321; // 报错，默认是double
+        float f1 = 54.321f;
+
+        // 布尔形
+
+        // 其长度位1
+        boolean b1 = true;
+        boolean b2 = false;
+        // 虽然布尔形真正存放的是0(flase)1(true)
+        // 但是，不能直接使用0 1 进行赋值
+//        boolean b3 = 1; // 报错
+
     }
 }
