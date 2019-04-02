@@ -48,5 +48,8 @@ public class Types {
         // String 类型并不是什么基本类型
         // String类型是Immutable的，一旦创建就不能够被改变
 
+        String str = "Hello World";
+
+
     }
 }
