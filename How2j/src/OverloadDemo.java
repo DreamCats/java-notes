@@ -29,13 +29,13 @@ public class OverloadDemo extends Hero{
         System.out.println(name + " 进行了一次攻击 ，但是不确定打中谁了");
     }
 
-    public void attack(Hero h1) {
-        System.out.println(name + "对" + h1.name + "进行了一次攻击 ");
-    }
-
-    public void attack(Hero h1, Hero h2) {
-        System.out.println(name + "同时对" + h1.name + "和" + h2.name + "进行了攻击 ");
-    }
+//    public void attack(Hero h1) {
+//        System.out.println(name + "对" + h1.name + "进行了一次攻击 ");
+//    }
+//
+//    public void attack(Hero h1, Hero h2) {
+//        System.out.println(name + "同时对" + h1.name + "和" + h2.name + "进行了攻击 ");
+//    }
 
     // 可变数量的参数
     public void attack(Hero... heros) {
@@ -43,4 +43,5 @@ public class OverloadDemo extends Hero{
             System.out.println(name + " 攻击了 " + heros[i].name);
 
         }
+    }
 }
