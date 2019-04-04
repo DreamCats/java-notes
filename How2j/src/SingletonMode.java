@@ -96,3 +96,5 @@ class TestDemo1 {
 // 1. 构造方法私有化
 // 2. 静态属性指向实例
 // 3. public static的 getInstance方法，返回第二步的静态属性
+
+
