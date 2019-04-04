@@ -9,6 +9,22 @@ public class OverloadDemo extends Hero{
     // 方法的重载指的是方法名一样，但是参数类型不一样
     // 继承Hero.java 这给类
 
+
+
+
+    public static void main(String[] args) {
+        OverloadDemo bh = new OverloadDemo();
+        bh.name = "赏金猎人";
+
+        Hero h1 = new Hero();
+        h1.name = "盖伦";
+        Hero h2 = new Hero();
+        h2.name = "提莫";
+
+        bh.attack(h1);
+        bh.attack(h1, h2);
+    }
+
     public void attack() {
         System.out.println(name + " 进行了一次攻击 ，但是不确定打中谁了");
     }
@@ -27,18 +43,4 @@ public class OverloadDemo extends Hero{
             System.out.println(name + " 攻击了 " + heros[i].name);
 
         }
-
-
-    public static void main(String[] args) {
-        OverloadDemo bh = new OverloadDemo();
-        bh.name = "赏金猎人";
-
-        Hero h1 = new Hero();
-        h1.name = "盖伦";
-        Hero h2 = new Hero();
-        h2.name = "提莫";
-
-        bh.attack(h1);
-        bh.attack(h1, h2);
-    }
 }
