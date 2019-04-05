@@ -45,3 +45,6 @@ public class OverloadDemo extends Hero{
         }
     }
 }
+
+
+// 重写的话， 子类可以继承父类的对象方法，重复提供该方法，就叫做方法的重写
