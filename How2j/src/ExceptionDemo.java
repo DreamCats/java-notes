@@ -30,6 +30,19 @@ public class ExceptionDemo {
         finally{
             System.out.println("无论文件是否存在， 都会执行的代码");
         }
+
+
+
+        // throw和throws的区别
+        // throws 出现在方法声明上，而throw通常都出现在方法体内。
+        //  throws 表示出现异常的一种可能性，并不一定会发生这些异常；
+        // throw则是抛出了异常，执行throw则一定抛出了某个异常对象。
+
+        // 异常分三类
+        // 1。错误
+        // 2。 运行时异常
+        // 3。 可检查异常
+        
     }
 
 
