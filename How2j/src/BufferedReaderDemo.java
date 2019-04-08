@@ -46,5 +46,9 @@ public class BufferedReaderDemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // 有的时候，需要立即把数据写入到硬盘
+        // flush
+
     }
 }
