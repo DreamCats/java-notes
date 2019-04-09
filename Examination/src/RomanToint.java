@@ -16,6 +16,8 @@ public class RomanToint {
 
 class SolutionRomanToint {
     public int romanToInt(String s) {
+        int res = 0;
 
+        return res;
     }
 }
