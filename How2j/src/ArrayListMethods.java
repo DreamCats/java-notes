@@ -56,6 +56,8 @@ public class ArrayListMethods {
             System.out.println(integer);
         }
 
+        // 清空 clear
+
 
 
     }
