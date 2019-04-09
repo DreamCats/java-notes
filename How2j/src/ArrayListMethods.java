@@ -1,3 +1,5 @@
+import sun.jvm.hotspot.utilities.IntArray;
+
 import java.util.ArrayList;
 
 /**
@@ -37,14 +39,23 @@ public class ArrayListMethods {
 
         // 转换为数组
 
-        Object[] intArray = arrayList.toArray();
-
-        System.out.println("数组：");
-        for (Object o : intArray) {
-            System.out.println(o);
-        }
+//
+//        System.out.println("数组：");
+//        for (Object o : intArray) {
+//            System.out.println(o);
+//        }
 
         // 把另一个容器加进来
+        ArrayList<Integer> arrayList1 = new ArrayList<>();
+        arrayList1.add(20);
+        arrayList1.add(21);
+
+        arrayList.addAll(arrayList1);
+        System.out.println("新的容器");
+        for (Integer integer : arrayList) {
+            System.out.println(integer);
+        }
+
 
 
     }
