@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @program JavaBooks
  * @description: 二叉树
@@ -10,25 +13,29 @@ public class BinaryTree {
     // 每个节点都可以有左子节点，右子节点
     // 每一个节点都有一个值
     public static void main(String[] args) {
-        int randoms[] = new int[] { 67, 7, 30, 73, 10, 0, 78, 81, 10, 74 };
+        int randoms[] = new int[] { 67, 7, 30, 73, 10, 0, 78, 74 };
         Node roots = new Node();
         for (int random : randoms) {
             roots.add(random);
         }
 
-
-        Node tempLeftNode = roots;
-        System.out.println("left:");
-        while (tempLeftNode != null) {
-            System.out.println(tempLeftNode.value);
-            tempLeftNode = tempLeftNode.leftNode;
+        List<Object> list = roots.values();
+        for (Object o : list) {
+            System.out.println(o);
         }
-        Node tempRightNode = roots;
-        System.out.println("right:");
-        while (tempRightNode != null) {
-            System.out.println(tempRightNode.value);
-            tempRightNode = tempRightNode.rightNode;
-        }
+//
+//        Node tempLeftNode = roots;
+//        System.out.println("left:");
+//        while (tempLeftNode != null) {
+//            System.out.println(tempLeftNode.value);
+//            tempLeftNode = tempLeftNode.leftNode;
+//        }
+//        Node tempRightNode = roots;
+//        System.out.println("right:");
+//        while (tempRightNode != null) {
+//            System.out.println(tempRightNode.value);
+//            tempRightNode = tempRightNode.rightNode;
+//        }
     }
 
 
@@ -61,5 +68,23 @@ class Node {
                 rightNode.add(v);
             }
         }
+    }
+    // 中序遍历所有的节点
+    public List<Object> values() {
+        List<Object> values = new ArrayList<>();
+
+        // 左节点的遍历结果
+        if (null != leftNode)
+            values.addAll(leftNode.values());
+
+        // 当前节点
+        values.add(value);
+
+        // 右节点的遍历结果
+        if (null != rightNode)
+
+            values.addAll(rightNode.values());
+
+        return values;
     }
 }
