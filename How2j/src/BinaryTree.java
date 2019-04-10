@@ -15,6 +15,20 @@ public class BinaryTree {
         for (int random : randoms) {
             roots.add(random);
         }
+
+
+        Node tempLeftNode = roots;
+        System.out.println("left:");
+        while (tempLeftNode != null) {
+            System.out.println(tempLeftNode.value);
+            tempLeftNode = tempLeftNode.leftNode;
+        }
+        Node tempRightNode = roots;
+        System.out.println("right:");
+        while (tempRightNode != null) {
+            System.out.println(tempRightNode.value);
+            tempRightNode = tempRightNode.rightNode;
+        }
     }
 
 
