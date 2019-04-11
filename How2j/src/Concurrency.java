@@ -8,6 +8,7 @@
 public class Concurrency {
     // 多线程的同步问题指的是多个线程同时修改一个数据的时候，可能导致的问题
     public static void main(String[] args) {
+        final Object someObject = new Object();
         final HeroConcurrency gareen = new HeroConcurrency();
         gareen.name = "盖伦";
         gareen.hp = 10000;
@@ -28,7 +29,11 @@ public class Concurrency {
         for (int i = 0; i < n; i++) {
             Thread t = new Thread(){
                 public void run(){
-                    gareen.recover();
+                    // 解决方案
+                    synchronized (someObject) {
+                        gareen.recover();
+                    }
+
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
@@ -46,7 +51,9 @@ public class Concurrency {
         for (int i = 0; i < n; i++) {
             Thread t = new Thread(){
                 public void run(){
-                    gareen.hurt();
+                    synchronized (someObject) {
+                        gareen.hurt();
+                    }
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
