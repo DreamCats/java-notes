@@ -29,16 +29,53 @@ public class ThreadDemo {
         leesin.name = "盲僧";
         leesin.hp = 455;
         leesin.damage = 80;
+//
+//        //盖伦攻击提莫
+//        while(!teemo.isDead()){
+//            gareen.attackHero(teemo);
+//        }
+//
+//        //赏金猎人攻击盲僧
+//        while(!leesin.isDead()){
+//            bh.attackHero(leesin);
+//        }
 
-        //盖伦攻击提莫
-        while(!teemo.isDead()){
-            gareen.attackHero(teemo);
-        }
 
-        //赏金猎人攻击盲僧
-        while(!leesin.isDead()){
-            bh.attackHero(leesin);
-        }
+        // 利用线程
+         // 继承 thread
+//        KillThread killThread1 = new KillThread(gareen,teemo);
+//        killThread1.start();
+//        KillThread killThread2 = new KillThread(bh,leesin);
+//        killThread2.start();
+            // 实现runnable接口
+//        Battle battle1 = new Battle(gareen,teemo);
+//        new Thread(battle1).start();
+//        Battle battle2 = new Battle(bh,leesin);
+//        new Thread(battle2).start();
+
+        // 匿名类
+        //匿名类
+        Thread t1= new Thread(){
+            public void run(){
+                //匿名类中用到外部的局部变量teemo，必须把teemo声明为final
+                //但是在JDK7以后，就不是必须加final的了
+                while(!teemo.isDead()){
+                    gareen.attackHero(teemo);
+                }
+            }
+        };
+
+        t1.start();
+
+        Thread t2= new Thread(){
+            public void run(){
+                while(!leesin.isDead()){
+                    bh.attackHero(leesin);
+                }
+            }
+        };
+        t2.start();
+
     }
 }
 
@@ -66,3 +103,44 @@ class HeroThread {
         return 0 >= hp? true : false;
     }
 }
+
+
+// 创建多线程-继承线程类
+
+class KillThread extends Thread {
+    private HeroThread h1;
+    private HeroThread h2;
+
+    public KillThread(HeroThread h1, HeroThread h2){
+        this.h1 = h1;
+        this.h2 = h2;
+    }
+
+    @Override
+    public void run() {
+        while (! h2.isDead()) {
+            h1.attackHero(h2);
+        }
+    }
+}
+
+// 创建多线程-实现Runnable接口
+
+class Battle implements Runnable {
+
+    private HeroThread h1;
+    private HeroThread h2;
+    public Battle(HeroThread h1, HeroThread h2){
+        this.h1 = h1;
+        this.h2 = h2;
+    }
+
+    @Override
+    public void run() {
+        while (! h2.isDead()) h1.attackHero(h2);
+    }
+}
+
+// 1. 继承Thread类
+// 2. 实现Runnable接口
+// 3. 匿名类的方式
