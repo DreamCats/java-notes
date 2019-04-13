@@ -52,8 +52,10 @@ public class ThreadNotifyTest1 {
 
                 synchronized (resourceA) {
                     System.out.println("threadC begin notify");
-                    resourceA.notify();
+//                    resourceA.notify();
+                    resourceA.notifyAll();
                 }
+
             }
         });
 
