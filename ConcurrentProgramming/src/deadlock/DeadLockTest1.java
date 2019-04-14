@@ -22,7 +22,20 @@ public class DeadLockTest1 {
     public static void main(String[] args) {
 
         // 创建线程A
-
+        Thread threadA = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (resourceA) {
+                    System.out.println(Thread.currentThread() + "get ResourceA");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread() + "waiting get source");
+                }
+            }
+        });
 
     }
 }
