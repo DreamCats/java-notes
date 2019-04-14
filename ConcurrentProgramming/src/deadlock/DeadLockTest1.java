@@ -32,10 +32,36 @@ public class DeadLockTest1 {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(Thread.currentThread() + "waiting get source");
+                    System.out.println(Thread.currentThread() + "waiting get sourceB");
+                    synchronized (resourceB) {
+                        System.out.println(Thread.currentThread() + "get esourceB");
+                    }
                 }
             }
         });
+
+        // 创建线程B
+        Thread threadB = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (resourceB) {
+                    System.out.println(Thread.currentThread() + "get ResourceB");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread() + "waiting get sourceA");
+                    synchronized (resourceA) {
+                        System.out.println(Thread.currentThread() + "get esourceA");
+                    }
+                }
+            }
+        });
+
+        // 启动线程
+        threadA.start();
+        threadB.start();
 
     }
 }
