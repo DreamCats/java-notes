@@ -1,4 +1,6 @@
 
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @program JavaBooks
@@ -12,6 +14,7 @@ public class IntegerInversion {
     public static void main(String[] args) {
         Solution s = new Solution();
         int res = s.reverse(1534236469);
+
 
     }
 
