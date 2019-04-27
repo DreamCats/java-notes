@@ -7,8 +7,8 @@
 
 public class StrStr {
     public static void main(String[] args) {
-        String haystack = "hello";
-        String needle = "lo";
+        String haystack = "";
+        String needle = "";
         SolutionStrStr solutionStrStr = new SolutionStrStr();
         int res = solutionStrStr.strStr(haystack, needle);
         System.out.println(res);
@@ -17,8 +17,9 @@ public class StrStr {
 
 class SolutionStrStr {
     public int strStr(String haystack, String needle) {
+
         if (haystack.length() == needle.length()) {
-            if (haystack == needle) {
+            if (haystack.equals(needle)) {
                 return 0;
             } else {
                 return -1;
@@ -37,10 +38,11 @@ class SolutionStrStr {
             }
 
         }
-        if (needle == null) {
+        if (needle.isEmpty()) {
             return 0;
         } else {
             return -1;
         }
+
     }
 }
