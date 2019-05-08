@@ -8,7 +8,8 @@
 public class CountAndSay {
     public static void main(String[] args) {
         SolutionCountAndSay solutionCountAndSay = new SolutionCountAndSay();
-        String res = solutionCountAndSay.countAndSay(4);
+//        String res = solutionCountAndSay.countAndSay(4);
+        String res = solutionCountAndSay.countAndSay1(4);
         System.out.println(res);
     }
 }
@@ -55,5 +56,36 @@ class  SolutionCountAndSay {
         }
         return res;
 
+    }
+
+
+    public String countAndSay1(int n) {
+        if (n == 1) {
+            return "1";
+        }
+        String str = "1";
+
+        for (int i = 0; i < n - 1; i++) {
+            StringBuffer sb = new StringBuffer();
+            int count = 0;
+            char code = str.charAt(0);
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(j) != code) {
+                    sb.append(count);
+                    sb.append(code);
+                    code = str.charAt(j);
+                    count = 1;
+                } else {
+                    count++;
+
+                }
+
+            }
+
+            sb.append(count);
+            sb.append(str.charAt(str.length() - 1));
+            str = sb.toString();
+        }
+        return str;
     }
 }
