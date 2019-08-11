@@ -5,3 +5,4 @@
 - [冒泡排序](/Sorts/src/BubbleSort.java)
 - [选择排序](/Sorts/src/SelectSort.java)
 - [冒泡排序](/Sorts/src/InsertSort.java)
+- [快速排序](/Sorts/src/QuickSort.java)
