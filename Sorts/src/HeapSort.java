@@ -26,11 +26,11 @@ public class HeapSort {
         for (int i = 0; i < arr.length; i++) {
             heapInsert(arr, i); // 依次从0～i形成大根堆
         }
-        int size = arr.length;
-        swap(arr, 0, --size);
-        while (size > 0) {
-            heapify(arr, 0, size);
-            swap(arr, 0, --size);
+        int heapSize = arr.length;
+        swap(arr, 0, --heapSize);
+        while (heapSize > 0) {
+            heapify(arr, 0, heapSize);
+            swap(arr, 0, --heapSize);
         }
     }
 
