@@ -24,9 +24,12 @@ public class T3 {
         System.out.println(helpList);
 
         int[] arr1 = {2, 3, 1, 0, 2, 5, 3};
-        // 第二种，哈希表
+        // 第二种，哈希表 -- 不可修改数组
         ArrayList<Integer> helpList1 = duplication2(arr1);
         System.out.println(helpList1);
+
+        // 刚才的第一种，可以添加辅助数组来解决不可修改数组的方案
+        // 或者用二分查找...以时间换空间...
 
     }
 
@@ -71,7 +74,6 @@ public class T3 {
             if (hashMap.containsKey(i)) {
                 helpList.add(i);
             }
-
             hashMap.put(i,i);
         }
         return helpList;
