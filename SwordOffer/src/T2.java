@@ -8,11 +8,11 @@
 /*
 饿汉
  */
-public class Singleton {
-    private static Singleton instance = new Singleton();
-    private Singleton(){}
+class T2 {
+    private static T2 instance = new T2();
+    private T2(){}
 
-    public static Singleton getInstance() {
+    public static T2 getInstance() {
         return instance;
     }
 }

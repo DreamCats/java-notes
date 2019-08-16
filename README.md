@@ -10,4 +10,4 @@
 - [堆排序](/Sorts/src/HeapSort.java)
 
 ## SwordOffer(剑指offer)
-- [单例模式](/SwordOffer/src/Singleton.java)
+- [单例模式](/SwordOffer/src/T2.java)
