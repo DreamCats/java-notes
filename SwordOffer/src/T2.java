@@ -8,7 +8,7 @@
 /*
 饿汉
  */
-class T2 {
+public class T2 {
     private static T2 instance = new T2();
     private T2(){}
 
