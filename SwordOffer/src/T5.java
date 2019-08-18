@@ -17,34 +17,34 @@ public class T5 {
         System.out.println(s1);
     }
     // 数组和指针
-    public static String replaceSpace(StringBuffer s) {
+    public static String replaceSpace(StringBuffer str) {
         int spaceNum = 0;
         // 检测空格数目
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ' ') spaceNum++;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ' ') spaceNum++;
         }
 
-        char[] s1 = new char[s.length() + 2 * spaceNum]; // 新数组的长度
+        char[] s1 = new char[str.length() + 2 * spaceNum]; // 新数组的长度
         int p2 = s1.length - 1; // 定义新数组的指针
-        for (int i = s.length() - 1; i>= 0; i--) { // 从后往前遍历
-            if (s.charAt(i) == ' ') {
+        for (int i = str.length() - 1; i>= 0; i--) { // 从后往前遍历
+            if (str.charAt(i) == ' ') {
                 s1[p2--] = '0';
                 s1[p2--] = '2';
                 s1[p2--] = '%';
             } else {
-                s1[p2--] = s.charAt(i);
+                s1[p2--] = str.charAt(i);
             }
         }
         return new String(s1);
     }
     // 第二种方法，Stringbuffer的特性
-    public static String replaceSpace2(StringBuffer s) {
+    public static String replaceSpace2(StringBuffer str) {
         StringBuffer s1 = new StringBuffer();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ' ') {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ' ') {
                 s1.append("%20");
             } else {
-                s1.append(s.charAt(i));
+                s1.append(str.charAt(i));
             }
         }
         return new String(s1);
