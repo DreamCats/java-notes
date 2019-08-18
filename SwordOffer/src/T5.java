@@ -18,7 +18,6 @@ public class T5 {
     }
     // 数组和指针
     public static String replaceSpace(StringBuffer s) {
-
         int spaceNum = 0;
         // 检测空格数目
         for (int i = 0; i < s.length(); i++) {
