@@ -14,3 +14,4 @@
 - [数组中重复的数字](/SwordOffer/src/T3.java)
 - [二维数组中的查找](/SwordOffer/src/T4.java)
 - [替换空格](/SwordOffer/src/T5.java)
+- [从尾到头打印链表](/SwordOffer/src/T6.java)
