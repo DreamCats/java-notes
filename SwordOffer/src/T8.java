@@ -1,3 +1,4 @@
+import java.util.PriorityQueue;
 import java.util.Stack;
 
 /**
@@ -31,6 +32,31 @@ public class T8 {
         // 从stack2倒回去
         while (!stack2.isEmpty()) {
             stack1.push(stack2.pop());
+        }
+        return first;
+    }
+}
+
+/*
+用两个队列实现一个栈
+ */
+class T8_1 {
+    PriorityQueue<Integer> queue1 = new PriorityQueue<>();
+    PriorityQueue<Integer> queue2 = new PriorityQueue<>();
+
+    public void add(int node) {
+        queue1.add(node);
+    }
+
+    public int poll() {
+        int first = 0;
+        while (!queue1.isEmpty()) {
+            first = queue1.poll();
+            queue2.add(first);
+        }
+        queue2.remove(first);
+        while(!queue2.isEmpty()) {
+            queue1.add(queue2.poll());
         }
         return first;
     }
