@@ -11,6 +11,32 @@
  */
 public class T10 {
     public static void main(String[] args) {
+        int res = frog(5);
+        System.out.println(res);
+        int res1 = frog2(5);
+        System.out.println(res1);
+    }
+    // 递归
+    public static int frog(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        if (n == 2) return 2;
+        return  frog(n - 1) + frog(n - 2);
+    }
 
+    // 从下往上for循环
+    public static int frog2(int n) {
+        int[] res = {0 , 1, 2};
+        if (n < 3) return res[n];
+
+        int one = 1;
+        int two = 2;
+        int sum = 0;
+        for (int i = 3; i <= n; i++) {
+            sum = one + two;
+            one = two;
+            two = sum;
+        }
+        return sum;
     }
 }
