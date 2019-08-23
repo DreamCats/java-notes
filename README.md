@@ -19,3 +19,4 @@
 - [用两个栈实现一个队列](/SwordOffer/src/T8.java)
 - [斐波那契数列](/SwordOffer/src/T9.java)
 - [青蛙跳台阶问题](/SwordOffer/src/T10.java)
+- [变态青蛙跳台阶问题](/SwordOffer/src/T11.java)
