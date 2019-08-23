@@ -30,6 +30,10 @@ public class T12 {
                 break;
             }
             mid = p1 + ((p2 - p1) >> 1);
+            // 提高代码健壮性，若是出现arr[p1] arr[p2] mid三者相等
+            if (arr[p1] == arr[p2] && arr[p1] == mid) {
+                return ergodic(arr, p1, p2);
+            }
             if (arr[p1] < arr[mid]) {
                 p1 = mid;
             } else {
@@ -38,5 +42,15 @@ public class T12 {
 
         }
         return mid;
+    }
+
+    public static int ergodic(int[] arr, int p1, int p2) {
+        int res = 0;
+        for (int i = p1; i <= p2; i++) {
+            if (res > arr[i]) {
+                res = arr[i];
+            }
+        }
+        return res;
     }
 }
