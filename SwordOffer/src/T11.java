@@ -16,11 +16,12 @@ public class T11 {
         System.out.println(frog2(5));
     }
 
+    // 递归 2*(n - 1) 次方
     public static int frog(int n) {
         if (n == 1 || n == 2) return n;
         return 2 * frog(n - 1);
     }
-
+    //  2*(n - 1) 次方
     public static int frog2(int n) {
         return 1<<(n - 1);
     }
