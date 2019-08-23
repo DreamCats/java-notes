@@ -22,17 +22,21 @@ public class T12 {
     public static int findMin(int[] arr) {
         int p1 = 0;
         int p2 = arr.length - 1;
-        int mid = p1 + ((p2 - p1) >> 1);
+        int mid = p1;
 
-        while (p1 < p2) {
-            if (p2 - p1 == 1) break;
+        while (arr[p1] >= arr[p2]) {
+            if (p2 - p1 == 1) {
+                mid = p2;
+                break;
+            }
+            mid = p1 + ((p2 - p1) >> 1);
             if (arr[p1] < arr[mid]) {
                 p1 = mid;
             } else {
                 p2 = mid;
             }
-            mid = p1 + ((p2 - p1) >> 1);
+
         }
-        return p2;
+        return mid;
     }
 }
