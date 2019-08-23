@@ -4,7 +4,7 @@
 ## Sorts(排序)
 - [冒泡排序](/Sorts/src/BubbleSort.java)
 - [选择排序](/Sorts/src/SelectSort.java)
-- [冒泡排序](/Sorts/src/InsertSort.java)
+- [插入排序](/Sorts/src/InsertSort.java)
 - [归并排序](/Sorts/src/MergeSort.java)
 - [快速排序](/Sorts/src/QuickSort.java)
 - [堆排序](/Sorts/src/HeapSort.java)
