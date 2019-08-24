@@ -15,4 +15,51 @@
 进入这个格子
  */
 public class T13 {
+    public static void main(String[] args) {
+        char[][] arr = {
+                {'a', 'b', 't', 'g'},
+                {'c', 'f', 'c', 's'},
+                {'j', 'd', 'e', 'h'}};
+        char[] s = {'b', 'f', 'c', 'e', '\0'};
+        System.out.println(hasPath(arr, s));
+
+    }
+
+    public static boolean hasPath(char[][] arr, char[] s) {
+        if (arr == null || arr.length < 1 || arr[0].length < 1) return false;
+        int rowNum = arr.length;
+        int colNum = arr[0].length;
+        int pathNum = 0;
+        boolean[][] visited = new boolean[rowNum][colNum];
+        for (int i = 0; i < rowNum; i++) {
+            for (int j = 0; j < colNum; j++) {
+                if (hasPathCore(arr, rowNum, colNum, i, j, s, pathNum, visited)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean hasPathCore(char[][] arr, int rowNum, int colNum, int i, int j, char[] s, int pathNum, boolean[][] visited) {
+        if (s[pathNum] == '\0') {
+            return true;
+        }
+
+        boolean hasPath = false;
+        if (i >= 0 && i < rowNum && j >= 0 && j < colNum && arr[i][j] == s[pathNum] && !visited[i][j]){
+            pathNum++;
+            visited[i][j] = true;
+            hasPath = hasPathCore(arr, rowNum, colNum, i, j -1, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i - 1, j, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i, j + 1, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i + 1, j, s, pathNum, visited);
+            if (!hasPath){
+                pathNum--;
+                visited[i][j] = false;
+            }
+        }
+        return hasPath;
+    }
+
 }
