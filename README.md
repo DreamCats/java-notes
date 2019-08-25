@@ -23,3 +23,4 @@
 - [旋转数组的最小数字](/SwordOffer/src/T12.java)
 - [矩阵中的路径](/SwordOffer/src/T13.java)
 - [机器人的运动范围](/SwordOffer/src/T14.java)
+- [剪绳子](/SwordOffer/src/T15.java)
