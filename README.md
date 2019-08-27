@@ -25,3 +25,4 @@
 - [机器人的运动范围](/SwordOffer/src/T14.java)
 - [剪绳子](/SwordOffer/src/T15.java)
 - [二进制中1的个数](/SwordOffer/src/T16.java)
+- [数值的整数次方](/SwordOffer/src/T17.java)
