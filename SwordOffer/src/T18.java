@@ -18,7 +18,8 @@ import java.util.Arrays;
 public class T18 {
     public static void main(String[] args) {
 //        printToMax(2);
-        printToMax2(2);
+//        printToMax2(2);
+        printToMax3(2);
     }
     // 最笨的方法，一定不符合面试官的要求
     public static void printToMax(int n) {
@@ -62,6 +63,7 @@ public class T18 {
                 }
             } else {
                 number[i] = (char) ('0' + nSum);
+                System.out.println(number[i]);
                 break;
             }
 
@@ -77,5 +79,27 @@ public class T18 {
             if(! isBeginning0) System.out.print(number[i]);
         }
         System.out.print('\t');
+    }
+
+
+    // 递归方法，把递归想成堆栈
+    public static void printToMax3(int n) {
+        if (n <= 0) return;
+        char[] number = new char[n];
+        for (int i = 0; i < 10; i++) {
+            number[0] = (char) (i + '0');
+            printToMax3Recur(number, n, 0);
+        }
+    }
+
+    private static void printToMax3Recur(char[] number, int n, int index) {
+        if (index == n - 1) {
+            printNumber(number);
+            return;
+        }
+        for (int j = 0; j < 10; j++) {
+            number[index + 1] = (char) (j + '0');
+            printToMax3Recur(number, n, index + 1);
+        }
     }
 }
