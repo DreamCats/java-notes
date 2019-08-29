@@ -27,3 +27,4 @@
 - [二进制中1的个数](/SwordOffer/src/T16.java)
 - [数值的整数次方](/SwordOffer/src/T17.java)
 - [打印从1到最大的n位数](/SwordOffer/src/T18.java)
+- [删除链表中的节点O(1)](/SwordOffer/src/T19.java)
