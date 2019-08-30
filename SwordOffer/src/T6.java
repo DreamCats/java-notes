@@ -18,15 +18,15 @@ public class T6 {
     public static void main(String[] args) {
 
         // 递归方法中的arraylist
-        ListNote listNote1 = new ListNote(1);
-        ListNote listNote2 = new ListNote(2);
-        ListNote listNote3 = new ListNote(3);
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
 
-        listNote1.next = listNote2;
-        listNote2.next = listNote3;
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
 
         // 栈方法
-        ArrayList<Integer> list = printListFromTailToHead1(listNote1);
+        ArrayList<Integer> list = printListFromTailToHead1(listNode1);
         list.forEach(System.out::println);
 
         // 递归方法
@@ -35,11 +35,11 @@ public class T6 {
 
 
     // 栈方法
-    public static ArrayList<Integer> printListFromTailToHead1(ListNote listNote) {
+    public static ArrayList<Integer> printListFromTailToHead1(ListNode listNote) {
         Stack<Integer> stack = new Stack<>();
         // 压栈
         while (listNote != null) {
-            stack.push(listNote.val);
+            stack.push(listNote.value);
             listNote = listNote.next;
         }
 
@@ -52,10 +52,10 @@ public class T6 {
     }
 
     // 递归方法
-    public  ArrayList<Integer> printListFromTailToHead2(ListNote listNote) {
+    public  ArrayList<Integer> printListFromTailToHead2(ListNode listNote) {
         if (listNote != null) {
             this.printListFromTailToHead2(listNote.next);
-            arrayList.add(listNote.val);
+            arrayList.add(listNote.value);
         }
         return arrayList;
     }
@@ -64,25 +64,18 @@ public class T6 {
 }
 
 
-class ListNote {
-    int val;
-    ListNote next = null;
 
-    public ListNote(int val) {
-        this.val = val;
-    }
-}
 
 class TestMethod2 {
     public static void main(String[] args) {
-        ListNote listNote1 = new ListNote(1);
-        ListNote listNote2 = new ListNote(2);
-        ListNote listNote3 = new ListNote(3);
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
 
-        listNote1.next = listNote2;
-        listNote2.next = listNote3;
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
         T6 t6 = new T6();
-        ArrayList<Integer> list = t6.printListFromTailToHead2(listNote1);
+        ArrayList<Integer> list = t6.printListFromTailToHead2(listNode1);
         list.forEach(System.out::println);
     }
 }

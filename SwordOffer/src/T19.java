@@ -10,14 +10,7 @@
 给定单向链表的头指针和一个节点指针，定义一个函数在O(1)时间内删除该节点
 链表节点与函数的定义如下
  */
-class ListNode {
-    int value;
-    ListNode next;
 
-    public ListNode(int value) {
-        this.value = value;
-    }
-}
 public class T19 {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
