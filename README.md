@@ -28,4 +28,4 @@
 - [数值的整数次方](/SwordOffer/src/T17.java)
 - [打印从1到最大的n位数](/SwordOffer/src/T18.java)
 - [删除链表中的节点O(1)](/SwordOffer/src/T19.java)
-- [删除链表中重复的节点(1)](/SwordOffer/src/T20.java)
+- [删除链表中重复的节点](/SwordOffer/src/T20.java)
