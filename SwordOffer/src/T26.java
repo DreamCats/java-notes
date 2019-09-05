@@ -11,6 +11,11 @@ import java.util.List;
 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表
 头节点。
  */
+
+/*
+思路：
+设定三个指针，pre p next， 交换即可，但交换之前检查next是否为空，以防锻炼
+ */
 public class T26 {
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(1);
@@ -37,9 +42,9 @@ public class T26 {
         while (pNode != null) {
             nextNode = pNode.next;
             if (nextNode == null) return pNode;
-            pNode.next = beforeNode;
-            beforeNode = pNode;
-            pNode = nextNode;
+            pNode.next = beforeNode; // p 下一个值指向pre
+            beforeNode = pNode; // p 赋 pre
+            pNode = nextNode; // next 赋给p
         }
         return pNode;
     }
