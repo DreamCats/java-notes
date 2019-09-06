@@ -41,15 +41,7 @@ public class T7 {
 }
 
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    public TreeNode(int val) {
-        this.val = val;
-    }
-}
 
 class TestT7 {
     public static void main(String[] args) {
