@@ -34,4 +34,40 @@ public class TreeNode {
         }
         return root;
     }
+
+    // 递归打印前序
+    public static void preOrderRe(TreeNode root) {
+        System.out.println(root.val);
+        TreeNode leftNode = root.left;
+        if (leftNode != null) {
+            preOrderRe(leftNode);
+        }
+
+        TreeNode rightNode = root.right;
+        if (rightNode != null) {
+            preOrderRe(rightNode);
+        }
+    }
+    // 递归打印中序
+    public static void midOrderRe(TreeNode node) {
+        if (node == null) {
+            return;
+        } else {
+            midOrderRe(node.left);
+            System.out.println(node.val);
+            midOrderRe(node.right);
+        }
+    }
+
+    // 递归打印后序
+    public static void postOrderRe(TreeNode node) {
+        if (node == null) {
+            return;
+        } else {
+            postOrderRe(node.left);
+            postOrderRe(node.right);
+            System.out.println(node.val);
+        }
+    }
+
 }
