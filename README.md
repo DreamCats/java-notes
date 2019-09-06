@@ -35,3 +35,4 @@
 - [24、链表中倒数第k个节点](/SwordOffer/src/T24.java)
 - [25、链表中环的入口节点](/SwordOffer/src/T25.java)
 - [26、反转链表](/SwordOffer/src/T26.java)
+- [27、合并两个排序的链表](/SwordOffer/src/T27.java)
