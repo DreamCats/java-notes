@@ -38,3 +38,4 @@
 - [27、合并两个排序的链表](/SwordOffer/src/T27.java)
 - [28、树的子结构](/SwordOffer/src/T28.java)
 - [29、树的镜像](/SwordOffer/src/T29.java)
+- [30、对称的二叉树](/SwordOffer/src/T30.java)
