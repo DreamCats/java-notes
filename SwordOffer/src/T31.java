@@ -13,6 +13,13 @@
  9 10 11 12
  13 14 15 16
  */
+
+/*
+思路：
+考虑圈的截止条件，从左上作为圈的开始和结束
+然后按圈打印，注意按圈打印的四个边界条件。
+
+ */
 public class T31 {
     public static void main(String[] args) {
         int[][] arr = {
