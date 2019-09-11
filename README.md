@@ -39,5 +39,5 @@
 - [28、树的子结构](/SwordOffer/src/T28.java)
 - [29、树的镜像](/SwordOffer/src/T29.java)
 - [30、对称的二叉树](/SwordOffer/src/T30.java)
-- [31、顺时针打印矩阵](/SwordOffer/src/31.java)
-- [32、包含min函数的栈](/SwordOffer/src/32.java)
+- [31、顺时针打印矩阵](/SwordOffer/src/T31.java)
+- [32、包含min函数的栈](/SwordOffer/src/T32.java)
