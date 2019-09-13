@@ -25,7 +25,8 @@ public class T34 {
         int[] pre = {8, 6, 5, 7, 10, 9, 11};
         int[] in = {5, 6, 7, 8, 9, 10, 11};
         TreeNode node = TreeNode.setBinaryTree(pre, in);
-        printNode(node);
+//        printNode(node);
+        printNode2(node);
     }
 
     private static void printNode(TreeNode node) {
@@ -43,6 +44,33 @@ public class T34 {
             if (tempNode.right != null) {
                 queue.offer(tempNode.right);
             }
+        }
+    }
+    // 分行打印
+    private static void printNode2(TreeNode node) {
+        if (node == null) return;
+        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
+        queue.offer(node);
+        int cLevel = 1;
+        int nextLevel = 0;
+        while (!queue.isEmpty()) {
+            TreeNode tempNode = queue.poll();
+            System.out.print(tempNode.val + "\t");
+            cLevel--;
+            if (tempNode.left != null) {
+                queue.offer(tempNode.left);
+                nextLevel++;
+            }
+            if (tempNode.right != null) {
+                queue.offer(tempNode.right);
+                nextLevel++;
+            }
+            if (cLevel == 0) {
+                System.out.print("\n");
+                cLevel = nextLevel;
+                nextLevel = 0;
+            }
+
         }
     }
 }
