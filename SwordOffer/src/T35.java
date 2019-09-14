@@ -13,4 +13,40 @@
 {7，4，6，5}
  */
 public class T35 {
+    public static void main(String[] args) {
+        int[] sequence = {5, 7, 6, 9, 11, 10, 8};
+        boolean res = VerifySquenceOfBST(sequence);
+    }
+
+    private static boolean VerifySquenceOfBST(int[] sequence) {
+        if (sequence == null || sequence.length == 0) return false;
+        return isBST(sequence, 0, sequence.length - 1);
+    }
+
+    private static boolean isBST(int[] sequence, int start, int end) {
+        if (start >= end) {
+            return true;
+        }
+        int inx = sequence[end];
+        int m = start;
+        // 找到分界点
+        for (int i = end - 1; i >= start; i--) {
+            if (sequence[i] < inx) {
+                m = i;
+                break;
+            }
+            if (i == start) {
+                m = -1;
+            }
+        }
+        // 分界点前的数据都小于根节点
+        for (int i = start; i <= m; i++) {
+            if (sequence[i] > inx) {
+                return false;
+            }
+        }
+        // 递归判断根节点的左右子树
+        return isBST(sequence, start, m) && isBST(sequence, m + 1, end - 1);
+
+    }
 }
