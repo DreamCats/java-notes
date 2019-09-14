@@ -43,3 +43,4 @@
 - [32、包含min函数的栈](/SwordOffer/src/T32.java)
 - [33、栈的压入、弹出序列](/SwordOffer/src/T33.java)
 - [34、从上到下打印二叉树](/SwordOffer/src/T34.java)
+- [35、二叉搜索树的后序遍历序列](/SwordOffer/src/T35.java)

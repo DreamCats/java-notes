@@ -16,6 +16,7 @@ public class T35 {
     public static void main(String[] args) {
         int[] sequence = {5, 7, 6, 9, 11, 10, 8};
         boolean res = VerifySquenceOfBST(sequence);
+        System.out.println(res);
     }
 
     private static boolean VerifySquenceOfBST(int[] sequence) {
