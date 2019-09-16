@@ -62,9 +62,6 @@ public class T28 {
         if (nodeA == null) return false; // 说明B还有节点，A没有子节点等
         if (nodeA.val != nodeB.val) return false; // 说明值不相等
         // 递归子节点
-        boolean result = false;
-        result = goOnFind(nodeA.left, nodeB.left);
-        result = goOnFind(nodeA.right, nodeB.right);
-        return result;
+        return goOnFind(nodeA.left, nodeB.left) && goOnFind(nodeA.right, nodeB.right);
     }
 }
