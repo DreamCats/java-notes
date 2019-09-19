@@ -48,3 +48,4 @@
 - [37、复杂链表的复制](/SwordOffer/src/T37.java)
 - [38、二叉搜索树与双向链表](/SwordOffer/src/T38.java)
 - [39、序列化二叉树](/SwordOffer/src/T39.java)
+- [40、字符串的排列](/SwordOffer/src/T40.java)
