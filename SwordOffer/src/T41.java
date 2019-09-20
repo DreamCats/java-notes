@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @program JavaBooks
  * @description: 数组中出现次数超过一半的数字
@@ -15,8 +18,33 @@ public class T41 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 2, 2, 2, 5, 4, 2};
 //        int res = moreThanHalfNum(arr);
-        int res = moreThanHalfNum2(arr);
+//        int res = moreThanHalfNum2(arr);
+        int res = moreThanHalfNum3(arr);
         System.out.println(res);
+    }
+
+    // 哈希
+    private static int moreThanHalfNum3(int[] arr) {
+        HashMap<Integer, Integer> maps = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (maps.containsKey(arr[i])) {
+                maps.put(arr[i], maps.get(arr[i]) + 1);
+            } else {
+                maps.put(arr[i], 1);
+            }
+        }
+        int length = arr.length >> 1;
+//        for (Map.Entry<Integer, Integer> entry : maps.entrySet()) {
+//            if (entry.getValue() > length) {
+//                return entry.getKey();
+//            }
+//        }
+        for (Integer key : maps.keySet()) {
+            if (maps.get(key) > length) {
+                return key;
+            }
+        }
+        return 0;
     }
 
     // 根据数组特性，相等++， 否则--， 毕竟最后剩最多次数的那个数
