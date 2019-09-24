@@ -1,4 +1,9 @@
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
+import java.security.PrivateKey;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 /**
  * @program JavaBooks
@@ -18,6 +23,14 @@ import java.util.LinkedList;
 先用链表
  */
 public class T43 {
+    private static int count = 0;
+    private static PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    private static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(15, new Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            return o2 - o1;
+        }
+    });
     public static void main(String[] args) {
         int[] arr = {1, 3, 2, 4, 5};
         LinkedList<Integer> list = new LinkedList<>();
@@ -26,8 +39,40 @@ public class T43 {
         }
         Double median = getMedian(list);
         System.out.println(median);
+
+
+
+        // 最大堆最小堆
+        for (int num : arr) {
+            insert(num);
+        }
+        Double median2 = getMedian();
+        System.out.println(median2);
     }
 
+    // 最大堆和最小堆
+    private static void insert(Integer num) {
+        if ((count & 0x1) == 0) {
+            maxHeap.offer(num);
+            int filterMaxNum = maxHeap.poll();
+            minHeap.offer(filterMaxNum);
+        } else {
+            minHeap.offer(num);
+            int filteredMinNum = minHeap.poll();
+            maxHeap.offer(filteredMinNum);
+        }
+        count++;
+    }
+
+    private static Double getMedian() {
+        if ((count & 0x1) == 0) {
+            return new Double((minHeap.peek() + maxHeap.peek())) / 2;
+        } else {
+            return new Double(minHeap.peek());
+        }
+    }
+
+    // 链表
     private static void insert(LinkedList<Integer> list, Integer num) {
         if (list.size() == 0 || num < list.getFirst()) {
             list.add(num);
@@ -47,6 +92,7 @@ public class T43 {
         }
     }
 
+    // 链表
     private static Double getMedian(LinkedList<Integer> list) {
         if (list.size() == 0) return null;
         if ((list.size() & 0x1) == 0) {
