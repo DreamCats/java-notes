@@ -56,3 +56,4 @@
 - [45、1~n整数中1出现的次数](/SwordOffer/src/T45.java)
 - [46、数字序列中某一位的数字](/SwordOffer/src/T46.java)
 - [47、把数组排成最小的数](/SwordOffer/src/T47.java)
+- [48、把数字翻译成字符串](/SwordOffer/src/T48.java)
