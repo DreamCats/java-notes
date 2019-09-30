@@ -57,3 +57,4 @@
 - [46、数字序列中某一位的数字](/SwordOffer/src/T46.java)
 - [47、把数组排成最小的数](/SwordOffer/src/T47.java)
 - [48、把数字翻译成字符串](/SwordOffer/src/T48.java)
+- [49、礼物的最大价值](/SwordOffer/src/T49.java)
