@@ -9,6 +9,10 @@
 - [快速排序](/Sorts/src/QuickSort.java)
 - [堆排序](/Sorts/src/HeapSort.java)
 
+## DesignPattern(设计模式)
+- [单例模式](/SwordOffer/src/T2.java)
+- [工厂模式](/DesignPattern/src/FactoryMode.java)
+
 ## SwordOffer(剑指offer)
 - [2、单例模式](/SwordOffer/src/T2.java)
 - [3、数组中重复的数字](/SwordOffer/src/T3.java)
