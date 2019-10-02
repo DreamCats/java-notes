@@ -61,4 +61,4 @@
 - [46、把数字翻译成字符串](/SwordOffer/src/T46.java)
 - [47、礼物的最大价值](/SwordOffer/src/47.java)
 - [48、最长不含重复字符的子字符串](/SwordOffer/src/48.java)
-- [49、丑数](/SwordOffer/src/49.java)
+- [49、丑数](/SwordOffer/src/T49.java)
