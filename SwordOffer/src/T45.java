@@ -1,46 +1,44 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * @program JavaBooks
- * @description: 1~n整数中1出现的次数
+ * @description: 把数组排成最小的数
  * @author: mf
- * @create: 2019/09/26 09:48
+ * @create: 2019/09/28 10:18
  */
 
 /*
-输入一个整数n，求1～n这n个整数的十进制表示中1出现的
-次数。例如，输入12，1～12这些整数中包含1的数字有1、10
-、11和12，1一共出现了5次
+输入一个正整数数组，把数组里所有数字拼接起来排成一个数，
+打印能拼接出的所有数字中最小的一个。例如输入数组{3,32,321}，则
+打这3个数字能排成的最小数字321323
  */
 public class T45 {
     public static void main(String[] args) {
-//        int count = numberOfBetweenAndN(12);
-        int count = numberOfBetweenAndN2(12);
-        System.out.println(count);
+        int[] arr = {3, 32, 321};
+        String res = printMinNumber(arr);
+        System.out.println(res);
     }
 
-    private static int numberOfBetweenAndN(int num) {
-        int count = 0;
-        for (int i = 0; i <= num; i++) {
-            String n = String.valueOf(i);
-            for (int j = 0; j < n.length(); j++) {
-                if ('1' == n.charAt(j)) {
-                    count++;
-                }
-            }
+    private static String printMinNumber(int[] arr) {
+        if (arr == null || arr.length == 0) return null;
+        int len = arr.length;
+        String[] str = new String[len];
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int i = 0; i < len; i++) {
+            str[i] = String.valueOf(arr[i]);
         }
-        return count;
-    }
-
-    private static int numberOfBetweenAndN2(int num) {
-        int count = 0;
-        for (int i = 1; i <= num; i++) {
-            int n = i;
-            while (n != 0) {
-                if (n % 10 == 1) {
-                    count++;
-                }
-                n /=  10;
+        Arrays.sort(str, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                String c1 = o1 + o2;
+                String c2 = o2 + o1;
+                return c1.compareTo(c2);
             }
+        });
+        for (int i = 0; i < len; i++) {
+            stringBuffer.append(str[i]);
         }
-        return count;
+        return stringBuffer.toString();
     }
 }

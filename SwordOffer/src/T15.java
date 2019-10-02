@@ -1,61 +1,54 @@
-import java.util.concurrent.ForkJoinPool;
-
 /**
  * @program JavaBooks
- * @description: 剪绳子
+ * @description: 二进制中1的个数
  * @author: mf
- * @create: 2019/08/25 15:55
+ * @create: 2019/08/26 10:04
  */
 
 /*
-给你一根长度为n的绳子，请把绳子剪成m段（m，n都是整数，n>1并且m>1），
-每段绳子的长度记为k[0],k[1],...,k[m]。请问k[0]xk[1]x...xk[m]可能
-的最大值乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别2、3、3的三段，
-此时得到的最大乘积是18
+请实现一个函数，输入一个整数，输出该整数二进制表示中1的个数。
+例如，把9表示成二进制是1001，有2位是1。因此，如果输入9，则该函数
+输出2。
  */
 public class T15 {
     public static void main(String[] args) {
-        int max = maxProductAfterCutting1(4);
-        System.out.println(max);
-        int max1 = maxProductAfterCutting2(4);
-        System.out.println(max1);
+        System.out.println(NumberOf1(9));
+        System.out.println(NumberOf2(9));
+        System.out.println(NumberOf3(9));
     }
 
-    // 动态规划
-    private static int maxProductAfterCutting1(int length) {
-        if (length < 2) return 0;
-        if (length == 2) return 1;
-        if (length == 3) return 2;
-        int[] products = new int[length + 1];
-        products[0] = 0;
-        products[1] = 1; // 长度为2...
-        products[2] = 2; // 长度为3...
-        products[3] = 3; // 长度为4...
-
-        int max = 0;
-        for (int i = 4; i <= length; i++) {
-            max = 0;
-            for (int j = 1; j <= i / 2; j++) {
-                int product = products[j] * products[i - j];
-                max = max > product ? max : product;
-                products[i] = max;
-            }
+    // 最高效的方法
+    private static int NumberOf3(int n) {
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n = (n - 1) & n;
         }
-        max = products[length];
-
-        return max;
+        return count;
     }
 
-    // 贪婪算法
-    public static int maxProductAfterCutting2(int length) {
-        if (length < 2) return 0;
-        if (length == 2) return 1;
-        if (length == 3) return 2;
-        // 尽可能剪3
-        int timesOf3 = length / 3;
-        // 如果==1的话， 我就变为最后剩4 ，然后变2x2
-        if (length - timesOf3 * 3 == 1) timesOf3 -= 1;
-        int timeOfs2 = (length - timesOf3 * 3) / 2;
-        return (int)(Math.pow(3, timesOf3)) * (int)(Math.pow(2, timeOfs2));
+
+    // 出现负数就凉了
+    private static int NumberOf1(int num) {
+        int count = 0 ;
+        while(num != 0) {
+            if ((1 & num) == 1) {
+                count++;
+            }
+            num = num >> 1;
+        }
+        return count;
+    }
+    // 但是循环32次，慢
+    private static int NumberOf2(int num) {
+        int count = 0;
+        int flag = 1;
+        while(flag >= 1) {
+            if ((num & flag) >= 1)
+                count++;
+
+            flag = flag << 1;
+        }
+        return count;
     }
 }

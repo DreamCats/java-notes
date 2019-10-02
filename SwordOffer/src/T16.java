@@ -1,54 +1,51 @@
 /**
  * @program JavaBooks
- * @description: 二进制中1的个数
+ * @description: 数值的整数次方
  * @author: mf
- * @create: 2019/08/26 10:04
+ * @create: 2019/08/27 09:49
  */
 
-/*
-请实现一个函数，输入一个整数，输出该整数二进制表示中1的个数。
-例如，把9表示成二进制是1001，有2位是1。因此，如果输入9，则该函数
-输出2。
- */
 public class T16 {
     public static void main(String[] args) {
-        System.out.println(NumberOf1(9));
-        System.out.println(NumberOf2(9));
-        System.out.println(NumberOf3(9));
+        double value = doublePow(2.0, 8);
+        System.out.println(value);
     }
-
-    // 最高效的方法
-    private static int NumberOf3(int n) {
-        int count = 0;
-        while (n != 0) {
-            count++;
-            n = (n - 1) & n;
+    // 0的0次方没有意义， 所以有个条件限制
+    private static double doublePow(double number, int exp) {
+        double result = 1.0;
+        if (number == 0.0 && exp < 0) return 0.0;
+        boolean expSign = true;
+        if (exp < 0) {
+            expSign = false;
+            exp = - exp;
         }
-        return count;
-    }
-
-
-    // 出现负数就凉了
-    private static int NumberOf1(int num) {
-        int count = 0 ;
-        while(num != 0) {
-            if ((1 & num) == 1) {
-                count++;
-            }
-            num = num >> 1;
+//        result = powerUnsignExp(number, exp);
+        result = powerUnsignExp2(number, exp);
+        if (!expSign) {
+            result = 1 / result;
         }
-        return count;
+        return result;
     }
-    // 但是循环32次，慢
-    private static int NumberOf2(int num) {
-        int count = 0;
-        int flag = 1;
-        while(flag >= 1) {
-            if ((num & flag) >= 1)
-                count++;
-
-            flag = flag << 1;
+    // 效率较低
+    private static double powerUnsignExp(double number, int exp) {
+        double result = 1.0;
+        for (int i = 1; i <= exp; i++) {
+            result *= number;
         }
-        return count;
+        return result;
     }
+    // 高效率 递归
+    private static double powerUnsignExp2(double number, int exp) {
+        if (exp == 0) return 1;
+        if (exp == 1) return number; // 不管是奇数还是偶数，都会将exp递归到1 都会到这里返回
+        // 讲究细节
+        double result = powerUnsignExp2(number, exp >> 1);
+        result *= result;
+        // 讲究细节 奇数
+        if ((exp & 0x1) == 1) result *= number;
+
+        return result;
+
+    }
+
 }

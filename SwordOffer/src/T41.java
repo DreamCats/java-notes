@@ -1,115 +1,104 @@
-import java.util.HashMap;
-import java.util.Map;
+
+import java.security.PrivateKey;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 /**
  * @program JavaBooks
- * @description: 数组中出现次数超过一半的数字
+ * @description: 数据流中的中位数
  * @author: mf
- * @create: 2019/09/20 10:01
+ * @create: 2019/09/24 08:59
  */
 
 /*
-数组中有一个数字出现的次数超过数组长度的一半
-请找出这个数字。例如，输入一个长度为9的数组
-{1,2,3,2,2,2,5,4,2},由于2在数组中出现了5
-次，超过数组长度的一半，因此输出2
+如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值
+那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中
+读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
+ */
+
+/*
+思路：
+先用链表
  */
 public class T41 {
+    private static int count = 0;
+    private static PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    private static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(15, new Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            return o2 - o1;
+        }
+    });
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 2, 2, 2, 5, 4, 2};
-//        int res = moreThanHalfNum(arr);
-//        int res = moreThanHalfNum2(arr);
-        int res = moreThanHalfNum3(arr);
-        System.out.println(res);
+        int[] arr = {1, 3, 2, 4, 5};
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int num : arr) {
+            insert(list, num);
+        }
+        Double median = getMedian(list);
+        System.out.println(median);
+
+
+
+        // 最大堆最小堆
+        for (int num : arr) {
+            insert(num);
+        }
+        Double median2 = getMedian();
+        System.out.println(median2);
     }
 
-    // 哈希
-    private static int moreThanHalfNum3(int[] arr) {
-        HashMap<Integer, Integer> maps = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            if (maps.containsKey(arr[i])) {
-                maps.put(arr[i], maps.get(arr[i]) + 1);
-            } else {
-                maps.put(arr[i], 1);
+    // 最大堆和最小堆
+    private static void insert(Integer num) {
+        if ((count & 0x1) == 0) {
+            maxHeap.offer(num);
+            int filterMaxNum = maxHeap.poll();
+            minHeap.offer(filterMaxNum);
+        } else {
+            minHeap.offer(num);
+            int filteredMinNum = minHeap.poll();
+            maxHeap.offer(filteredMinNum);
+        }
+        count++;
+    }
+
+    private static Double getMedian() {
+        if ((count & 0x1) == 0) {
+            return new Double((minHeap.peek() + maxHeap.peek())) / 2;
+        } else {
+            return new Double(minHeap.peek());
+        }
+    }
+
+    // 链表
+    private static void insert(LinkedList<Integer> list, Integer num) {
+        if (list.size() == 0 || num < list.getFirst()) {
+            list.add(num);
+        } else {
+            boolean insertFlag = false;
+            for (Integer e : list) {
+                if (num < e) {
+                    int index = list.indexOf(e);
+                    list.add(index, num);
+                    insertFlag = true;
+                    break;
+                }
+            }
+            if (!insertFlag) {
+                list.addLast(num);
             }
         }
-        int length = arr.length >> 1;
-//        for (Map.Entry<Integer, Integer> entry : maps.entrySet()) {
-//            if (entry.getValue() > length) {
-//                return entry.getKey();
-//            }
-//        }
-        for (Integer key : maps.keySet()) {
-            if (maps.get(key) > length) {
-                return key;
-            }
-        }
-        return 0;
     }
 
-    // 根据数组特性，相等++， 否则--， 毕竟最后剩最多次数的那个数
-    private static int moreThanHalfNum2(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-        int res = arr[0];
-        int times = 1;
-        for (int i = 1; i < arr.length; i++) {
-            if (times == 0) {
-                res = arr[i];
-                times = 1;
-            } else if (arr[i] == res) {
-                times++;
-            } else {
-                times--;
-            }
+    // 链表
+    private static Double getMedian(LinkedList<Integer> list) {
+        if (list.size() == 0) return null;
+        if ((list.size() & 0x1) == 0) {
+            int i = list.size() >> 1;
+            Double a = Double.valueOf(list.get(i - 1) + list.get(i));
+            return a / 2;
         }
-        if (!checkMoreThanHalf(arr, res)) return 0;
-
-        return res;
-    }
-
-    // 采用快排的partition操作
-    //
-    private static int moreThanHalfNum(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-        int middle = (arr.length - 1) >> 1;
-        int partitionIndex = partition(arr, 0, arr.length - 1);
-        while (partitionIndex != middle) {
-            if (partitionIndex > middle) {
-                partitionIndex = partition(arr, 0, partitionIndex - 1);
-            } else {
-                partitionIndex = partition(arr, partitionIndex + 1, arr.length - 1);
-            }
-        }
-        int res = arr[middle];
-        if (!checkMoreThanHalf(arr, res)) res = 0;
-        return res;
-    }
-
-    private static boolean checkMoreThanHalf(int[] arr, int res) {
-        int times = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == res) times++;
-        }
-        boolean isMoreThanHalf = true;
-        if (times * 2 <= arr.length) isMoreThanHalf = false;
-        return isMoreThanHalf;
-    }
-
-    private static int partition(int[] arr, int left, int right) {
-        int pivot = left;
-        int index = pivot + 1;
-        for (int i = index; i <= right; i++) {
-            if (arr[i] < arr[pivot]) {
-                swap(arr, i, index++);
-            }
-        }
-        swap(arr, pivot, index - 1);
-        return index - 1;
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        return Double.valueOf(list.get(list.size() / 2));
     }
 }

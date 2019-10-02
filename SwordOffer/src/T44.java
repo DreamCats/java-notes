@@ -1,50 +1,54 @@
 /**
  * @program JavaBooks
- * @description: 连续子数组的最大和
+ * @description: 数字序列中某一位的数字
  * @author: mf
- * @create: 2019/09/25 09:33
+ * @create: 2019/09/27 09:44
  */
 
 /*
-输入一个整型数组，数组里有正数也有负数。数组中的
-一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
-要求时间复杂度为o（n）。
+数字以01234567891011121213141516...的格式序列化到一个字符
+序列中。在这个序列中，第5位（从0开始计数）是5，第13位是1，第19位是4，
+等等。请写一个函数，求任意第n位对应的数字。
  */
 public class T44 {
     public static void main(String[] args) {
-        int[] arr = {1, -2, 3, 10, -4, 7, 2, -5};
-        int max = findGreatestSumOfArr(arr);
-        int max2 = findGreatestSumOfarr2(arr);
-        System.out.println(max);
-        System.out.println(max2);
-    }
-    // 分析数组规律
-    private static int findGreatestSumOfArr(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-        int nCurNum = 0;
-        int greatestSum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (nCurNum <= 0) {
-                nCurNum = arr[i];
-            } else {
-                nCurNum += arr[i];
-            }
-            if (nCurNum > greatestSum) {
-                greatestSum = nCurNum;
-            }
-        }
-        return greatestSum;
+        int res = digitAtIndex(1002);
+        System.out.println(res);
     }
 
-    // 动态规划 感觉和上面的方法异曲同工罢了。。
-    private static int findGreatestSumOfarr2(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-        int res = arr[0]; // 记录当前所有子数组的和的最大值
-        int max = arr[0]; // 记录包含arr[i]的连续子数组的和的最大值
-        for (int i = 1; i < arr.length; i++) {
-            max = Math.max(max + arr[i], arr[i]);
-            res = Math.max(max, res); // 更新最大值 max其实就是nCurNum
+    private static int digitAtIndex(int index) {
+        if (index < 0) return -1;
+        int digits = 1;
+        while (true) {
+            int numbers = countOfInteger(digits);
+            if (index < numbers * digits) return digitAtIndex(index, digits);
+            index -= digits * numbers;
+            digits++;
         }
-        return res;
+    }
+
+    // 得到m位的数字总共有多少个
+    private static int countOfInteger(int digits) {
+        if (digits == 1) {
+            return 10;
+        }
+        int count = (int) Math.pow(10, digits - 1);
+        return 9 * count;
+    }
+
+    private static int digitAtIndex(int index, int digits) {
+        int number = beginNumber(digits) + index / digits;
+        int indexFromRight = digits - index % digits;
+        for (int i = 1; i < indexFromRight; i++) {
+            number /= 10;
+        }
+        return number % 10;
+    }
+
+    private static int beginNumber(int digits) {
+        if (digits == 1) {
+            return 0;
+        }
+        return (int) Math.pow(10, digits - 1);
     }
 }

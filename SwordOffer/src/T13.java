@@ -1,65 +1,63 @@
+
 /**
  * @program JavaBooks
- * @description: 矩阵中的路径
+ * @description: 机器人的运动范围
  * @author: mf
- * @create: 2019/08/24 15:02
+ * @create: 2019/08/25 09:45
  */
 
 /*
-请设计一个函数，用来判断在一个矩阵中是否存在一条包含某
-字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步
-可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵
-的某一格，那么该路径不能再次进入该格子。例如，在下面的3x4的矩阵中包含一条
-字符串"afce"的路径（路径中的字母用下画线标出。）但矩阵中不包含字符串"abfb"的
-路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次
-进入这个格子
+地上有一个m行n列的方格。一个机器人从坐标(0,0)的格子开始移动
+它每次可以向左、右、上、下移动一格，但不能进入行坐标和列坐标
+的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格(35, 37), 因为
+3+5+3+7=18。但它不能进入方格(35, 38)，因为3+5+3+8=19。请问？
+该机器人能够到达多少个格子。
  */
 public class T13 {
     public static void main(String[] args) {
-        char[][] arr = {
-                {'a', 'b', 't', 'g'},
-                {'c', 'f', 'c', 's'},
-                {'j', 'd', 'e', 'h'}};
-        char[] s = {'b', 'f', 'c', 'e', '\0'};
-        System.out.println(hasPath(arr, s));
+
+        int count = movingCount(18, 40, 40);
+        System.out.println(count);
+    }
+
+    public static int movingCount(int threshold, int rows, int cols) {
+        if (threshold < 0 || rows < 1 || cols < 0) return 0;
+        boolean[][] visited = new boolean[rows][cols];
+        int count = movingCountCore(threshold, rows, cols, 0, 0, visited);
+        return count;
 
     }
 
-    public static boolean hasPath(char[][] arr, char[] s) {
-        if (arr == null || arr.length < 1 || arr[0].length < 1) return false;
-        int rowNum = arr.length;
-        int colNum = arr[0].length;
-        int pathNum = 0;
-        boolean[][] visited = new boolean[rowNum][colNum];
-        for (int i = 0; i < rowNum; i++) {
-            for (int j = 0; j < colNum; j++) {
-                if (hasPathCore(arr, rowNum, colNum, i, j, s, pathNum, visited)) {
-                    return true;
-                }
-            }
+    public static int movingCountCore(int threshold, int rows, int cols, int i, int j, boolean[][] visited) {
+        int count = 0;
+        if (check(threshold, rows, cols, i, j, visited)) {
+            visited[i][j] = true;
+            // 核心之二
+            count = 1 + movingCountCore(threshold, rows, cols, i, j - 1, visited)
+                    + movingCountCore(threshold, rows, cols, i, j + 1, visited)
+                    + movingCountCore(threshold, rows, cols, i - 1, j, visited)
+                    + movingCountCore(threshold, rows, cols, i + 1, j, visited);
         }
+        return count;
+    }
+
+    public static boolean check(int threshold, int rows, int cols, int i, int j, boolean[][] visited) {
+        // 核心之一
+        if (i >=0 && j >= 0 && i < rows && j < cols
+                && getDigiSum(i) + getDigiSum(j) <= threshold
+                && !visited[i][j]) return true;
         return false;
     }
 
-    public static boolean hasPathCore(char[][] arr, int rowNum, int colNum, int i, int j, char[] s, int pathNum, boolean[][] visited) {
-        if (s[pathNum] == '\0') {
-            return true;
+
+    // 常用方法，求一个数的总和
+    public static int getDigiSum(int i) {
+        int sum = 0;
+        while (i > 0 ) {
+            sum += i % 10;
+            i /= 10;
         }
 
-        boolean hasPath = false;
-        if (i >= 0 && i < rowNum && j >= 0 && j < colNum && arr[i][j] == s[pathNum] && !visited[i][j]){
-            pathNum++;
-            visited[i][j] = true;
-            hasPath = hasPathCore(arr, rowNum, colNum, i, j -1, s, pathNum, visited)
-                    ||hasPathCore(arr, rowNum, colNum, i - 1, j, s, pathNum, visited)
-                    ||hasPathCore(arr, rowNum, colNum, i, j + 1, s, pathNum, visited)
-                    ||hasPathCore(arr, rowNum, colNum, i + 1, j, s, pathNum, visited);
-            if (!hasPath){
-                pathNum--;
-                visited[i][j] = false;
-            }
-        }
-        return hasPath;
+        return sum;
     }
-
 }

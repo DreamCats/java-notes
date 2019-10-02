@@ -1,57 +1,65 @@
 /**
  * @program JavaBooks
- * @description: 旋转数组的最小数字
+ * @description: 矩阵中的路径
  * @author: mf
- * @create: 2019/08/23 10:18
+ * @create: 2019/08/24 15:02
  */
 
 /*
-把一个数组最开始的若干个元素搬到数组的末尾，我们称之
-为数组的旋转。输入一个递增排序的数组是的一个旋转，输出旋转
-数组的最小元素。例如{3, 4, 5, 1, 2}为{1, 2, 3, 4, 5}的
-一个旋转，该数组的最小值为1。
-{0, 1, 1, 1, 1, ,1, 1}
+请设计一个函数，用来判断在一个矩阵中是否存在一条包含某
+字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步
+可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵
+的某一格，那么该路径不能再次进入该格子。例如，在下面的3x4的矩阵中包含一条
+字符串"afce"的路径（路径中的字母用下画线标出。）但矩阵中不包含字符串"abfb"的
+路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次
+进入这个格子
  */
 public class T12 {
     public static void main(String[] args) {
-        int[] arr = {3, 4, 5, 1, 2};
-        System.out.println(arr[findMin(arr)]);
+        char[][] arr = {
+                {'a', 'b', 't', 'g'},
+                {'c', 'f', 'c', 's'},
+                {'j', 'd', 'e', 'h'}};
+        char[] s = {'b', 'f', 'c', 'e', '\0'};
+        System.out.println(hasPath(arr, s));
+
     }
 
-    // 别用从头到尾遍历的...那个对这道题没有意义
-    // 无重复的
-    public static int findMin(int[] arr) {
-        int p1 = 0;
-        int p2 = arr.length - 1;
-        int mid = p1;
-
-        while (arr[p1] >= arr[p2]) {
-            if (p2 - p1 == 1) {
-                mid = p2;
-                break;
-            }
-            mid = p1 + ((p2 - p1) >> 1);
-            // 提高代码健壮性，若是出现arr[p1] arr[p2] mid三者相等
-            if (arr[p1] == arr[p2] && arr[p1] == mid) {
-                return ergodic(arr, p1, p2);
-            }
-            if (arr[p1] < arr[mid]) {
-                p1 = mid;
-            } else {
-                p2 = mid;
-            }
-
-        }
-        return mid;
-    }
-
-    public static int ergodic(int[] arr, int p1, int p2) {
-        int res = 0;
-        for (int i = p1; i <= p2; i++) {
-            if (res > arr[i]) {
-                res = arr[i];
+    public static boolean hasPath(char[][] arr, char[] s) {
+        if (arr == null || arr.length < 1 || arr[0].length < 1) return false;
+        int rowNum = arr.length;
+        int colNum = arr[0].length;
+        int pathNum = 0;
+        boolean[][] visited = new boolean[rowNum][colNum];
+        for (int i = 0; i < rowNum; i++) {
+            for (int j = 0; j < colNum; j++) {
+                if (hasPathCore(arr, rowNum, colNum, i, j, s, pathNum, visited)) {
+                    return true;
+                }
             }
         }
-        return res;
+        return false;
     }
+
+    public static boolean hasPathCore(char[][] arr, int rowNum, int colNum, int i, int j, char[] s, int pathNum, boolean[][] visited) {
+        if (s[pathNum] == '\0') {
+            return true;
+        }
+
+        boolean hasPath = false;
+        if (i >= 0 && i < rowNum && j >= 0 && j < colNum && arr[i][j] == s[pathNum] && !visited[i][j]){
+            pathNum++;
+            visited[i][j] = true;
+            hasPath = hasPathCore(arr, rowNum, colNum, i, j -1, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i - 1, j, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i, j + 1, s, pathNum, visited)
+                    ||hasPathCore(arr, rowNum, colNum, i + 1, j, s, pathNum, visited);
+            if (!hasPath){
+                pathNum--;
+                visited[i][j] = false;
+            }
+        }
+        return hasPath;
+    }
+
 }

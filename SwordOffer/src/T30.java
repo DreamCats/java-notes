@@ -1,33 +1,55 @@
+import java.util.Stack;
+
 /**
  * @program JavaBooks
- * @description: 对称的二叉树
+ * @description: 包含min函数的栈
  * @author: mf
- * @create: 2019/09/09 10:11
+ * @create: 2019/09/11 10:12
  */
 
 /*
-请实现一个函数，用来判断一颗二叉树是不是对称的。如果一颗二叉树
-和它的镜像一样，那么它是对称的。具体举例请看书
+定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素
+的min函数。在干栈中，调用min、push及pop的时间复杂度都是o（1）
  */
+
 /*
 思路
-前序遍历和对称的前序遍历是一样的，这就是规律。
-但注意的是考虑空值，以防二叉树不完整
+一般来个辅助栈
+好多题， 都需要辅助空间的
+辅助栈的话，就很简单了。思路也很明了了。
  */
 public class T30 {
     public static void main(String[] args) {
-        int[] pre = {8, 6, 5, 7, 6, 7, 5};
-        int[] in = {5, 6, 7, 8, 7, 6, 5};
-        TreeNode node = TreeNode.setBinaryTree(pre, in);
-        boolean res = isSymmetrical(node, node);
-        System.out.println(res);
+        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> helpStack = new Stack<>();
+
+        dataPush(stack, helpStack, 3);
+        dataPush(stack, helpStack, 2);
+        dataPush(stack, helpStack, 1);
+        dataPush(stack, helpStack, 5);
+        dataPush(stack, helpStack, 0);
+//        dataPop(stack, helpStack);
+        Integer value = dataMin(stack, helpStack);
+        System.out.println(value);
     }
 
-    private static boolean isSymmetrical(TreeNode node, TreeNode node1) {
-        if (node == null && node1 == null) return true; // 遍历到底了
-        if (node == null || node1 == null) return false; // 以防二叉树不完整
-        if (node.val != node1.val) return false; // 互为对称的值是相等的。
-        // node.left right 前序， node1 right left 对称前序遍历
-        return isSymmetrical(node.left, node1.right) && isSymmetrical(node.right, node1.left);
+    private static Integer dataMin(Stack<Integer> stack, Stack<Integer> helpStack) {
+        if (stack.isEmpty() || helpStack.isEmpty()) return null;
+        return helpStack.peek();
+    }
+
+    private static void dataPop(Stack<Integer> stack, Stack<Integer> helpStack) {
+        if (stack.empty() || helpStack.empty()) return;
+        stack.pop();
+        helpStack.pop();
+    }
+
+    private static void dataPush(Stack<Integer> stack, Stack<Integer> helpStack, int value) {
+        stack.push(value);
+        if (helpStack.empty() || value < helpStack.peek()) {
+            helpStack.push(value);
+        } else {
+            helpStack.push(helpStack.peek());
+        }
     }
 }

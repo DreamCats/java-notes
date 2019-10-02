@@ -1,72 +1,60 @@
-import javax.naming.RefAddr;
+import java.util.List;
 
 /**
  * @program JavaBooks
- * @description: 表示数值的字符串
+ * @description: 链表中倒数第K个节点
  * @author: mf
- * @create: 2019/09/01 10:16
+ * @create: 2019/09/03 09:32
  */
 
 /*
-请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如
-字符串"+100"、"5e2"、"-123"、"3。1416"及"-1E-16"都表示数值。
-但"12e"、"1a3.14"、"1.2.3"、"+-5"及"12e+5.4"都不是
+输入一个链表，输出该链表中倒数第K个节点。为了符合大多数
+人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。
+例如，一个链表有6个节点，从头节点开始，它们的值依次是1、2、3
+、4、5、6。这个链表的倒数第3个节点是值为4的节点。链表的定义如下：
  */
 
+
 /*
-数字的格式可以用A[.[B]][e|EC]表示，其中A和C都是
-整数（可以有正负号，也可以没有），而B是一个无符号整数
+思路
+准备两个指针p1 p2
+当p1++ 到k的时候，p2开始++
+当当尾节点的时候，p2正好是倒数k个节点  n-k+1
+追赶思路。。。
  */
 public class T22 {
     public static void main(String[] args) {
-        char[] str = {'1', '2', '3', '.', '4', '5', 'e', '+', '6'};
-        boolean res = isNumeric(str);
-        System.out.println(res);
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+        ListNode listNode5 = new ListNode(5);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
+
+        ListNode kNode = findKthToTail(listNode1, 5);
+        System.out.println(kNode);
     }
 
-    private static boolean isNumeric(char[] str) {
-        int index = 0;
-        if (str == null || str.length == 0) return false;
-        if (str.length == 1 && (str[0] == '+' || str[0] == '-')) return false; // 说明只有一个字符，要不+要不-
-        if (str[0] == '+' || str[0] == '-') index++; // 跳过+ 或者-
-        index = judgeDigits(str, index); // 跳过整数的数字部分
-        if (index == str.length) return true; // 正好满足
-        if (str[index] == '.') {
-            // 跳过整数， 就是小数点了
-            //跳过小数点
-            index++;
-            if (index == str.length) return false; // 不满足
-            index = judgeDigits(str, index); // 跳过小数点后的整数部分
-            if (index == str.length) return true; // 正好满足就返回
-            if (str[index] == 'e' || str[index] == 'E') {
-                index++; // 吧e和E跳过去
-                return judgeE(str, index);
+    public static ListNode findKthToTail(ListNode headListNode, int k) {
+        if (headListNode == null || k == 0 ) return null;
+
+        int p1 = 0;
+//        int p2 = 0;
+        ListNode tempHeadNode = headListNode;
+        ListNode kNode = null;
+        while (headListNode != null) {
+            p1++;
+            if (p1 >= k) {
+//                p2++;
+                kNode = tempHeadNode;
+                tempHeadNode = tempHeadNode.next;
             }
-            return false;
-        } else if(str[index] == 'e' || str[index] == 'E') {
-            index++; // 吧e和E跳过去
-            return judgeE(str, index);
+            headListNode = headListNode.next;
         }
-
-        return false;
-    }
-
-    private static boolean judgeE(char[] str, int index) {
-        if (index >= str.length) return false;
-        if (str[index] == '+' || str[index] == '-') index++; // 跳过+ 或者-
-        if (index >= str.length) return false;//如果刚跳过e就到了字符串末尾 是12e就是不规范的
-        index = judgeDigits(str, index); // 跳过数字部分部分
-        if (index == str.length) return true;
-        return false;
-    }
-
-    private static int judgeDigits(char[] str, int index) {
-        while (index < str.length) {
-            // 判断是不是0-9之间，不是的话就break返回index下标
-            int number = str[index] - '0';
-            if (number <= 9 && number >= 0) index++;
-            else break;
-        }
-        return index;
+        return kNode;
     }
 }

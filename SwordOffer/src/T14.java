@@ -1,64 +1,60 @@
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 /**
  * @program JavaBooks
- * @description: 机器人的运动范围
+ * @description: 剪绳子
  * @author: mf
- * @create: 2019/08/25 09:45
+ * @create: 2019/08/25 15:55
  */
 
 /*
-地上有一个m行n列的方格。一个机器人从坐标(0,0)的格子开始移动
-它每次可以向左、右、上、下移动一格，但不能进入行坐标和列坐标
-的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格(35, 37), 因为
-3+5+3+7=18。但它不能进入方格(35, 38)，因为3+5+3+8=19。请问？
-该机器人能够到达多少个格子。
+给你一根长度为n的绳子，请把绳子剪成m段（m，n都是整数，n>1并且m>1），
+每段绳子的长度记为k[0],k[1],...,k[m]。请问k[0]xk[1]x...xk[m]可能
+的最大值乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别2、3、3的三段，
+此时得到的最大乘积是18
  */
 public class T14 {
     public static void main(String[] args) {
-
-        int count = movingCount(18, 40, 40);
-        System.out.println(count);
+        int max = maxProductAfterCutting1(4);
+        System.out.println(max);
+        int max1 = maxProductAfterCutting2(4);
+        System.out.println(max1);
     }
 
-    public static int movingCount(int threshold, int rows, int cols) {
-        if (threshold < 0 || rows < 1 || cols < 0) return 0;
-        boolean[][] visited = new boolean[rows][cols];
-        int count = movingCountCore(threshold, rows, cols, 0, 0, visited);
-        return count;
+    // 动态规划
+    private static int maxProductAfterCutting1(int length) {
+        if (length < 2) return 0;
+        if (length == 2) return 1;
+        if (length == 3) return 2;
+        int[] products = new int[length + 1];
+        products[0] = 0;
+        products[1] = 1; // 长度为2...
+        products[2] = 2; // 长度为3...
+        products[3] = 3; // 长度为4...
 
-    }
-
-    public static int movingCountCore(int threshold, int rows, int cols, int i, int j, boolean[][] visited) {
-        int count = 0;
-        if (check(threshold, rows, cols, i, j, visited)) {
-            visited[i][j] = true;
-            // 核心之二
-            count = 1 + movingCountCore(threshold, rows, cols, i, j - 1, visited)
-                    + movingCountCore(threshold, rows, cols, i, j + 1, visited)
-                    + movingCountCore(threshold, rows, cols, i - 1, j, visited)
-                    + movingCountCore(threshold, rows, cols, i + 1, j, visited);
+        int max = 0;
+        for (int i = 4; i <= length; i++) {
+            max = 0;
+            for (int j = 1; j <= i / 2; j++) {
+                int product = products[j] * products[i - j];
+                max = max > product ? max : product;
+                products[i] = max;
+            }
         }
-        return count;
+        max = products[length];
+
+        return max;
     }
 
-    public static boolean check(int threshold, int rows, int cols, int i, int j, boolean[][] visited) {
-        // 核心之一
-        if (i >=0 && j >= 0 && i < rows && j < cols
-                && getDigiSum(i) + getDigiSum(j) <= threshold
-                && !visited[i][j]) return true;
-        return false;
-    }
-
-
-    // 常用方法，求一个数的总和
-    public static int getDigiSum(int i) {
-        int sum = 0;
-        while (i > 0 ) {
-            sum += i % 10;
-            i /= 10;
-        }
-
-        return sum;
+    // 贪婪算法
+    public static int maxProductAfterCutting2(int length) {
+        if (length < 2) return 0;
+        if (length == 2) return 1;
+        if (length == 3) return 2;
+        // 尽可能剪3
+        int timesOf3 = length / 3;
+        // 如果==1的话， 我就变为最后剩4 ，然后变2x2
+        if (length - timesOf3 * 3 == 1) timesOf3 -= 1;
+        int timeOfs2 = (length - timesOf3 * 3) / 2;
+        return (int)(Math.pow(3, timesOf3)) * (int)(Math.pow(2, timeOfs2));
     }
 }

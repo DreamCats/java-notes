@@ -1,76 +1,49 @@
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.ArrayList;
 
 /**
  * @program JavaBooks
- * @description: 从上到下打印二叉树
+ * @description: 二叉树中和为某一值的路径
  * @author: mf
- * @create: 2019/09/13 12:38
+ * @create: 2019/09/15 13:56
  */
 
 /*
-不分行从下到上打印二叉树
-从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印
-例如，见书
+输入一颗二叉树和一个整数，打印出二叉树中节点值的和
+为输入整数的所有路径。从树的根节点开始往下一直到叶节点
+所经过的节点形成一条路径。
  */
 
-
 /*
-思路
-这个题需要辅助队列容器
-也就是说， 从上往下打印某个节点时，该节点的两个子节点不为空，就加进容器中，
-直到打印到容器为空为止。
+思路：
+准备两个容器
+一个存放走过来的路径
+一个存放和为target的路径
+递归的过程，前序遍历
+用第一个容器去记录节点值，
+每当路径走完计算和是否为target， 不管等不等，都需要减掉最后节点
  */
 public class T34 {
+    private static ArrayList<ArrayList<Integer>> listall = new ArrayList<>();
+    private static ArrayList<Integer> lists = new ArrayList<>();
+
     public static void main(String[] args) {
-        int[] pre = {8, 6, 5, 7, 10, 9, 11};
-        int[] in = {5, 6, 7, 8, 9, 10, 11};
+        int[] pre = {10, 5, 4, 7, 12};
+        int[] in = {4, 5, 7, 10, 12};
         TreeNode node = TreeNode.setBinaryTree(pre, in);
-//        printNode(node);
-        printNode2(node);
+        ArrayList<ArrayList<Integer>> resList = findPath(node, 22);
+        System.out.println(resList);
     }
 
-    private static void printNode(TreeNode node) {
-        if (node == null) return;
-        // new一个队列
-        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
-
-        queue.offer(node);
-        while (!queue.isEmpty()) {
-            TreeNode tempNode = queue.poll();
-            System.out.print(tempNode.val + "\t");
-            if (tempNode.left != null) {
-                queue.offer(tempNode.left);
-            }
-            if (tempNode.right != null) {
-                queue.offer(tempNode.right);
-            }
+    private static ArrayList<ArrayList<Integer>> findPath(TreeNode node, int target) {
+        if (node == null) return listall;
+        lists.add(node.val);
+        target -= node.val;
+        if (target == 0 && node.left == null && node.right == null) {
+            listall.add(new ArrayList<>(lists));
         }
-    }
-    // 分行打印
-    private static void printNode2(TreeNode node) {
-        if (node == null) return;
-        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
-        queue.offer(node);
-        int cLevel = 1;
-        int nextLevel = 0;
-        while (!queue.isEmpty()) {
-            TreeNode tempNode = queue.poll();
-            System.out.print(tempNode.val + "\t");
-            cLevel--;
-            if (tempNode.left != null) {
-                queue.offer(tempNode.left);
-                nextLevel++;
-            }
-            if (tempNode.right != null) {
-                queue.offer(tempNode.right);
-                nextLevel++;
-            }
-            if (cLevel == 0) {
-                System.out.print("\n");
-                cLevel = nextLevel;
-                nextLevel = 0;
-            }
-
-        }
+        findPath(node.left, target);
+        findPath(node.right, target);
+        lists.remove(lists.size() - 1);
+        return listall;
     }
 }

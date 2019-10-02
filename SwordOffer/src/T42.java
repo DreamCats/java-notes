@@ -1,68 +1,50 @@
-import java.util.Arrays;
-
 /**
  * @program JavaBooks
- * @description: 最小的k个数
+ * @description: 连续子数组的最大和
  * @author: mf
- * @create: 2019/09/23 14:22
+ * @create: 2019/09/25 09:33
  */
 
 /*
-输入n个整数，找出其中最小的k个数。例如，输入
-4、5、1、6、2、7、3、8这个8个数字，则最小的
-4个数字数1、2、3、4
- */
-
-/*
-思路：
-partition操作
-或者
-最大堆
-或者
-红黑树
+输入一个整型数组，数组里有正数也有负数。数组中的
+一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+要求时间复杂度为o（n）。
  */
 public class T42 {
     public static void main(String[] args) {
-        // partition
-        int[] arr = {4, 5, 1, 6, 2, 7, 3, 8};
-        int[] resArr = getLeastNumbers(arr, 4);
-        System.out.println(Arrays.toString(resArr));
-
+        int[] arr = {1, -2, 3, 10, -4, 7, 2, -5};
+        int max = findGreatestSumOfArr(arr);
+        int max2 = findGreatestSumOfarr2(arr);
+        System.out.println(max);
+        System.out.println(max2);
     }
-
-    // partition 可修改数组
-    private static int[] getLeastNumbers(int[] arr, int k) {
-        if (arr == null || k < 0) return null;
-        int index = partition(arr, 0, arr.length - 1);
-        while (index != k - 1) {
-            if (index > k -1) {
-                index = partition(arr, 0, index - 1);
+    // 分析数组规律
+    private static int findGreatestSumOfArr(int[] arr) {
+        if (arr == null || arr.length == 0) return 0;
+        int nCurNum = 0;
+        int greatestSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (nCurNum <= 0) {
+                nCurNum = arr[i];
             } else {
-                index = partition(arr, index + 1, arr.length - 1);
+                nCurNum += arr[i];
+            }
+            if (nCurNum > greatestSum) {
+                greatestSum = nCurNum;
             }
         }
-        int[] resArr = new int[k];
-        for (int i = 0; i < k; i++) {
-            resArr[i] = arr[i];
-        }
-        return resArr;
+        return greatestSum;
     }
 
-    private static int partition(int[] arr, int left, int right) {
-        int pivot = left;
-        int index = pivot + 1;
-        for (int i = index; i <= right; i++) {
-            if (arr[i] < arr[pivot]) {
-                swap(arr, i, index++);
-            }
+    // 动态规划 感觉和上面的方法异曲同工罢了。。
+    private static int findGreatestSumOfarr2(int[] arr) {
+        if (arr == null || arr.length == 0) return 0;
+        int res = arr[0]; // 记录当前所有子数组的和的最大值
+        int max = arr[0]; // 记录包含arr[i]的连续子数组的和的最大值
+        for (int i = 1; i < arr.length; i++) {
+            max = Math.max(max + arr[i], arr[i]);
+            res = Math.max(max, res); // 更新最大值 max其实就是nCurNum
         }
-        swap(arr, pivot, index - 1);
-        return index - 1;
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        return res;
     }
 }

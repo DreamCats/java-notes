@@ -1,105 +1,97 @@
-import java.util.Arrays;
-
 /**
  * @program JavaBooks
- * @description: 打印从1到最大的n位数
+ * @description: 删除链表的节点 & 删除链表中重复的节点
  * @author: mf
- * @create: 2019/08/28 09:51
- */
-/*
-输入数字n，按顺序打印出从1到最大的n位十进制数。比如输入3
-则打印出1、2、3一直到最大的3位数999
+ * @create: 2019/08/29 14:49
  */
 
 /*
-面试官没给n的范围， 万一很大呢？ int和long岂不是要溢出？
-这种题溢出的题，字符串可以搞定。
+在O(1)时间内删除链表节点
+给定单向链表的头指针和一个节点指针，定义一个函数在O(1)时间内删除该节点
+链表节点与函数的定义如下
  */
+
 public class T18 {
     public static void main(String[] args) {
-//        printToMax(2);
-//        printToMax2(2);
-        printToMax3(2);
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        System.out.println("source ListNode...");
+        printListNode(listNode1);
+        deleteNode(listNode1, listNode3);
+        System.out.println("deleted ListNode...");
+        printListNode(listNode1);
+
+//        ListNode listNode1 = new ListNode(1);
+//        ListNode listNode2 = new ListNode(2);
+//        ListNode listNode3 = new ListNode(2);
+//        ListNode listNode4 = new ListNode(3);
+//
+//        listNode1.next = listNode2;
+//        listNode2.next = listNode3;
+//        listNode3.next = listNode4;
+//        System.out.println("source");
+//        printListNode(listNode1);
+//        deleteDuplication(listNode1);
+//        System.out.println("deleted");
+//        printListNode(listNode1);
     }
-    // 最笨的方法，一定不符合面试官的要求
-    public static void printToMax(int n) {
-        int number = 1;
-        // 先求最大数
-        while (n-- > 0) {
-            number *= 10;
-        }
 
-        while (number-- > 1) {
-            System.out.println(number);
-        }
-    }
-    //
-    public static void printToMax2(int n) {
-        if (n <= 0) return;
-        char[] number = new char[n];
-        for (int i = 0; i < number.length; i++) {
-            number[i] = '0';
-        }
-        while (!Increment(number)) {
-            printNumber(number);
-        }
-    }
-
-
-
-    private static boolean Increment(char[] number) {
-        boolean isOverflow = false;
-        int nTakeOver = 0;
-        int nLength = number.length;
-        for (int i = nLength - 1; i >= 0; i--) {
-            int nSum = number[i] - '0' + nTakeOver;
-            if (i == nLength - 1) nSum++;
-            if (nSum >= 10) {
-                if (i == 0) isOverflow = true;
-                else {
-                    nSum -= 10;
-                    nTakeOver = 1;
-                    number[i] = (char) ('0' + nSum);
-                }
-            } else {
-                number[i] = (char) ('0' + nSum);
-                System.out.println(number[i]);
-                break;
+    private static void deleteNode(ListNode headListNode, ListNode pListNode) {
+        // 要删除的节点不是尾节点
+        if (pListNode.next != null) {
+            ListNode node = pListNode.next;
+            pListNode.value = node.value;
+            pListNode.next = node.next;
+        } else if (headListNode == pListNode) { // 只有一个头节点
+            pListNode = null;
+            headListNode = null;
+        } else { // 链表中有多个节点，删除的是尾节点
+            // 只能遍历了
+            ListNode node = headListNode;
+            while (node.next != pListNode) {
+                node = node.next;
             }
-
-        }
-        return isOverflow;
-    }
-    private static void printNumber(char[] number) {
-        boolean isBeginning0 = true;
-
-        int nLength = number.length;
-        for (int i = 0; i < nLength; i++) {
-            if (isBeginning0 && number[i]!= '0') isBeginning0 = false;
-            if(! isBeginning0) System.out.print(number[i]);
-        }
-        System.out.print('\t');
-    }
-
-
-    // 递归方法，把递归想成堆栈
-    public static void printToMax3(int n) {
-        if (n <= 0) return;
-        char[] number = new char[n];
-        for (int i = 0; i < 10; i++) {
-            number[0] = (char) (i + '0');
-            printToMax3Recur(number, n, 0);
+            node.next = null;
+            pListNode = null;
         }
     }
 
-    private static void printToMax3Recur(char[] number, int n, int index) {
-        if (index == n - 1) {
-            printNumber(number);
-            return;
-        }
-        for (int j = 0; j < 10; j++) {
-            number[index + 1] = (char) (j + '0');
-            printToMax3Recur(number, n, index + 1);
+    private static void deleteDuplication(ListNode headListNode) {
+        if (headListNode == null) return;
+        ListNode preNode = null;
+        ListNode pNode = headListNode;
+        while (pNode != null) {
+            ListNode pNext = pNode.next;
+            boolean needDelete = false;
+            if (pNext != null && pNext.value == pNode.value) needDelete = true;
+            if (!needDelete) {
+                preNode = pNode;
+                pNode = pNext;
+            } else {
+                int value = pNode.value;
+                ListNode pDelNode = pNode;
+                while (pDelNode != null && pDelNode.value == value) {
+                    pNext = pDelNode.next;
+                    pDelNode = pNext;
+                }
+                if (preNode == null) headListNode = pNext;
+                else pNode.next = pNext;
+//                else preNode.next = pNext;
+//                pNode = pNext;
+            }
         }
     }
+    public static void printListNode(ListNode headListnode) {
+        while (headListnode != null) {
+            System.out.println(headListnode.value);
+            headListnode = headListnode.next;
+        }
+    }
+
 }

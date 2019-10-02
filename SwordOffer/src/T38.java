@@ -1,41 +1,52 @@
 /**
  * @program JavaBooks
- * @description: 二叉搜索树与双向链表
+ * @description: 字符串的排列
  * @author: mf
- * @create: 2019/09/17 09:54
+ * @create: 2019/09/19 09:51
  */
 
 /*
-输入一颗二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。
-要求不能创建任何新的结点，只能调整树中结点指针的指向。
+输入一个字符串，打印出该字符串中字符的所有排列。
+例如，输入字符串abc，则打印出由字符a、b、c所能
+排列出来的所有字符串abc、acb、bca、cab和cba
+ */
+/*
+思路：
+每次分为两个部分
+第一部分固定第一个字符，后面的交换
+第二部分继续可以分为两个部分，
+第一个字符固定，后面交换
+依次类堆
+递归
  */
 public class T38 {
     public static void main(String[] args) {
-        int[] pre = {10, 6, 4, 8, 14, 12, 16};
-        int[] in = {4, 6, 8, 10, 12, 14, 16};
-        TreeNode treeNode = TreeNode.setBinaryTree(pre, in);
-        TreeNode listNode = Convert(treeNode);
+        pemutation("abc");
     }
 
-    private static TreeNode Convert(TreeNode treeNode) {
-        if (treeNode == null) return null;
-        if (treeNode.left == null && treeNode.right == null) return treeNode;
-        // left
-        TreeNode left = Convert(treeNode.left);
-        TreeNode p = left;
-        while (p != null && p.right != null) {
-            p = p.right;
+    private static void pemutation(String s) {
+        if (s == null) return;
+        char[] chars = s.toCharArray();
+        pemutation(chars, 0);
+    }
+
+    private static void pemutation(char[] chars, int begin) {
+        if (chars.length == 0 || begin < 0 || begin > chars.length - 1) return;
+        if (begin == chars.length - 1) {
+            String s = new String(chars);
+            System.out.print(s + '\t');
+        } else {
+            for (int i = begin; i < chars.length; i++) {
+                swap(chars, begin, i); // 交换
+                pemutation(chars, begin + 1);
+                swap(chars, begin, i); // 交换回去
+            }
         }
-        if (left != null) {
-            p.right = treeNode;
-            treeNode.left = p;
-        }
-        // right
-        TreeNode right = Convert(treeNode.right);
-        if (right != null) {
-            treeNode.right = right;
-            right.left = treeNode;
-        }
-        return left != null ? left : treeNode;
+    }
+
+    private static void swap(char[] chars, int begin, int i) {
+        char temp = chars[begin];
+        chars[begin] = chars[i];
+        chars[i] = temp;
     }
 }

@@ -1,46 +1,53 @@
-import java.util.Stack;
-
 /**
  * @program JavaBooks
- * @description: 栈的压入、弹出序列
+ * @description: 二叉搜索树的后序遍历序列
  * @author: mf
- * @create: 2019/09/12 10:16
+ * @create: 2019/09/14 21:15
  */
 
 /*
-输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈
-的弹出顺序。假设压入栈的所有数字均不相等。例如，序列{1， 2， 3，4， 5}
-是某栈的压栈序列，序列{4，5，3，2，1}是该压栈序列对应的一个弹出序列，但
-{4，3，5，1，2}就不肯能是该压栈序列的弹出序列。
- */
-
-/*
-思路：
-用一个Pop的指针即可
-每次压栈，取出栈顶去和当前pop的值做比较，若相等，pop++
-并且stack弹出栈顶
+输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果
+如果是则返回true，否则返回false。假设输入的数组的任意两个数字
+都互不相同。例如，输入数组{5, 7, 6, 9, 11, 10, 8}, 则返回true
+因为这个整数序列是书上图4.9二叉搜索树的后序遍历结果。如果输入的数组是
+{7，4，6，5}
  */
 public class T33 {
     public static void main(String[] args) {
-        int[] arrPush = {1, 2, 3, 4, 5};
-        int[] arrPop = {4, 5, 3, 2, 1};
-        int[] arrPop1 = {4, 3, 5, 1, 2};
-        boolean res = isPopOrder(arrPush, arrPop1);
+        int[] sequence = {5, 7, 6, 9, 11, 10, 8};
+        boolean res = VerifySquenceOfBST(sequence);
         System.out.println(res);
     }
 
-    private static boolean isPopOrder(int[] arrPush, int[] arrPop) {
-        if (arrPush == null || arrPop == null) return false;
-        int pPop = 0;
-        Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < arrPush.length; i++) {
-            stack.push(arrPush[i]);
-            while (!stack.empty() && stack.peek() == arrPop[pPop]) {
-                stack.pop();
-                pPop++;
+    private static boolean VerifySquenceOfBST(int[] sequence) {
+        if (sequence == null || sequence.length == 0) return false;
+        return isBST(sequence, 0, sequence.length - 1);
+    }
+
+    private static boolean isBST(int[] sequence, int start, int end) {
+        if (start >= end) {
+            return true;
+        }
+        int inx = sequence[end];
+        int m = start;
+        // 找到分界点
+        for (int i = end - 1; i >= start; i--) {
+            if (sequence[i] < inx) {
+                m = i;
+                break;
+            }
+            if (i == start) {
+                m = -1;
             }
         }
+        // 分界点前的数据都小于根节点
+        for (int i = start; i <= m; i++) {
+            if (sequence[i] > inx) {
+                return false;
+            }
+        }
+        // 递归判断根节点的左右子树
+        return isBST(sequence, start, m) && isBST(sequence, m + 1, end - 1);
 
-        return stack.empty();
     }
 }

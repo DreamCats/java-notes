@@ -1,46 +1,72 @@
-import java.util.Arrays;
-
 /**
  * @program JavaBooks
- * @description: 调整数组顺序使奇数位于偶数前面
+ * @description: 链表中环的入口节点
  * @author: mf
- * @create: 2019/09/02 09:47
+ * @create: 2019/09/04 14:28
  */
+
 /*
-输入一个整数数组，实现一个函数来调整该数组中数字的顺序，
-使得所有奇数位于数组的前半部分
-所有偶数位于数组的后半部分
+
  */
 public class T23 {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 6, 4, 7, 5};
-        reorderOddEven(arr);
-        System.out.println(Arrays.toString(arr));
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+        ListNode listNode5 = new ListNode(5);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
+        listNode5.next = listNode3;
+        ListNode enterNode = findEnterNode(listNode1);
+        System.out.println(enterNode.value);
     }
 
-    private static void reorderOddEven(int[] arr) {
-        if (arr == null || arr.length == 0) return;
-        int p1 = 0;
-        int p2 = arr.length - 1;
-        while (p1 < p2) {
-            // 向后移动p1, 直到指向偶数  根据题目的话，这里可扩展
-            while (p1 < p2 && (arr[p1] & 0x1) != 0) {
-                p1++;
-            }
-            // 向前移动p2，直到指向奇数  同理
-            while (p1 < p2 && (arr[p2] & 0x1) != 1) {
-                p2--;
-            }
+    private static ListNode findEnterNode(ListNode headNode) {
+        if (headNode == null) return null;
+        ListNode meetingNode = findMeetingNode(headNode);
+        if (meetingNode == null) return null; // 无环
 
-            if(p1 < p2) {
-                swap(arr, p1, p2);
+        // 找环中有几个节点
+        ListNode tempNode = meetingNode.next;
+        int ringNum = 1;
+        while (tempNode != meetingNode) {
+            tempNode = tempNode.next;
+            ringNum++;
+        }
+
+        // 设定两个指针，比如p1 p2
+        // 一开始都在头节点，当p1 跑到ringNum的时候，p2开始移动
+        // 当p1 == p2 的时候， 就是环入口节点
+        ListNode enterNode = headNode;
+        headNode = headNode.next;
+        int p1 = 1;
+        while (enterNode != headNode) {
+            headNode = headNode.next;
+            p1++;
+            if (p1 > ringNum) {
+                enterNode = enterNode.next;
             }
         }
+        return enterNode;
     }
 
-    private static void swap(int[] arr, int p1, int p2) {
-        int temp = arr[p1];
-        arr[p1] = arr[p2];
-        arr[p2] = temp;
+    private static ListNode findMeetingNode(ListNode headNode) {
+        ListNode slowNode = headNode.next;
+        if (slowNode == null) return null;
+        ListNode fastNode = slowNode.next;
+        while (fastNode != null && slowNode != null) {
+            if (fastNode == slowNode) return fastNode;
+            slowNode = slowNode.next;
+            fastNode = fastNode.next;
+            if (fastNode != null) fastNode = fastNode.next; // 提高代码的鲁棒性而已
+//            fastNode = fastNode.next;
+        }
+        return null;
     }
+
+
 }
