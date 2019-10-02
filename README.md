@@ -9,6 +9,9 @@
 - [快速排序](/Sorts/src/QuickSort.java)
 - [堆排序](/Sorts/src/HeapSort.java)
 
+## Searchs(查找)
+- [二分查找](/Searchs/src/BinarySearch.java)
+
 ## DesignPattern(设计模式)
 - [单例模式](/SwordOffer/src/T2.java)
 - [工厂模式](/DesignPattern/src/FactoryMode.java)
