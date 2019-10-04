@@ -17,6 +17,7 @@
 - [工厂模式](/DesignPattern/src/FactoryMode.java)
 - [代理模式](/DesignPattern/src/ProxyMode.java)
 - [模版方法模式](/DesignPattern/src/TemplateMode.java)
+- [观察者模式](/DesignPattern/src/ObserverMode.java)
 
 ## SwordOffer(剑指offer)
 - [2、单例模式](/SwordOffer/src/T2.java)
