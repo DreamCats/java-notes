@@ -67,3 +67,4 @@
 - [48、最长不含重复字符的子字符串](/SwordOffer/src/48.java)
 - [49、丑数](/SwordOffer/src/T49.java)
 - [50、第一个只出现一次的字符](/SwordOffer/src/T50.java)
+- [51、数组中的逆序对](/SwordOffer/src/T51.java)
