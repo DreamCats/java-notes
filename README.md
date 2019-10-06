@@ -71,3 +71,4 @@
 - [50、第一个只出现一次的字符](/SwordOffer/src/T50.java)
 - [51、数组中的逆序对](/SwordOffer/src/T51.java)
 - [52、两个链表的第一个公共节点](/SwordOffer/src/T52.java)
+- [53、在排序数组中查找数字](/SwordOffer/src/T53.java)
