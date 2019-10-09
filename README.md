@@ -74,3 +74,4 @@
 - [53、在排序数组中查找数字](/SwordOffer/src/T53.java)
 - [54、二叉搜索树的第K大节点](/SwordOffer/src/T54.java)
 - [55、二叉树的深度](/SwordOffer/src/T55.java)
+- [56、数组中只出现一次的两个数字](/SwordOffer/src/T56.java)
