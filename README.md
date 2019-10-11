@@ -78,3 +78,4 @@
 - [57、和为s的数字](/SwordOffer/src/T57.java)
 - [58、翻转字符串](/SwordOffer/src/T58.java)
 - [59、滑动窗口的最大值](/SwordOffer/src/T59.java)
+- [60、n个骰子的点数](/SwordOffer/src/T60.java)
