@@ -84,6 +84,7 @@
 - [63、股票的最大利润](/SwordOffer/src/T63.java)
 - [64、求1+2+...+n](/SwordOffer/src/T64.java)
 - [65、不用加减乘除做加法](/SwordOffer/src/T65.java)
+- [66、构建乘积数组](/SwordOffer/src/T66.java)
 
 ## LeetCode
 ### easy
