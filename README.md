@@ -94,4 +94,4 @@
 
 
 ## Interview
-- [设计一个LRU](/Interview/src/LRUDemo.java)
+- [设计一个LRU](/Interview/src/LRUDemo.md)
