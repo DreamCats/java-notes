@@ -88,3 +88,6 @@
 
 ## LeetCode
 ### easy
+- [1、两数之和](/LeetCode/src/TwoSum.java)
+
+### Medium
