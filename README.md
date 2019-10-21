@@ -92,6 +92,7 @@
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
+- [3、无重复字符的最长子串](/LeetCode/src/LengthOfLongestSubstring.java)
 
 ## Interview
 - [设计一个LRU](/Interview/src/LRUDemo.md)
