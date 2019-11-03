@@ -90,6 +90,7 @@
 ### easy
 - [1、两数之和](/LeetCode/src/TwoSum.java)
 - [111、二叉树的最小深度](/LeetCode/src/MinDepth.java)
+- [111、杨辉三角](/LeetCode/src/Generate.java)
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
