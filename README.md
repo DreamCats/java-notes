@@ -95,6 +95,8 @@
 - [111、二叉树的最小深度](/LeetCode/src/MinDepth.java)
 - [118、杨辉三角](/LeetCode/src/Generate.java)
 - [121、买卖股票的最佳时机](/LeetCode/src/MaxProfit.java)
+- [122、买卖股票的最佳时机2](/LeetCode/src/MaxProfi2t.java)
+- [169、求众数](/LeetCode/src/MajorityElement.java)
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
