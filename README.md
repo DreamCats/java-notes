@@ -98,6 +98,7 @@
 - [122、买卖股票的最佳时机2](/LeetCode/src/MaxProfi2t.java)
 - [169、求众数](/LeetCode/src/MajorityElement.java)
 - [189、旋转数组](/LeetCode/src/Rotate.java)
+- [217、存在重复元素](/LeetCode/src/ContainsDuplicate.java)
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
