@@ -94,6 +94,7 @@
 - [88、合并两个排序的数组](/LeetCode/src/Merge.java)
 - [111、二叉树的最小深度](/LeetCode/src/MinDepth.java)
 - [118、杨辉三角](/LeetCode/src/Generate.java)
+- [121、买卖股票的最佳时机](/LeetCode/src/MaxProfit.java)
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
