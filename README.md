@@ -89,6 +89,7 @@
 ## LeetCode
 ### easy
 - [1、两数之和](/LeetCode/src/TwoSum.java)
+- [1、合并两个有序链表](/LeetCode/src/MergeTwoLists.java)
 - [26、删除排序数组中的重复项](/LeetCode/src/RemoveDuplicates.java)
 - [66、加一](/LeetCode/src/PlusOne.java)
 - [88、合并两个排序的数组](/LeetCode/src/Merge.java)
