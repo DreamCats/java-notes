@@ -27,8 +27,9 @@ public class ListNode {
 
     public static void printNode(ListNode node) {
         while (node != null) {
-            System.out.println(node.val);
+            System.out.print(node.val + "->");
             node = node.next;
         }
+        System.out.print("null");
     }
 }
