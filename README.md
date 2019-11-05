@@ -101,6 +101,7 @@
 - [160、相交链表](/LeetCode/src/GetIntersectionNode.java)
 - [169、求众数](/LeetCode/src/MajorityElement.java)
 - [189、旋转数组](/LeetCode/src/Rotate.java)
+- [206、反转链表](/LeetCode/src/ReverseList.java)
 - [217、存在重复元素](/LeetCode/src/ContainsDuplicate.java)
 - [268、缺失数字](/LeetCode/src/MissingNumber.java)
 - [283、移动零](/LeetCode/src/MoveZeroes.java)
