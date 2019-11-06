@@ -111,6 +111,7 @@
 - [268、缺失数字](/LeetCode/src/MissingNumber.java)
 - [283、移动零](/LeetCode/src/MoveZeroes.java)
 - [350、两个数组的交集 II](/LeetCode/src/Intersect.java)
+- [387、字符串中的第一个唯一字符](/LeetCode/src/FirstUniqChar.java)
 
 ### Medium
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
