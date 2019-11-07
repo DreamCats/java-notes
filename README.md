@@ -99,6 +99,7 @@
 - [122、买卖股票的最佳时机2](/LeetCode/src/MaxProfi2t.java)
 - [136、只出现一次的数字](/LeetCode/src/SingleNumber.java)
 - [141、环形链表](/LeetCode/src/HasCycle.java)
+- [155、最小栈](/LeetCode/src/MinStack.java)
 - [160、相交链表](/LeetCode/src/GetIntersectionNode.java)
 - [169、求众数](/LeetCode/src/MajorityElement.java)
 - [189、旋转数组](/LeetCode/src/Rotate.java)
