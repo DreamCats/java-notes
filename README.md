@@ -103,6 +103,7 @@
 - [118、杨辉三角](/LeetCode/src/Generate.java)
 - [121、买卖股票的最佳时机](/LeetCode/src/MaxProfit.java)
 - [122、买卖股票的最佳时机2](/LeetCode/src/MaxProfi2t.java)
+- [125、验证回文串](/LeetCode/src/IsPalindromeStr.java)
 - [136、只出现一次的数字](/LeetCode/src/SingleNumber.java)
 - [141、环形链表](/LeetCode/src/HasCycle.java)
 - [155、最小栈](/LeetCode/src/MinStack.java)
