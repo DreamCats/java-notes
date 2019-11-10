@@ -130,6 +130,7 @@
 - [242、有效的字母异位词](/LeetCode/src/IsAnagram.java)
 - [268、缺失数字](/LeetCode/src/MissingNumber.java)
 - [283、移动零](/LeetCode/src/MoveZeroes.java)
+- [326、3的幂](/LeetCode/src/IsPowerOfThree.java)
 - [344、反转字符串](/LeetCode/src/ReverseString.java)
 - [350、两个数组的交集 II](/LeetCode/src/Intersect.java)
 - [371、两整数之和](/LeetCode/src/GetSum.java)
