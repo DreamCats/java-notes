@@ -134,6 +134,7 @@
 - [350、两个数组的交集 II](/LeetCode/src/Intersect.java)
 - [371、两整数之和](/LeetCode/src/GetSum.java)
 - [387、字符串中的第一个唯一字符](/LeetCode/src/FirstUniqChar.java)
+- [412、Fizz Buzz](/LeetCode/src/FizzBuzz.java)
 - [744、寻找比目标字母大的最小字母](/LeetCode/src/NextGreatestLetter.java)
 
 ### Medium
