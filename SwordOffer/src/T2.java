@@ -5,8 +5,8 @@
  * @create: 2019/08/15 15:53
  */
 
-/*
-饿汉
+/**
+ * 饿汉
  */
 public class T2 {
     private static T2 instance = new T2();
@@ -17,8 +17,8 @@ public class T2 {
     }
 }
 
-/*
-饿汉变种
+/**
+ * 饿汉变种
  */
 class Singleton1 {
     private static Singleton1 instance = null;
@@ -32,8 +32,8 @@ class Singleton1 {
     }
 }
 
-/*
-懒汉 -- 线程不安全...
+/**
+ * 懒汉 -- 线程不安全...
  */
 class Singleton2 {
     private static Singleton2 instance = null;
@@ -48,8 +48,8 @@ class Singleton2 {
     }
 }
 
-/*
-懒汉 -- 线程安全， 但消耗资源较为严重
+/**
+ * 懒汉 -- 线程安全， 但消耗资源较为严重
  */
 class Singleton3 {
     private static Singleton3 instance = null;
@@ -65,8 +65,8 @@ class Singleton3 {
     }
 }
 
-/*
-懒汉 -- 线程安全，相对上一种好一些，双重校验
+/**
+ * 线程安全，双重校验
  */
 class Singleton4 {
     private static volatile Singleton4 instance = null;
