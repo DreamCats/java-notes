@@ -16,7 +16,12 @@ public class T5 {
         String s1 = replaceSpace2(s);
         System.out.println(s1);
     }
-    // 数组和指针
+
+    /**
+     * 双指针，从后往前遍历即可
+     * @param str
+     * @return
+     */
     public static String replaceSpace(StringBuffer str) {
         int spaceNum = 0;
         // 检测空格数目
