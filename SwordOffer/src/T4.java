@@ -22,6 +22,12 @@ public class T4 {
         System.out.println(res);
     }
 
+    /**
+     * 数组规律特性，边界问题
+     * @param arr
+     * @param target
+     * @return
+     */
     public static boolean find(int[][] arr, int target) {
         int row = 0;
         // i = 最后一行，往上扫
