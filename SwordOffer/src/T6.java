@@ -33,8 +33,11 @@ public class T6 {
 
     }
 
-
-    // 栈方法
+    /**
+     * 栈方法
+     * @param listNote
+     * @return
+     */
     public static ArrayList<Integer> printListFromTailToHead1(ListNode listNote) {
         Stack<Integer> stack = new Stack<>();
         // 压栈
@@ -51,10 +54,14 @@ public class T6 {
         return arrayList;
     }
 
-    // 递归方法
+    /**
+     * 递归方法
+     * @param listNote
+     * @return
+     */
     public  ArrayList<Integer> printListFromTailToHead2(ListNode listNote) {
         if (listNote != null) {
-            this.printListFromTailToHead2(listNote.next);
+            this.printListFromTailToHead2(listNote.next); // 层层递归到最后链表最后一位，从最后一位add
             arrayList.add(listNote.value);
         }
         return arrayList;
