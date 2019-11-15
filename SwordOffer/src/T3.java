@@ -33,9 +33,11 @@ public class T3 {
 
     }
 
-
-
-
+    /**
+     * 可修改数组
+     * @param arr
+     * @return
+     */
     public static ArrayList<Integer> duplication(int[] arr) {
         ArrayList<Integer> helpList = new ArrayList<>();
         // 提高鲁棒性
@@ -66,7 +68,11 @@ public class T3 {
         arr[j] = temp;
     }
 
-    // 哈希表
+    /**
+     * 哈希
+     * @param arr
+     * @return
+     */
     public static ArrayList<Integer> duplication2(int[] arr) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         ArrayList<Integer> helpList = new ArrayList<>();
