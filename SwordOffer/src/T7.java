@@ -17,7 +17,7 @@
             7                                    8
  */
 public class T7 {
-
+    // 递归
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         TreeNode root = reConstructBinaryTree(pre, 0, pre.length - 1, in, 0, in.length - 1);
         return root;
@@ -32,6 +32,7 @@ public class T7 {
         TreeNode root = new TreeNode(pre[startPre]);
         for (int i = startIn; i <= endIn; i++) {
             if (in[i] == pre[startPre]) {
+                //注意边界，递归可看成重复的子问题。
                 root.left = reConstructBinaryTree(pre, startPre + 1, startPre + i - startIn, in, startIn, i - 1);
                 root.right = reConstructBinaryTree(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn);
             }
