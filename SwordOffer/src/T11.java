@@ -15,11 +15,14 @@
 public class T11 {
     public static void main(String[] args) {
         int[] arr = {3, 4, 5, 1, 2};
-        System.out.println(arr[findMin(arr)]);
+        System.out.println(findMin2(arr));
     }
 
-    // 别用从头到尾遍历的...那个对这道题没有意义
-    // 无重复的
+    /**
+     *
+     * @param arr
+     * @return 坐标
+     */
     public static int findMin(int[] arr) {
         int p1 = 0;
         int p2 = arr.length - 1;
@@ -53,5 +56,24 @@ public class T11 {
             }
         }
         return res;
+    }
+
+    /**
+     * 分析数组规律，单指针即可
+     * @param arr
+     * @return
+     */
+    public static int findMin2(int[] arr) {
+        if (arr.length == 0) return 0;
+        if (arr.length == 1) return arr[0];
+        int a = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (a > arr[i]) {
+                return arr[i];
+            } else {
+                a = arr[i];
+            }
+        }
+        return 0;
     }
 }
