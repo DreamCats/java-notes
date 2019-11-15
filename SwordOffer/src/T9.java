@@ -35,6 +35,15 @@ public class T9 {
         }
         return first;
     }
+
+    public int pop2() {
+        if (stack2.isEmpty()) {
+            while (!stack1.isEmpty()) {
+                stack2.push(stack1.pop());
+            }
+        }
+        return stack2.pop(); // 返回输出栈的栈顶
+    }
 }
 
 /*
