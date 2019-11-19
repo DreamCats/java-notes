@@ -33,19 +33,21 @@ public class T24 {
         System.out.println(headNode.value);
     }
 
+    /**
+     * 循环
+     * @param headNode
+     * @return
+     */
     private static ListNode reverseListNode(ListNode headNode) {
-        if (headNode == null) return null;
-        ListNode beforeNode = null;
-        ListNode pNode = headNode;
-        ListNode nextNode = null;
-
-        while (pNode != null) {
-            nextNode = pNode.next;
-            if (nextNode == null) return pNode;
-            pNode.next = beforeNode; // p 下一个值指向pre
-            beforeNode = pNode; // p 赋 pre
-            pNode = nextNode; // next 赋给p
+        if (headNode == null) return  null;
+        ListNode pre = null; // 当前节点的前一个节点
+        ListNode cur = headNode;  // 当前节点
+        while (cur != null) {
+            ListNode next = cur.next; // 存一下当前节点的下一个节点
+            cur.next = pre; // 将当前节点的下一个节点直接指向当前节点的pre
+            pre = cur; // 前一个节点指向当前节点
+            cur = next; // 当前节点指向下一个节点
         }
-        return pNode;
+        return pre;
     }
 }
