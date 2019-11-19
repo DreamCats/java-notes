@@ -69,16 +69,21 @@ public class T22 {
      * @return
      */
     public static ListNode findKthToTail2(ListNode headListNode, int k) {
+        if(headListNode == null || k <= 0) return null;
         Stack<ListNode> stack = new Stack<>();
         ListNode root = headListNode;
-        ListNode kNode = null;
-        while (root != null) {
+        while(root != null) {
             stack.push(root);
             root = root.next;
         }
-        for (int i = 0; i < k; i++) {
-            kNode = stack.pop();
+        int temp = 0;
+        while(!stack.isEmpty()) {
+            ListNode listNode = stack.pop();
+            temp++;
+            if (temp == k) {
+                return listNode;
+            }
         }
-        return kNode;
+        return null;
     }
 }
