@@ -35,25 +35,28 @@ public class T22 {
         listNode3.next = listNode4;
         listNode4.next = listNode5;
 
-        ListNode kNode = findKthToTail(listNode1, 5);
-        System.out.println(kNode);
+        ListNode kNode = findKthToTail(listNode1, 2);
+        System.out.println(kNode.value);
     }
 
+    /**
+     * 快慢指针问题
+     * @param headListNode
+     * @param k
+     * @return
+     */
     public static ListNode findKthToTail(ListNode headListNode, int k) {
         if (headListNode == null || k == 0 ) return null;
-
+        //
+        ListNode pNode = headListNode;
+        ListNode kNode = headListNode;
         int p1 = 0;
-//        int p2 = 0;
-        ListNode tempHeadNode = headListNode;
-        ListNode kNode = null;
-        while (headListNode != null) {
-            p1++;
-            if (p1 >= k) {
-//                p2++;
-                kNode = tempHeadNode;
-                tempHeadNode = tempHeadNode.next;
+        while (pNode != null) {
+            if (p1 > k - 1) { // 当p1走完k-1步，那么kNode开始走
+                kNode = kNode.next;
             }
-            headListNode = headListNode.next;
+            pNode = pNode.next;
+            p1++;
         }
         return kNode;
     }
