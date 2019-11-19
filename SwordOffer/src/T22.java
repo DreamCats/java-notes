@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @program JavaBooks
@@ -35,7 +36,7 @@ public class T22 {
         listNode3.next = listNode4;
         listNode4.next = listNode5;
 
-        ListNode kNode = findKthToTail(listNode1, 2);
+        ListNode kNode = findKthToTail2(listNode1, 2);
         System.out.println(kNode.value);
     }
 
@@ -57,6 +58,26 @@ public class T22 {
             }
             pNode = pNode.next;
             p1++;
+        }
+        return kNode;
+    }
+
+    /**
+     * 栈
+     * @param headListNode
+     * @param k
+     * @return
+     */
+    public static ListNode findKthToTail2(ListNode headListNode, int k) {
+        Stack<ListNode> stack = new Stack<>();
+        ListNode root = headListNode;
+        ListNode kNode = null;
+        while (root != null) {
+            stack.push(root);
+            root = root.next;
+        }
+        for (int i = 0; i < k; i++) {
+            kNode = stack.pop();
         }
         return kNode;
     }
