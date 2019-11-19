@@ -36,7 +36,7 @@ public class T22 {
         listNode3.next = listNode4;
         listNode4.next = listNode5;
 
-        ListNode kNode = findKthToTail2(listNode1, 2);
+        ListNode kNode = findKthToTail(listNode1, 6);
         System.out.println(kNode.value);
     }
 
@@ -59,7 +59,10 @@ public class T22 {
             pNode = pNode.next;
             p1++;
         }
-        return kNode;
+        if (p1 >= k) {
+            return kNode;
+        }
+        return null;
     }
 
     /**
