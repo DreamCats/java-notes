@@ -50,4 +50,21 @@ public class T24 {
         }
         return pre;
     }
+
+    /**
+     * 尾递归
+     * @param headNode
+     * @return
+     */
+    private static ListNode reverseListNode2(ListNode headNode) {
+        if (headNode == null) return null;
+        return reverse(null, headNode);
+    }
+
+    private static ListNode reverse(ListNode pre, ListNode cur) {
+        if (cur == null) return pre;
+        ListNode next = cur.next;
+        cur.next = pre;
+        return reverse(cur, next);
+    }
 }
