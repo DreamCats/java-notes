@@ -21,7 +21,7 @@ public class T45 {
     }
 
     private static String printMinNumber(int[] arr) {
-        if (arr == null || arr.length == 0) return null;
+        if (arr == null || arr.length == 0) return "";
         int len = arr.length;
         String[] str = new String[len];
         StringBuffer stringBuffer = new StringBuffer();
