@@ -13,12 +13,12 @@ import java.util.Map;
  */
 public class T50 {
     public static void main(String[] args) {
-        String first = FirstNotRepeatingChar("abaccdeff");
+        Integer first = FirstNotRepeatingChar("abaccdeff");
         System.out.println(first);
     }
     // 哈希表
-    private static String FirstNotRepeatingChar(String str) {
-        if (str == null || str.length() == 0) return null;
+    private static int FirstNotRepeatingChar(String str) {
+        if (str == null || str.length() == 0) return -1;
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < str.length(); i++) {
             if (map.containsKey(str.charAt(i))) {
@@ -27,11 +27,11 @@ public class T50 {
                 map.put(str.charAt(i), 1);
             }
         }
-        for (Character character : map.keySet()) {
-            if (map.get(character) == 1) {
-                return character.toString();
+        for (int i = 0; i < str.length(); i++) {
+            if (map.get(str.charAt(i)) == 1) {
+                return i;
             }
         }
-        return null;
+        return -1;
     }
 }
