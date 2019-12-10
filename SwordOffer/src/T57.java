@@ -36,4 +36,27 @@ public class T57 {
         }
         return null;
     }
+
+    private static ArrayList<ArrayList<Integer>> findContinuousSequence(int sum) {
+        ArrayList<ArrayList<Integer>> arrayLists = new ArrayList<>();
+        int phigh = 2, plow = 1;
+        while (phigh > plow) {
+            int cur = (phigh + plow) * (phigh - plow + 1) / 2;
+            if (cur < sum) {
+                phigh++;
+            }
+            if (cur == sum) {
+                ArrayList<Integer> arrayList = new ArrayList<>();
+                for (int i = plow; i <= phigh; i++) {
+                    arrayList.add(i);
+                }
+                arrayLists.add(arrayList);
+                plow++;
+            }
+            if (cur > sum) {
+                plow++;
+            }
+        }
+        return arrayLists;
+    }
 }
