@@ -20,4 +20,16 @@ public class T1 {
             System.out.println(Thread.currentThread().getName() + " count = " + count);
         }
     }
+
+    public void m1() {
+        synchronized (this) { // 任何线程要执行下面的代码，必须先拿到this的锁
+            count--;
+            System.out.println(Thread.currentThread().getName() + " count = " + count);
+        }
+    }
+
+    public synchronized void m2() { // 等效synchroniezd(this)
+        count--;
+        System.out.println(Thread.currentThread().getName() + " count = " + count);
+    }
 }
