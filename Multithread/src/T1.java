@@ -12,6 +12,8 @@ public class T1 {
 
     private int count = 10;
 
+    private static int count1 = 10;
+
     private Object o = new Object();
 
     public void m() {
@@ -31,5 +33,16 @@ public class T1 {
     public synchronized void m2() { // 等效synchroniezd(this)
         count--;
         System.out.println(Thread.currentThread().getName() + " count = " + count);
+    }
+
+    public static synchronized void m3() { // class对象
+        count1--;
+        System.out.println(Thread.currentThread().getName() + " count = " + count1);
+    }
+
+    public static void m4() {
+        synchronized (T1.class) {
+            count1--;
+        }
     }
 }
