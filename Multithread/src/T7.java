@@ -1,5 +1,8 @@
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @program JavaBooks
@@ -10,13 +13,14 @@ import java.util.List;
 
 public class T7 {
 
+    AtomicInteger count = new AtomicInteger(0);
 
+//    /*volatile*/ int count = 0;
 
-    /*volatile*/ int count = 0;
-
-    synchronized void m() {
+    /*synchronized*/ void m() {
         for (int i = 0; i < 1000; i++) {
-            count++;
+//            count++;
+            count.incrementAndGet();
         }
     }
 
