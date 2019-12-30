@@ -7,6 +7,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -119,6 +120,66 @@ class T11_1 {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                }
+            }
+        }, "t1").start();
+    }
+}
+
+
+/**
+ * 使用CountDownLatch CyclicBarrier semaphore
+ */
+class T11_2 {
+
+    List lists = new ArrayList();
+
+    public void add (Object o) {
+        lists.add(o);
+    }
+
+    public int size() {
+        return lists.size();
+    }
+
+    public static void main(String[] args) {
+        T11_2 t11_2 = new T11_2();
+
+        CountDownLatch countDownLatch = new CountDownLatch(1);
+
+        new Thread(() -> {
+            System.out.println("t2启动");
+            if (t11_2.size() != 5) {
+                try {
+                    countDownLatch.await(); // 上个门闩
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            System.out.println("t2结束");
+        }, "t2").start();
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        new Thread(() -> {
+            System.out.println("t1启动");
+            for (int i = 0; i < 10; i++) {
+                t11_2.add(new Object());
+                System.out.println("add " + i);
+
+                if (t11_2.size() == 5) {
+                    // 打开门闩，让t2得以执行
+                    countDownLatch.countDown();
+                }
+
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }, "t1").start();
