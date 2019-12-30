@@ -16,7 +16,10 @@ import java.util.concurrent.TimeUnit;
 
 public class T11 {
 
-    List lists = new ArrayList();
+//    List lists = new ArrayList();
+
+    // 解决方法1， 添加volatile，使t2能够得到通知
+    volatile List lists = new ArrayList();
 
     public void add(Object o) {
         lists.add(o);
@@ -33,12 +36,11 @@ public class T11 {
             for (int i = 0; i < 10; i++) {
                 t11.add(new Object());
                 System.out.println("add " + i);
-            }
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }, "t1").start();
 
@@ -51,5 +53,28 @@ public class T11 {
             }
             System.out.println("t2结束");
         }, "t2").start();
+    }
+}
+
+
+/**
+ * 使用wait和notify优化
+ */
+class T11_1 {
+
+    volatile List lists = new ArrayList();
+
+    public void add(Object o) {
+        lists.add(o);
+    }
+
+    public int size() {
+        return lists.size();
+    }
+
+    public static void main(String[] args) {
+        T11_1 t11_1 = new T11_1();
+
+        final Object lock
     }
 }
