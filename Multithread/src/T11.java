@@ -59,10 +59,11 @@ public class T11 {
 
 /**
  * 使用wait和notify优化
+ * wait释放锁，但是notify不释放
  */
 class T11_1 {
 
-    volatile List lists = new ArrayList();
+    List lists = new ArrayList();
 
     public void add(Object o) {
         lists.add(o);
@@ -75,6 +76,51 @@ class T11_1 {
     public static void main(String[] args) {
         T11_1 t11_1 = new T11_1();
 
-        final Object lock
+        final Object lock = new Object();
+
+        new Thread(() -> {
+            synchronized (lock) {
+                System.out.println("t2 启动");
+                if (t11_1.size() != 5) {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println("t2 结束");
+                lock.notify();
+            }
+        }, "t2").start();
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        new Thread(() -> {
+            System.out.println("t1 启动");
+            synchronized (lock) {
+                for (int i = 0; i < 10; i++) {
+                    t11_1.add(new Object());
+                    System.out.println("add " + i);
+
+                    if (t11_1.size() == 5) {
+                        lock.notify();
+                        try {
+                            lock.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }, "t1").start();
     }
 }
