@@ -45,7 +45,7 @@ public class T15<T> {
         }
         t = lists.removeFirst();
         count--;
-        this.notifyAll(); // 通知所有被wait挂起的线程
+        this.notifyAll(); // 通知所有被wait挂起的线程  用notify可能就死锁了。
         return t;
     }
 
@@ -54,7 +54,7 @@ public class T15<T> {
         // 启动消费者线程
         for (int i = 0; i < 2; i++) {
             new Thread(() -> {
-                for (int j = 0; j < 10; j++) System.out.println("消费者：" + t15.get());
+                for (int j = 0; j < 15; j++) System.out.println("消费者：" + t15.get());
             }, "t15_" + i).start();
         }
 
