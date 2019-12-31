@@ -22,6 +22,7 @@ ConcurrentSkipListMap
 ArrayList LinkedList
 2. 并发量小，可选择
 Collections.synchroizedXXX
+CopyOnWriteList(适合大量读，少量写)
 3. 并发量大，可选择
 ConcurrentLinkedQueue
 BlockingQueue(无界阻塞式队列) 
