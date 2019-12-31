@@ -1,9 +1,6 @@
 import java.util.Queue;
 import java.util.Random;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentLinkedDeque;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @program JavaBooks
@@ -15,6 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class T21 {
 
 //    private static Queue<String> strs = new ConcurrentLinkedDeque<>();
+
+//    private static BlockingQueue<String> strs = new ArrayBlockingQueue<>(10);
 
     private static BlockingQueue<String> strs = new LinkedBlockingDeque<>();
 
