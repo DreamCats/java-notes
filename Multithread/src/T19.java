@@ -18,7 +18,7 @@ public class T19 {
     private static List<String> tickets = new ArrayList<>();
 
     static {
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000; i++) {
             tickets.add("票编号：" + i);
         }
     }
@@ -28,6 +28,7 @@ public class T19 {
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
                 while (tickets.size() > 0) {
+                    // size和remove不是原子性的
                     System.out.println("销售了--" + tickets.remove(0));
                 }
             }).start();
