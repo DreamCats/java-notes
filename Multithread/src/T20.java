@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -14,8 +15,8 @@ import java.util.concurrent.CountDownLatch;
 public class T20 {
 
     public static void main(String[] args) {
-        Map<String, String> map = new Hashtable<>();
-
+//        Map<String, String> map = new Hashtable<>();
+        Map<String, String> map = new ConcurrentHashMap<>();
         Random r = new Random();
         Thread[] ths = new Thread[100]; // 100个线程
         CountDownLatch latch = new CountDownLatch(ths.length);
