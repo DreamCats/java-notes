@@ -68,3 +68,37 @@ class T19_1 {
         }
     }
 }
+
+/**
+ * 用synchroized
+ */
+class T19_2 {
+
+    private static List<String> lists = new ArrayList<>();
+
+    static {
+        for (int i = 0; i < 1000; i++) {
+            lists.add("编号：" + i);
+        }
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                while (true) {
+                    synchronized (lists) {
+                        if (lists.size() <= 0) break;
+
+                        try {
+                            TimeUnit.MILLISECONDS.sleep(10);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        System.out.println("销售了--" + lists.remove(0));
+                    }
+                }
+            }).start();
+        }
+    }
+}
