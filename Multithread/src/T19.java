@@ -7,7 +7,9 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -97,6 +99,33 @@ class T19_2 {
 
                         System.out.println("销售了--" + lists.remove(0));
                     }
+                }
+            }).start();
+        }
+    }
+}
+
+
+/**
+ * 使用并发容器队列
+ */
+class T19_3 {
+
+    private static Queue<String> lists = new ConcurrentLinkedDeque<>();
+
+    static {
+        for (int i = 0; i < 1000; i++) {
+            lists.add("编号:" + i);
+        }
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                while (true) {
+                    String s = lists.poll();
+                    if (s == null) break;
+                    else System.out.println("销售了--" + s);
                 }
             }).start();
         }
