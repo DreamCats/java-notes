@@ -13,9 +13,11 @@ public class T21 {
 
 //    private static Queue<String> strs = new ConcurrentLinkedDeque<>();
 
-//    private static BlockingQueue<String> strs = new ArrayBlockingQueue<>(10);
+//    private static BlockingQueue<String> strs = new ArrayBlockingQueue<>(10); // 有界队列
 
-    private static BlockingQueue<String> strs = new LinkedBlockingDeque<>();
+//    private static LinkedTransferQueue<String> strs = new LinkedTransferQueue<>(); // 更高的高并发，先找消费者
+
+    private static BlockingQueue<String> strs = new LinkedBlockingDeque<>(); // 无界队列
 
     private static Random r  = new Random();
 
