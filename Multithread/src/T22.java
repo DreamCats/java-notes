@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class T22 {
 
     public static void main(String[] args) throws InterruptedException {
+        //第一个，固定线程池
         ExecutorService service = Executors.newFixedThreadPool(5);
 
         for (int i = 0; i < 6; i++) {
