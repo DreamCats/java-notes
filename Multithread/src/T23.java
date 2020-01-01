@@ -32,5 +32,6 @@ public class T23 {
         System.out.println(f.isDone());
         System.out.println(f.get());
         System.out.println(f.isDone());
+        service.shutdown();
     }
 }
