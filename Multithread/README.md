@@ -36,4 +36,5 @@ DelayQueue(执行定时任务)
 3. Callable
 4. Future
 5. 6种线程池
+- newFixedThreadPool(固定线程池)
 - 
