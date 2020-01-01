@@ -37,4 +37,5 @@ DelayQueue(执行定时任务)
 4. Future
 5. 6种线程池
 - newFixedThreadPool(固定线程池)
+- newCachedThreadPool(带有缓存线程池，默认空闲线程60s)
 - 
