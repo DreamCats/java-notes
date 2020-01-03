@@ -3,6 +3,14 @@
 ## [面试必准备系列...持续更新...](http://dreamcat.ink/2019/11/19/java-notes/1/)
 ## [开源项目总结...持续更新...](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
 
+## 多线程
+- [多线程一些例子](/Multithread/README.md)
+
+## Interview
+- [设计一个LRU](/Interview/src/LRUDemo.md)
+- [二叉树的深度搜索遍历](/Interview/src/DFSDemo.java)
+
+
 ## Sorts(排序)
 - [冒泡排序](/Sorts/src/BubbleSort.java)
 - [选择排序](/Sorts/src/SelectSort.java)
@@ -144,10 +152,6 @@
 - [2、两个链表相加](/LeetCode/src/AddTwoNumbers.java)
 - [3、无重复字符的最长子串](/LeetCode/src/LengthOfLongestSubstring.java)
 
-## Interview
-- [设计一个LRU](/Interview/src/LRUDemo.md)
-- [二叉树的深度搜索遍历](/Interview/src/DFSDemo.java)
 
 
-## 多线程
-- [多线程文档](/Multithread/README.md)
+
