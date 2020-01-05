@@ -3,10 +3,13 @@
 ## [面试必准备系列...持续更新...](http://dreamcat.ink/2019/11/19/java-notes/1/)
 ## [开源项目总结...持续更新...](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
 
-## 多线程
+
+## 刷题系列
+- [SwordOffer](/SwordOffer/README.md)
+
+## 多线程系列
 - [多线程一些例子](/Multithread/README.md)
 
-## [SwordOffer](/SwordOffer/README.md)
 
 ## Interview
 - [设计一个LRU](/Interview/src/LRUDemo.md)
