@@ -6,7 +6,7 @@
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
-- [SwordOffer-牛客网的顺序]()
+- [SwordOffer-牛客网的顺序](https://github.com/DreamCats/LeetNiu#%E5%89%91%E6%8C%87offer-%E7%BD%91%E7%AB%99)
 - [LeetCode](/LeetCode/README.md)
 
 ## 多线程系列
