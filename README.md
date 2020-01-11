@@ -14,6 +14,7 @@
 - [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
 - [Java面经-LinkedList源码解析](/Collections/Java面经-LinkedList源码解析.md)
 - [Java面经-HashSet-HashMap源码解析](/Collections/Java面经-HashSet-HashMap源码解析.md)
+- [Java面经-LinkedHashSet-Map源码解析](/Collections/Java面经-LinkedHashSet-Map源码解析.md)
 - [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
 
 ## 多线程系列
