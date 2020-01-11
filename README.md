@@ -37,6 +37,7 @@
 - [JVM-类加载器](/Jvm/JVM-类加载器.md)
 - [Java面经-内存模型](/Jvm/Java面经-内存模型.md)
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
+- [Java面经-JVM调优参数](/Jvm/Java面经-JVM调优参数.md)
 
 ## 计算机网络
 - [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
