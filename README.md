@@ -17,6 +17,7 @@
 - [Java面经-LinkedHashSet-Map源码解析](/Collections/Java面经-LinkedHashSet-Map源码解析.md)
 - [Java面经-TreeSet-TreeMap源码解析](/Collections/Java面经-TreeSet-TreeMap源码解析.md)
 - [Java面经-PriorityQueue源码解析](/Collections/Java面经-PriorityQueue源码解析.md)
+- [Java面经-Stack-Queue源码解析](/Collections/Java面经-Stack-Queue源码解析.md)
 - [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
 
 ## 多线程系列
