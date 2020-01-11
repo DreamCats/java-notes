@@ -17,6 +17,7 @@
 - [JVM-类加载过程](/Jvm/JVM-类加载过程.md)
 - [Java面经-类加载机制](/Jvm/Java面经-类加载机制.md)
 - [JVM-类加载器](/Jvm/JVM-类加载器.md)
+- [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 
 ## 计算机网络
 - [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
