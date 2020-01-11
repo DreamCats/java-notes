@@ -24,6 +24,7 @@
 - [Java多线程-并发基础常见面试题总结](/Multithread/Java多线程-并发基础常见面试题总结.md)
 - [Java多线程-synchronized](/Multithread/Java多线程-synchronized.md)
 - [Java多线程-ThreadLocal](/Multithread/Java多线程-ThreadLocal.md)
+- [Java多线程-Atomic原子类](/Multithread/Java多线程-Atomic原子类.md)
 - [多线程一些例子](/Multithread/README.md)
 
 ## JVM
