@@ -44,7 +44,7 @@
 - [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
 
 ## Mysql
-
+- [Mysql-面试常见的问题](/Interview/mysql/Mysql-面试常见的问题.md)
 
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
