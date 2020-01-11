@@ -23,6 +23,7 @@
 - [JVM-类加载过程](/Jvm/JVM-类加载过程.md)
 - [Java面经-类加载机制](/Jvm/Java面经-类加载机制.md)
 - [JVM-类加载器](/Jvm/JVM-类加载器.md)
+- [Java面经-内存模型](/Jvm/Java面经-内存模型.md)
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 
 ## 计算机网络
