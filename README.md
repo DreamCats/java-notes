@@ -1,5 +1,6 @@
 # JavaBooks
 **关于Java书籍中的代码，再继续学习一遍，针对面试知识点流程总结。持续更新......**
+**如果观看不流畅，可以去我的博客浏览面试知识点[dreamcat.ink](http://dreamcat.ink/)**
 ## [开源项目总结...持续更新...](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
 
 ## Java面试思维导图(包括分布式架构)
