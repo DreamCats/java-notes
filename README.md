@@ -50,6 +50,9 @@
 - [sql-存储引擎](/Interview/mysql/sql-存储引擎.md)
 - [sql-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 
+## Reids
+- [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
+
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
 
