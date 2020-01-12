@@ -1,8 +1,9 @@
 # JavaBooks
-**关于Java书籍中的代码，再继续学习一遍。持续更新......**
-## [面试必准备系列...持续更新...](http://dreamcat.ink/2019/11/19/java-notes/1/)
+**关于Java书籍中的代码，再继续学习一遍，针对面试知识点流程总结。持续更新......**
 ## [开源项目总结...持续更新...](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
 
+## Java面试思维导图(包括分布式架构)
+- [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553)
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
