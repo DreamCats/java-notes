@@ -3,7 +3,7 @@
 > **如果观看不流畅，可以去我的博客浏览面试知识点[dreamcat.ink](http://dreamcat.ink/)**
 
 ## 常用网站
-- [:bookmark:开源项目总结](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
+- [:bookmark:开源项目总结](/Tools/network/开源的github项目总结.md)
 - [:fire:常用的在线网站](/Tools/network/收集常用的网站(持续更新...).md)
 
 ## Java面试思维导图(包括分布式架构)
