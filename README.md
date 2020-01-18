@@ -31,6 +31,8 @@
 - [Java多线程-线程池](/Multithread/Java多线程-线程池.md)
 - [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
 - [多线程一些例子](/Multithread/README.md)
+### 多线程图解
+- [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 
 ## JVM
 - [JVM-类文件结构](/Jvm/JVM-类文件结构.md)
