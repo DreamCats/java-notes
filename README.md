@@ -1,7 +1,9 @@
 # JavaBooks
 **关于Java书籍中的代码，再继续学习一遍，针对面试知识点流程总结。持续更新......**
 > **如果观看不流畅，可以去我的博客浏览面试知识点[dreamcat.ink](http://dreamcat.ink/)**
-## [开源项目总结...持续更新...](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
+
+## 常用网站
+- [:bookmark:开源项目总结](http://dreamcat.ink/2019/06/19/tool-notes/github1/)
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553)
@@ -46,7 +48,7 @@
 - [Java面经-内存模型](/Jvm/Java面经-内存模型.md)
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 - [Java面经-JVM调优参数](/Jvm/Java面经-JVM调优参数.md)
-###JVM图解
+### JVM图解
 - [JVM整个流程](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
 ## 计算机网络
