@@ -33,6 +33,7 @@
 - [多线程一些例子](/Multithread/README.md)
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
+- [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
 
 ## JVM
 - [JVM-类文件结构](/Jvm/JVM-类文件结构.md)
