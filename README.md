@@ -49,6 +49,8 @@
 - [Java面经-内存模型](/Jvm/Java面经-内存模型.md)
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 - [Java面经-JVM调优参数](/Jvm/Java面经-JVM调优参数.md)
+### JVM例子
+- [引用计数的循环引用问题](/Jvm/src/T2.java)
 ### JVM图解
 - [JVM整个流程](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
