@@ -41,6 +41,7 @@
 - [线程的状态周期图](https://www.processon.com/view/link/5e16a379e4b0f5a7ed06d2fb)
 - [volatile保证内存可见性和避免重排](https://www.processon.com/view/link/5e12e591e4b061a80c683639)
 - [volatile不能保证原子性操作](https://www.processon.com/view/link/5e130e51e4b07db4cfac9d2c)
+- [无锁-偏向锁-轻量级锁-重量级锁](https://www.processon.com/view/link/5e1744a7e4b0f5a7ed086f4a)
 
 ## JVM
 - [JVM-类文件结构](/Jvm/JVM-类文件结构.md)
