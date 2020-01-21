@@ -6,7 +6,7 @@
 - [:bookmark:开源项目总结](/Tools/network/开源的github项目总结.md)
 - [:fire:常用的在线网站](/Tools/network/收集常用的网站(持续更新...).md)
 - [:sparkles:emoji集合](/Tools/network/github表情图标.md)
-- [Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
+- [:smiling_imp:Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553)
