@@ -76,6 +76,7 @@
 
 ## Reids
 - [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
+- [Redis是什么?](https://github.com/DreamCats/JavaBooks/blob/master/Interview/redis/Redis-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#redis%E6%98%AF%E4%BB%80%E4%B9%88%E7%8E%A9%E6%84%8F)
 
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
