@@ -35,5 +35,23 @@ public class streamDemo {
                 .map(String::toUpperCase)
                 .sorted()
                 .forEach(System.out::println);
+
+        // match
+        System.out.println("匹配：");
+        boolean anyStartsWithA =
+                strings
+                .stream()
+                .anyMatch((s) -> s.startsWith("d"));
+        System.out.println(anyStartsWithA);
+        boolean allStartsWithA =
+                strings
+                .stream()
+                .allMatch((s) -> s.startsWith("d"));
+        System.out.println(allStartsWithA);
+        boolean noneStartsWithA =
+                strings
+                .stream()
+                .noneMatch((s) -> s.startsWith("a"));
+        System.out.println(noneStartsWithA);
     }
 }
