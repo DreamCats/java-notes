@@ -12,11 +12,20 @@ import java.util.List;
 
 public class streamDemo {
     public static void main(String[] args) {
-        List<String> strings = Arrays.asList("ddd", "bbb", "ccc", "www", "eee", "ddd2");
+        List<String> strings = Arrays.asList("ddd3", "bbb", "ccc", "www", "eee", "ddd2");
 
+        System.out.println("过滤：");
         // 过滤
         strings
                 .stream()
+                .filter((s) -> s.startsWith("d"))
+                .forEach(System.out::println);
+
+        System.out.println("排序：");
+        // 排序
+        strings
+                .stream()
+                .sorted()
                 .filter((s) -> s.startsWith("d"))
                 .forEach(System.out::println);
     }
