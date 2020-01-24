@@ -28,5 +28,12 @@ public class streamDemo {
                 .sorted()
                 .filter((s) -> s.startsWith("d"))
                 .forEach(System.out::println);
+
+        System.out.println("映射：");
+        strings
+                .stream()
+                .map(String::toUpperCase)
+                .sorted()
+                .forEach(System.out::println);
     }
 }
