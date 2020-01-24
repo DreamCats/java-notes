@@ -53,5 +53,13 @@ public class streamDemo {
                 .stream()
                 .noneMatch((s) -> s.startsWith("a"));
         System.out.println(noneStartsWithA);
+
+        System.out.println("计数：");
+        long count =
+                strings
+                .stream()
+                .filter((s) -> s.startsWith("d"))
+                .count();
+        System.out.println(count);
     }
 }
