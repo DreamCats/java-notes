@@ -5,7 +5,7 @@
  * @create: 2020/01/23 16:20
  */
 
-package com.stream;
+package com.java8;
 
 import java.util.*;
 

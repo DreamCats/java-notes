@@ -5,9 +5,8 @@
  * @create: 2020/01/23 17:39
  */
 
-package com.stream;
+package com.java8;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
