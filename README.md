@@ -18,8 +18,10 @@
 
 ## 基础
 - [Java面试基础知识](/Basics/Java面试基础知识.md)
-### ==、hashcode和equals
-- []()
+- **==、hashcode和equals**
+- [==与equals](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#-%E4%B8%8E-equals%E9%87%8D%E8%A6%81)
+- [hashcode和equlas](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#hashcode-%E4%B8%8E-equals-%E9%87%8D%E8%A6%81)
+- [hashcode和equlas代码小例子](/Basics/src/com/equal/Student.java)
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
 - [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
