@@ -16,6 +16,10 @@
 - [SwordOffer-牛客网的顺序](https://github.com/DreamCats/LeetNiu#%E5%89%91%E6%8C%87offer-%E7%BD%91%E7%AB%99)
 - [LeetCode](/LeetCode/README.md)
 
+## 基础
+- [Java面试基础知识](/Basics/Java面试基础知识.md)
+### ==、hashcode和equals
+- []()
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
 - [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
