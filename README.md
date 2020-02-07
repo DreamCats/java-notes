@@ -24,6 +24,14 @@
     - [hashcode和equlas代码小例子](/Basics/src/com/equal/Student.java)
 - [面向对象和面向过程的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB)
 - [Java 语言有哪些特点?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9)
+- **关于 JVM JDK 和 JRE 最详细通俗的解答**
+    - [JVM](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jvm)
+    - [JDK 和 JRE](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jdk-%E5%92%8C-jre)
+- [Java和C++的区别?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java%E5%92%8Cc%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [字符型常量和字符串常量的区别?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%B8%B8%E9%87%8F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [构造器 Constructor 是否可被 override?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%9E%84%E9%80%A0%E5%99%A8-constructor-%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A2%AB-override)
+- [重载和重写的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [Java 面向对象编程三大特性: 封装 继承 多态](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB)
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
 - [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
