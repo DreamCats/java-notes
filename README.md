@@ -45,6 +45,8 @@
     - [基本类型传递代码例子](/Basics/src/com/transfer/TransferDemo.java)
     - [数组类型传递代码例子](/Basics/src/com/transfer/TransferDemo2.java)
     - [对象引用类型传递代码例子](/Basics/src/com/transfer/TransferDemo3.java)
+- [简述线程、程序、进程的基本概念。以及他们之间关系是什么?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E7%AE%80%E8%BF%B0%E7%BA%BF%E7%A8%8B%E7%A8%8B%E5%BA%8F%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88)
+- [关于 final 关键字的一些总结](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%85%B3%E4%BA%8E-final-%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93) **一般关键字的面试，答的时候按照变量、方法和类去总结**
 
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
