@@ -22,6 +22,8 @@
     - [==与equals](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#-%E4%B8%8E-equals%E9%87%8D%E8%A6%81)
     - [hashcode和equlas](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#hashcode-%E4%B8%8E-equals-%E9%87%8D%E8%A6%81)
     - [hashcode和equlas代码小例子](/Basics/src/com/equal/Student.java)
+- [面向对象和面向过程的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [Java 语言有哪些特点?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9)
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
 - [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
@@ -100,7 +102,7 @@
     - [数据库范式](https://github.com/DreamCats/JavaBooks/blob/master/Interview/mysql/Mysql-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F)
     - [什么是覆盖索引?](https://github.com/DreamCats/JavaBooks/blob/master/Interview/mysql/Mysql-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A6%86%E7%9B%96%E7%B4%A2%E5%BC%95)
 
-## Reids
+## Redis
 - [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
 - [Redis是什么?](https://github.com/DreamCats/JavaBooks/blob/master/Interview/redis/Redis-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#redis%E6%98%AF%E4%BB%80%E4%B9%88%E7%8E%A9%E6%84%8F)
 - [为什么要用Redis/为什么要用缓存？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/redis/Redis-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8redis%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E7%BC%93%E5%AD%98)
