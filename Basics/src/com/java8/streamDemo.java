@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 public class streamDemo {
     public static void main(String[] args) {
-        List<String> strings = Arrays.asList("ddd3", "bbb", "ccc", "www", "eee", "ddd2");
+        List<String> strings = Arrays.asList("ddd3", "bbb", "ccc", "www", "eee", "ddd2", "bbb");
 
         System.out.println("过滤：");
         // 过滤
@@ -71,6 +71,10 @@ public class streamDemo {
                 .sorted()
                 .reduce((s1, s2) -> s1 + "#" + s2);
         reduce.ifPresent(System.out::println);
+
+        // 去重
+        System.out.println("去重");
+        strings.stream().distinct().forEach(s -> System.out.println(s));
 
         // 字符串拼接
         String reduce1 = Stream.of("A", "B", "C").reduce("", String::concat);
