@@ -56,6 +56,7 @@
 - [this 关键字](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#this-%E5%85%B3%E9%94%AE%E5%AD%97)
 - [super 关键字](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#super-%E5%85%B3%E9%94%AE%E5%AD%97)
 - [深拷贝 vs 浅拷贝](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%B7%B1%E6%8B%B7%E8%B4%9D-vs-%E6%B5%85%E6%8B%B7%E8%B4%9D)
+- [String A = "123"; String B = new String("123");生成几个对象？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#string-a--123-string-b--new-string123%E7%94%9F%E6%88%90%E5%87%A0%E4%B8%AA%E5%AF%B9%E8%B1%A1)
 
 
 
