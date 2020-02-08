@@ -58,6 +58,7 @@
 - [深拷贝 vs 浅拷贝](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%B7%B1%E6%8B%B7%E8%B4%9D-vs-%E6%B5%85%E6%8B%B7%E8%B4%9D)
 - [String A = "123"; String B = new String("123");生成几个对象？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#string-a--123-string-b--new-string123%E7%94%9F%E6%88%90%E5%87%A0%E4%B8%AA%E5%AF%B9%E8%B1%A1)
 - [说说&和&&的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%AF%B4%E8%AF%B4%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1; 有什么错?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#short-s1--1-s1--s1--1%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99-short-s1--1-s1--1-%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99)
 
 
 
