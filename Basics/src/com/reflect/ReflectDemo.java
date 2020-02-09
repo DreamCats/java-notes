@@ -20,5 +20,8 @@ public class ReflectDemo {
         Class studentClass = student.getClass();
         System.out.println(studentClass.getName()); // com.reflect.Student
 
+        // 第二种方式获取Class对象
+        Class studentClass2 = Student.class;
+        System.out.println(studentClass == studentClass2); //判断第一种方式获取的Class对象和第二种方式获取的是否是同一个
     }
 }
