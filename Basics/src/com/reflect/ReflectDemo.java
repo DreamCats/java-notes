@@ -27,5 +27,9 @@ public class ReflectDemo {
         //第三种方式获取Class对象
         Class studentClass3 = Class.forName("com.reflect.Student"); //注意此字符串必须是真实路径，就是带包名的类路径，包名.类名
         System.out.println(studentClass3 == studentClass2); // //判断三种方式是否获取的是同一个Class对象
+
+        // 三种方式常用第三种，第一种对象都有了还要反射干什么。
+        // 第二种需要导入类的包，依赖太强，不导包就抛编译错误。
+        // 一般都第三种，一个字符串可以传入也可写在配置文件中等多种方法。
     }
 }
