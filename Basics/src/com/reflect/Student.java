@@ -13,6 +13,8 @@ public class Student {
 
     private Integer age;
 
+    public String gender;
+
     // 无参数的构造方法
     public Student() {
         System.out.println("调用了公有、无参构造方法执行了。。。");
@@ -61,11 +63,20 @@ public class Student {
         this.age = age;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", gender='" + gender + '\'' +
                 '}';
     }
 }
