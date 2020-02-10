@@ -45,6 +45,10 @@ public class Student implements Cloneable{
     @Override
     protected Object clone() throws CloneNotSupportedException {
         // 浅拷贝
-        return super.clone();
+//        return super.clone();
+
+        // 深拷贝
+        Student student = new Student(new Subject(subject.getName()), name);
+        return student;
     }
 }
