@@ -31,5 +31,8 @@ public class ShallowCopyDemo {
         System.out.println("更新后的原始对象: " + student.getName() + " - " + student.getSubject().getName());
         System.out.println("更新原始对象后的克隆对象: " + cloneStu.getName() + " - " + cloneStu.getSubject().getName());
 
+        // 在这个例子中，让要拷贝的类Student实现了Clonable接口并重写Object类的clone()方法，然后在方法内部调用super.clone()方法。
+        // 从输出结果中我们可以看到，对原始对象stud的"name"属性所做的改变并没有影响到拷贝对象clonedStud；
+        // 但是对引用对象subj的"name"属性所做的改变影响到了拷贝对象clonedStud。
     }
 }
