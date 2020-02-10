@@ -106,9 +106,18 @@
 - [Java多线程-AQS](/Multithread/Java多线程-Atomic原子类.md)
 - [Java多线程-线程池](/Multithread/Java多线程-线程池.md)
 - [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
-- [多线程一些例子](/Multithread/README.md)
+- **代码例子**
+    - [多线程一些例子](/Multithread/README.md)
 - **常见问题**
     - [Java锁机制](/Multithread/Java锁机制.md)
+        - [公平锁/非公平锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%85%AC%E5%B9%B3%E9%94%81%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81)
+        - [可重入锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%8F%AF%E9%87%8D%E5%85%A5%E9%94%81)
+        - [独享锁/共享锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E7%8B%AC%E4%BA%AB%E9%94%81%E5%85%B1%E4%BA%AB%E9%94%81)
+        - [互斥锁/读写锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E4%BA%92%E6%96%A5%E9%94%81%E8%AF%BB%E5%86%99%E9%94%81)
+        - [乐观锁/悲观锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E4%B9%90%E8%A7%82%E9%94%81%E6%82%B2%E8%A7%82%E9%94%81)
+        - [分段锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%88%86%E6%AE%B5%E9%94%81)
+        - [偏向锁/轻量级锁/重量级锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%81%8F%E5%90%91%E9%94%81%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81%E9%87%8D%E9%87%8F%E7%BA%A7%E9%94%81)
+        - [自旋锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E8%87%AA%E6%97%8B%E9%94%81)
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
