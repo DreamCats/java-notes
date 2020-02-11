@@ -36,15 +36,17 @@ DelayQueue(执行定时任务)
 3. Callable
 4. Future
 5. 6种线程池
-- newFixedThreadPool(固定线程池)
-- newCachedThreadPool(带有缓存线程池，默认空闲线程60s)
-- newSingleThreadExecutor(单个线程)
-- newScheduledThreadPoold(定时线程池)
-- newWorkStealingPool(空闲线程去抢占其他线程的任务队列的任务)
-- ForkJoinPool(适合大规模计算)
+    - newFixedThreadPool(固定线程池)
+    - newCachedThreadPool(带有缓存线程池，默认空闲线程60s)
+    - newSingleThreadExecutor(单个线程)
+    - newScheduledThreadPoold(定时线程池)
+    - newWorkStealingPool(空闲线程去抢占其他线程的任务队列的任务)
+    - ForkJoinPool(适合大规模计算)
 
 ## 索引
-- [synchronized 加锁](./src/com/basic/T1.java)
+
+### 基础
+- [synchronized加锁](./src/com/basic/T1.java)
 - [加锁与不加锁的区别](./src/com/basic/T2.java)
 - [产生脏读问题](./src/com/basic/Account.java)
 - [同步和非同步方法是否可以同时使用](./src/com/basic/T3.java)
