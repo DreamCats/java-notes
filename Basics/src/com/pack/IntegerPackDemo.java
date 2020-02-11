@@ -38,7 +38,7 @@ public class IntegerPackDemo {
         // 缓存池
         // new Integer(123) 与 Integer.valueOf(123)
         // new Integer(123) 每次都会新建一个对象
-        // Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
+        // Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。前提注意范围
         Integer ab = new Integer(123);
         Integer ba = new Integer(123);
         System.out.println(ab == ba); // false
@@ -46,5 +46,14 @@ public class IntegerPackDemo {
         Integer aa = Integer.valueOf(123);
         Integer bb = Integer.valueOf(123);
         System.out.println(aa == bb); // true
+        /**
+         *
+         * public static Integer valueOf(int i) {
+         *      // 判断是否在Integer的范围内
+         *     if (i >= IntegerCache.low && i <= IntegerCache.high)
+         *         return IntegerCache.cache[i + (-IntegerCache.low)];
+         *     return new Integer(i);
+         * }
+         */
     }
 }
