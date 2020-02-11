@@ -9,7 +9,7 @@
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
 
 ## Java面试思维导图(包括分布式架构)
-- [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。**
+- [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
