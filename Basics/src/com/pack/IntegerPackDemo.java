@@ -12,7 +12,8 @@ package com.pack;
  */
 public class IntegerPackDemo {
     public static void main(String[] args) {
-        Integer x = 3;
+        Integer x = 3; // 装箱
+        int z = x; // 拆箱
         Integer y = 3;
         System.out.println(x == y); // true
         // 当使用自动装箱方式创建一个Integer对象时，当数值在-128 ~127时，
@@ -33,5 +34,17 @@ public class IntegerPackDemo {
          *         return false;
          *     }
          */
+
+        // 缓存池
+        // new Integer(123) 与 Integer.valueOf(123)
+        // new Integer(123) 每次都会新建一个对象
+        // Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
+        Integer ab = new Integer(123);
+        Integer ba = new Integer(123);
+        System.out.println(ab == ba); // false
+        // 从缓存中拿123
+        Integer aa = Integer.valueOf(123);
+        Integer bb = Integer.valueOf(123);
+        System.out.println(aa == bb); // true
     }
 }
