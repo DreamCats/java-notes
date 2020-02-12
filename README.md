@@ -124,6 +124,11 @@
         - [分段锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%88%86%E6%AE%B5%E9%94%81)
         - [偏向锁/轻量级锁/重量级锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E5%81%8F%E5%90%91%E9%94%81%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81%E9%87%8D%E9%87%8F%E7%BA%A7%E9%94%81)
         - [自旋锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E8%87%AA%E6%97%8B%E9%94%81)
+    - [volatile]()
+        - [volatile的可见性]()
+        - [volatile的可序性]()
+        - [volatile不能保证原子性]()
+        - [重排和内存屏障](https://juejin.im/post/5d030d59f265da1bcb4f2865)
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
