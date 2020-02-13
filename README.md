@@ -129,7 +129,10 @@
         - [volatile的可序性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E6%9C%89%E5%BA%8F%E6%80%A7) [单例模式](/Multithread/src/com/juc/volatiletest/VolatileVisibleDemo.java)
         - [volatile不能保证原子性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E4%B8%8D%E8%83%BD%E4%BF%9D%E8%AF%81%E5%8E%9F%E5%AD%90%E6%80%A7)
         - [重排和内存屏障](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C)
-    - [CAS](/Multithread/)
+    - [CAS](/Multithread/CAS底层解析.md)
+        - [CAS-Atomic](/Multithread/src/com/juc/cas/CASDemo.java)
+        - [CAS-Unsafe类底层原理](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/CAS%E5%BA%95%E5%B1%82%E8%A7%A3%E6%9E%90.md#%E4%BE%8B%E5%AD%90)
+        - [ABA问题及解决方法](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/CAS%E5%BA%95%E5%B1%82%E8%A7%A3%E6%9E%90.md#cas%E7%9A%84%E9%97%AE%E9%A2%98)
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
