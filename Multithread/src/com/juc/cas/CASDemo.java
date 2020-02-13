@@ -1,6 +1,6 @@
 /**
  * @program JavaBooks
- * @description: compare and set
+ * @description: compare and swap
  * @author: mf
  * @create: 2020/02/13 14:48
  */
