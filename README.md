@@ -126,7 +126,7 @@
         - [自旋锁](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E9%94%81%E6%9C%BA%E5%88%B6.md#%E8%87%AA%E6%97%8B%E9%94%81)
     - [volatile](/Multithread/深刻理解volatile的一切.md)
         - [volatile的可见性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E5%8F%AF%E8%A7%81%E6%80%A7)
-        - [volatile的可序性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E6%9C%89%E5%BA%8F%E6%80%A7)
+        - [volatile的可序性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E6%9C%89%E5%BA%8F%E6%80%A7) [单例模式](/Multithread/src/com/juc/volatiletest/VolatileVisibleDemo.java)
         - [volatile不能保证原子性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E4%B8%8D%E8%83%BD%E4%BF%9D%E8%AF%81%E5%8E%9F%E5%AD%90%E6%80%A7)
         - [重排和内存屏障](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C)
 ### 多线程图解
