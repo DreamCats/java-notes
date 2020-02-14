@@ -17,7 +17,7 @@
 - [LeetCode](/LeetCode/README.md)
 
 ## 基础
-- [Java面试基础一些常见问题思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
+- [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
 - [Java面试基础知识](/Basics/Java面试基础知识.md)
 - [简述线程、程序、进程的基本概念。以及他们之间关系是什么?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E7%AE%80%E8%BF%B0%E7%BA%BF%E7%A8%8B%E7%A8%8B%E5%BA%8F%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88)
 - [Java 语言有哪些特点?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9)
@@ -134,6 +134,11 @@
         - [CAS-Atomic](/Multithread/src/com/juc/cas/CASDemo.java)
         - [CAS-Unsafe类底层原理](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/CAS%E5%BA%95%E5%B1%82%E8%A7%A3%E6%9E%90.md#%E4%BE%8B%E5%AD%90)
         - [ABA问题及解决方法](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/CAS%E5%BA%95%E5%B1%82%E8%A7%A3%E6%9E%90.md#cas%E7%9A%84%E9%97%AE%E9%A2%98)
+    - [并发集合]()
+        - [为什么ArrayList是线程不安全的?]()
+        - [ArrayList->Vector->SynchronizedList->CopyOnWriteArrayList]()
+        - [ArraySet->SynchronizedSet->CopyOnWriteArraySet]()
+        - [HashMap->SynchronizedMap->ConcurrentHashMap]()
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
