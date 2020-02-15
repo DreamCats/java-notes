@@ -11,7 +11,7 @@
  * @create: 2020/02/15 14:31
  */
 
-package com.lock;
+package com.juc.lock;
 
 import java.util.HashMap;
 import java.util.Map;

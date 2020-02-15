@@ -7,7 +7,7 @@
  * @create: 2020/02/15 12:20
  */
 
-package com.lock;
+package com.juc.lock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
