@@ -147,9 +147,9 @@
         - [Semaphore-例子](/Multithread/src/com/juc/aqs/SemaphoreDemo.java)
     - [阻塞队列]()
         - [BlockingQueue](/Multithread/src/com/juc/queue/BlockingQueueDemo.java)
-        - [传统版生产者消费者模式-synchronized]()
-        - [传统版生产者消费者模式-ReentrantLock]()
-        - [阻塞队列版本生产者消费者模式]()
+        - [传统版生产者消费者模式-synchronized](/Multithread/src/com/juc/queue/ProdConsumerSynchronized.java)
+        - [传统版生产者消费者模式-ReentrantLock](/Multithread/src/com/juc/queue/ProdConsumerReentrantLock.java)
+        - [阻塞队列版本生产者消费者模式](/Multithread/src/com/juc/queue/ProdConsumerBlockingQueue.java)
         
 ### 多线程图解
 - [Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
