@@ -117,11 +117,20 @@
 - **代码例子**
     - [多线程一些例子](/Multithread/README.md)
 ### 常见问题
+- [synchronized底层原理](/Multithread/Java多线程-synchronized.md)
+    - **说一说自己对于 synchronized 关键字的了解**
+    - **说说自己是怎么使用 synchronized 关键字，在项目中用到了吗**
+        - **synchronized关键字最主要的三种使用方式：**
+        - **双重校验锁实现对象单例（线程安全）**
+    - **讲一下 synchronized 关键字的底层原理**
+    - **说说 JDK1.6 之后的synchronized 关键字底层做了哪些优化，可以详细介绍一下这些优化吗**
+    - **谈谈 synchronized和ReentrantLock 的区别**
 - [volatile](/Multithread/深刻理解volatile的一切.md)
     - [volatile的可见性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E5%8F%AF%E8%A7%81%E6%80%A7)
     - [volatile的可序性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E6%9C%89%E5%BA%8F%E6%80%A7) [单例模式](/Multithread/src/com/juc/volatiletest/VolatileVisibleDemo.java)
     - [volatile不能保证原子性](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E4%B8%8D%E8%83%BD%E4%BF%9D%E8%AF%81%E5%8E%9F%E5%AD%90%E6%80%A7)
     - [重排和内存屏障](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/%E6%B7%B1%E5%88%BB%E7%90%86%E8%A7%A3volatile%E7%9A%84%E4%B8%80%E5%88%87.md#%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C)
+- [ThreadLocal底层原理](/Multithread/Java多线程-ThreadLocal.md)
 - [CAS](/Multithread/CAS底层解析.md)
     - [CAS-Atomic](/Multithread/src/com/juc/cas/CASDemo.java)
     - [CAS-Unsafe类底层原理](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/CAS%E5%BA%95%E5%B1%82%E8%A7%A3%E6%9E%90.md#%E4%BE%8B%E5%AD%90)
