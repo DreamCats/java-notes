@@ -195,7 +195,7 @@
 - [JVM-类加载机制](/Jvm/Java面经-类加载机制.md)
 - [JVM-类加载器](/Jvm/JVM-类加载器.md)
 - [JVM-内存模型](/Jvm/Java面经-内存模型.md)
-- [JVM-对象创建]()
+- [JVM-对象创建](/Jvm/JVM-对象创建.md)
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 - [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
 ### 常见问题
