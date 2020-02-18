@@ -1,5 +1,21 @@
 # JavaBooks
-**关于Java书籍中的代码，再继续学习一遍，针对面试知识点流程总结。持续更新......**
+## 引言
+> 总结的知识点包括：
+>
+> - Java基础
+> - Java集合
+> - Java多线程
+> - JVM虚拟机
+> - Spring系列(SpringIOC、SpringAOP、SpringMVC及SpringBoot)
+> - ORM(Mybatis)
+> - 数据库(Mysql和Redis)
+> - 微服务(Dubbo)
+> - 消息队列(RocketMQ)
+> - 计算机网络
+> - 操作系统(Linux系统)
+> - 微服务项目(SpringBoot+Mybatis+Dubbo+Mysql+Redis+RocketMQ)
+> - 数据结构与算法(Leetcode/剑指Offer)
+>
 > **如果观看不流畅，可以去我的博客浏览面试知识点[dreamcat.ink](http://dreamcat.ink/)**
 
 ## 常用网站
@@ -179,7 +195,7 @@
     - [线程池原理-ThreadPoolExecutor](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E7%BA%BF%E7%A8%8B%E6%B1%A0.md#%E9%87%8D%E8%A6%81threadpoolexecutor-%E7%B1%BB%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D)
     - [ThreadPoolExecutor使用示例](/Multithread/src/com/juc/pool/ThreadPoolExecutorDemo.java)
     - [线程池大小确定](https://github.com/DreamCats/JavaBooks/blob/master/Multithread/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E7%BA%BF%E7%A8%8B%E6%B1%A0.md#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%A4%A7%E5%B0%8F%E7%A1%AE%E5%AE%9A)
-        
+      
 ### 多线程图解
 - [谈谈Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
