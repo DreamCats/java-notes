@@ -80,3 +80,16 @@ Class 文件中的常量池（编译器生成的各种字面量和符号引用�
 在 JDK 1.4 中新加入了 NIO 类，它可以使用 Native 函数库直接分配堆外内存，然后通过一个存储在 Java 堆里的 DirectByteBuffer 对象作为这块内存的引用进行操作。
 
 这样能在一些场景中显著提高性能，因为避免了在 Java 堆和 Native 堆中来回复制数据。
+
+## 请你谈谈对OOM的认识
+
+- `java.lang.StackOverflowError`:栈空间溢出 ，递归调用卡死
+- `java.lang.OutOfMemoryError:Java heap space`:堆内存溢出 ， 对象过大
+- `java.lang.OutOfMemoryError:GC overhead limit exceeded`:GC回收时间过长
+- `java.lang.OutOfMemoryError:Direct buffer memory`执行内存挂了，比如：NIO
+- `java.lang.OutOfMemoryError:unable to create new native thread`
+  - 应用创建了太多线程，一个应用进程创建了多个线程，超过系统承载极限
+  - 你的服务器并不允许你的应用程序创建这么多线程，linux系统默认允许单个进程可以创建的线程数是1024，超过这个数量，就会报错
+  - 解决办法：降低应用程序创建线程的数量，分析应用给是否针对需要这么多线程，如果不是，减到最低修改linux服务器配置
+
+- `java.lang.OutOfMemoryError:Metaspace`:元空间主要存放了虚拟机加载的类的信息、常量池、静态变量、即时编译后的代码

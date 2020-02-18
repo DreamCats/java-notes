@@ -9,7 +9,40 @@ categories: Java
 
 ## 引言
 
-**JVM - 参数调优**
+> **JVM - 参数调优**
+
+## 如何盘点查看JVM系统默认值
+
+**如何查看运行中程序的JVM信息**
+
+- jps查看进程信息
+- jinfo -flag 配置项 晋城号
+- jinfo -flags 进程号(查看所有配置)
+
+#### JVM参数类型
+
+1. 标配参
+   1. `-version -help`
+   2. 各个版本之间稳定，很少有很大的变化
+2. x参数
+   1. `-Xint -Xcomp -Xmixed`
+   2. -Xint:解释执行
+   3. -Xcomp:第一次使用就编译成本地代码
+   4. -Xmixed:混合模式
+3. **XX参数(重要)**
+   1. Boolean类型
+      1. 公式：`-XX+或者-某个属性`---> +表示开启，-表示关闭
+      2. 比如：**是否打印GC收集细节 -XX:+PrintGCDetails   -XX:-PrintGCDetails**
+      3. 比如：**是否使用串行垃圾回收器：-XX:-UserSerialGC**
+   2. KV设值类型
+      1. 公式：`-XX:key=value`
+      2. 比如：`-XX:MetaspaceSize=128m`  `-XX:MaxTenuringThreshold=15` `-Xms----> -XX:InitialHeapSize` `-Xmx----> -XX:MaxHeapSize`
+
+#### 查看参数
+
+- `-XX:+PrintFlagsInitial`:查看初始默认，eg:`java -XX:+PrintFlagsInitial -version`
+- `-XX:+PrintFlagsFinal`:查看修改后的 `:=`说明是修改过的
+- `-XX:+PrintCommandLineFlags`:查看使用的垃圾回收器
 
 ## JVM参数
 
@@ -164,3 +197,23 @@ CMS是不会默认对永久代进行垃圾回收的，设置此参数则是开�
 - -XX:+PrintGCDateStamps
 
 将时间和日期也加入到GC日志中
+
+## 你平时工作用过的JVM常用基本配置参数有哪些
+
+`-Xms` `-Xmx` `-Xmn` 
+
+```shell
+-Xms128m -Xmx4096m -Xss1024K -XX:MetaspaceSize=512m -XX:+PrintCommandLineFlags -XX:+PrintGCDetails -XX:+UseSerialGC
+```
+
+- -Xms:初始大小内存，默认为物理内存1/64，等价于-XX:InitialHeapSize
+- -Xmx:最大分配内存，默认物理内存1/4，等价于-XX:MaxHeapSize
+- -Xss:设置单个线程栈的大小，默认542K~1024K ，等价于-XX:ThreadStackSize
+- -Xmn:设置年轻代的大小
+- -XX:MetaspaceSize:设置元空间大小
+- -XX:+PrintGCDetails:输出详细GC收集日志信息，如[名称：GC前内存占用->GC后内存占用(该区内存总大小)]
+- -XX:SurvivorRatio:设置新生代中Eden和S0/S1空间的比例，默认-XX:SurvivorRatio=8,Eden:S0:S1=8:1:1
+- -XX:NewRatio:设置年轻代与老年代在堆结构的占比，如：默认-XX:NewRatio=2  新生代在1，老年代2，年轻代占整个堆的1/3，NewRatio值几句诗设置老年代的占比，剩下的1给新生代
+- -XX:MaxTenuringThreshold:设置垃圾的最大年龄，默认-XX:MaxTenuringThreshold=15
+- -XX:+UseSerialGC:串行垃圾回收器
+- -XX:+UseParallelGC:并行垃圾回收器
