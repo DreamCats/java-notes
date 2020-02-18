@@ -296,3 +296,25 @@ G1 收集器的运作大致分为以下几个步骤：
 - **筛选回收**
 
 **G1 收集器在后台维护了一个优先列表，每次根据允许的收集时间，优先选择回收价值最大的 Region(这也就是它的名字 Garbage-First 的由来)**。这种使用 Region 划分内存空间以及有优先级的区域回收方式，保证了 GF 收集器在有限时间内可以尽可能高的收集效率（把内存化整为零）。
+
+## 如何选择垃圾选择器
+
+- 单CPU或小内存，单机内存
+  
+  -XX:+UseSerialGC
+
+- 多CPU，需要最大吞吐量，如后台计算型应用
+  
+  -XX:+UseParallelGC    -XX:+UseParallelOldGC
+
+- 多CPU，最求低停顿时间，需快速相应，如互联网应用
+  
+  -XX:+ParNewGC    -XX:+UseConcMarkSweepGC
+
+| 参数                              | 新生代垃圾收集器   | 新生代算法         | 老年代垃圾收集器                                             | 老年代算法 |
+| --------------------------------- | ------------------ | ------------------ | ------------------------------------------------------------ | ---------- |
+| UseSerialGC                       | SerialGC           | 复制               | SerialOldGC                                                  | 标整       |
+| UseParNewGC                       | ParNew             | 复制               | SerialOldGC                                                  | 标整       |
+| UseParallelGC<br>UseParallelOldGC | Parallel[Scavenge] | 复制               | Parallel Old                                                 | 标整       |
+| UseConcMarkSweepGC                | ParNew             | 复制               | CMS+Serial Old的收集器组合(Serial Old 作为CMS出错的后备收集器) | 标清       |
+| UseG1GC                           | G1整体上采用标整   | 局部是通过复制算法 |                                                              |            |
