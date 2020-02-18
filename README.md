@@ -195,6 +195,7 @@
 - [JVM-类加载机制](/Jvm/Java面经-类加载机制.md)
 - [JVM-类加载器](/Jvm/JVM-类加载器.md)
 - [JVM-内存模型](/Jvm/Java面经-内存模型.md)
+- [JVM-对象创建]()
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 - [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
 ### 常见问题
@@ -213,6 +214,7 @@
 - [JVM内存模型]()
     - [聊一聊JVM内存模型](/Jvm/Java面经-内存模型.md)
     - [堆的空间基本结构](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md#%E6%8F%AD%E5%BC%80jvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6%E7%9A%84%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1)
+    - [请你谈谈对OOM的认识](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/Java%E9%9D%A2%E7%BB%8F-%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md#%E8%AF%B7%E4%BD%A0%E8%B0%88%E8%B0%88%E5%AF%B9oom%E7%9A%84%E8%AE%A4%E8%AF%86)
     - [如何判断对象已经死亡？都有哪些方法？](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md#%E5%AF%B9%E8%B1%A1%E5%B7%B2%E7%BB%8F%E6%AD%BB%E4%BA%A1)
     - [四大引用是什么？区别是什么？](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md#%E5%86%8D%E8%B0%88%E5%BC%95%E7%94%A8)
     - [聊一聊垃圾收集算法？](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md#%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95)
