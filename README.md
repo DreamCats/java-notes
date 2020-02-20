@@ -280,7 +280,12 @@
     - [一个 TCP 连接中 HTTP 请求发送可以一起发送么（比如一起发三个请求，再三个响应一起接收）](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#%E4%B8%80%E4%B8%AA-tcp-%E8%BF%9E%E6%8E%A5%E4%B8%AD-http-%E8%AF%B7%E6%B1%82%E5%8F%91%E9%80%81%E5%8F%AF%E4%BB%A5%E4%B8%80%E8%B5%B7%E5%8F%91%E9%80%81%E4%B9%88%E6%AF%94%E5%A6%82%E4%B8%80%E8%B5%B7%E5%8F%91%E4%B8%89%E4%B8%AA%E8%AF%B7%E6%B1%82%E5%86%8D%E4%B8%89%E4%B8%AA%E5%93%8D%E5%BA%94%E4%B8%80%E8%B5%B7%E6%8E%A5%E6%94%B6)
     - [为什么有的时候刷新页面不需要重新建立 SSL 连接？]()TCP 连接有的时候会被浏览器和服务端维持一段时间。TCP 不需要重新建立，SSL 自然也会用之前的。
     - [浏览器对同一Host建立TCP连接到数量有没有限制？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E5%90%8C%E4%B8%80-host-%E5%BB%BA%E7%AB%8B-tcp-%E8%BF%9E%E6%8E%A5%E5%88%B0%E6%95%B0%E9%87%8F%E6%9C%89%E6%B2%A1%E6%9C%89%E9%99%90%E5%88%B6)
-    
+- **HTTPS**
+    - [HTTPS是什么](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#https)
+    - [对称密钥加密](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#%E5%AF%B9%E7%A7%B0%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86)
+    - [非对称密钥加密](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86)
+    - [HTTPS采用的加密方式](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-http%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md#https%E9%87%87%E7%94%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F)
+    - [HTTPS的缺点]()因为需要进行加密解密等过程，因此速度会更慢；需要支付证书授权的高额费用。
 ## Mysql
 - [sql-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
 - [Mysql-面试常见的问题](/Interview/mysql/Mysql-面试常见的问题.md)
