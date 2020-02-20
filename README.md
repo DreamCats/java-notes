@@ -262,6 +262,7 @@
 - [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
 - [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
 ### 常见问题
+- [网络7层和4层的区别](https://juejin.im/post/59a0472f5188251240632f92)
 - **DNS**
     - [DNS是什么？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#dns%E6%98%AF)
     - [谈谈DNS解析过程](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#%E8%A7%A3%E6%9E%90%E8%BF%87%E7%A8%8B)
@@ -362,7 +363,8 @@
 - [装饰器模式](/DesignPattern/src/DecoratorMode.java)
 
 
-
+## 工具篇
+- [IDEA开发的26个常用的配置](https://juejin.im/post/5e4d33abe51d4526f76eb2d3)
 
 
 
