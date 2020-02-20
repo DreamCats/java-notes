@@ -252,6 +252,9 @@
 
 ## Spring系列
 - [Spring面试相关系列](https://github.com/DreamCats/SpringBooks)
+## MyBatis系列
+- [MyBatis常见问题的思维导图](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71)
+- [MyBatis面试相关系列](https://github.com/DreamCats/SpringBooks#mybatis)
 
 ## 计算机网络
 - [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
