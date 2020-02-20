@@ -261,7 +261,14 @@
 - [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
 - [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
 - [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
-
+### 常见问题
+- **DNS**
+    - [DNS是什么？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#dns%E6%98%AF)
+    - [谈谈DNS解析过程](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#%E8%A7%A3%E6%9E%90%E8%BF%87%E7%A8%8B)
+    - [DNS查询方式？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#%E6%9F%A5%E8%AF%A2%E6%96%B9%E5%BC%8F)
+    - [DNS负载均衡](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#dns%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
+    - [为什么域名解析用UDP协议？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%94%A8udp%E5%8D%8F%E8%AE%AE)
+    - [为什么区域传送用TCP协议？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86-DNS%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84.md#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9F%9F%E4%BC%A0%E9%80%81%E7%94%A8tcp%E5%8D%8F%E8%AE%AE)
 ## Mysql
 - [sql-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
 - [Mysql-面试常见的问题](/Interview/mysql/Mysql-面试常见的问题.md)
