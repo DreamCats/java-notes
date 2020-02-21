@@ -368,7 +368,7 @@
 - [IDEA开发的26个常用的配置](https://juejin.im/post/5e4d33abe51d4526f76eb2d3)
 - [全网最全frp内网穿透(ssh及web)](/Tools/frp/全网最全frp内网穿透(ssh及web).md)
 - [centos7安装dubbo环境](/Tools/dubbo/centos7安装dubbo环境.md)
-
+- [centos7安装rocketmq环境及配置](/Tools/rocketmq/centos7安装rocketmq及配置.md)
 
 
 
