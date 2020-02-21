@@ -36,6 +36,10 @@ categories: Tool
 - `pwd`:查看当前路径
 - `w`:查看机器运行的时间
 
+- `lsof -i:8000`：查看端口占用情况
+- `ps -aux | grep python`: 查看某个进程
+- `ps -ef | grep python`: 查看某个进程
+
 ## 统计文件数目
 
 ### ls
