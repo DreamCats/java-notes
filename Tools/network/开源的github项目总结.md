@@ -9,8 +9,7 @@ categories: Tool
 
 ## 引言
 
-**一些有趣的github项目总结，其中包括终端、Python、Java、笔试&面试、效率软件等。**
-
+> **一些有趣的github项目总结，其中包括终端、Python、Java、笔试&面试、效率软件等。**
 
 ## 终端
 
@@ -45,8 +44,6 @@ categories: Tool
 
 - [wxpy](<https://github.com/youfou/wxpy>) 微信机器人 / 可能是最优雅的微信个人号 API ✨✨ [http://wxpy.readthedocs.io](http://wxpy.readthedocs.io/) **star:10700**
 
-
-
 ## Java
 
 - [Awesome Java](<https://github.com/akullpp/awesome-java>) A curated list of awesome frameworks, libraries and software for the Java programming language. **star:21651**
@@ -69,6 +66,10 @@ categories: Tool
 - [dbblog](<https://github.com/llldddbbb/dbblog>) 基于SpringBoot2.x+Vue2.x+ElementUI+Iview+Elasticsearch+RabbitMQ+Redis+Shiro的多模块前后端分离的博客项目 **star:375**
 - [spring-analysis](<https://github.com/seaswalker/spring-analysis>) Spring源码阅读 **star:4045**
 - [mall](<https://github.com/macrozheng/mall>) mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。**star:21926**
+- [后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome) **star:42900**
+- [mall-swarm](https://github.com/macrozheng/mall-swarm)mall-swarm是一套微服务商城系统，采用了 Spring Cloud Greenwich、Spring Boot 2、MyBatis、Docker、Elasticsearch等核心技术，同时提供了基于Vue的管理后台方便快速搭建系统。**star:1400**
+- [jeecg-boot](https://github.com/zhangdaiscott/jeecg-boot)一款基于代码生成器的JAVA快速开发平台，开源界“小普元”超越传统商业企业级开发平台！**star:9600**
+- [dbblog](https://github.com/llldddbbb/dbblog) 基于SpringBoot2.x+Vue2.x+ElementUI+Iview+Elasticsearch+RabbitMQ+Redis+Shiro的多模块前后端分离的博客项目 [http://www.dblearn.cn](http://www.dblearn.cn/) **star:643**
 
 ### 2. 笔试&&面试
 
@@ -82,8 +83,6 @@ categories: Tool
 - [leetcode](<https://github.com/azl397985856/leetcode>) LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
 - [reverse-interview-zh](<https://github.com/yifeikong/reverse-interview-zh>) 技术面试最后反问面试官的话 **star:4500**
 - [algo](https://github.com/wangzheng0822/algo) 数据结构和算法必知必会的50个代码实现 **star:10700**
-
-
 
 ## Vue&&前端
 
@@ -100,8 +99,6 @@ categories: Tool
 
 - [CS-Notes](<https://github.com/CyC2018/CS-Notes>) : 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计。**star:67433**
 
-
-
 ## Flutter
 
 ### 1. 项目
@@ -109,8 +106,6 @@ categories: Tool
 - [Flutter_YYeTs](<https://github.com/popeyelau/Flutter_YYeTs>) : 基于Flutter的人人影视移动端。**star:233**
 - [Flutter-Notebook](<https://github.com/OpenFlutter/Flutter-Notebook>) 日更的FlutterDemo合集，今天你fu了吗 **star:3879**
 - [Best-Flutter-UI-Templates](<https://github.com/mitesh77/Best-Flutter-UI-Templates>) completely free for everyone. Its build-in Flutter Dart. **star:1261**
-
-
 
 ## 效率软件
 
@@ -130,8 +125,7 @@ categories: Tool
 - [Alfred-collection](<https://github.com/msoedov/Alfred-collection>) A collection of all known Alfred3 workflows **star:411**
 - [RevokeMsgPatcher](https://github.com/huiyadanli/RevokeMsgPatcher)  editor for WeChat/QQ/TIM - PC版微信/QQ/TIM防撤回补丁（我已经看到了，撤回也没用了） **star:1500**
 - [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) 一个基于 electron 的音乐软件 **star:1300**
-
-
+- [UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic) Revive unavailable songs for Netease Cloud Music **star:7900**
 
 ## 有趣
 
@@ -142,13 +136,8 @@ categories: Tool
 - [free-api](<https://github.com/fangzesheng/free-api>) 收集免费的接口服务,做一个api的搬运工 **star:6000**
 - [fanhaodaquan](https://github.com/imfht/fanhaodaquan) 番号大全。 **star:1200**
 - [BullshitGenerator](https://github.com/menzi11/BullshitGenerator) Needs to generate some texts to test if my GUI rendering codes good or not. so I made this. **star:3700**
-
-
-
-
-
-
-
-
+- [howto-make-more-money](https://github.com/easychen/howto-make-more-money): 程序员如何优雅的挣零花钱 **star:8200**
+- [marktext](https://github.com/marktext/marktext) A simple and elegant markdown editor, available for Linux, macOS and Windows. [https://marktext.app](https://marktext.app/) **star：14800**
 
 ## 持续更新...
+
