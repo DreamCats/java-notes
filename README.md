@@ -267,7 +267,12 @@
 - [MyBatis常见问题的思维导图](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71)
 - [MyBatis面试相关系列](https://github.com/DreamCats/SpringBooks#mybatis)
 
+## Spring项目
+
+- [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 本项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
+
 ## 计算机网络
+
 - [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
 - [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
 - [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
