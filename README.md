@@ -27,6 +27,14 @@
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
+## 微信公众号推荐
+
+- **JavaGuide**：大家都懂的，帮这位老哥宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
+- **程序员乔戈里**：我也经常浏览，大佬也非常勤奋，也宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
+- **帅地玩编程**：少不了**帅地呀**，hhh-->"本号专注于讲解数据结构与算法、计算机基础(如计算机网络+操作系统+数据库+Linux)等编程知识，期待你的关注。"
+- **GitHubDaily**：经常分享Github一些项目-->"专注于分享 Python、Java、Web、AI、数据分析等多个领域的优质学习资源、开源项目及开发者工具。"
+- **方志朋**：号主为BAT一线架构师，CSDN博客专家，博客访问量突破一千万，著有畅销书《深入理解SpringCloud与微服务构建》。主要分享Java、Python等技术，用大厂程序员的视角来探讨技术进阶、面试指南、职业规划等。15W技术人的选择！
+- **好好学java**：学习Java必备公众号，关注于Java、算法，公众号每日与您分享Java知识，定期的分享面试题，关注我们吧，和小海一起学习进步！
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
@@ -369,7 +377,4 @@
 - [全网最全frp内网穿透(ssh及web)](/Tools/frp/全网最全frp内网穿透(ssh及web).md)
 - [centos7安装dubbo环境](/Tools/dubbo/centos7安装dubbo环境.md)
 - [centos7安装rocketmq环境及配置](/Tools/rocketmq/centos7安装rocketmq及配置.md)
-
-
-
 
