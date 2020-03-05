@@ -15,6 +15,7 @@
 > - 操作系统(Linux系统)
 > - 微服务项目(SpringBoot+Mybatis+Dubbo+Mysql+Redis+RocketMQ)
 > - 数据结构与算法(Leetcode/剑指Offer)
+> - 设计模式
 > - 常用工具
 >
 > **如果观看不流畅，可以去我的博客浏览面试知识点[dreamcat.ink](http://dreamcat.ink/)**
@@ -27,6 +28,17 @@
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
+- [Java常见基础问题](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad) **常见的基础问题，这是必须要掌握。**
+- [Java常见集合问题]() **还没总结，后续总结...**
+- [Java常见多线程问题](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf) **常见的多线程问题，也是必须掌握...**
+- [JVM常见问题](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44) **常见的JVM要掌握的点...**
+## 个人事迹
+
+**本来是不想贴的，之前做了图，见丑了...**
+
+- [本科事迹](https://www.processon.com/view/link/5e45532fe4b06b291a6e0d7c) **不是科班出身，专业是就不说啦...**
+- [研究生事迹](https://www.processon.com/view/link/5e455cbae4b06b291a6e1af0) **还未结束，后续继续补充...**
+
 ## 微信公众号推荐
 
 - **JavaGuide**：大家都懂的，帮这位老哥宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
