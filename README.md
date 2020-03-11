@@ -253,6 +253,7 @@
     - [初始化](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.md#%E5%88%9D%E5%A7%8B%E5%8C%96)
     - [类加载器都有哪些？](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E6%80%BB%E7%BB%93)
     - [聊一聊双亲委派机制](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8.md#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B)
+    - [JVM里的符号引用如何存储？](https://www.zhihu.com/question/30300585)
 - [JVM内存模型]()
     - [聊一聊JVM内存模型](/Jvm/Java面经-内存模型.md)
     - [堆的空间基本结构](https://github.com/DreamCats/JavaBooks/blob/master/Jvm/JVM-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md#%E6%8F%AD%E5%BC%80jvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6%E7%9A%84%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1)
