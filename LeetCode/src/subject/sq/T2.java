@@ -1,6 +1,6 @@
 /**
  * @program JavaBooks
- * @description: 用队列实现栈
+ * @description: 用一个队列实现栈
  * @author: mf
  * @create: 2020/03/11 12:24
  */
