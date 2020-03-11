@@ -16,12 +16,13 @@ public class T3 {
     private int top;
 
     public void push(int x) {
-        q2.add(x);
+        // 添加顺序1, 2
+        q2.add(x); // 2
         top = x;
         while (!q1.isEmpty()) {
-            q2.add(q1.remove());
+            q2.add(q1.remove()); //2, 1
         }
-        Queue<Integer> temp = q1;
+        Queue<Integer> temp = q1; // q1 null
         q1 = q2;
         q2 = temp;
     }
