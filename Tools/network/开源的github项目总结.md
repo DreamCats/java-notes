@@ -5,7 +5,6 @@ author: DreamCat
 tags: github
 id: github1
 categories: Tool
-
 ---
 
 ## 引言
@@ -66,6 +65,8 @@ categories: Tool
 - [dbblog](https://github.com/llldddbbb/dbblog) 基于SpringBoot2.x+Vue2.x+ElementUI+Iview+Elasticsearch+RabbitMQ+Redis+Shiro的多模块前后端分离的博客项目 [http://www.dblearn.cn](http://www.dblearn.cn/) **star:643**
 - [ springboot-seckill](https://github.com/zaiyunduan123/springboot-seckill) 基于SpringBoot + MySQL + Redis + RabbitMQ + Guava开发的高并发商品限时秒杀系统 **star:943**
 - [MeetingFilm](https://github.com/daydreamdev/MeetingFilm)基于微服务架构的在线电影购票平台 **star：111**
+- [guava](https://github.com/google/guava) Google core libraries for Java **star:36400**
+- [hutool](https://github.com/looly/hutool) A set of tools that keep Java sweet. [http://www.hutool.cn](http://www.hutool.cn/) **star:10800**
 
 ### 2. 笔试&&面试
 
@@ -81,6 +82,7 @@ categories: Tool
 - [algo](https://github.com/wangzheng0822/algo) 数据结构和算法必知必会的50个代码实现 **star:10700**
 - [fucking-algorithm](https://github.com/labuladong/fucking-algorithm) 手把手撕LeetCode题目，扒各种算法套路的裤子，not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/ **star：4700**
 - [JavaFamily](https://github.com/AobingJava/JavaFamily)【互联网一线大厂面试+学习指南】进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，作者风格幽默，看起来津津有味，把学习当做一种乐趣，何乐而不为，后端同学必看，前端同学我保证你也看得懂，看不懂你加我微信骂我渣男就好了。 **star：7100**
+- [Java-Interview](https://github.com/gzc426/Java-Interview) Java 面试必会 直通BAT **star:3500**
 
 ## Vue&&前端
 
@@ -147,3 +149,4 @@ categories: Tool
 - [FreePAC](https://github.com/xiaoming2028/FreePAC) 科学上网/梯子/自由上网/翻墙 SS/SSR/V2Ray/Brook 搭建教程 **star：2146**
 
 ## 持续更新...
+
