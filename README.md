@@ -151,7 +151,8 @@
 ## 多线程系列
 - [多线程思维导图](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf)
 - [Java多线程-并发基础常见面试题总结](/Multithread/Java多线程-并发基础常见面试题总结.md)
-- [Java多线程-synchronized](/Multithread/Java多线程-synchronized.md)
+- [Java多线程-Synchronized](/Multithread/Java多线程-synchronized.md)
+- [Java多线程-volatile](/Multithread/深刻理解volatile的一切.md)
 - [Java多线程-ThreadLocal](/Multithread/Java多线程-ThreadLocal.md)
 - [Java多线程-Atomic原子类](/Multithread/Java多线程-Atomic原子类.md)
 - [Java多线程-AQS](/Multithread/Java多线程-Atomic原子类.md)
