@@ -11,7 +11,10 @@ import java.util.concurrent.*;
 
 public class ThreadPoolExecutorDemo {
     public static void main(String[] args) {
-        ExecutorService threadpools = new ThreadPoolExecutor(3, 5, 1l,
+        ExecutorService threadpools = new ThreadPoolExecutor(
+                3,
+                5,
+                1l,
                 TimeUnit.SECONDS,
                 new LinkedBlockingDeque<>(3),
                 Executors.defaultThreadFactory(),
