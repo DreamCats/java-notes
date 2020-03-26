@@ -1,10 +1,8 @@
 ---
 title: 开源的github项目总结
-date: 2019-06-19 10:44:35
-author: DreamCat
+date: 2019-03-24 23:07:33
 tags: github
-id: github1
-categories: Tool
+categories: web
 ---
 
 ## 引言
@@ -30,11 +28,8 @@ categories: Tool
 - [requests](<https://github.com/psf/requests>) :Python HTTP Requests for Humans™ ✨🍰✨ **star:39860**
 - [requests-html](<https://github.com/psf/requests-html>) : Pythonic HTML Parsing for Humans™  **star:10111**
 - [httpx](<https://github.com/encode/httpx>) A next generation HTTP client for Python. 🦋 <https://www.encode.io/httpx> **star:1900**
-
 - [PySimpleGUI](<https://github.com/PySimpleGUI/PySimpleGUI>) : 做一些简单的GUI，可以用这个，简单应用。**star:1608**
-
 - [bokeh](<https://github.com/bokeh/bokeh>) Interactive Web Plotting for Python。 **star:10701**
-
 - [wxpy](<https://github.com/youfou/wxpy>) 微信机器人 / 可能是最优雅的微信个人号 API ✨✨ [http://wxpy.readthedocs.io](http://wxpy.readthedocs.io/) **star:10700**
 
 ## Java
@@ -125,28 +120,19 @@ categories: Tool
 - [RevokeMsgPatcher](https://github.com/huiyadanli/RevokeMsgPatcher)  editor for WeChat/QQ/TIM - PC版微信/QQ/TIM防撤回补丁（我已经看到了，撤回也没用了） **star:1500**
 - [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) 一个基于 electron 的音乐软件 **star:1300**
 - [UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic) Revive unavailable songs for Netease Cloud Music **star:7900**
+- [CodeVar](https://github.com/xudaolong/CodeVar) 生成可用的代码变量 (CodeVar that return u a better variable from Chinese to English . ) **star：684**
 
 ## 有趣
 
 - [ChineseBQB](ChineseBQB)🇨🇳Chinese sticker pack,More joy / 中国表情包大集合,更欢乐 **star:2319**
-
 - [free-programming-books-zh_CN](<https://github.com/justjavac/free-programming-books-zh_CN>)📚 免费的计算机编程类中文书籍，欢迎投稿 **star:55296**
-
 - [freeCodeCamp](<https://github.com/freeCodeCamp/freeCodeCamp>) The [https://www.freeCodeCamp.org](https://www.freecodecamp.org/) open source codebase and curriculum. Learn to code for free together with millions of people. **star:304920**
-
 - [hosts](<https://github.com/googlehosts/hosts>) 镜像 **star:15582**
-
 - [free-api](<https://github.com/fangzesheng/free-api>) 收集免费的接口服务,做一个api的搬运工 **star:6000**
-
-- [fanhaodaquan](https://github.com/imfht/fanhaodaquan) 番号大全。 **star:1200**
-
+- [fanhaodaquan](https://github.com/imfht/fanhaodaquan) 番号大全。 **star:1200*
 - [BullshitGenerator](https://github.com/menzi11/BullshitGenerator) Needs to generate some texts to test if my GUI rendering codes good or not. so I made this. **star:3700**
-
 - [howto-make-more-money](https://github.com/easychen/howto-make-more-money): 程序员如何优雅的挣零花钱 **star:8200**
-
 - [marktext](https://github.com/marktext/marktext) A simple and elegant markdown editor, available for Linux, macOS and Windows. [https://marktext.app](https://marktext.app/) **star：14800**
-
 - [FreePAC](https://github.com/xiaoming2028/FreePAC) 科学上网/梯子/自由上网/翻墙 SS/SSR/V2Ray/Brook 搭建教程 **star：2146**
 
 ## 持续更新...
-
