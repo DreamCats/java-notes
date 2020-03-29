@@ -1,11 +1,3 @@
----
-title: 计算机网络原理-http那些事儿
-author: DreamCat
-id: 2
-date: 2019-11-21 15:31:10
-tags: 计算机网络
-categories: 知识
----
 ## 引言
 
 > 想必大家都用过浏览器吧？

@@ -1,12 +1,3 @@
----
-title: Java面经-LinkedList源码解析
-author: DreamCat
-id: 1
-date: 2019-10-30 09:00:27
-tags: Java
-categories: Java
----
-
 ## 引言
 
 **Java的集合框架，LinkedList源码解析等...**

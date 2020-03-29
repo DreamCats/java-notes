@@ -1,12 +1,3 @@
----
-title: 命令行的奇淫技巧
-date: 2019-06-08 22:05:09
-author: DreamCat
-tags: bash
-id: bash1
-categories: Tool
----
-
 ## 引言
 
 **常用的命令行技巧...**

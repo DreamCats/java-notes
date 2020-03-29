@@ -1,11 +1,3 @@
----
-title: 深刻理解volatile的一切
-author: DreamCat
-id: 1
-date: 2020-02-13 00:44:43
-tags: Java
-categories: Java
----
 ## 引言
 
 > 不得不说，如果谈到volatile只会它的作用：可见性，可序性和不能保证原子性，就太Low了些，因此还得熟悉其中的奥妙才行呀...

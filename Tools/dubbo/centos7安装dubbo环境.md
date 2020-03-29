@@ -1,11 +1,3 @@
----
-title: Centos7配置Dubbo和Zookeeper
-author: DreamCat
-id: 1
-date: 2019-12-10 18:12:08
-tags: Dubbo
-categories: Java
----
 ## 引言
 
 > 最近看了看分布式架构，尝试了一下dubbo，注册中心是hiZookeeper，所以先在centos下配置环境吧。

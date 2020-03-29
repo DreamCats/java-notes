@@ -1,12 +1,3 @@
----
-title: Java面经-内存模型
-author: DreamCat
-id: 6
-date: 2019-11-02 23:06:51
-tags: JVM
-categories: Java
----
-
 ## 引言
 
 **JVM - 内存模型**

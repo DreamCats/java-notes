@@ -1,11 +1,3 @@
----
-title: Redis-面试常见的问题
-author: DreamCat
-id: 1
-date: 2019-11-23 16:02:32
-tags: Redis
-categories: 知识
----
 ## 引言
 
 > Redis在大型项目中也是经常用到的非关系型数据库，面试官也挺喜欢问的。

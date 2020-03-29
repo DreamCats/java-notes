@@ -1,12 +1,3 @@
----
-title: Java面经-ArrayList源码解析
-author: DreamCat
-id: 2
-date: 2019-10-29 23:51:46
-tags: Java
-categories: Java
----
-
 ## 引言
 
 **Java的集合框架，ArrayList源码解析等...**

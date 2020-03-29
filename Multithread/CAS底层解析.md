@@ -1,11 +1,3 @@
----
-title: Java CAS原理剖析
-author: DreamCat
-id: 1
-date: 2020-02-14 00:05:57
-tags: Java
-categories: Java
----
 ## 引言
 
 > 大家都知道，在Java并发种，我们最初接触的应该就是`synchronized`关键字了，但是`synchronized`属于重量级锁，很多时候会引起性能问题，`volatile`也是个不错的选择，但是`volatile`不能保证原子性，只能在某些场合下使用。像`synchronized`这种独占锁属于**悲观锁**，乐观锁最常见的就是`CAS`。

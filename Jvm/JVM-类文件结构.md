@@ -49,7 +49,7 @@ ClassFile {
 
 **Class文件字节码结构组织示意图** （之前在网上保存的，非常不错，原出处不明）：
 
-![类文件字节码结构组织示意图](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/类文件字节码结构组织示意图.png)
+![参考-JavaGuide-类文件字节码结构组织示意图](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/类文件字节码结构组织示意图.png)
 
 ### 魔数
 

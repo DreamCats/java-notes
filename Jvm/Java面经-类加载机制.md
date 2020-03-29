@@ -1,12 +1,3 @@
----
-title: Java面经-类加载机制
-author: DreamCat
-id: 5
-date: 2019-11-02 21:01:31
-tags: JVM
-categories: Java
----
-
 ## 引言
 
 **JVM - 类加载机制**

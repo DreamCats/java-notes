@@ -1,11 +1,3 @@
----
-title: Java面试基础知识
-author: DreamCat
-id: 1
-date: 2019-11-29 16:20:07
-tags: Java
-categories: Java
----
 ## 引言
 
 > [JavaGuide](https://github.com/Snailclimb/JavaGuide) :一份涵盖大部分Java程序员所需要掌握的核心知识。**star:45159**，替他宣传一下子
@@ -87,7 +79,7 @@ JRE 是 Java运行时环境。它是运行已编译 Java 程序所需的所有�
 2. 含义上: 字符常量相当于一个整型值( ASCII 值),可以参加表达式运算; 字符串常量代表一个地址值(该字符串在内存中存放位置)
 3. 占内存大小 字符常量只占2个字节; 字符串常量占若干个字节(至少一个字符结束标志) (**注意： char在Java中占两个字节**)
 
-![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg)
+![参考-JavaGuide](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-15/86735519.jpg)
 
 ## 构造器 Constructor 是否可被 override?
 

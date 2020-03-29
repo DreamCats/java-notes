@@ -1,12 +1,3 @@
----
-title: sql-索引(B+树)
-author: DreamCat
-id: 1
-date: 2019-11-16 10:05:16
-tags: Sql
-categories: Sql
----
-
 ## 引言
 
 **sql-索引(B+树)**

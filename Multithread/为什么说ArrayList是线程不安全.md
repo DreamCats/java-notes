@@ -1,11 +1,3 @@
----
-title: 为什么说ArrayList是线程不安全的?
-author: DreamCat
-id: 1
-date: 2020-02-14 16:41:53
-tags: Java
-categories: Java
----
 ## 引言
 
 > 面试时相信面试官首先就会问到关于它的知识。一个经常被问到的问题就是：ArrayList是否是线程安全的？那么它为什么是线程不安全的呢？它线程不安全的具体体现又是怎样的呢？我们从源码的角度来看下。
@@ -17,7 +9,7 @@ categories: Java
 **首先看看该类的属性字段**：
 
 ```java
- 		/**
+    /**
      * 列表元素集合数组
      * 如果新建ArrayList对象时没有指定大小，那么会将EMPTY_ELEMENTDATA赋值给elementData，
      * 并在第一次添加元素时，将列表容量设置为DEFAULT_CAPACITY 

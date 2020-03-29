@@ -1,12 +1,3 @@
----
-title: linux-基础
-author: DreamCat
-id: 1
-date: 2019-11-12 15:23:30
-tags: Linux
-categories: 知识
----
-
 ## 引言
 
 **linux-基础**

@@ -1,12 +1,3 @@
----
-title: Java面经-Java集合框架
-author: DreamCat
-id: 1
-date: 2019-10-29 17:55:21
-tags: Java
-categories: Java
----
-
 ## 引言
 
 **Java的集合框架，包括常见的面试源码解析等...**

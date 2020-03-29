@@ -1,12 +1,3 @@
----
-title: Mysql中ACID的原理
-author: DreamCat
-id: 1
-date: 2019-11-20 15:51:07
-tags: Sql
-categories: Sql
----
-
 ## 引言
 
 ## 场景

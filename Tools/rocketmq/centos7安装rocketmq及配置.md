@@ -1,11 +1,3 @@
----
-title: Centos7安装RocketMQ及配置
-author: DreamCat
-id: 1
-date: 2020-02-21 20:33:02
-tags: MQ
-categories: Java
----
 ## 引言
 > 项目中用到消息队列RocketMQ，因此在Centos7安装及配置。。。
 

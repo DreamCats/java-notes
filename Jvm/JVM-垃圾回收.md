@@ -1,11 +1,3 @@
----
-title: JVM-垃圾回收
-author: DreamCat
-id: 1
-date: 2019-11-26 15:38:17
-tags: JVM
-categories: Java
----
 ## 引言
 
 
@@ -75,7 +67,7 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（G
 
 堆中几乎放着所有的对象实例，对堆垃圾回收前的第一步就是要判断那些对象已经死亡（即不能再被任何途径使用的对象）。
 
-![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/11034259.jpg)
+![参考-JavaGuide](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/11034259.jpg)
 
 ### 引用计数法
 
@@ -102,7 +94,7 @@ public class ReferenceCountingGc {
 
 这个算法的基本思想就是通过一系列的称为 **“GC Roots”** 的对象作为起点，从这些节点开始向下搜索，节点所走过的路径称为引用链，当一个对象到 GC Roots 没有任何引用链相连的话，则证明此对象是不可用的。
 
-![可达性分析算法 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/72762049.jpg)
+![参考-JavaGuide-可达性分析算法 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/72762049.jpg)
 
 - 哪些可以作为GC Roots的根
   - 虚拟机栈（栈帧中的局部变量区，也叫局部变量表）中应用的对象。
@@ -170,7 +162,7 @@ JDK1.2 以后，Java 对引用的概念进行了扩充，将引用分为强引�
 
 ## 垃圾收集算法
 
-![垃圾收集算法分类](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/垃圾收集算法.jpg)
+![参考-JavaGuide-垃圾收集算法分类](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/垃圾收集算法.jpg)
 
 ### 标记-清除算法
 
@@ -185,7 +177,7 @@ JDK1.2 以后，Java 对引用的概念进行了扩充，将引用分为强引�
 
 根据老年代的特点提出的一种标记算法，标记过程仍然与“标记-清除”算法一样，但后续步骤不是直接对可回收对象回收，而是让所有存活的对象向一端移动，然后直接清理掉端边界以外的内存。
 
-![](https://www.pdai.tech/_images/pics/902b83ab-8054-4bd2-898f-9a4a0fe52830.jpg)
+![参考-JavaGuide](https://www.pdai.tech/_images/pics/902b83ab-8054-4bd2-898f-9a4a0fe52830.jpg)
 
 ### 复制算法
 
@@ -205,7 +197,7 @@ JDK1.2 以后，Java 对引用的概念进行了扩充，将引用分为强引�
 
 ## 垃圾收集器
 
-![垃圾收集器分类](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/垃圾收集器.jpg)
+![参考-JavaGuide-垃圾收集器分类](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/垃圾收集器.jpg)
 
 **如果说收集算法是内存回收的方法论，那么垃圾收集器就是内存回收的具体实现。**
 
@@ -217,7 +209,7 @@ Serial（串行）收集器收集器是最基本、历史最悠久的垃圾收�
 
 **新生代采用复制算法，老年代采用标记-整理算法。**
 
-![ Serial 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/46873026.jpg)
+![参考-JavaGuide Serial 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/46873026.jpg)
 
 虚拟机的设计者们当然知道 Stop The World 带来的不良用户体验，所以在后续的垃圾收集器设计中停顿时间在不断缩短（仍然还有停顿，寻找最优秀的垃圾收集器的过程仍然在继续）。
 
@@ -229,7 +221,7 @@ Serial（串行）收集器收集器是最基本、历史最悠久的垃圾收�
 
  **新生代采用复制算法，老年代采用标记-整理算法。**
 
-![ParNew 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/22018368.jpg)
+![参考-JavaGuideParNew 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/22018368.jpg)
 
 它是许多运行在 Server 模式下的虚拟机的首要选择，除了 Serial 收集器外，只有它能与 CMS 收集器（真正意义上的并发收集器，后面会介绍到）配合工作。
 
@@ -246,7 +238,7 @@ Parallel Scavenge 收集器也是使用复制算法的多线程收集器，它�
 
 **新生代采用复制算法，老年代采用标记-整理算法。**
 
-![Parallel Scavenge 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/22018368.jpg)
+![参考-JavaGuideParallel Scavenge 收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/22018368.jpg)
 
 ### Serial Old 收集器
 
@@ -269,7 +261,7 @@ Parallel Scavenge 收集器也是使用复制算法的多线程收集器，它�
 - **重新标记：** 重新标记阶段就是为了修正并发标记期间因为用户程序继续运行而导致标记产生变动的那一部分对象的标记记录，这个阶段的停顿时间一般会比初始标记阶段的时间稍长，远远比并发标记阶段时间短
 - **并发清除：** 开启用户线程，同时 GC 线程开始对为标记的区域做清扫。
 
-![CMS 垃圾收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/82825079.jpg)
+![参考-JavaGuide-CMS 垃圾收集器 ](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-8-27/82825079.jpg)
 
 从它的名字就可以看出它是一款优秀的垃圾收集器，主要优点：**并发收集、低停顿**。但是它有下面三个明显的缺点：
 

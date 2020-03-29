@@ -1,12 +1,3 @@
----
-title: HashMap & ConcurrentHashMap面试必问
-author: DreamCat
-id: 1
-date: 2019-11-17 12:21:38
-tags: Java
-categories: Java
----
-
 ## 引言
 
 **HashMap 和 ConcurrentHashMap面试常问，务必理解和掌握**

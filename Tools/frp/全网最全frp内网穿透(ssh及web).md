@@ -1,14 +1,3 @@
----
-title: frp内网穿透
-date: 2019-05-25 22:24:46
-author: DreamCat
-tags: frp
-id: frp1
-categories: Tool
----
-
-​	frp内网穿透，非常详细的步骤说明。
-
 ## 1. 准备工作
 
 - vps（云服务器一台）

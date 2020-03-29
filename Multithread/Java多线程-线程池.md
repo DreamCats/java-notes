@@ -1,11 +1,3 @@
----
-title: Java多线程-线程池
-author: DreamCat
-id: 4
-date: 2019-11-27 15:50:00
-tags: 多线程
-categories: Java
----
 ## 引言
 
 > [JavaGuide](https://github.com/Snailclimb/JavaGuide) :一份涵盖大部分Java程序员所需要掌握的核心知识。**star:45159**，替他宣传一下子

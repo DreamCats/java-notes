@@ -1,13 +1,3 @@
----
-title: Java锁机制
-author: DreamCat
-id: 1
-date: 2020-02-10 01:22:20
-tags: Java
-categories: Java
-
----
-
 ## 引言
 
 > Java常见的几种锁，比如：

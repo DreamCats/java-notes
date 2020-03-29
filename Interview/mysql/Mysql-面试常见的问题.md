@@ -1,16 +1,6 @@
----
-title: Mysql-面试常见的问题
-author: DreamCat
-id: 1
-date: 2019-11-24 12:37:38
-tags: Sql
-categories: Sql
----
 ## 引言
 
 > Mysql，那可是老生常谈了，对于后端同学，那是必须要掌握的呀。
-
-<!-- more -->
 
 ## 常见问题
 

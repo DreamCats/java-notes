@@ -1,12 +1,3 @@
----
-title: Java面经-JVM调优参数
-author: DreamCat
-id: 2
-date: 2019-11-03 10:54:29
-tags: JVM
-categories: Java
----
-
 ## 引言
 
 > **JVM - 参数调优**

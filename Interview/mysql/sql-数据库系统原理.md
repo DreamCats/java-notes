@@ -1,12 +1,3 @@
----
-title: sql-数据库系统原理
-author: DreamCat
-id: 1
-date: 2019-11-14 15:22:17
-tags: Sql
-categories: Sql
----
-
 ## 引言
 
 **sql-数据库系统原理**

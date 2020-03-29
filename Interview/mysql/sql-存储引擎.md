@@ -1,12 +1,3 @@
----
-title: sql-存储引擎
-author: DreamCat
-id: 1
-date: 2019-11-15 10:41:34
-tags: Sql
-categories: Sql
----
-
 ## 引言
 
 **sql-存储引擎**
