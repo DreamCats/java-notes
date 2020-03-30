@@ -432,7 +432,7 @@
 - [sql-存储引擎](/Interview/mysql/sql-存储引擎.md)
 - [sql-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 - **常见问题**
-    - [数据库引擎innodb与myisam的区别？](https://github.com/DreamCats/JavaBooks/blob/master/Interview/mysql/Mysql-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%95%E6%93%8Einnodb%E4%B8%8Emyisam%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [数据库引擎innodb与myisam的区别？](/Interview/mysql/sql-存储引擎.md)
     - [Mysql的ACID原理](/Interview/mysql/Mysql中ACID的原理.md)
     - [并发事务带来的问题](https://github.com/DreamCats/JavaBooks/blob/master/Interview/mysql/Mysql-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E5%B9%B6%E5%8F%91%E4%BA%8B%E5%8A%A1%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%97%AE%E9%A2%98)
     - [数据库的隔离级别](https://github.com/DreamCats/JavaBooks/blob/master/Interview/mysql/Mysql-%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98.md#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
