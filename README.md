@@ -41,6 +41,12 @@
 - [研究生事迹](https://www.processon.com/view/link/5e455cbae4b06b291a6e1af0) **还未结束，后续继续补充...**
 - [个人博客](http://www.dreamcat.ink) **这是我个人博客，该项目的文章都在博客上有体现，github上若是阅读不佳，可以去博客上观看，时间紧迫，有些地方还没有细细的优化**
 
+## 吐血系列
+- **个人吐血系列-总结Java基础**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java基础.md)->[博客阅读](http://dreamcat.ink/2020/03/27/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-chu/)->[掘进阅读](https://juejin.im/post/5e7e0615f265da795568754b)
+- **个人吐血系列-总结Java集合**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java集合.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-he/)->[掘进阅读](https://juejin.im/post/5e801e29e51d45470b4fce1c)
+- **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘进阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘进阅读-2](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c)
+- **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘进阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
+
 ## 微信公众号推荐
 
 - **JavaGuide**：大家都懂的，帮这位老哥宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
