@@ -25,6 +25,7 @@
 - [:fire:常用的在线网站](/Tools/network/收集常用的网站(持续更新...).md)
 - [:sparkles:emoji集合](/Tools/network/github表情图标.md)
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
+- [📖:今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
@@ -32,6 +33,7 @@
 - [Java常见集合问题]() **还没总结，后续总结...**
 - [Java常见多线程问题](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf) **常见的多线程问题，也是必须掌握...**
 - [JVM常见问题](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44) **常见的JVM要掌握的点...**
+- [Spring常见问题](https://www.processon.com/view/link/5e846de9e4b07b16dcdb63f0) **常见的Spring面试的问题...**
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 ## 个人事迹
 
@@ -58,6 +60,7 @@
 - **好好学java**：学习Java必备公众号，关注于Java、算法，公众号每日与您分享Java知识，定期的分享面试题，关注我们吧，和小海一起学习进步！
 - **小鹿动画学编程**：和小鹿同学一起用动画的方式从基础学编程，将 Web前端领域、数据结构与算法、网络原理等通俗易懂的呈献给小伙伴。先定个小目标，原创 1000 篇的动画技术文章，和各位小伙伴一起学习！
 - **Java3y**：看人家说的：”只有光头才能变强“，头像也是个光头呢。
+- **本来作者也有微信公众号的...**：可惜时间由于学业问题，很少维护，等后期有空重新整理，目前我就不贴自己微信公众号了
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
