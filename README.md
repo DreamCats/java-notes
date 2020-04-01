@@ -493,7 +493,7 @@
     - [解释一下Duboo的负载均衡]()
     - [配置方式]()
     - [Dubbo的健壮性表现]()
-    - [Dubbo和SpringCloud区别]()
+    - [Dubbo和SpringCloud区别](/Interview/crazy/个人吐血系列-总结Dubbo.md#dubbo和springcloud的区别)
 
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
