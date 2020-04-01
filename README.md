@@ -502,13 +502,13 @@
 ## RocketMQ
 - [消息队列-RocketMQ面试常见问题](Interview/crazy/个人吐血系列-总结RocketMQ.md)
 - **常见问题**
-    - [什么是消息队列？消息队列的主要作用是什么？](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-    - [kafka、activemq、rabbitmq、rocketmq都有什么区别？](Interview/crazy/个人吐血系列-总结RocketMQ.md)
+    - [什么是消息队列？消息队列的主要作用是什么？](Interview/crazy/个人吐血系列-总结RocketMQ.md#什么是消息队列消息队列的主要作用是什么)
+    - [kafka、activemq、rabbitmq、rocketmq都有什么区别？](Interview/crazy/个人吐血系列-总结RocketMQ.md#kafkaactivemqrabbitmqrocketmq都有什么区别)
     - [MQ在高并发情况下，假设队列满了如何防止消息丢失？](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-    - [谈谈死信队列](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-    - [消费者消费消息，如何保证MQ幂等性？](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-    - [使用异步消息时如何保证数据的一致性](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-    - [RockMQ不适用Zookeeper作为注册中心的原因，以及自制的NameServer优缺点？](Interview/crazy/个人吐血系列-总结RocketMQ.md)
+    - [谈谈死信队列](Interview/crazy/个人吐血系列-总结RocketMQ.md#谈谈死信队列)
+    - [消费者消费消息，如何保证MQ幂等性？](Interview/crazy/个人吐血系列-总结RocketMQ.md#消费者消费消息如何保证mq幂等性)
+    - [使用异步消息时如何保证数据的一致性](Interview/crazy/个人吐血系列-总结RocketMQ.md#使用异步消息时如何保证数据的一致性)
+    - [RockMQ不适用Zookeeper作为注册中心的原因，以及自制的NameServer优缺点？](Interview/crazy/个人吐血系列-总结RocketMQ.md#rockmq不适用zookeeper作为注册中心的原因以及自制的nameserver优缺点)
 
 
 ## Linux
