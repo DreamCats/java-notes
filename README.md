@@ -34,6 +34,7 @@
 - [Java常见多线程问题](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf) **常见的多线程问题，也是必须掌握...**
 - [JVM常见问题](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44) **常见的JVM要掌握的点...**
 - [Spring常见问题](https://www.processon.com/view/link/5e846de9e4b07b16dcdb63f0) **常见的Spring面试的问题...**
+- [Mybatis常见问题](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71) **常见的Mybatis面试的问题...**
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 ## 个人事迹
 
