@@ -49,6 +49,7 @@
 - **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘进阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘进阅读-2](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c)
 - **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘进阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
 - **个人吐血系列-总结Spring**: [本地阅读](/Interview/crazy/个人吐血系列-总结Spring.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-spring/)->[掘进阅读](https://juejin.im/post/5e846a4a6fb9a03c42378bc1)
+- **个人吐血系列-总结Mybatis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Mybatis.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-mybatis/)->[掘进阅读](https://juejin.im/post/5e889b196fb9a03c875c8f50)
 
 ## 微信公众号推荐
 
@@ -305,7 +306,6 @@
 - [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
 
 ### 目录说明
-#### 组件注册
 - [xml注册bean方式](/spring-annotation/src/main/resources/beans.xml)
 - [xml注册包扫描方式](/spring-annotation/src/main/resources/beans.xml)
 - [注解注册bean方式](/spring-annotation/src/main/java/org/example/config/MainConfig.java)
@@ -315,27 +315,15 @@
 - [@Lazy的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfScope.java)
 - [@Conditional的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfConditional.java)
 - [@Import的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfImport.java)
-
-#### 生命周期
 - [bean的生命周期](/spring-annotation/src/main/java/org/example/config/MainConfigOfLifeCycle.java)
-
-#### 属性赋值
 - [@Value的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfValue.java)
 - [@PropertySource的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfValue.java)
-
-#### 自动装配
 - [@Autowired的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfAutowired.java)
 - [@Qualifier的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfAutowired.java)
 - [@Profile的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfProfile.java)
-
-#### AOP
 - [AOP小例子](/spring-aop/src/main/java/org/example/config/MainConfigOfAOP.java)
-
-#### 事务
 - [Spring事务](/spring-annotation/src/main/java/org/example/tx/MainConfigOfTx.java)
 - [Spring事务源码](/spring-annotation/src/main/java/org/example/tx/MainConfigOfTx.java)
-
-#### 扩展原理
 - [BeanFactoryPostProcessor](/spring-annotation/src/main/java/org/example/ext/MyBeanFactoryPostProcessor.java)
 - [BeanDefinitionRegistryPostProcessor](/spring-annotation/src/main/java/org/example/ext/MyBeanDefinitionRegistryPostProcessor.java)
 - [ApplicationListener](/spring-annotation/src/main/java/org/example/ext/MyApplicationListener.java)
