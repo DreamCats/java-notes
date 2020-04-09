@@ -13,6 +13,7 @@ package subject.dpointer;
  */
 public class T8 {
     public void moveZeroes(int[] nums) {
+        // index记录什么开始填充0
         int index = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) nums[index++] = nums[i];
