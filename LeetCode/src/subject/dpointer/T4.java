@@ -20,6 +20,13 @@ public class T4 {
             }
         }
         // 双指针
-
+        int p = nums1.length - 1;
+        int a1 = m - 1;
+        for (int i = n - 1; i >= 0; i--) {
+            while (a1 > 0 && nums1[a1] > nums2[i]) {
+                nums1[p--] = nums1[a1--];
+            }
+            nums1[p--] = nums2[i];
+        }
     }
 }
