@@ -8,7 +8,7 @@
 
 - 系统：Centos7
 
-- 安装[Java][http://dreamcat.ink/2019/07/08/tool-notes/java3/]环境
+- 安装[Java](http://dreamcat.ink/2019/07/08/windows-mac-he-linux-an-zhuang-java/)环境
 
 - [下载地址](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
