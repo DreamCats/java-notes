@@ -51,6 +51,7 @@
 - **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘进阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
 - **个人吐血系列-总结Spring**: [本地阅读](/Interview/crazy/个人吐血系列-总结Spring.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-spring/)->[掘进阅读](https://juejin.im/post/5e846a4a6fb9a03c42378bc1)
 - **个人吐血系列-总结Mybatis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Mybatis.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-mybatis/)->[掘进阅读](https://juejin.im/post/5e889b196fb9a03c875c8f50)
+- **个人吐血系列-总结MySQL**: [本地阅读](/Interview/crazy/个人吐血系列-总结MySQL.md)->[博客阅读](http://dreamcat.ink/2020/03/30/ge-ren-tu-xie-xi-lie-zong-jie-mysql/)->[掘进阅读](https://juejin.im/post/5e94116551882573b86f970f)
 
 ## 微信公众号推荐
 
