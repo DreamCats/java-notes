@@ -11,13 +11,13 @@
 - *ArrayList*实现了*List*接口，是顺序容器，即元素存放的数据与放进去的顺序相同，允许放入`null`元素，底层通过**数组实现**。
 - 除该类未实现同步外，其余跟*Vector*大致相同。
 - 每个*ArrayList*都有一个容量（capacity），表示底层数组的实际大小，容器内存储元素的个数不能多于当前容量。
-- 当向容器中添加元素时，如果容量不足，容器会自动增大底层数组的大小。
+- 当向容器中添加元素时，如果容量不足，**容器会自动增大底层数组的大小**。
 - 前面已经提过，Java泛型只是编译器提供的语法糖，所以这里的数组是一个Object数组，以便能够容纳任何类型的对象。
 
 ![](https://www.pdai.tech/_images/collection/ArrayList_base.png)
 
-- size(), isEmpty(), get(), set()方法均能在常数时间内完成，add()方法的时间开销跟插入位置有关，addAll()方法的时间开销跟添加元素的个数成正比。其余方法大都是线性时间。
-- 为追求效率，ArrayList没有实现同步（synchronized），如果需要多个线程并发访问，用户可以手动同步，也可使用Vector替代。
+- size(), isEmpty(), get(), set()方法均能在**常数时间**内完成，add()方法的时间开销跟插入位置有关，addAll()方法的时间开销跟添加元素的个数成正比。其余方法大都是线性时间。
+- 为追求效率，ArrayList没有实现同步（**synchronized**），如果需要多个线程并发访问，用户可以手动同步，也可使用Vector替代。
 
 #### 实现
 
@@ -117,11 +117,11 @@ private int size; // 大小
 
 
 
-- 每当向数组中添加元素时，都要去检查添加后元素的个数是否会超出当前数组的长度，如果超出，数组将会进行扩容，以满足添加数据的需求。
-- 数组扩容通过一个公开的方法ensureCapacity(int minCapacity)来实现。在实际添加大量元素前，我也可以使用ensureCapacity来手动增加ArrayList实例的容量，以减少递增式再分配的数量。
-- 数组进行扩容时，会将老数组中的元素重新拷贝一份到新的数组中，每次数组容量的增长大约是其原容量的1.5倍。
-- 这种操作的代价是很高的，因此在实际使用时，我们应该尽量避免数组容量的扩张。
-- 当我们可预知要保存的元素的多少时，要在构造ArrayList实例时，就指定其容量，以避免数组扩容的发生。
+- 每当向数组中添加元素时，都要去检查添加后**元素的个数是否会超出当前数组的长度**，如果超出，**数组将会进行扩容**，以满足添加数据的需求。
+- 数组扩容通过一个公开的方法`ensureCapacity(int minCapacity)`来实现。在实际添加大量元素前，我也可以使用ensureCapacity来手动增加ArrayList实例的容量，以减少递增式再分配的数量。
+- 数组进行扩容时，会将老数组中的元素重新**拷贝**一份到新的数组中，每次数组容量的增长大约是其原容量的**1.5倍**。
+- 这种操作的代价是很高的，因此在实际使用时，我们应该**尽量避免数组容量的扩张**。
+- 当我们可预知要保存的元素的多少时，要在构造ArrayList实例时，就**指定其容量**，以避免数组扩容的发生。
 - 或者根据实际需求，通过调用ensureCapacity方法来手动增加ArrayList实例的容量。
 
 ![扩容](https://www.pdai.tech/_images/collection/ArrayList_grow.png)
@@ -161,7 +161,7 @@ public E get(int index) {
 
 ##### remove()
 
-`remove()`方法也有两个版本，一个是`remove(int index)`删除指定位置的元素，另一个是`remove(Object o)`删除第一个满足`o.equals(elementData[index])`的元素。删除操作是`add()`操作的逆过程，需要将删除点之后的元素向前移动一个位置。需要注意的是为了让GC起作用，必须显式的为最后一个位置赋`null`值。
+`remove()`方法也有两个版本，一个是`remove(int index)`删除指定位置的元素，另一个是`remove(Object o)`删除第一个满足`o.equals(elementData[index])`的元素。删除操作是`add()`操作的逆过程，需要将删除点之后的元素向前移动一个位置。需要注意的是为了让**GC**起作用，必须显式的为最后一个位置赋`null`值。
 
 ```java
 public E remove(int index) {
@@ -199,7 +199,7 @@ public E remove(int index) {
 
 ##### Fail-Fast机制
 
-ArrayList也采用了快速失败的机制，通过记录modCount参数来实现。在面对并发的修改时，迭代器很快就会完全失败，而不是冒着在将来某个不确定时间发生任意不确定行为的风险。
+ArrayList也采用了**快速失败的机制**，**通过记录modCount参数来实现**。在面对并发的修改时，迭代器很快就会完全失败，而不是冒着在将来某个不确定时间发生任意不确定行为的风险。
 
 ##### 多线程问题
 
@@ -209,7 +209,7 @@ ArrayList也采用了快速失败的机制，通过记录modCount参数来实现
 
 #### 概述
 
-**LinkedList**同时实现了**list**接口和**Deque**接口，也就是说它既可以看作一个顺序容器，又可以看作一个队列（Queue），同时又可以看作一个栈（Stack）。这样看来，LinkedList简直就是个全能冠军。当你需要使用栈或者队列时，可以考虑使用LinkedList，一方面是因为Java官方已经声明不建议使用Stack类，更遗憾的是，Java里根本没有一个叫做Queue的类（它是个接口名字）。关于栈或队列，现在的首选是ArrayDeque，它有着比LinkedList（当作栈或队列使用时）有着更好的性能。
+**LinkedList**同时实现了**list**接口和**Deque**接口，也就是说它既可以看作一个**顺序容器**，又可以看作**一个队列（Queue）**，同时又可以看作**一个栈（Stack）**。这样看来，LinkedList简直就是个全能冠军。当你需要使用栈或者队列时，可以考虑使用LinkedList，一方面是因为Java官方已经声明不建议使用Stack类，更遗憾的是，Java里根本没有一个叫做Queue的类（它是个接口名字）。**关于栈或队列，现在的首选是ArrayDeque，它有着比LinkedList（当作栈或队列使用时）有着更好的性能**。
 
 ![LinkedList](https://www.pdai.tech/_images/collection/LinkedList_base.png)
 
@@ -275,7 +275,7 @@ LinkedList底层**通过双向链表实现**，本节将着重讲解插入和删
 
 ![remove](https://www.pdai.tech/_images/collection/LinkedList_remove.png)
 
-删除元素 - 指的是删除第一次出现的这个元素, 如果没有这个元素，则返回false；判读的依据是equals方法， 如果equals，则直接unlink这个node；由于LinkedList可存放null元素，故也可以删除第一次出现null的元素；
+**删除元素** - 指的是删除第一次出现的这个元素, 如果没有这个元素，则返回false；判读的依据是`equals`方法， 如果equals，则直接unlink这个node；由于LinkedList可存放null元素，故也可以删除第一次出现null的元素；
 
 ```java
     public boolean remove(Object o) {
@@ -449,9 +449,9 @@ LinkedList底层**通过双向链表实现**，本节将着重讲解插入和删
 
 介绍成员变量：
 
-1. 初始化桶大小，因为底层是数组，所以这是数组默认的大小。
-2. 桶最大值。
-3. 默认的负载因子（0.75）
+1. **初始化桶大小**，因为底层是数组，所以这是数组默认的大小。
+2. **桶最大值**。
+3. 默认的**负载因子**（0.75）
 4. table真正存放数据的数组。
 5. map存放数量的大小
 6. 桶大小，可在构造函数时显式指定。
@@ -477,15 +477,16 @@ public HashMap(int initialCapacity, float loadFactor) {
     in
 ```
 
-- 给定的默认容量为16，负载因子为0.75.
-- Map在使用过程中不断的往里面存放数据，当数量达到了`16 * 0.75 = 12`就需要将当前16的容量进行扩容，而扩容这个过程涉及到rehash（重新哈希）、复制数据等操作，所有非常消耗性能。
+- **给定的默认容量为16，负载因子为0.75**.
+- Map在使用过程中不断的往里面存放数据，当数量达到了`16 * 0.75 = 12`就需要将当前16的容量进行扩容，而扩容这个过程涉及到`rehash`（重新哈希）、复制数据等操作，所有非常消耗性能。
 - 因此通常建议能提前预估HashMap的大小最好，尽量的减少扩容带来的额外性能损耗。
+- 关于这部分后期专门出一篇文章进行讲解。
 
 ##### Entry
 
 ![Entry](https://i.loli.net/2019/05/08/5cd1d2c08e693.jpg)
 
-Entry是Hashmap中的一个内部类，从他的成员变量很容易看出：
+Entry是**Hashmap中的一个内部类**，从他的成员变量很容易看出：
 
 - key就是写入时的键
 - value自然就是值
@@ -542,7 +543,7 @@ void createEntry(int hash, K key, V value, int bucketIndex) {
 ```
 
 - 当调用addEntry写入Entry时需要判断是否需要扩容
-- 如果需要就进行两倍扩充，并将当前的key重新hash并定位。
+- 如果需要就进行**两倍扩充**，并将当前的key重新hash并定位。
 - 而在createEntry中会将当前位置的桶传入到新建的桶中，如果当前桶有值就会在位置形成链表。
 
 ##### get
@@ -679,9 +680,9 @@ transient int size;
 - 判断当前桶是否为空，空的就需要初始化（resize中会判断是否进行初始化）
 - 根据当前key的hashcode定位到具体的桶中并判断是否为空，为空则表明没有Hash冲突，就直接在当前位置创建一个新桶
 - 如果当前桶有值（Hash冲突），那么就要比较当前桶中的key、key的hashcode与写入的key是否相等，相等就赋值给e，在第8步的时候会统一进行赋值及返回
-- 如果当前桶为红黑树，那就要按照红黑树的方式写入数据
+- 如果当前桶为**红黑树**，那就要按照红黑树的方式写入数据
 - 如果是个链表，就需要将当前的key、value封装称一个新节点写入到当前桶的后面形成链表。
-- 接着判断当前链表的大小是否大于预设的阈值，大于就要转换成为红黑树
+- 接着判断当前链表的大小是否**大于预设的阈值**，大于就要转换成为**红黑树**
 - 如果在遍历过程中找到key相同时直接退出遍历。
 - 如果`e != null`就相当于存在相同的key，那就需要将值覆盖。
 - 最后判断是否需要进行扩容。
@@ -725,7 +726,7 @@ final Node<K,V> getNode(int hash, Object key) {
 
 #### 问题
 
-但是 HashMap 原有的问题也都存在，比如在并发场景下使用时容易出现死循环。
+但是 HashMap 原有的问题也都存在，比如在并发场景下使用时容易出现**死循环**。
 
 ```java
 final HashMap<String, String> map = new HashMap<String, String>();
@@ -741,7 +742,7 @@ for (int i = 0; i < 1000; i++) {
 
 - HashMap扩容的时候会调用resize()方法，就是这里的并发操作容易在一个桶上形成环形链表
 - 这样当获取一个不存在的key时，计算出的index正好是环形链表的下标就会出现死循环。
-- 但是1.7的头插法造成的问题，1.8改变了插入顺序，就解决了这个问题，但是为了内存可见性等安全性，还是需要ConCurrentHashMap
+- **但是1.7的头插法造成的问题，1.8改变了插入顺序，就解决了这个问题，但是为了内存可见性等安全性，还是需要ConCurrentHashMap**
 
 > 参考：hashMap死循环分析
 >
@@ -763,7 +764,7 @@ Iterator<String> iterator = map.keySet().iterator();
         }
 ```
 
-- 建议使用第一种，同时可以把key value取出。
+- **建议使用第一种，同时可以把key value取出**。
 - 第二种还需要通过key取一次key，效率较低。
 
 ### ConcurrentHashMap
@@ -803,10 +804,10 @@ static final class Segment<K,V> extends ReentrantLock implements Serializable {
 
 ![](https://i.loli.net/2019/05/08/5cd1d2c635c69.jpg)
 
-- 唯一的区别就是其中的核心数据如 value ，以及链表都是 volatile 修饰的，保证了获取时的可见性。
-- ConcurrentHashMap 采用了分段锁技术，其中 Segment 继承于 ReentrantLock。
+- 唯一的区别就是其中的核心数据如 value ，以及链表都是 `volatile` 修饰的，保证了获取时的可见性。
+- ConcurrentHashMap 采用了**分段锁**技术，其中 Segment 继承于 `ReentrantLock`。
 - 不会像HashTable那样不管是put还是get操作都需要做同步处理，理论上 ConcurrentHashMap 支持 CurrencyLevel (Segment 数组数量)的线程并发。
-- 每当一个线程占用锁访问一个 Segment 时，不会影响到其他的 Segment。
+- **每当一个线程占用锁访问一个 Segment 时，不会影响到其他的 Segment**。
 
 ##### put
 
@@ -872,13 +873,13 @@ final V put(K key, int hash, V value, boolean onlyIfAbsent) {
 }
 ```
 
-- 虽然HashEntry中的value是用volatile关键字修饰的，但是并不能保证并发的原子性，所以put操作仍然需要加锁处理。
+- **虽然HashEntry中的value是用volatile关键字修饰的，但是并不能保证并发的原子性，所以put操作仍然需要加锁处理**。
 
-- 首先第一步的时候会尝试获取锁，如果获取失败肯定就是其他线程存在竞争，则利用 `scanAndLockForPut()` 自旋获取锁。
+- **首先第一步的时候会尝试获取锁，如果获取失败肯定就是其他线程存在竞争，则利用 `scanAndLockForPut()` 自旋获取锁**。
 
   1. 尝试获取自旋锁
 
-  2. 如果重试的次数达到了`MAX_SCAN_RETRIES` 则改为阻塞锁获取，保证能获取成功。
+  2. 如果重试的次数达到了`MAX_SCAN_RETRIES` 则改为**阻塞锁获取**，保证能获取成功。
 
 总的来说：
 
@@ -919,7 +920,7 @@ public V get(Object key) {
 
 ![](https://i.loli.net/2019/05/08/5cd1d2ce33795.jpg)
 
-其中抛弃了原有的 Segment 分段锁，而采用了 `CAS + synchronized` 来保证并发安全性
+**其中抛弃了原有的 Segment 分段锁，而采用了 `CAS + synchronized` 来保证并发安全性**
 
 ##### put
 
@@ -991,10 +992,10 @@ public V get(Object key) {
 
 - 根据key计算出hashcode
 - 判断是否需要进行初始化
-- f即为当前key定位出的Node，如果为空表示当前位置可以写入数据，利用CAS尝试写入，失败则自旋保证成功。
+- f即为当前key定位出的Node，如果为空表示当前位置可以写入数据，**利用CAS尝试写入，失败则自旋保证成功**。
 - 如果当前位置的`hashcode == MOVED == -1`，则需要进行扩容
-- 如果都不满足，则利用synchronized锁写入数据
-- 如果数量大于`TREEIFY_THRESHOLD` 则要转换为红黑树。
+- **如果都不满足，则利用synchronized锁写入数据**
+- 如果数量大于`TREEIFY_THRESHOLD` 则要转换为**红黑树**。
 
 ##### get
 
@@ -1036,3 +1037,5 @@ public V get(Object key) {
 - 不安全会导致哪些问题？
 - 如何解决？有没有线程安全的并发容器？
 - ConcurrentHashMap 是如何实现的？ 1.7、1.8 实现有何不同？为什么这么做？
+
+> 创作不易哇，觉得有帮助的话，给个小小的star呗。github地址😁😁😁
