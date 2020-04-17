@@ -21,7 +21,7 @@ public class T6 {
         for (int i = 1; i < dp.length; i++) {
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j] && dp[i] > dp[j] + 1) {
+                if (nums[i] > nums[j] && dp[i] < dp[j] + 1) {
                     dp[i] = dp[j] + 1;
                 }
             }
