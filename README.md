@@ -37,6 +37,9 @@
 - [JVM常见问题](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44) **常见的JVM要掌握的点...**
 - [Spring常见问题](https://www.processon.com/view/link/5e846de9e4b07b16dcdb63f0) **常见的Spring面试的问题...**
 - [Mybatis常见问题](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71) **常见的Mybatis面试的问题...**
+- [MySQL常见问题](https://www.processon.com/view/link/5e9b0cb15653bb1a686e17ea) **常见的MySQL面试的问题...**
+
+## 微服务班车在线预约系统
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 
 ## 个人事迹
@@ -145,38 +148,12 @@
 - [JVM整个流程](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
 ## Spring系列
-### Spring项目
-- [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 本项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
-
 ### 参考笔记
 - [b站视频入口](https://www.bilibili.com/video/av32102436?p=1)
 - [代码资料](https://gitee.com/adanzzz/spring_source_parsing_data)
 
 ### 思维导图
 - [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
-
-### 目录说明
-- [xml注册bean方式](/spring-annotation/src/main/resources/beans.xml)
-- [xml注册包扫描方式](/spring-annotation/src/main/resources/beans.xml)
-- [注解注册bean方式](/spring-annotation/src/main/java/org/example/config/MainConfig.java)
-- [注解注册包扫描方式](/spring-annotation/src/main/java/org/example/config/MainConfig.java)
-- [@Filter的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfFilter.java)
-- [@Scope的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfScope.java)
-- [@Lazy的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfScope.java)
-- [@Conditional的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfConditional.java)
-- [@Import的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfImport.java)
-- [bean的生命周期](/spring-annotation/src/main/java/org/example/config/MainConfigOfLifeCycle.java)
-- [@Value的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfValue.java)
-- [@PropertySource的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfValue.java)
-- [@Autowired的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfAutowired.java)
-- [@Qualifier的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfAutowired.java)
-- [@Profile的使用](/spring-annotation/src/main/java/org/example/config/MainConfigOfProfile.java)
-- [AOP小例子](/spring-aop/src/main/java/org/example/config/MainConfigOfAOP.java)
-- [Spring事务](/spring-annotation/src/main/java/org/example/tx/MainConfigOfTx.java)
-- [Spring事务源码](/spring-annotation/src/main/java/org/example/tx/MainConfigOfTx.java)
-- [BeanFactoryPostProcessor](/spring-annotation/src/main/java/org/example/ext/MyBeanFactoryPostProcessor.java)
-- [BeanDefinitionRegistryPostProcessor](/spring-annotation/src/main/java/org/example/ext/MyBeanDefinitionRegistryPostProcessor.java)
-- [ApplicationListener](/spring-annotation/src/main/java/org/example/ext/MyApplicationListener.java)
 
 ### 源码总结
 - [Spring和SpringAOP](/Spring和SpringAOP源码总结.md)
@@ -206,13 +183,13 @@
 - [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
 - [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
 - [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
-- [计算机网络面试常见问题](/Interview/network/计算机网络面试常见问题.md)
+- [计算机网络面试常见问题](Interview/network/计算机网络面试常见问题.md)
 
-## Mysql
-- [sql-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
-- [Mysql中ACID的原理](/Interview/mysql/Mysql中ACID的原理.md)
-- [sql-存储引擎](/Interview/mysql/sql-存储引擎.md)
-- [sql-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
+## MySQL
+- [SQL-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
+- [MySQL中ACID的原理](/Interview/mysql/Mysql中ACID的原理.md)
+- [SQL-存储引擎](/Interview/mysql/sql-存储引擎.md)
+- [SQL-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 - [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
 
 ## Redis
