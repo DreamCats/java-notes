@@ -1,0 +1,67 @@
+- [简述线程、程序、进程的基本概念。以及他们之间关系是什么?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E7%AE%80%E8%BF%B0%E7%BA%BF%E7%A8%8B%E7%A8%8B%E5%BA%8F%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88)
+- [Java 语言有哪些特点?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9)
+- [面向对象和面向过程的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB)
+- **==、hashcode和equals**
+    - [==与equals](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#-%E4%B8%8E-equals%E9%87%8D%E8%A6%81)
+    - [hashcode和equlas](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#hashcode-%E4%B8%8E-equals-%E9%87%8D%E8%A6%81)
+    - [hashcode和equlas代码小例子](/Basics/src/com/equal/Student.java)
+- **关于 JVM JDK 和 JRE 最详细通俗的解答**
+    - [JVM](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jvm)
+    - [JDK 和 JRE](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jdk-%E5%92%8C-jre)
+- [Java和C++的区别?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java%E5%92%8Cc%E7%9A%84%E5%8C%BA%E5%88%AB)
+- **基本类型**
+    - [自动装箱与拆箱](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1%E4%B8%8E%E6%8B%86%E7%AE%B1)
+    - [字符型常量和字符串常量的区别?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%B8%B8%E9%87%8F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [说说&和&&的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%AF%B4%E8%AF%B4%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1; 有什么错?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#short-s1--1-s1--s1--1%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99-short-s1--1-s1--1-%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99) [demo](/Basics/src/com/type/TypeConvert.java)
+    - [char 型变量中能不能存贮一个中文汉字?为什么?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#char-%E5%9E%8B%E5%8F%98%E9%87%8F%E4%B8%AD%E8%83%BD%E4%B8%8D%E8%83%BD%E5%AD%98%E8%B4%AE%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E6%B1%89%E5%AD%97%E4%B8%BA%E4%BB%80%E4%B9%88)
+    - [整形包装缓存池例子vlaueof](/Basics/src/com/pack/IntegerPackDemo.java)
+- **构造器**
+    - [构造器 Constructor 是否可被 override?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%9E%84%E9%80%A0%E5%99%A8-constructor-%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A2%AB-override)
+    - [构造方法有哪些特性？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7)
+- **String**
+    - [String StringBuffer 和 StringBuilder 的区别是什么? String 为什么是不可变的?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#string-stringbuffer-%E5%92%8C-stringbuilder-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88-string-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84)
+    - [String StringBuffer 和 StringBuilder的代码例子](/Basics/src/com/strings/SbDemo.java)
+    - [String A = "123"; String B = new String("123");生成几个对象？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#string-a--123-string-b--new-string123%E7%94%9F%E6%88%90%E5%87%A0%E4%B8%AA%E5%AF%B9%E8%B1%A1)
+    - [String.intern与缓存池](/Basics/src/com/strings/SIntern.java)
+- **对象**
+    - [Java 面向对象编程三大特性: 封装 继承 多态](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [接口和抽象类的区别是什么？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
+    - [成员变量与局部变量的区别有哪些？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E6%9C%89%E5%93%AA%E4%BA%9B)
+    - [重载和重写的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [创建一个对象用什么运算符?对象实体与对象引用有何不同?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%94%A8%E4%BB%80%E4%B9%88%E8%BF%90%E7%AE%97%E7%AC%A6%E5%AF%B9%E8%B1%A1%E5%AE%9E%E4%BD%93%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C)
+    - [对象的相等与指向他们的引用相等,两者有什么不同?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%9B%B8%E7%AD%89%E4%B8%8E%E6%8C%87%E5%90%91%E4%BB%96%E4%BB%AC%E7%9A%84%E5%BC%95%E7%94%A8%E7%9B%B8%E7%AD%89%E4%B8%A4%E8%80%85%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C)
+- [为什么Java中只有值传递？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E4%B8%BA%E4%BB%80%E4%B9%88java%E4%B8%AD%E5%8F%AA%E6%9C%89%E5%80%BC%E4%BC%A0%E9%80%92)
+    - [参考这篇文章](https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/PreparingForInterview/%E5%BA%94%E5%B1%8A%E7%94%9F%E9%9D%A2%E8%AF%95%E6%9C%80%E7%88%B1%E9%97%AE%E7%9A%84%E5%87%A0%E9%81%93Java%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98.md#%E4%B8%80-%E4%B8%BA%E4%BB%80%E4%B9%88-java-%E4%B8%AD%E5%8F%AA%E6%9C%89%E5%80%BC%E4%BC%A0%E9%80%92)
+    - [基本类型传递代码例子](/Basics/src/com/transfer/TransferDemo.java)
+    - [数组类型传递代码例子](/Basics/src/com/transfer/TransferDemo2.java)
+    - [对象引用类型传递代码例子](/Basics/src/com/transfer/TransferDemo3.java)
+- **关键字**
+    - [关于 final 关键字的一些总结](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%85%B3%E4%BA%8E-final-%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93) **一般关键字的面试，答的时候按照变量、方法和类去总结**
+    - [static 关键字](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#static-%E5%85%B3%E9%94%AE%E5%AD%97)
+    - [this 关键字](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#this-%E5%85%B3%E9%94%AE%E5%AD%97)
+    - [super 关键字](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#super-%E5%85%B3%E9%94%AE%E5%AD%97)
+    - [final, finally, finalize 的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#final-finally-finalize-%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [请说出作用域 public，private，protected，以及不写时的区别](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%AF%B7%E8%AF%B4%E5%87%BA%E4%BD%9C%E7%94%A8%E5%9F%9F-publicprivateprotected%E4%BB%A5%E5%8F%8A%E4%B8%8D%E5%86%99%E6%97%B6-%E7%9A%84%E5%8C%BA%E5%88%AB)
+- **异常**
+    - [Java 中的异常处理](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86)
+    - [请写出你最常见到的 5 个 runtime exception](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%AF%B7%E5%86%99%E5%87%BA%E4%BD%A0%E6%9C%80%E5%B8%B8%E8%A7%81%E5%88%B0%E7%9A%84-5-%E4%B8%AA-runtime-exception)
+- **IO**
+    - [获取用键盘输入常用的两种方法](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E8%8E%B7%E5%8F%96%E7%94%A8%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95)
+    - [Java 中 IO 流分为几种?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#java-%E4%B8%AD-io-%E6%B5%81%E5%88%86%E4%B8%BA%E5%87%A0%E7%A7%8D)
+    - [既然有了字节流,为什么还要有字符流?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%97%A2%E7%84%B6%E6%9C%89%E4%BA%86%E5%AD%97%E8%8A%82%E6%B5%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E6%9C%89%E5%AD%97%E7%AC%A6%E6%B5%81)
+    - [BIO,NIO,AIO 有什么区别?](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#bionioaio-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
+- **反射**
+    - [反射是什么？](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E4%BB%8B%E7%BB%8D)
+    - [静态编译和动态编译](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E9%9D%99%E6%80%81%E7%BC%96%E8%AF%91%E5%92%8C%E5%8A%A8%E6%80%81%E7%BC%96%E8%AF%91)
+    - [反射机制优缺点](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E4%BC%98%E7%BC%BA%E7%82%B9)
+    - [反射的应用场景](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E5%8F%8D%E5%B0%84%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
+    - [反射得到Class对象的三种方式代码例子](/Basics/src/com/reflect/ReflectDemo.java)
+    - [反射访问并调用构造方法的代码例子](/Basics/src/com/reflect/ConstructorsDemo.java)
+    - [反射访问并调用成员变量的代码例子](/Basics/src/com/reflect/FieldDemo.java)
+    - [反射访问并调用成员方法的代码例子](/Basics/src/com/reflect/MethodDemo.java)
+- **拷贝**
+    - [深拷贝 vs 浅拷贝](https://github.com/DreamCats/JavaBooks/blob/master/Basics/Java%E9%9D%A2%E8%AF%95%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#%E6%B7%B1%E6%8B%B7%E8%B4%9D-vs-%E6%B5%85%E6%8B%B7%E8%B4%9D)
+    - [深浅拷贝参考](https://juejin.im/post/5c988a7ef265da6116246d11)
+    - [浅拷贝代码例子](/Basics/src/com/copy/ShallowCopyDemo.java)
+    - [深拷贝代码例子](/Basics/src/com/copy/Student.java)
