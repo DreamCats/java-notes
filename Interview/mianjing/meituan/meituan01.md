@@ -38,9 +38,51 @@
 > 对于 HashSet 而言，它是基于 HashMap 实现的，底层采用 HashMap 来保存元素，所以如果对 HashMap 比较熟悉了，那么学习 HashSet 也是很轻松的。
 
 对于 HashSet 而言，它是基于 HashMap 实现的，HashSet 底层使用 HashMap 来保存所有元素，因此 HashSet 的实现比较简单，相关 HashSet 的操作，基本上都是直接调用底层 HashMap 的相关方法来完成，我们应该为保存到 HashSet 中的对象覆盖 hashCode() 和 equals()
+> 主要是add方法
+```java
+/**
+
+ * @param e 将添加到此set中的元素。
+ * @return 如果此set尚未包含指定元素，则返回true。
+ */
+public boolean add(E e) {
+    return map.put(e, PRESENT)==null;
+}
+```
+> 由于HashMap的put()方法添加 key-value 对时，
+> 当新放入HashMap的Entry中key 与集合中原有 Entry 的 key 相同（hashCode()返回值相等，
+> 通过 equals 比较也返回 true），新添加的 Entry 的 value 会将覆盖原来 Entry 的 value（HashSet 中的 value 都是PRESENT），
+> 但 key 不会有任何改变，因此如果向 HashSet 中添加一个已经存在的元素时，新添加的集合元素将不会被放入 HashMap中，
+> 原来的元素也不会有任何改变，这也就满足了 Set 中元素不重复的特性。
+
 ### MySQL数据库有哪几种索引
+#### 索引类型
+- FULLTEXT
+    即为全文索引，目前只有MyISAM引擎支持。其可以在CREATE TABLE ，ALTER TABLE ，CREATE INDEX 使用，不过目前只有 CHAR、VARCHAR ，TEXT 列上可以创建全文索引。
+- HASH
+    由于HASH的唯一（几乎100%的唯一）及类似键值对的形式，很适合作为索引。
+    HASH索引可以一次定位，不需要像树形索引那样逐层查找,因此具有极高的效率。但是，这种高效是有条件的，即只在“=”和“in”条件下高效，对于范围查询、排序及组合索引仍然效率不高。
+- BTREE
+    BTREE索引就是一种将索引值按一定的算法，存入一个树形的数据结构中（二叉树），每次查询都是从树的入口root开始，依次遍历node，获取leaf。这是MySQL里默认和最常用的索引类型。
+- RTREE
+    RTREE在MySQL很少使用，仅支持geometry数据类型，支持该类型的存储引擎只有MyISAM、BDb、InnoDb、NDb、Archive几种。
+    相对于BTREE，RTREE的优势在于范围查找。
+#### 索引种类
+- 普通索引：仅加速查询
+- 唯一索引：加速查询 + 列值唯一（可以有null）
+- 主键索引：加速查询 + 列值唯一（不可以有null）+ 表中只有一个
+- 组合索引：多列值组成一个索引，专门用于组合搜索，其效率大于索引合并
+- 全文索引：对文本的内容进行分词，进行搜索
+- 索引合并：使用多个单列索引组合搜索
+- 覆盖索引：select的数据列只用从索引中就能够取得，不必读取数据行，换句话说查询列要被所建的索引覆盖
+
 ### 三次握手和四次挥手
+- [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
+- [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
+
 ### Linux查看当前文件路径命令
+- `pwd`
+
 ### 找出数组中的两个出现次数是奇数的数字（其他都是偶数）（剑指offer）
 ```java
 public class SingleNumbers {
