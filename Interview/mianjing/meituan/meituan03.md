@@ -174,3 +174,43 @@ final boolean nonfairTryAcquire(int acquires) {
 #### 总结
 > 非公平锁和公平锁的两处不同： 1. 非公平锁在调用 lock 后，首先就会调用 CAS 进行一次抢锁，如果这个时候恰巧锁没有被占用，那么直接就获取到锁返回了。
 
+### 操作系统里进程状态及转换
+- [操作系统之进程的状态和转换详解](https://blog.csdn.net/qwe6112071/article/details/70473905)
+
+### yield sleep结合状态转换讲一下
+- sleep:不会释放锁
+让当前正在执行的线程先暂停一定的时间，并进入阻塞状态。
+在其睡眠的时间段内，该线程由于不是处于就绪状态，因此不会得到执行的机会。
+即使此时系统中没有任何其他可执行的线程，处于sleep()中的线程也不会执行。
+因此sleep()方法常用来暂停线程的执行。当sleep()结束后，然后转入到 Runnable(就绪状态)，这样才能够得到执行的机会。
+
+- yield：线程让步，不会释放锁
+让一个线程执行了yield()方法后，就会进入Runnable(就绪状态)，不同于sleep()和join（）方法，因为这两个方法是使线程进入阻塞状态】。
+除此之外，yield()方法还与线程优先级有关，当某个线程调用yield()方法时，就会从运行状态转换到就绪状态后，CPU从就绪状态线程队列中只会选择与该线程优先级相同或者更高优先级的线程去执行。
+
+### 常用的排序算法哪些，最优时间复杂度，最差时间复杂度，平均时间复杂度，空间复杂度
+- [常用的排序算法](http://dreamcat.ink/2019/07/09/shi-da-jing-dian-pai-xu-suan-fa/)
+
+### 最长不含重复字符的子字符串
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length(), ans = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0, j = 0; j < n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return ans;
+    }
+}
+```
+
+### 4G内存读取10G日志，统计其中出现频次最高的十个word，如何实现，如何使得速度更快
+- [教你如何迅速秒杀掉99%的海量数据处理面试题](https://juejin.im/entry/5a27cb796fb9a045104a5e8c)
+
+### 数据库范式
+- [数据库范式](https://juejin.im/post/5e94116551882573b86f970f#heading-31)
