@@ -30,3 +30,37 @@ Session 可以存储在服务器上的文件、数据库或者内存中。也可
    Cookie和Session的选择
    
 
+###  二进制中1的个数
+```java
+public class Solution {
+    // you need to treat n as an unsigned value
+    public int hammingWeight(int n) {
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n = (n - 1) & n;
+        }
+        return count;
+    }
+}
+```
+
+### 最长不含重复字符的子字符串
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length(), ans = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0, j = 0; j < n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return ans;
+    }
+}
+```
+
+## 美团广告 二面
