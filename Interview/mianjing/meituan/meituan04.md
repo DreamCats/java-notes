@@ -89,3 +89,17 @@ set 对外提供的功能与list类似是一个列表的功能，特殊之处在
 
 和set相比，sorted set增加了一个权重参数score，使得集合中的元素能够按score进行有序排列。
 举例： 在直播系统中，实时排行信息包含直播间在线用户列表，各种礼物排行榜，弹幕消息（可以理解为按消息维 度的消息排行榜）等信息，适合使用 Redis 中的 SortedSet 结构进行存储。
+
+### 只出现一次的数字
+```java
+class Solution {
+    public int singleNumber(int[] nums) {
+        if(nums.length == 1) return nums[0];
+        int ans = nums[0];
+        for(int i = 1; i < nums.length; i++) {
+            ans ^= nums[i];
+        }
+        return ans;
+    }
+}
+```
