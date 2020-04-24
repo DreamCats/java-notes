@@ -38,6 +38,7 @@
 - [Spring常见问题](https://www.processon.com/view/link/5e846de9e4b07b16dcdb63f0) **常见的Spring面试的问题...**
 - [Mybatis常见问题](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71) **常见的Mybatis面试的问题...**
 - [MySQL常见问题](https://www.processon.com/view/link/5e9b0cb15653bb1a686e17ea) **常见的MySQL面试的问题...**
+- [Redis常见问题](https://www.processon.com/view/link/5ea2da5907912948b0d89a0a) **常见的Redis面试的问题...**
 
 ## 微服务班车在线预约系统
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
@@ -123,7 +124,7 @@
 - [Java多线程-CAS](/Multithread/CAS底层解析.md)
 - [Java多线程-ThreadLocal](/Multithread/Java多线程-ThreadLocal.md)
 - [Java多线程-Atomic原子类](/Multithread/Java多线程-Atomic原子类.md)
-- [Java多线程-AQS](/Multithread/Java多线程-Atomic原子类.md)
+- [Java多线程-AQS](/Multithread/Java多线程-AQS.md)
 - [Java多线程-线程池](/Multithread/Java多线程-线程池.md)
 - [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
 - [多线程一些例子](/Multithread/README.md)
