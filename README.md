@@ -52,15 +52,15 @@
 - [个人博客](http://www.dreamcat.ink) **这是我个人博客，该项目的文章都在博客上有体现，github上若是阅读不佳，可以去博客上观看，时间紧迫，有些地方还没有细细的优化**
 
 ## 吐血系列
-- **个人吐血系列-总结Java基础**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java基础.md)->[博客阅读](http://dreamcat.ink/2020/03/27/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-chu/)->[掘进阅读](https://juejin.im/post/5e7e0615f265da795568754b)
-- **个人吐血系列-总结Java集合**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java集合.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-he/)->[掘进阅读](https://juejin.im/post/5e801e29e51d45470b4fce1c)
-- **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘进阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘进阅读-2](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c)
-- **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘进阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
-- **个人吐血系列-总结Spring**: [本地阅读](/Interview/crazy/个人吐血系列-总结Spring.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-spring/)->[掘进阅读](https://juejin.im/post/5e846a4a6fb9a03c42378bc1)
-- **个人吐血系列-总结Mybatis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Mybatis.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-mybatis/)->[掘进阅读](https://juejin.im/post/5e889b196fb9a03c875c8f50)
-- **个人吐血系列-总结MySQL**: [本地阅读](/Interview/crazy/个人吐血系列-总结MySQL.md)->[博客阅读](http://dreamcat.ink/2020/03/30/ge-ren-tu-xie-xi-lie-zong-jie-mysql/)->[掘进阅读](https://juejin.im/post/5e94116551882573b86f970f)
-- **个人吐血系列-总结Redis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Redis.md)->[博客阅读](http://dreamcat.ink/2020/03/31/ge-ren-tu-xie-xi-lie-zong-jie-redis/)->[掘进阅读](https://juejin.im/post/5e9d6a9ff265da47e34c0e8a)
-- **个人吐血系列-总结计算机网络**: [本地阅读](/Interview/crazy/个人吐血系列-总结计算机网络.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)->[掘进阅读](https://juejin.im/post/5ea383c251882573716ab496)
+- **个人吐血系列-总结Java基础**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java基础.md)->[博客阅读](http://dreamcat.ink/2020/03/27/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-chu/)->[掘金阅读](https://juejin.im/post/5e7e0615f265da795568754b)
+- **个人吐血系列-总结Java集合**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java集合.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-he/)->[掘金阅读](https://juejin.im/post/5e801e29e51d45470b4fce1c)
+- **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘金阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘金阅读-2](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c)
+- **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘金阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
+- **个人吐血系列-总结Spring**: [本地阅读](/Interview/crazy/个人吐血系列-总结Spring.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-spring/)->[掘金阅读](https://juejin.im/post/5e846a4a6fb9a03c42378bc1)
+- **个人吐血系列-总结Mybatis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Mybatis.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-mybatis/)->[掘金阅读](https://juejin.im/post/5e889b196fb9a03c875c8f50)
+- **个人吐血系列-总结MySQL**: [本地阅读](/Interview/crazy/个人吐血系列-总结MySQL.md)->[博客阅读](http://dreamcat.ink/2020/03/30/ge-ren-tu-xie-xi-lie-zong-jie-mysql/)->[掘金阅读](https://juejin.im/post/5e94116551882573b86f970f)
+- **个人吐血系列-总结Redis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Redis.md)->[博客阅读](http://dreamcat.ink/2020/03/31/ge-ren-tu-xie-xi-lie-zong-jie-redis/)->[掘金阅读](https://juejin.im/post/5e9d6a9ff265da47e34c0e8a)
+- **个人吐血系列-总结计算机网络**: [本地阅读](/Interview/crazy/个人吐血系列-总结计算机网络.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)->[掘金阅读](https://juejin.im/post/5ea383c251882573716ab496)
 
 ## 微信公众号推荐
 
