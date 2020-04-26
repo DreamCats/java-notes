@@ -82,9 +82,8 @@ put:
 - 从设计层面来说，抽象是对类的抽象，是一种模板设计，而接口是对行为的抽象，是一种行为的规范。
 
 ### JVM内存分区
-两张图：
-![](https://user-gold-cdn.xitu.io/2020/3/31/17130c2c0a57c0f7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-![](https://user-gold-cdn.xitu.io/2020/3/31/17130c2c0bed60c9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![1.8前](https://user-gold-cdn.xitu.io/2020/3/31/17130c2c0a57c0f7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![1.8后](https://user-gold-cdn.xitu.io/2020/3/31/17130c2c0bed60c9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ### 新生代：eden，survivor_from, survivor_to
 大部分情况，对象都会首先在 Eden 区域分配，在一次新生代垃圾回收后，如果对象还存活，则会进入 s1("To")，并且对象的年龄还会加 1(Eden 区->Survivor 区后对象的初始年龄变为 1)，当它的年龄增加到一定程度（默认为 15 岁），就会被晋升到老年代中。
@@ -104,10 +103,10 @@ put:
 比如在新生代中，每次收集都会有大量对象死去，所以可以选择复制算法，只需要付出少量对象的复制成本就可以完成每次垃圾收集。而老年代的对象存活几率是比较高的，而且没有额外的空间对它进行分配担保，所以我们必须选择“标记-清除”或“标记-整理”算法进行垃圾收集。
 
 ### PretenureSizeThreshold，maxTenuringThreshold
-默认15
+**默认15**
 
 ### JVM调优
-![](https://juejin.im/post/5e8344486fb9a03c786ef885#heading-61)
+[参考](https://juejin.im/post/5e8344486fb9a03c786ef885#heading-61)
 
 ### 如何判断对象是否应该被回收 
 （引用计数法，可达性分析）
