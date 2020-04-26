@@ -307,3 +307,204 @@ public class Solution {
 // 2,1,0,3
 // 0,1,2,3
 ```
+
+## 美团二面
+### synchronized底层实现
+- synchronized 同步语句块的情况
+> synchronized 同步语句块的实现使用的是 monitorenter 和 monitorexit 指令，其中 monitorenter 指令指向同步代码块的开始位置，monitorexit 指令则指明同步代码块的结束位置。
+> 当执行 monitorenter 指令时，线程试图获取锁也就是获取 monitor(monitor对象存在于每个Java对象的对象头中，synchronized 锁便是通过这种方式获取锁的，也是为什么Java中任意对象可以作为锁的原因) 的持有权.当计数器为0则可以成功获取，获取后将锁计数器设为1也就是加1。
+> 相应的在执行 monitorexit 指令后，将锁计数器设为0，表明锁被释放。如果获取对象锁失败，那当前线程就要阻塞等待，直到锁被另外一个线程释放为止。
+
+- synchronized 修饰方法的的情况
+> synchronized 修饰的方法并没有 monitorenter 指令和 monitorexit 指令，取得代之的确实是 ACC_SYNCHRONIZED 标识，该标识指明了该方法是一个同步方法，JVM 通过该 ACC_SYNCHRONIZED 访问标志来辨别一个方法是否声明为同步方法，从而执行相应的同步调用。
+
+#### 1.6之后的优化
+> JDK1.6对锁的实现引入了大量的优化，如自旋锁、适应性自旋锁、锁消除、锁粗化、偏向锁、轻量级锁等技术来减少锁操作的开销。
+  锁主要存在四中状态，依次是：「无锁状态、偏向锁状态、轻量级锁状态、重量级锁状态」，他们会随着竞争的激烈而逐渐升级。注意锁可以升级不可降级，这种策略是为了提高获得锁和释放锁的效率。
+
+1. 偏向锁
+- 引入偏向锁的目的和引入轻量级锁的目的很像，他们都是为了没有多线程竞争的前提下，减少传统的重量级锁使用操作系统互斥量产生的性能消耗。但是不同是：轻量级锁在无竞争的情况下使用 CAS 操作去代替使用互斥量。而偏向锁在无竞争的情况下会把整个同步都消除掉。
+- 偏向锁的“偏”就是偏心的偏，它的意思是会偏向于第一个获得它的线程，如果在接下来的执行中，该锁没有被其他线程获取，那么持有偏向锁的线程就不需要进行同步！
+- 但是对于锁竞争比较激烈的场合，偏向锁就失效了，因为这样场合极有可能每次申请锁的线程都是不相同的，因此这种场合下不应该使用偏向锁，否则会得不偿失，需要注意的是，偏向锁失败后，并不会立即膨胀为重量级锁，而是先升级为轻量级锁。
+**升级过程**：
+- 访问Mark Word中偏向锁的标识是否设置成1，锁标识位是否为01，确认偏向状态
+- 如果为可偏向状态，则判断当前线程ID是否为偏向线程
+- 如果偏向线程未当前线程，则通过cas操作竞争锁，如果竞争成功则操作Mark Word中线程ID设置为当前线程ID
+- 如果cas偏向锁获取失败，则挂起当前偏向锁线程，偏向锁升级为轻量级锁。
+
+2. 轻量级锁
+- 轻量级锁不是为了代替重量级锁，它的本意是在没有多线程竞争的前提下，减少传统的重量级锁使用操作系统互斥量产生的性能消耗，因为使用轻量级锁时，不需要申请互斥量。另外，轻量级锁的加锁和解锁都用到了CAS操作。
+- 如果没有竞争，轻量级锁使用 CAS 操作避免了使用互斥操作的开销。但如果存在锁竞争，除了互斥量开销外，还会额外发生CAS操作，因此在有锁竞争的情况下，轻量级锁比传统的重量级锁更慢！如果锁竞争激烈，那么轻量级将很快膨胀为重量级锁！
+**升级过程**：
+- 线程由偏向锁升级为轻量级锁时，会先把锁的对象头MarkWord复制一份到线程的栈帧中，建立一个名为锁记录空间（Lock Record），用于存储当前Mark Word的拷贝。
+- 虚拟机使用cas操作尝试将对象的Mark Word指向Lock Record的指针，并将Lock record里的owner指针指对象的Mark Word。
+- 如果cas操作成功，则该线程拥有了对象的轻量级锁。第二个线程cas自旋锁等待锁线程释放锁。
+- 如果多个线程竞争锁，轻量级锁要膨胀为重量级锁，Mark Word中存储的就是指向重量级锁（互斥量）的指针。其他等待线程进入阻塞状态。
+
+### AQS底层实现（非公平锁，公平锁）
+> ReentrantLock的公平锁和非公平锁 学习AQS的时候，了解到AQS依赖于内部的FIFO同步队列来完成同步状态的管理，当前线程获取同步状态失败时，同步器会将当前线程以及等待状态等信息构造成一个Node对象并将其加入到同步队列，同时会阻塞当前线程，当同步状态释放时，会把首节点中的线程唤醒，使其再次尝试获取同步状态。
+
+- ReentrantLock 默认采用非公平锁，除非在构造方法中传入参数 true 。
+```java
+//默认
+public ReentrantLock() {
+  sync = new NonfairSync();
+}
+//传入true or false
+public ReentrantLock(boolean fair) {
+  sync = fair ? new FairSync() : new NonfairSync();
+}
+
+```
+#### 公平锁lock方法
+```java
+static final class FairSync extends Sync {
+  final void lock() {
+      acquire(1);
+  }
+  // AbstractQueuedSynchronizer.acquire(int arg)
+  public final void acquire(int arg) {
+      if (!tryAcquire(arg) &&
+          acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+          selfInterrupt();
+  }
+  protected final boolean tryAcquire(int acquires) {
+      final Thread current = Thread.currentThread();
+      int c = getState();
+      if (c == 0) {
+          // 1. 和非公平锁相比，这里多了一个判断：是否有线程在等待
+          if (!hasQueuedPredecessors() &&
+              compareAndSetState(0, acquires)) {
+              setExclusiveOwnerThread(current);
+              return true;
+          }
+      }
+      else if (current == getExclusiveOwnerThread()) {
+          int nextc = c + acquires;
+          if (nextc < 0)
+              throw new Error("Maximum lock count exceeded");
+          setState(nextc);
+          return true;
+      }
+      return false;
+  }
+}
+
+```
+> 我们可以看到，在注释1的位置，有个!hasQueuedPredecessors()条件，意思是说当前同步队列没有前驱节点（也就是没有线程在等待）时才会去compareAndSetState(0, acquires)使用CAS修改同步状态变量。所以就实现了公平锁，根据线程发出请求的顺序获取锁。
+
+#### 非公平锁的lock方法
+```java
+static final class NonfairSync extends Sync {
+    final void lock() {
+        // 2. 和公平锁相比，这里会直接先进行一次CAS，成功就返回了
+        if (compareAndSetState(0, 1))
+            setExclusiveOwnerThread(Thread.currentThread());
+        else
+            acquire(1);
+    }
+    // AbstractQueuedSynchronizer.acquire(int arg)
+    public final void acquire(int arg) {
+        if (!tryAcquire(arg) &&
+            acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+            selfInterrupt();
+    }
+    protected final boolean tryAcquire(int acquires) {
+        return nonfairTryAcquire(acquires);
+    }
+}
+/**
+ * Performs non-fair tryLock.  tryAcquire is implemented in
+ * subclasses, but both need nonfair try for trylock method.
+ */
+final boolean nonfairTryAcquire(int acquires) {
+    final Thread current = Thread.currentThread();
+    int c = getState();
+    if (c == 0) {
+        //3.这里也是直接CAS，没有判断前面是否还有节点。
+        if (compareAndSetState(0, acquires)) {
+            setExclusiveOwnerThread(current);
+            return true;
+        }
+    }
+    else if (current == getExclusiveOwnerThread()) {
+        int nextc = c + acquires;
+        if (nextc < 0) // overflow
+            throw new Error("Maximum lock count exceeded");
+        setState(nextc);
+        return true;
+    }
+    return false;
+}
+
+```
+> 非公平锁的实现在刚进入lock方法时会直接使用一次CAS去尝试获取锁，不成功才会到acquire方法中，如注释2。而在nonfairTryAcquire方法中并没有判断是否有前驱节点在等待，直接CAS尝试获取锁，如注释3。由此实现了非公平锁。
+
+#### 总结
+> 非公平锁和公平锁的两处不同： 1. 非公平锁在调用 lock 后，首先就会调用 CAS 进行一次抢锁，如果这个时候恰巧锁没有被占用，那么直接就获取到锁返回了。
+
+
+### Spring Ioc，AOP介绍
+#### Ioc
+- IoC（Inverse of Control:控制反转）是一种设计思想，就是将原本在程序中手动创建对象的控制权，交由Spring框架来管理。 IoC 在其他语言中也有应用，并非 Spring 特有。 IoC 容器是 Spring 用来实现 IoC 的载体，IoC 容器实际上就是个Map（key，value）,Map中存放的是各种对象。
+- 将对象之间的相互依赖关系交给 IoC 容器来管理，并由 IoC 容器完成对象的注入。这样可以很大程度上简化应用的开发，把应用从复杂的依赖关系中解放出来。 
+- IoC 容器就像是一个工厂一样，当我们需要创建一个对象的时候，只需要配置好配置文件/注解即可，完全不用考虑对象是如何被创建出来的。
+推荐阅读：[https://www.zhihu.com/question/23277575/answer/169698662](https://www.zhihu.com/question/23277575/answer/169698662)
+
+#### AOP
+- AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无关，却为业务模块所共同调用的逻辑或责任（例如事务处理、日志管理、权限控制等）封装起来，便于减少系统的重复代码，降低模块间的耦合度，并有利于未来的可拓展性和可维护性。 
+- Spring AOP就是基于动态代理的，如果要代理的对象，实现了某个接口，那么Spring AOP会使用JDK Proxy，去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，这时候Spring AOP会使用Cglib ，这时候Spring AOP会使用 Cglib 生成一个被代理对象的子类来作为代理。 
+
+### Spring用到了什么设计模式
+- 工厂设计模式 : Spring使用工厂模式通过 BeanFactory、ApplicationContext 创建 bean 对象。
+- 代理设计模式 : Spring AOP 功能的实现。
+- 单例设计模式 : Spring 中的 Bean 默认都是单例的。
+- 模板方法模式 : Spring 中 jdbcTemplate、hibernateTemplate 等以 Template 结尾的对数据库操作的类，它们就使用到了模板模式。
+- 适配器模式 :Spring AOP 的增强或通知(Advice)使用到了适配器模式、spring MVC 中也是用到了适配器模式适配Controller。
+- 等等......
+
+### 单例为什么加锁，volatile什么作用
+- 如果单例不加锁，在高并发情况下可能出现多个实例的情况
+- volatile的有序性特性则是指禁止JVM指令重排优化。因为实例初始化的时候，并非原子性，如
+```
+memory =allocate();    //1. 分配对象的内存空间 
+ctorInstance(memory);  //2. 初始化对象 
+instance =memory;     //3. 设置instance指向刚分配的内存地址
+```
+上面三个指令中，步骤2依赖步骤1，但是步骤3不依赖步骤2，所以JVM可能针对他们进行指令重拍序优化，重排后的指令如下：
+```
+memory =allocate();    //1. 分配对象的内存空间 
+instance =memory;     //3. 设置instance指向刚分配的内存地址
+ctorInstance(memory);  //2. 初始化对象 
+```
+> 这样优化之后，内存的初始化被放到了instance分配内存地址的后面，这样的话当线程1执行步骤3这段赋值指令后，刚好有另外一个线程2进入getInstance方法判断instance不为null，这个时候线程2拿到的instance对应的内存其实还未初始化，这个时候拿去使用就会导致出错。
+
+**所以我们在用这种方式实现单例模式时，会使用volatile关键字修饰instance变量，这是因为volatile关键字除了可以保证变量可见性之外，还具有防止指令重排序的作用。当用volatile修饰instance之后，JVM执行时就不会对上面提到的初始化指令进行重排序优化，这样也就不会出现多线程安全问题了**。
+
+### hashmap什么时候用到了红黑树
+当 HashMap 中有大量的元素都存放到同一个桶中时，这个桶下有一条长长的链表，这个时候 HashMap 就相当于一个单链表，假如单链表有 n 个元素，遍历的时间复杂度就是 O(n)，完全失去了它的优势。
+针对这种情况，JDK 1.8 中引入了 红黑树（查找时间复杂度为 O(logn)）来优化这个问题。
+- [参考](https://blog.csdn.net/wushiwude/article/details/75331926)
+
+### 介绍红黑树特点（不是严格意义平衡，插入删除最多两次自旋，时间复杂度O(logn)等），为什么不用AVL树
+- 每个结点要么是红的要么是黑的。（红或黑）
+- 根结点是黑的。 （根黑）
+- 每个叶结点（叶结点即指树尾端NIL指针或NULL结点）都是黑的。 （叶黑）
+- 如果一个结点是红的，那么它的两个儿子都是黑的。 （红子黑）
+- 对于任意结点而言，其到叶结点树尾端NIL指针的每条路径都包含相同数目的黑结点。（路径下黑相同）
+为什么不用AVL：
+- AVL树更加严格平衡,因此可以提供更快的查找效果。因此,对于查找密集型任务,使用AVL树。
+- 对于插入密集型任务,请使用红黑树。'
+- AVL树在每个节点存储平衡因子。这需要。但是,如果我们知道将插入树中的键总是大于零,我们可以使用键的符号位来存储红黑树的颜色信息。因此,在这种情况下,红黑树占用,因此与AVL树相比更有效和有用。
+- 通常, AVL树的旋转比红黑树的旋转更难实现和调试。
+- 因此，红黑树更加通用，它们在添加、删除和查找方面表现相对较好，但AVL树的查找速度更快，代价是添加/删除速度较慢。
+
+## 美团三面
+### 介绍了两个项目
+略
+### 看过阿里电商的项目结构吗？（没有，随便说了说我的项目怎么做的）
+略
+### 怎么解决超卖（答：redis + mysql乐观锁）
+
+### 职业规划 + 想成为tech lead应该应该具备什么条件
+略
