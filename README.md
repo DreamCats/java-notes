@@ -54,13 +54,21 @@
 ## 吐血系列
 - **个人吐血系列-总结Java基础**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java基础.md)->[博客阅读](http://dreamcat.ink/2020/03/27/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-chu/)->[掘金阅读](https://juejin.im/post/5e7e0615f265da795568754b)
 - **个人吐血系列-总结Java集合**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java集合.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-he/)->[掘金阅读](https://juejin.im/post/5e801e29e51d45470b4fce1c)
-- **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘金阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘金阅读-2](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c)
+- **个人吐血系列-总结Java多线程**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java多线程.md)->[博客阅读](http://dreamcat.ink/2020/03/25/ge-ren-tu-xie-xi-lie-zong-jie-java-duo-xian-cheng/)->[掘金阅读-1](https://juejin.im/post/5e7e0e4ce51d4546cd2fcc7c) [掘金阅读-2](https://juejin.im/post/5e7e10b5518825739b2d1fb1)
 - **个人吐血系列-总结JVM**: [本地阅读](/Interview/crazy/个人吐血系列-总结JVM.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-jvm/)->[掘金阅读](https://juejin.im/post/5e8344486fb9a03c786ef885)
 - **个人吐血系列-总结Spring**: [本地阅读](/Interview/crazy/个人吐血系列-总结Spring.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-spring/)->[掘金阅读](https://juejin.im/post/5e846a4a6fb9a03c42378bc1)
 - **个人吐血系列-总结Mybatis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Mybatis.md)->[博客阅读](http://dreamcat.ink/2020/03/29/ge-ren-tu-xie-xi-lie-zong-jie-mybatis/)->[掘金阅读](https://juejin.im/post/5e889b196fb9a03c875c8f50)
 - **个人吐血系列-总结MySQL**: [本地阅读](/Interview/crazy/个人吐血系列-总结MySQL.md)->[博客阅读](http://dreamcat.ink/2020/03/30/ge-ren-tu-xie-xi-lie-zong-jie-mysql/)->[掘金阅读](https://juejin.im/post/5e94116551882573b86f970f)
 - **个人吐血系列-总结Redis**: [本地阅读](/Interview/crazy/个人吐血系列-总结Redis.md)->[博客阅读](http://dreamcat.ink/2020/03/31/ge-ren-tu-xie-xi-lie-zong-jie-redis/)->[掘金阅读](https://juejin.im/post/5e9d6a9ff265da47e34c0e8a)
 - **个人吐血系列-总结计算机网络**: [本地阅读](/Interview/crazy/个人吐血系列-总结计算机网络.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)->[掘金阅读](https://juejin.im/post/5ea383c251882573716ab496)
+
+## 面经
+### 美团
+- [美团小象二面实习面经](/Interview/mianjing/meituan/meituan01.md)
+- [美团到店一、二面](/Interview/mianjing/meituan/meituan02.md)
+- [美团广告一、二面](/Interview/mianjing/meituan/meituan03.md)
+- [美团北京一、二、三面](/Interview/mianjing/meituan/meituan04.md)
+- [美团面经一、二、三面](/Interview/mianjing/meituan/meituan05.md)
 
 ## 微信公众号推荐
 
@@ -86,13 +94,6 @@
 - [位运算-专题](/LeetCode/数据结构-位运算.md)
 - [动态规划-专题](/LeetCode/数据结构-动态规划.md)
 
-## 面经
-### 美团
-- [美团小象二面实习面经](/Interview/mianjing/meituan/meituan01.md)
-- [美团到店一、二面](/Interview/mianjing/meituan/meituan02.md)
-- [美团广告一、二面](/Interview/mianjing/meituan/meituan03.md)
-- [美团北京一、二、三面](/Interview/mianjing/meituan/meituan04.md)
-- [美团面经一、二、三面](/Interview/mianjing/meituan/meituan05.md)
 
 ## 基础
 - [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
