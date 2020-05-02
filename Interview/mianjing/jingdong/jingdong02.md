@@ -194,3 +194,104 @@ public void refresh() throws BeansException, IllegalStateException {
 - wait通常被用于线程间交互/通信，sleep通常被用于暂停执行。
 - wait方法被调用后，线程不会自动苏醒，需要别的线程调用同一个对象上的notify或者notifyAll方法。sleep方法执行完成后，线程会自动苏醒。或者可以使用wait(long timeout)超时后线程会自动苏醒。
 
+### synchronized和volatile区别
+synchronized的修饰范围：
+- 修饰一个代码块
+- 修饰一个方法
+- 修饰一个类
+- 修饰一个静态的方法
+
+> 个人的理解是：因为同步关键字Synchronized不能修饰变量（不能直接使用synchronized声明一个变量），不能使变量得到共享，故引入了轻量级的Volatie
+
+volatile:
+- volatile可以修饰变量，共享变量。
+- 保障了共享变量对所有线程的可见性。即可保证在线程A将其修改时，线程B可以立刻得到。
+- 禁止指令重排序
+
+### 线程池的参数定义，大小
+先放一波变量定义
+```java
+    /**
+     * 用给定的初始参数创建一个新的ThreadPoolExecutor。
+     */
+    public ThreadPoolExecutor(int corePoolSize,//线程池的核心线程数量
+                              int maximumPoolSize,//线程池的最大线程数
+                              long keepAliveTime,//当线程数大于核心线程数时，多余的空闲线程存活的最长时间
+                              TimeUnit unit,//时间单位
+                              BlockingQueue<Runnable> workQueue,//任务队列，用来储存等待执行任务的队列
+                              ThreadFactory threadFactory,//线程工厂，用来创建线程，一般默认即可
+                              RejectedExecutionHandler handler//拒绝策略，当提交的任务过多而不能及时处理时，我们可以定制策略来处理任务
+                               ) {
+        if (corePoolSize < 0 ||
+            maximumPoolSize <= 0 ||
+            maximumPoolSize < corePoolSize ||
+            keepAliveTime < 0)
+            throw new IllegalArgumentException();
+        if (workQueue == null || threadFactory == null || handler == null)
+            throw new NullPointerException();
+        this.corePoolSize = corePoolSize;
+        this.maximumPoolSize = maximumPoolSize;
+        this.workQueue = workQueue;
+        this.keepAliveTime = unit.toNanos(keepAliveTime);
+        this.threadFactory = threadFactory;
+        this.handler = handler;
+    }
+```
+ThreadPoolExecutor 3 个最重要的参数：
+- `corePoolSize`:核心线程数定义了最小可以同时运行的线程数量。
+- `maximumPoolSize`:当队列中存放的任务达到队列容量的时候，当前可以同时运行的线程数量变为最大线程数。
+- `workQueue`:当新任务来的时候会先判断当前运行的线程数量是否达到了核心线程数，如果达到的话，信任就会被从存放到队列中中。
+
+ThreadPoolExecutor 其他常见参数：
+- `keepAliveTime`:当线程池中的线程数量大于`corePoolSize`的时候，如果这时没有新的任务提交，核心线程外的线程不会立即销毁，而是会等待，直到等待的时间超过了`keepAliveTime`才会被回收销毁
+- `unit`:`keepAliveTime`参数的时间单位
+- `threadFactory`:executor创建新线程的时候会用到。
+- `handle`:饱和策略。关于饱和策略下面单独介绍
+如果当前同时运行的线程数量达到最大线程数量并且队列也已经被放满了任时，`ThreadPoolTaskExecutor`定义一些策略:
+- `ThreadPoolExecutor.AbortPolicy`：抛出`RejectedExecutionException`来拒绝新任务的处理。
+- `ThreadPoolExecutor.CallerRunsPolicy`：调用执行自己的线程运行任务。您不会任务请求。但是这种策略会降低对于新任务提交速度，影响程序的整体性能。另外，这个策略喜欢增加队列容量。如果您的应用程序可以承受此延迟并且你不能任务丢弃任何一个任务请求的话，你可以选择这个策略。
+- `ThreadPoolExecutor.DiscardPolicy`： 不处理新任务，直接丢弃掉。
+- `ThreadPoolExecutor.DiscardOldestPolicy`： 此策略将丢弃最早的未处理的任务请求。
+
+大小：
+> 如果我们设置的线程池数量太小的话，如果同一时间有大量任务/请求需要处理，可能会导致大量的请求/任务在任务队列中排队等待执行，甚至会出现任务队列满了之后任务/请求无法处理的情况，或者大量任务堆积在任务队列导致 OOM。这样很明显是有问题的！ CPU 根本没有得到充分利用。
+> 但是，如果我们设置线程数量太大，大量线程可能会同时在争取 CPU 资源，这样会导致大量的上下文切换，从而增加线程的执行时间，影响了整体执行效率。
+
+- **CPU 密集型任务(N+1)**： 这种任务消耗的主要是 CPU 资源，可以将线程数设置为 N（CPU 核心数）+1，比 CPU 核心数多出来的一个线程是为了防止线程偶发的缺页中断，或者其它原因导致的任务暂停而带来的影响。一旦任务暂停，CPU 就会处于空闲状态，而在这种情况下多出来的一个线程就可以充分利用 CPU 的空闲时间。
+- **I/O 密集型任务(2N)**： 这种任务应用起来，系统会用大部分的时间来处理 I/O 交互，而线程在处理 I/O 的时间段内不会占用 CPU 来处理，这时就可以将 CPU 交出给其它线程使用。因此在 I/O 密集型任务的应用中，我们可以多配置一些线程，具体的计算方法是 2N。
+
+### java为何设计成单继承
+可以举个例子：
+> 在这里有个A类，我们又编写了两个类B类和C类，并且B类和C类分别继承了A类，并且对A类的同一个方法进行了覆盖。
+> 如果此时我们再次编写了一个D类，并且D类以多继承的方式同时集成了B类和C类，那么D类也会继承B类和C类从A类中重载的方法，那么问题来了，D类也开始犯迷糊了，我到底应该哪个继承哪个类中的方法呢，
+> 因为类是结构性的，这样就会造成结构上的混乱。这就是多继承的菱形继承问题。
+
+可以实现对个接口：
+> Java接口是行为性的，也就是说它只是定义某个行为的名称，而具体的行为的实现是集成接口的类实现的，
+> 因此就算两个接口中定义了两个名称完全相同的方法，当某个类去集成这两个接口时，
+> 类中也只会有一个相应的方法，这个方法的具体实现是这个类来进行编写的，所以并不会出现结构混乱的情况。
+
+### 继承和组合有啥区别
+继承：
+> 继承是Is a 的关系，比如说Student继承Person,则说明Student is a Person。继承的优点是子类可以重写父类的方法来方便地实现对父类的扩展。
+
+- 父类的内部细节对子类是可见的。
+- 子类从父类继承的方法在编译时就确定下来了，所以无法在运行期间改变从父类继承的方法的行为。
+- 子类与父类是一种高耦合，违背了面向对象思想。
+- 继承关系最大的弱点是打破了封装，子类能够访问父类的实现细节，子类与父类之间紧密耦合，子类缺乏独立性，从而影响了子类的可维护性。
+- 不支持动态继承。在运行时，子类无法选择不同的父类。
+
+组合：
+- 不破坏封装，整体类与局部类之间松耦合，彼此相对独立。
+- 具有较好的可扩展性。
+- 支持动态组合。在运行时，整体对象可以选择不同类型的局部对象。
+
+组合是has a的关系, 继承是is a的关系
+> 引用一句老话应该更能分清继承和组合的区别：组合可以被说成“我请了个老头在我家里干活” ，继承则是“我父亲在家里帮我干活"。
+
+总结：
+- 除非考虑使用多态，否则优先使用组合。
+- 要实现类似”多重继承“的设计的时候，使用组合。
+- 要考虑多态又要考虑实现“多重继承”的时候，使用组合+接口。
+
+
