@@ -189,3 +189,8 @@ public void refresh() throws BeansException, IllegalStateException {
 - [https://zhuanlan.zhihu.com/p/67915754](https://zhuanlan.zhihu.com/p/67915754)
 
 ### wait（）和sleep（）区别
+- 两者最主要的区别在于：**sleep方法没有释放锁，而wait方法释放了锁**。
+- 两者都可以暂停线程的执行。
+- wait通常被用于线程间交互/通信，sleep通常被用于暂停执行。
+- wait方法被调用后，线程不会自动苏醒，需要别的线程调用同一个对象上的notify或者notifyAll方法。sleep方法执行完成后，线程会自动苏醒。或者可以使用wait(long timeout)超时后线程会自动苏醒。
+
