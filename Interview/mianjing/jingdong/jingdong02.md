@@ -237,6 +237,8 @@ volatile:
         this.handler = handler;
     }
 ```
+![线程池参数](http://media.dreamcat.ink/uPic/线程池参数.png)
+
 ThreadPoolExecutor 3 个最重要的参数：
 - `corePoolSize`:核心线程数定义了最小可以同时运行的线程数量。
 - `maximumPoolSize`:当队列中存放的任务达到队列容量的时候，当前可以同时运行的线程数量变为最大线程数。

@@ -192,8 +192,8 @@ G1 收集器的运作大致分为以下几个步骤：
 ### 单例模式写一下代码
 ```java
 public class Singleton {
-//    private static Singleton instance = null; // valotile
     private static volatile Singleton instance = null;
+
     private Singleton() { } // 私有
 
     public static Singleton getInstance() { // 双重校验
@@ -210,3 +210,4 @@ public class Singleton {
     }
 }
 ```
+![Singleton](http://media.dreamcat.ink/uPic/Singleton.png)

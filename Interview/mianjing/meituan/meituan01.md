@@ -104,6 +104,8 @@ public class SingleNumbers {
     }
 }
 ```
+![SingleNumbers-1](http://media.dreamcat.ink/uPic/SingleNumbers-1.png)
+
 ### 无重复最长子串（HashMap）
 ```java
 public class LongestSubstring {
@@ -122,3 +124,4 @@ public class LongestSubstring {
     }
 }
 ```
+![LongestSubstring](http://media.dreamcat.ink/uPic/LongestSubstring.png)

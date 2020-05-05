@@ -509,6 +509,7 @@ public class Singleton {
     }
 }
 ```
+![Singleton](http://media.dreamcat.ink/uPic/Singleton.png)
 
 ### 单链表反转
 ```java

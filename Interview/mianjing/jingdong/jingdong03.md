@@ -104,8 +104,9 @@ Java虚拟机栈会出现两种异常：`StackOverFlowError`和`OutOfMemoryError
         this.threadFactory = threadFactory;
         this.handler = handler;
     }
-
 ```
+![线程池参数](http://media.dreamcat.ink/uPic/线程池参数.png)
+
 `ThreadPoolExecutor` 3 个最重要的参数：
 
 - `corePoolSize` : 核心线程数线程数定义了最小可以同时运行的线程数量。
