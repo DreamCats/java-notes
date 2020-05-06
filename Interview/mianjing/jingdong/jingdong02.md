@@ -40,7 +40,6 @@ appendfsync no  #让操作系统决定何时进行同步
 
 ### spring中的ioc运行机制
 ```java
-@Override
 public void refresh() throws BeansException, IllegalStateException {
    // 来个锁，不然 refresh() 还没结束，你又来个启动或销毁容器的操作，那不就乱套了嘛
    synchronized (this.startupShutdownMonitor) {
@@ -118,8 +117,9 @@ public void refresh() throws BeansException, IllegalStateException {
       }
    }
 }
-
 ```
+![spring-ioc](http://media.dreamcat.ink/uPic/spring-ioc.png)
+
 #### 大概总结
 1. Spring容器在启动的时候，先会保存所有注册进来的Bean的定义信息；
     1. xml注册bean

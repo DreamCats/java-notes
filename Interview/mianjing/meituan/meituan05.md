@@ -435,7 +435,6 @@ final boolean nonfairTryAcquire(int acquires) {
     }
     return false;
 }
-
 ```
 > 非公平锁的实现在刚进入lock方法时会直接使用一次CAS去尝试获取锁，不成功才会到acquire方法中，如注释2。而在nonfairTryAcquire方法中并没有判断是否有前驱节点在等待，直接CAS尝试获取锁，如注释3。由此实现了非公平锁。
 

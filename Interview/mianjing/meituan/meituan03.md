@@ -44,6 +44,7 @@ public class Solution {
     }
 }
 ```
+![hammingWeight](http://media.dreamcat.ink/uPic/hammingWeight.png)
 
 ### 最长不含重复字符的子字符串
 ```java
@@ -62,6 +63,7 @@ class Solution {
     }
 }
 ```
+![LongestSubstring](http://media.dreamcat.ink/uPic/LongestSubstring.png)
 
 ## 美团广告 二面
 
@@ -208,6 +210,7 @@ class Solution {
     }
 }
 ```
+![LongestSubstring](http://media.dreamcat.ink/uPic/LongestSubstring.png)
 
 ### 4G内存读取10G日志，统计其中出现频次最高的十个word，如何实现，如何使得速度更快
 - [教你如何迅速秒杀掉99%的海量数据处理面试题](https://juejin.im/entry/5a27cb796fb9a045104a5e8c)

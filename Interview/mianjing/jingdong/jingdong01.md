@@ -139,6 +139,8 @@ public class HeapSort {
     }
 }
 ```
+![HeapSort](http://media.dreamcat.ink/uPic/HeapSort.png)
+
 
 ### 垃圾回收算法 各自优缺点
 - 标记-清除

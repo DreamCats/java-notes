@@ -103,6 +103,7 @@ class Solution {
     }
 }
 ```
+![hammingWeight](http://media.dreamcat.ink/uPic/hammingWeight.png)
 
 ## 美团成都一面
 ### 自我介绍
@@ -485,6 +486,7 @@ class Solution {
     }
 }
 ```
+![climbStairs](http://media.dreamcat.ink/uPic/climbStairs.png)
 
 ### 写代码：写双重验证的单例模式
 ```java
@@ -527,6 +529,7 @@ class Solution {
     }
 }
 ```
+![reverseList](http://media.dreamcat.ink/uPic/reverseList.png)
 
 ## 美团成都三面
 ### redis如何保持和mysql的数据一致性
@@ -560,5 +563,6 @@ class Solution {
 		return alist;
 	}
 ```
+![二叉树-非递归-preOrder1](http://media.dreamcat.ink/uPic/二叉树-非递归-preOrder1.png)
 
 
