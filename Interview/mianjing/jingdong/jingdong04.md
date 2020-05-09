@@ -395,5 +395,103 @@ b+树的非叶子节点不保存数据，只保存子树的临界值（最大或
 
 **mybatis中的#和$的区别：**
 - `#`将传入的数据都当成一个字符串，会对自动传入的数据加一个双引号。
+如：`where username=#{username}`，如果传入的值是111,那么解析成sql时的值为`where username="111"`, 如果传入的值是id，则解析成的sql为`where username="id"`.　
+- `$`将传入的数据直接显示生成在sql中。如：`where username=${username}`，如果传入的值是111,那么解析成sql时的值为`where username=111`；如果传入的值是：`drop table user;`，则解析成的sql为：`select id, username, password, role from user where username=;drop table user`;
+- `#`方式能够很大程度防止sql注入，`$`方式无法防止Sql注入。
+- `$`方式一般用于传入数据库对象，例如传入表名.
+- 一般能用`#`的就别用`$`，若不得不使用`“${xxx}”`这样的参数，要手工地做好过滤工作，来防止sql注入攻击。
+- 在MyBatis中，`“${xxx}”`这样格式的参数会直接参与SQL编译，从而不能避免注入攻击。但涉及到动态表名和列名时，只能使用`“${xxx}”`这样的参数格式。所以，这样的参数需要我们在代码中手工进行处理来防止注入。
 
+**sql注入**：
+>  **SQL注入**，大家都不陌生，是一种常见的攻击方式。**攻击者**在界面的表单信息或URL上输入一些奇怪的SQL片段（例如“or ‘1’=’1’”这样的语句），有可能入侵**参数检验不足**的应用程序。所以，在我们的应用中需要做一些工作，来防备这样的攻击方式。在一些安全性要求很高的应用中（比如银行软件），经常使用将**SQL语句**全部替换为**存储过程**这样的方式，来防止SQL注入。这当然是**一种很安全的方式**，但我们平时开发中，可能不需要这种死板的方式。
+
+**mybatis是如何做到防止sql注入的**
+ MyBatis框架作为一款半自动化的持久层框架，其SQL语句都要我们自己手动编写，这个时候当然需要防止SQL注入。其实，MyBatis的SQL是一个具有“**输入+输出**”的功能，类似于函数的结构，参考上面的两个例子。其中，parameterType表示了输入的参数类型，resultType表示了输出的参数类型。回应上文，如果我们想防止SQL注入，理所当然地要在输入参数上下功夫。上面代码中使用#的即输入参数在SQL中拼接的部分，传入参数后，打印出执行的SQL语句，会看到SQL是这样的：
+```sql
+select id, username, password, role from user where username=? and password=?
+```
+不管输入什么参数，打印出的SQL都是这样的。这是因为MyBatis启用了预编译功能，在SQL执行前，会先将上面的SQL发送给数据库进行编译；执行时，直接使用编译好的SQL，替换占位符“?”就可以了。因为SQL注入只能对编译过程起作用，所以这样的方式就很好地避免了SQL注入的问题。
+ [底层实现原理]MyBatis是如何做到SQL预编译的呢？其实在框架底层，是JDBC中的PreparedStatement类在起作用，PreparedStatement是我们很熟悉的Statement的子类，它的对象包含了编译好的SQL语句。这种“准备好”的方式不仅能提高安全性，而且在多次执行同一个SQL时，能够提高效率。原因是SQL已编译好，再次执行时无需再编译。
+ ```java
+ //安全的，预编译了的
+ Connection conn = getConn();//获得连接
+ String sql = "select id, username, password, role from user where id=?"; //执行sql前会预编译号该条语句
+ PreparedStatement pstmt = conn.prepareStatement(sql); 
+ pstmt.setString(1, id); 
+ ResultSet rs=pstmt.executeUpdate(); 
+ ......
+```
+```java
+ //不安全的，没进行预编译
+ private String getNameByUserId(String userId) {
+     Connection conn = getConn();//获得连接
+     String sql = "select id,username,password,role from user where id=" + id;
+     //当id参数为"3;drop table user;"时，执行的sql语句如下:
+     //select id,username,password,role from user where id=3; drop table user;  
+     PreparedStatement pstmt =  conn.prepareStatement(sql);
+     ResultSet rs=pstmt.executeUpdate();
+     ......
+ }
+```
+**结论**：
+- **\#{}**：相当于JDBC中的PreparedStatement
+- **${}**：是输出变量的值
+简单说，#{}是经过预编译的，是安全的；${}是未经过预编译的，仅仅是取变量的值，是非安全的，存在SQL注入。
+
+### 设计模式会吗，单例设计模式？
+```java
+public class Singleton {
+    private static volatile Singleton instance = null;
+
+    private Singleton() { } // 私有
+
+    public static Singleton getInstance() { // 双重校验
+        //第一次判断
+        if(instance == null) {
+            synchronized (Singleton.class) { // 加锁
+                if(instance == null) {
+                    //初始化，并非原子操作
+                    instance = new Singleton(); // 这一行代码展开其实分三步走
+                }
+            }
+        }
+        return instance;
+    }
+}
+```
+![Singleton](http://media.dreamcat.ink/uPic/Singleton.png)
+
+### 分布式设计原理CAP
+CAP原则又称CAP定理，指的是在一个分布式系统中：
+- Consistency（一致性）：每次读操作都能保证返回的是最新数据；
+- Availability（可用性）：任何一个没有发生故障的节点，会在合理的时间内返回一个正常的结果；
+> 备注：在集群中一部分节点故障后，集群整体是否还能响应客户端的读写请求。（对数据更新具备高可用性），换句话就是说，任何时候，任何应用程序都可以读写数据
+- Partition tolerance（分区容错性）：以当节点间出现网络分区，照样可以提供服务。
+
+### jdk1.7和jdk1.8的变化
+- Java 8允许我们给接口添加一个非抽象的方法实现，只需要使用 default关键字即可，这个特征又叫做扩展方法。
+- Lambda 表达式
+- 方法与构造函数引用
+- 函数式接口
+- Annotation 注解（多重注解）
+- 新的日期时间 API
+- 在Java 8中，Base64编码成为了Java类库的标准。Base64类同时还提供了对URL、MIME友好的编码器与解码器。
+- Stream的使用
+- Java 8引入Optional类来防止空指针异常
+- 支持对数组进行并行处理，主要是parallelSort()方法
+- 对HashMap、CurrentHashMap做了升级
+
+### IO和NIO的区别
+IO：
+- 按照流的流向分，可以分为输入流和输出流；
+- 按照操作单元划分，可以划分为字节流和字符流；
+- 按照流的角色划分为节点流和处理流。
+
+NIO：
+> NIO是一种同步非阻塞的I/O模型，在Java 1.4 中引入了NIO框架，对应 java.nio 包，提供了 Channel , Selector，Buffer等抽象。
+> NIO中的N可以理解为Non-blocking，不单纯是New。
+> 它支持面向缓冲的，基于通道的I/O操作方法。 NIO提供了与传统BIO模型中的 Socket 和 ServerSocket 相对应的 SocketChannel 和 ServerSocketChannel 两种不同的套接字通道实现,两种通道都支持阻塞和非阻塞两种模式。
+> 阻塞模式使用就像传统中的支持一样，比较简单，但是性能和可靠性都不好；非阻塞模式正好与之相反。
+> 对于低负载、低并发的应用程序，可以使用同步阻塞I/O来提升开发速率和更好的维护性；
+> 对于高负载、高并发的（网络）应用，应使用 NIO 的非阻塞模式来开发
 
