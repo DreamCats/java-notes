@@ -349,3 +349,51 @@ MyISAM：
 - 不支持事务。
 - 不支持行级锁，只能对整张表加锁，读取时会对需要读到的所有表加共享锁，写入时则对表加排它锁。但在表有读取操作的同时，也可以往表中插入新的记录，这被称为并发插入(CONCURRENT INSERT)。
 
+#### 索引类型
+- FULLTEXT
+  即为全文索引，目前只有MyISAM引擎支持。其可以在CREATE TABLE ，ALTER TABLE ，CREATE INDEX 使用，不过目前只有 CHAR、VARCHAR ，TEXT 列上可以创建全文索引。
+- HASH
+  由于HASH的唯一（几乎100%的唯一）及类似键值对的形式，很适合作为索引。
+  HASH索引可以一次定位，不需要像树形索引那样逐层查找,因此具有极高的效率。但是，这种高效是有条件的，即只在“=”和“in”条件下高效，对于范围查询、排序及组合索引仍然效率不高。
+- BTREE
+  BTREE索引就是一种将索引值按一定的算法，存入一个树形的数据结构中（二叉树），每次查询都是从树的入口root开始，依次遍历node，获取leaf。这是MySQL里默认和最常用的索引类型。
+- RTREE
+  RTREE在MySQL很少使用，仅支持geometry数据类型，支持该类型的存储引擎只有MyISAM、BDb、InnoDb、NDb、Archive几种。
+  相对于BTREE，RTREE的优势在于范围查找。
+
+#### B+树
+B+ 树是一种树数据结构，通常用于关系型数据库（如Mysql）和操作系统的文件系统中。B+ 树的特点是能够保持数据稳定有序，其插入与修改拥有较稳定的对数时间复杂度。B+ 树元素自底向上插入，这与二叉树恰好相反。
+在B树基础上，为叶子结点增加链表指针（B树+叶子有序链表），所有关键字都在叶子结点 中出现，非叶子结点作为叶子结点的索引；B+树总是到叶子结点才命中。
+b+树的非叶子节点不保存数据，只保存子树的临界值（最大或者最小），所以同样大小的节点，b+树相对于b树能够有更多的分支，使得这棵树更加矮胖，查询时做的IO操作次数也更少。
+
+### mysql 的共享锁和排它锁
+
+#### 共享锁
+> 共享锁又称为读锁，简称S锁，顾名思义，共享锁就是多个事务对于同一数据可以共享一把锁，都能访问到数据，但是只能读不能修改。
+
+#### 排它锁
+> 排他锁又称为写锁，简称X锁，顾名思义，排他锁就是不能与其他所并存，如一个事务获取了一个数据行的排他锁，其他事务就不能再获取该行的其他锁，包括共享锁和排他锁，但是获取排他锁的事务是可以对数据就行读取和修改。
+
+### mybatis如何防止sql注入
+**首先看一下下面两个sql语句的区别：**
+```mysql
+ <select id="selectByNameAndPassword" parameterType="java.util.Map" resultMap="BaseResultMap"
+ select id, username, password, role
+ from user
+ where username = #{username,jdbcType=VARCHAR}
+ and password = #{password,jdbcType=VARCHAR}
+ </select
+```
+```mysql
+ <select id="selectByNameAndPassword" parameterType="java.util.Map" resultMap="BaseResultMap"
+ select id, username, password, role
+ from user
+ where username = ${username,jdbcType=VARCHAR}
+ and password = ${password,jdbcType=VARCHAR}
+ </select
+```
+
+**mybatis中的#和$的区别：**
+- `#`将传入的数据都当成一个字符串，会对自动传入的数据加一个双引号。
+
+
