@@ -501,31 +501,15 @@ NIO：
 
 ### 线程池的参数
 ```java
-    /**
-     * 用给定的初始参数创建一个新的ThreadPoolExecutor。
-     */
-    public ThreadPoolExecutor(int corePoolSize,//线程池的核心线程数量
-                              int maximumPoolSize,//线程池的最大线程数
-                              long keepAliveTime,//当线程数大于核心线程数时，多余的空闲线程存活的最长时间
-                              TimeUnit unit,//时间单位
-                              BlockingQueue<Runnable> workQueue,//任务队列，用来储存等待执行任务的队列
-                              ThreadFactory threadFactory,//线程工厂，用来创建线程，一般默认即可
-                              RejectedExecutionHandler handler//拒绝策略，当提交的任务过多而不能及时处理时，我们可以定制策略来处理任务
-                               ) {
-        if (corePoolSize < 0 ||
-            maximumPoolSize <= 0 ||
-            maximumPoolSize < corePoolSize ||
-            keepAliveTime < 0)
-            throw new IllegalArgumentException();
-        if (workQueue == null || threadFactory == null || handler == null)
-            throw new NullPointerException();
-        this.corePoolSize = corePoolSize;
-        this.maximumPoolSize = maximumPoolSize;
-        this.workQueue = workQueue;
-        this.keepAliveTime = unit.toNanos(keepAliveTime);
-        this.threadFactory = threadFactory;
-        this.handler = handler;
-    }
+public ThreadPoolExecutor(int corePoolSize,//线程池的核心线程数量
+                          int maximumPoolSize,//线程池的最大线程数
+                          long keepAliveTime,//当线程数大于核心线程数时，多余的空闲线程存活的最长时间
+                          TimeUnit unit,//时间单位
+                          BlockingQueue<Runnable> workQueue,//任务队列，用来储存等待执行任务的队列
+                          ThreadFactory threadFactory,//线程工厂，用来创建线程，一般默认即可
+                          RejectedExecutionHandler handler//拒绝策略，当提交的任务过多而不能及时处理时，我们可以定制策略来处理任务
+                           )
+}
 ```
 ![线程池参数](http://media.dreamcat.ink/uPic/线程池参数.png)
 ThreadPoolExecutor 3 个最重要的参数：
@@ -598,3 +582,136 @@ Java锁机制可归为Sychornized锁和Lock锁两类。Synchronized是基于JVM�
 - Synchronized是一个非公平、悲观、独享、互斥、可重入的重量级锁。
 - ReentrantLock是一个默认非公平但可实现公平的、悲观、独享、互斥、可重入、重量级锁。
 - ReentrantReadWriteLock是一个默认非公平但可实现公平的、悲观、写独享、读共享、读写、可重入、重量级锁。
+
+### CAS的有哪些实现？
+> **我们在读Concurrent包下的类的源码时，发现无论是**ReenterLock内部的AQS，还是各种Atomic开头的原子类，内部都应用到了`CAS`
+
+#### 涉及一下底层
+```java
+public class Test {
+
+    public AtomicInteger i;
+
+    public void add() {
+        i.getAndIncrement();
+    }
+}
+```
+
+**我们来看`getAndIncrement`的内部**：
+```java
+public final int getAndIncrement() {
+    return unsafe.getAndAddInt(this, valueOffset, 1);
+}
+```
+
+**再深入到`getAndAddInt`()**:
+
+```java
+public final int getAndAddInt(Object var1, long var2, int var4) {
+    int var5;
+    do {
+        var5 = this.getIntVolatile(var1, var2);
+    } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
+
+    return var5;
+}
+```
+**现在重点来了，`compareAndSwapInt（var1, var2, var5, var5 + var4）`其实换成`compareAndSwapInt（obj, offset, expect, update）`比较清楚，意思就是如果`obj`内的`value`和`expect`相等，就证明没有其他线程改变过这个变量，那么就更新它为`update`，如果这一步的`CAS`没有成功，那就采用自旋的方式继续进行`CAS`操作，取出乍一看这也是两个步骤了啊，其实在`JNI`里是借助于一个`CPU`指令完成的。所以还是原子操作。**
+
+#### CAS底层
+```
+UNSAFE_ENTRY(jboolean, Unsafe_CompareAndSwapInt(JNIEnv *env, jobject unsafe, jobject obj, jlong offset, jint e, jint x))
+  UnsafeWrapper("Unsafe_CompareAndSwapInt");
+  oop p = JNIHandles::resolve(obj);
+  jint* addr = (jint *) index_oop_from_field_offset_long(p, offset);
+  return (jint)(Atomic::cmpxchg(x, addr, e)) == e;
+UNSAFE_END
+```
+**p是取出的对象，addr是p中offset处的地址，最后调用了`Atomic::cmpxchg(x, addr, e)`, 其中参数x是即将更新的值，参数e是原内存的值。代码中能看到cmpxchg有基于各个平台的实现。**
+
+#### ABA问题
+描述: 第一个线程取到了变量 x 的值 A，然后巴拉巴拉干别的事，总之就是只拿到了变量 x 的值 A。这段时间内第二个线程也取到了变量 x 的值 A，然后把变量 x 的值改为 B，然后巴拉巴拉干别的事，最后又把变量 x 的值变为 A （相当于还原了）。在这之后第一个线程终于进行了变量 x 的操作，但是此时变量 x 的值还是 A，所以 compareAndSet 操作是成功。
+
+**目前在JDK的atomic包里提供了一个类`AtomicStampedReference`来解决ABA问题。**
+
+```java
+public class ABADemo {
+    static AtomicInteger atomicInteger = new AtomicInteger(100);
+    static AtomicStampedReference<Integer> atomicStampedReference = new AtomicStampedReference<>(100, 1);
+
+    public static void main(String[] args) {
+        System.out.println("=====ABA的问题产生=====");
+        new Thread(() -> {
+            atomicInteger.compareAndSet(100, 101);
+            atomicInteger.compareAndSet(101, 100);
+        }, "t1").start();
+
+        new Thread(() -> {
+            // 保证线程1完成一次ABA问题
+            try { TimeUnit.SECONDS.sleep(1); } catch (InterruptedException e) { e.printStackTrace(); }
+            System.out.println(atomicInteger.compareAndSet(100, 2020) + " " + atomicInteger.get());
+        }, "t2").start();
+        try { TimeUnit.SECONDS.sleep(2); } catch (InterruptedException e) { e.printStackTrace(); }
+
+        System.out.println("=====解决ABA的问题=====");
+        new Thread(() -> {
+            int stamp = atomicStampedReference.getStamp(); // 第一次获取版本号
+            System.out.println(Thread.currentThread().getName() + " 第1次版本号" + stamp);
+            try { TimeUnit.SECONDS.sleep(2); } catch (InterruptedException e) { e.printStackTrace(); }
+            atomicStampedReference.compareAndSet(100, 101, atomicStampedReference.getStamp(), atomicStampedReference.getStamp() + 1);
+            System.out.println(Thread.currentThread().getName() + "\t第2次版本号" + atomicStampedReference.getStamp());
+            atomicStampedReference.compareAndSet(101, 100, atomicStampedReference.getStamp(), atomicStampedReference.getStamp() + 1);
+            System.out.println(Thread.currentThread().getName() + "\t第3次版本号" + atomicStampedReference.getStamp());
+        }, "t3").start();
+
+        new Thread(() -> {
+            int stamp = atomicStampedReference.getStamp();
+            System.out.println(Thread.currentThread().getName() + "\t第1次版本号" + stamp);
+            try { TimeUnit.SECONDS.sleep(4); } catch (InterruptedException e) { e.printStackTrace(); }
+            boolean result = atomicStampedReference.compareAndSet(100, 2020, stamp, stamp + 1);
+            System.out.println(Thread.currentThread().getName() + "\t修改是否成功" + result + "\t当前最新实际版本号：" + atomicStampedReference.getStamp());
+            System.out.println(Thread.currentThread().getName() + "\t当前最新实际值：" + atomicStampedReference.getReference());
+        }, "t4").start();
+
+    }
+}
+```
+### 分布式CAP了解吗
+一面有
+
+### JVM内存分配
+一面有
+
+### full GC的原因？
+1. System.gc()方法的调用
+2. 老年代不足
+3. 永久代不足
+4. concurrent mode failure
+> concurrent mode failure是在执行CMS GC的过程中同时有对象要放入老年代，而此时老年代空间不足造成的（有时候“空间不足”是CMS GC时当前的浮动垃圾过多导致暂时性的空间不足触发Full GC）。
+5. promotion failed
+> minor gc时年轻代的存活区空间不足而晋升老年代，老年代又空间不足而触发full gc。
+
+6. 统计得到的Minor GC晋升到旧生代的平均大小大于老年代的剩余空间
+
+### 堆内存的容量？
+[https://zhuanlan.zhihu.com/p/66209174](https://zhuanlan.zhihu.com/p/66209174)
+
+### 访问一个网址的过程？DNS解析过程
+访问一个网址的过程：
+- 根据域名，进行DNS域名解析；
+- 拿到解析的IP地址，建立TCP连接；
+- 向IP地址，发送HTTP请求；
+- 服务器处理请求；
+- 返回响应结果；
+- 关闭TCP连接；
+- 浏览器解析HTML；
+- 浏览器布局渲染；
+
+DNS解析过程：
+![DNS解析过程](http://media.dreamcat.ink/uPic/DNS解析过程.png)
+- 请求一旦发起，若是chrome浏览器，先在浏览器找之前**有没有缓存过的域名所对应的ip地址**，有的话，直接跳过dns解析了，若是没有，就会**找硬盘的hosts文件**，看看有没有，有的话，直接找到hosts文件里面的ip
+- 如果本地的hosts文件没有能的到对应的ip地址，浏览器会发出一个**dns请求到本地dns服务器**，**本地dns服务器一般都是你的网络接入服务器商提供**，比如中国电信，中国移动等。
+- 查询你输入的网址的DNS请求到达本地DNS服务器之后，**本地DNS服务器会首先查询它的缓存记录**，如果缓存中有此条记录，就可以直接返回结果，此过程是**递归的方式进行查询**。如果没有，本地DNS服务器还要向**DNS根服务器**进行查询。
+- 本地DNS服务器继续向域服务器发出请求，在这个例子中，请求的对象是.com域服务器。.com域服务器收到请求之后，也不会直接返回域名和IP地址的对应关系，而是告诉本地DNS服务器，你的域名的解析服务器的地址。
+- 最后，本地DNS服务器向**域名的解析服务器**发出请求，这时就能收到一个域名和IP地址对应关系，本地DNS服务器不仅要把IP地址返回给用户电脑，还要把这个对应关系保存在缓存中，以备下次别的用户查询时，可以直接返回结果，加快网络访问。
