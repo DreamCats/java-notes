@@ -39,6 +39,8 @@
 - [Mybatis常见问题](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71) **常见的Mybatis面试的问题...**
 - [MySQL常见问题](https://www.processon.com/view/link/5e9b0cb15653bb1a686e17ea) **常见的MySQL面试的问题...**
 - [Redis常见问题](https://www.processon.com/view/link/5ea2da5907912948b0d89a0a) **常见的Redis面试的问题...**
+- [计算机网络常见问题](https://www.processon.com/view/link/5eb8c93be401fd16f42b5f77) **常见的计算机网络面试的问题...**
+- [Dubbo常见问题](https://www.processon.com/view/link/5eb8c9715653bb6f2aff7c11) **常见的Dubbo的问题...**
 
 ## 微服务班车在线预约系统
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
@@ -76,6 +78,7 @@
 - [京东-2](/Interview/mianjing/jingdong/jingdong02.md)
 - [京东-3](/Interview/mianjing/jingdong/jingdong03.md)
 - [京东-4](/Interview/mianjing/jingdong/jingdong04.md)
+- [京东-5](/Interview/mianjing/jingdong/jingdong05.md)
 
 ## 微信公众号推荐
 
