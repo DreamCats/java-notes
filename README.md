@@ -103,6 +103,8 @@
 - [哈希表-专题](/LeetCode/数据结构-哈希表.md)
 - [位运算-专题](/LeetCode/数据结构-位运算.md)
 - [动态规划-专题](/LeetCode/数据结构-动态规划.md)
+- [排序-专题](/LeetCode/数据结构-排序.md)
+- [查找-专题](/LeetCode/数据结构-查找.md)
 
 
 ## 基础
@@ -228,21 +230,14 @@
 
 
 ## Interview
+
+### 线程
+
+### 其他
 - [设计一个LRU](/Interview/src/LRUDemo.md)
 - [二叉树的深度搜索遍历](/Interview/src/DFSDemo.java)
 
-## Sorts(排序)
-- [冒泡排序](/Sorts/src/BubbleSort.java)
-- [选择排序](/Sorts/src/SelectSort.java)
-- [插入排序](/Sorts/src/InsertSort.java)
-- [归并排序](/Sorts/src/MergeSort.java)
-- [快速排序](/Sorts/src/QuickSort.java)
-- [堆排序](/Sorts/src/HeapSort.java)
-
-## Searchs(查找)
-- [二分查找](/Searchs/src/BinarySearch.java)
-
-## DesignPattern(设计模式)
+### DesignPattern(设计模式)
 - [单例模式](/SwordOffer/src/T2.java)
 - [工厂模式](/DesignPattern/src/FactoryMode.java)
 - [代理模式](/DesignPattern/src/ProxyMode.java)
