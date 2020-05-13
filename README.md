@@ -80,6 +80,8 @@
 - [京东-4](/Interview/mianjing/jingdong/jingdong04.md)
 - [京东-5](/Interview/mianjing/jingdong/jingdong05.md)
 
+### 拼多多
+
 ## 微信公众号推荐
 
 - **JavaGuide**：大家都懂的，帮这位老哥宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
@@ -104,7 +106,7 @@
 - [位运算-专题](/LeetCode/数据结构-位运算.md)
 - [动态规划-专题](/LeetCode/数据结构-动态规划.md)
 - [排序-专题](/LeetCode/数据结构-排序.md)
-- [查找-专题](/LeetCode/数据结构-查找.md)
+- [查找-专题](/LeetCode/数据结构-二分法.md)
 
 
 ## 基础
@@ -229,21 +231,23 @@
 - [linux-基础](/Interview/linux/linux-基础.md)
 
 
-## Interview
+## 手撕代码系列
 
 ### 线程
+
+### 设计模式
+- [单例模式](/Interview/codes/modes/单例模式.md)
+- [工厂模式](/Interview/codes/modes/工厂模式.md)
+- [代理模式](/Interview/codes/modes/带来模式.md)
+- [模版方法模式](/Interview/codes/modes/模板方法模式.md)
+- [观察者模式](/Interview/codes/modes/观察者模式.md)
+- [装饰器模式](/Interview/codes/modes/装饰器模式.md)
 
 ### 其他
 - [设计一个LRU](/Interview/src/LRUDemo.md)
 - [二叉树的深度搜索遍历](/Interview/src/DFSDemo.java)
 
-### DesignPattern(设计模式)
-- [单例模式](/SwordOffer/src/T2.java)
-- [工厂模式](/DesignPattern/src/FactoryMode.java)
-- [代理模式](/DesignPattern/src/ProxyMode.java)
-- [模版方法模式](/DesignPattern/src/TemplateMode.java)
-- [观察者模式](/DesignPattern/src/ObserverMode.java)
-- [装饰器模式](/DesignPattern/src/DecoratorMode.java)
+
 
 
 ## 工具篇
