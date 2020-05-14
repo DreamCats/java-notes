@@ -177,8 +177,6 @@
 ### 参考笔记
 - [b站视频入口](https://www.bilibili.com/video/av32102436?p=1)
 - [代码资料](https://gitee.com/adanzzz/spring_source_parsing_data)
-
-### 思维导图
 - [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
 
 ### 源码总结
@@ -211,20 +209,18 @@
 - [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
 - [计算机网络面试常见问题](Interview/network/计算机网络面试常见问题.md)
 
-## MySQL
+## 数据库
 - [SQL-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
 - [MySQL中ACID的原理](/Interview/mysql/Mysql中ACID的原理.md)
 - [SQL-存储引擎](/Interview/mysql/sql-存储引擎.md)
 - [SQL-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 - [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
 
-## Redis
+### Redis
 - [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
 
-## Dubbo
+## 分布式
 - [Dubbo-面试常见问题](/Interview/crazy/个人吐血系列-总结Dubbo.md)
-
-## RocketMQ
 - [消息队列-RocketMQ面试常见问题](Interview/crazy/个人吐血系列-总结RocketMQ.md)
 
 ## Linux
@@ -233,7 +229,7 @@
 
 ## 手撕代码系列
 
-### 线程
+
 
 ### 设计模式
 - [单例模式](/Interview/codes/modes/单例模式.md)
