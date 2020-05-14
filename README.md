@@ -228,7 +228,7 @@
 
 
 ## 手撕代码系列
-
+- [equals和hashcode](/Interview/codes/basics/equals和hashcode.md)
 
 
 ### 设计模式
