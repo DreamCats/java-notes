@@ -231,6 +231,7 @@
 - [equals和hashcode](/Interview/codes/basics/equals和hashcode.md)
 - [类型转换的问题](/Interview/codes/basics/类型转换的问题.md)
 - [String的一些问题](/Interview/codes/basics/String的一些问题.md)
+- [面向对象的一些问题](/Interview/codes/basics/面向对象的一些问题.md)
 
 
 ### 设计模式
