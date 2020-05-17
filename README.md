@@ -44,6 +44,7 @@
 
 ## 微服务班车在线预约系统
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
+- [BUG排查之一](https://github.com/DreamCats/school-bus/blob/master/doc/%E4%B8%8A%E7%BA%BF%E9%81%87%E5%88%B0%E7%9A%84bug.md)
 
 ## 个人事迹
 
