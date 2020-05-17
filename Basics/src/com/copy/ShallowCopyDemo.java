@@ -10,7 +10,7 @@ package com.copy;
 public class ShallowCopyDemo {
     public static void main(String[] args) throws CloneNotSupportedException {
         // 原始对象
-        Student student = new Student(new Subject("买"), "峰");
+        Student student = new Student(new Subject("code"), "dream");
         System.out.println("原始对象: " + student.getName() + " - " + student.getSubject().getName());
 
         // 拷贝对象
@@ -26,8 +26,8 @@ public class ShallowCopyDemo {
         // 原始对象和拷贝对象的subj属性是否一样
         System.out.println("原始对象和拷贝对象的subj属性是否一样: " + (student.getSubject() == cloneStu.getSubject()));
 
-        student.setName("小");
-        student.getSubject().setName("疯");
+        student.setName("cat");
+        student.getSubject().setName("eat");
         System.out.println("更新后的原始对象: " + student.getName() + " - " + student.getSubject().getName());
         System.out.println("更新原始对象后的克隆对象: " + cloneStu.getName() + " - " + cloneStu.getSubject().getName());
 
