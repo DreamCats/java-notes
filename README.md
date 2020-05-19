@@ -229,6 +229,7 @@
 - [反射的一些问题](/Interview/codes/basics/反射的一些问题.md)
 - [集合总览](/Interview/codes/collection/集合总览.md)
 - [ArrayList的一些问题](/Interview/codes/collection/ArrayList的一些问题.md)
+- [LinkedList的一些问题](/Interview/codes/collection/LinkedList的一些问题.md)
 
 
 ### 设计模式
