@@ -138,6 +138,11 @@ final Node<K,V> getNode(int hash, Object key) {
 - 这样当获取一个不存在的key时，计算出的index正好是环形链表的下标就会出现死循环。
 - **但是1.7的头插法造成的问题，1.8改变了插入顺序，就解决了这个问题，但是为了内存可见性等安全性，还是需要ConCurrentHashMap**
 
+### Java 中有 HashTable、Collections.synchronizedMap、以及 ConcurrentHashMap 可以实现线程安全的 Map。
+- HashTable 是直接在操作方法上加 synchronized 关键字，锁住整个数组，粒度比较大
+- Collections.synchronizedMap 是使用 Collections 集合工具的内部类，通过传入 Map 封装出一个 SynchronizedMap 对象，内部定义了一个对象锁，方法内通过对象锁实现
+- ConcurrentHashMap 使用分段锁，降低了锁粒度，让并发度大大提高。(jdk1.8 CAS+ synchronized)
+
 [死循环分析](https://zhuanlan.zhihu.com/p/67915754)
 
 ## 哈希遍历
@@ -157,3 +162,9 @@ Iterator<String> iterator = map.keySet().iterator();
 ```
 - 建议使用第一种，同时可以把key value取出。
 - 第二种还需要通过key取一次key，效率较低。
+
+# HashSet
+> HashSet中不允许有重复元素，这是因为HashSet是基于HashMap实现的，HashSet中的元素都存放在HashMap的key上面，而value中的值都是统一的一个`private static final Object PRESENT = new Object();`。 HashSet跟HashMap一样，都是一个存放链表的数组。
+
+# TreeMap
+> TreeMap 是按照 Key 的自然顺序或者 Comprator 的顺序进行排序，内部是通过红黑树来实现。所以要么 key 所属的类实现 Comparable 接口，或者自定义一个实现了 Comparator 接口的比较器，传给 TreeMap 用户 key 的比较。
