@@ -232,6 +232,7 @@
 - [LinkedList的一些问题](/Interview/codes/collection/LinkedList的一些问题.md)
 - [HashMap的一些问题](/Interview/codes/collection/HashMap的一些问题.md)
 - [ConcurrentHashMap的一些问题](/Interview/codes/collection/ConcurrentHashMap的一些问题.md)
+- [手写LRU算法](/Interview/codes/collection/手写LRU算法.md)
 
 
 ### 设计模式
@@ -243,7 +244,6 @@
 - [装饰器模式](/Interview/codes/modes/装饰器模式.md)
 
 ### 其他
-- [设计一个LRU](/Interview/src/LRUDemo.md)
 - [二叉树的深度搜索遍历](/Interview/src/DFSDemo.java)
 
 ## 微信公众号推荐
