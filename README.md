@@ -234,6 +234,7 @@
 - [ConcurrentHashMap的一些问题](/Interview/codes/collection/ConcurrentHashMap的一些问题.md)
 - [手写LRU算法](/Interview/codes/collection/手写LRU算法.md)
 - [BlockingQueue的一些问题](/Interview/codes/collection/BlockingQueue的一些问题.md)
+- [线程生命周期一些问题](/Interview/codes/collection/线程生命周期一些问题.md)
 
 
 ### 设计模式
