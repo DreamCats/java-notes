@@ -235,6 +235,7 @@
 - [手写LRU算法](/Interview/codes/collection/手写LRU算法.md)
 - [BlockingQueue的一些问题](/Interview/codes/collection/BlockingQueue的一些问题.md)
 - [线程生命周期一些问题](/Interview/codes/thread/线程生命周期一些问题.md)
+- [线程的启动方式](/Interview/codes/thread/线程的启动方式.md)
 
 
 ### 设计模式
