@@ -7,32 +7,30 @@
 
 package Test;
 
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.CountDownLatch;
 
 public class Test {
-    private static Object res1 = new Object();
-    private static Object res2 = new Object();
+    volatile int count = 0;
+    private CountDownLatch latch;
 
-    public static void main(String[] args) {
-        new Thread(() -> {
-            synchronized (res1) {
-                System.out.println(Thread.currentThread().getName() + " res1");
-                // 延迟一下, 确保B拿到了res2
-                try { TimeUnit.SECONDS.sleep(1); } catch (InterruptedException e) { e.printStackTrace(); }
-                synchronized (res2) {
-                    System.out.println(Thread.currentThread().getName() + " res2");
-                }
-            }
-        }, "ThreadA").start();
+    public Test(CountDownLatch latch) {
+        this.latch = latch;
+    }
 
-        new Thread(() -> {
-            synchronized (res2) {
-                System.out.println(Thread.currentThread().getName() + " res2");
-                // 延迟一下，确保A拿到了res1
-                synchronized (res1) {
-                    System.out.println(Thread.currentThread().getName() + " res1");
-                }
-            }
-        }, "ThreadB").start();
+    void m() {
+        for (int i = 0; i < 10000; i++) {
+            count++;
+        }
+        latch.countDown();
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        CountDownLatch latch = new CountDownLatch(20);
+        Test t1 = new Test(latch);
+        for (int i = 0; i < 20; i++) {
+            new Thread(t1::m, "Thread " + i).start();
+        }
+        latch.await();
+        System.out.println(t1.count);
     }
 }
