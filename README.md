@@ -237,6 +237,7 @@
 - [线程生命周期一些问题](/Interview/codes/thread/线程生命周期一些问题.md)
 - [线程的启动方式](/Interview/codes/thread/线程的启动方式.md)
 - [Runnable、Callable和FutureTask](/Interview/codes/thread/Runnable、Callable和FutureTask.md)
+- [举个多线程的小例子](/Interview/codes/thread/举个多线程的小例子.md)
 
 
 ### 设计模式
