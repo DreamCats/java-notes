@@ -239,6 +239,7 @@
 - [Runnable、Callable和FutureTask](/Interview/codes/thread/Runnable、Callable和FutureTask.md)
 - [举个多线程的小例子](/Interview/codes/thread/举个多线程的小例子.md)
 - [主线程等待多个子线程的例子](/Interview/codes/thread/主线程等待多个子线程的例子.md)
+- [死锁例子](/Interview/codes/thread/死锁例子.md)
 
 
 ### 设计模式
