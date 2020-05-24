@@ -17,5 +17,6 @@ public class Test{
             System.out.println("dream");
         });
         threadPool.shutdown();
+        new Thread()
     }
 }
