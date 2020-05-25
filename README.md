@@ -245,6 +245,7 @@
 - [synchronized的一些问题](/Interview/codes/thread/synchronized的一些问题.md)
 - [CAS的一些问题](/Interview/codes/thread/CAS的一些问题.md)
 - [ThreadLocal的一些问题](/Interview/codes/thread/ThreadLocal的一些问题.md)
+- [AQS的一些问题](/Interview/codes/thread/AQS的一些问题.md)
 
 
 ### 设计模式
