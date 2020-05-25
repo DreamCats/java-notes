@@ -244,6 +244,7 @@
 - [volatile的一些问题](/Interview/codes/thread/volatile的一些问题.md)
 - [synchronized的一些问题](/Interview/codes/thread/synchronized的一些问题.md)
 - [CAS的一些问题](/Interview/codes/thread/CAS的一些问题.md)
+- [ThreadLocal的一些问题](/Interview/codes/thread/ThreadLocal的一些问题.md)
 
 
 ### 设计模式
