@@ -253,6 +253,9 @@
 - [栈溢出的小例子](/Interview/codes/jvm/栈溢出的小例子.md)
 - [堆溢出的小例子](/Interview/codes/jvm/堆溢出的小例子.md)
 - [查看反编译源码](/Interview/codes/jvm/查看反编译源码.md)
+- [查看JVM吐血系列](/Interview/crazy/个人吐血系列-总结JVM.md)
+- [查看Spring吐血系列](/Interview/crazy/个人吐血系列-总结Spring.md)
+- [手写SpringIoc容器](/Interview/codes/spring/手写SpringIoc容器.md)
 
 
 ### 设计模式
