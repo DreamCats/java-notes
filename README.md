@@ -249,12 +249,14 @@
 - [生产者和消费者的三种例子](/Interview/codes/thread/生产者和消费者的三种例子.md)
 - [线程池的一些问题](/Interview/codes/thread/线程池的一些问题.md)
 - [Java锁的介绍](/Interview/codes/thread/Java锁的介绍.md)
+- [循环引用的小例子](/Interview/codes/jvm/循环引用的小例子.md)
+- [栈溢出的小例子](/Interview/codes/jvm/栈溢出的小例子.md)
 
 
 ### 设计模式
 - [单例模式](/Interview/codes/modes/单例模式.md)
 - [工厂模式](/Interview/codes/modes/工厂模式.md)
-- [代理模式](/Interview/codes/modes/带来模式.md)
+- [代理模式](/Interview/codes/modes/代理模式.md)
 - [模版方法模式](/Interview/codes/modes/模板方法模式.md)
 - [观察者模式](/Interview/codes/modes/观察者模式.md)
 - [装饰器模式](/Interview/codes/modes/装饰器模式.md)
