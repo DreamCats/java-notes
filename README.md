@@ -251,6 +251,8 @@
 - [Java锁的介绍](/Interview/codes/thread/Java锁的介绍.md)
 - [循环引用的小例子](/Interview/codes/jvm/循环引用的小例子.md)
 - [栈溢出的小例子](/Interview/codes/jvm/栈溢出的小例子.md)
+- [堆溢出的小例子](/Interview/codes/jvm/堆溢出的小例子.md)
+- [查看反编译源码](/Interview/codes/jvm/查看反编译源码.md)
 
 
 ### 设计模式

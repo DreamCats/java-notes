@@ -7,30 +7,16 @@
 
 package Test;
 
-import java.util.concurrent.CountDownLatch;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
-    volatile int count = 0;
-    private CountDownLatch latch;
-
-    public Test(CountDownLatch latch) {
-        this.latch = latch;
-    }
-
-    void m() {
-        for (int i = 0; i < 10000; i++) {
-            count++;
+    public static void main(String[] args) {
+        List<byte[]> list = new ArrayList<>();
+        int i = 0;
+        while (true) {
+            list.add(new byte[5*1024*1024]);
+            System.out.println("分配次数：" + (++i));
         }
-        latch.countDown();
-    }
-
-    public static void main(String[] args) throws InterruptedException {
-        CountDownLatch latch = new CountDownLatch(20);
-        Test t1 = new Test(latch);
-        for (int i = 0; i < 20; i++) {
-            new Thread(t1::m, "Thread " + i).start();
-        }
-        latch.await();
-        System.out.println(t1.count);
     }
 }
