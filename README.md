@@ -267,6 +267,7 @@
 - [数据库范式](/Interview/codes/mysql/数据库范式.md)
 - [数据库结构优化](/Interview/codes/mysql/数据库结构优化.md)
 - [MVCC的缺点](/Interview/codes/mysql/MVCC的缺点.md)
+- [MySQL读写分离主从复制原理](/Interview/codes/mysql/MySQL读写分离主从复制原理.md)
 
 
 ### 设计模式
