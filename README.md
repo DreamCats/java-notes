@@ -261,6 +261,8 @@
 - [InnoDB和MyISAM](/Interview/codes/spring/InnoDB和MyISAM.md)
 - [红黑树、B树和B+树](/Interview/codes/spring/红黑树、B树和B+树.md)
 - [MySQL索引原理](https://juejin.im/post/5a6873fbf265da3e393a97fa)
+- [索引种类](/Interview/codes/spring/索引种类.md)
+- [MySQL的ACID原理](/Interview/codes/spring/MySQL的ACID原理.md)
 
 
 ### 设计模式
