@@ -258,6 +258,7 @@
 - [手写SpringIoc容器](/Interview/codes/spring/手写SpringIoc容器.md)
 - [手写SpringAOP代码](/Interview/codes/spring/手写SpringAOP代码.md)
 - [MySQL是如何执行一条SQL语句的](/Interview/codes/spring/MySQL是如何执行一条SQL语句的.md)
+- [InnoDB和MyISAM](/Interview/codes/spring/InnoDB和MyISAM.md)
 
 
 ### 设计模式
@@ -283,9 +284,4 @@
 - **Java3y**：看人家说的：”只有光头才能变强“，头像也是个光头呢。
 
 
-## 工具篇
-- [IDEA开发的26个常用的配置](https://juejin.im/post/5e4d33abe51d4526f76eb2d3)
-- [全网最全frp内网穿透(ssh及web)](/Tools/frp/全网最全frp内网穿透(ssh及web).md)
-- [centos7安装dubbo环境](/Tools/dubbo/centos7安装dubbo环境.md)
-- [centos7安装rocketmq环境及配置](/Tools/rocketmq/centos7安装rocketmq及配置.md)
 
