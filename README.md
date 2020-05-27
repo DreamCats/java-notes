@@ -257,13 +257,15 @@
 - [查看Spring吐血系列](/Interview/crazy/个人吐血系列-总结Spring.md)
 - [手写SpringIoc容器](/Interview/codes/spring/手写SpringIoc容器.md)
 - [手写SpringAOP代码](/Interview/codes/spring/手写SpringAOP代码.md)
-- [MySQL是如何执行一条SQL语句的](/Interview/codes/spring/MySQL是如何执行一条SQL语句的.md)
-- [InnoDB和MyISAM](/Interview/codes/spring/InnoDB和MyISAM.md)
-- [红黑树、B树和B+树](/Interview/codes/spring/红黑树、B树和B+树.md)
+- [MySQL是如何执行一条SQL语句的](/Interview/codes/mysql/MySQL是如何执行一条SQL语句的.md)
+- [InnoDB和MyISAM](/Interview/codes/mysql/InnoDB和MyISAM.md)
+- [红黑树、B树和B+树](/Interview/codes/mysql/红黑树、B树和B+树.md)
 - [MySQL索引原理](https://juejin.im/post/5a6873fbf265da3e393a97fa)
-- [索引种类](/Interview/codes/spring/索引种类.md)
-- [MySQL的ACID原理](/Interview/codes/spring/MySQL的ACID原理.md)
-- [并发事务带来的问题](/Interview/codes/spring/并发事务带来的问题.md)
+- [索引种类](/Interview/codes/mysql/索引种类.md)
+- [MySQL的ACID原理](/Interview/codes/mysql/MySQL的ACID原理.md)
+- [并发事务带来的问题](/Interview/codes/mysql/并发事务带来的问题.md)
+- [数据库范式](/Interview/codes/mysql/数据库范式.md)
+- [数据库结构优化](/Interview/codes/mysql/数据库结构优化.md)
 
 
 ### 设计模式
