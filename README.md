@@ -42,6 +42,7 @@
 - [Redis常见问题](https://www.processon.com/view/link/5ea2da5907912948b0d89a0a) **常见的Redis面试的问题...**
 - [计算机网络常见问题](https://www.processon.com/view/link/5eb8c93be401fd16f42b5f77) **常见的计算机网络面试的问题...**
 - [Dubbo常见问题](https://www.processon.com/view/link/5eb8c9715653bb6f2aff7c11) **常见的Dubbo的问题...**
+- [RocketMQ常见问题](https://www.processon.com/view/link/5ecf208f7d9c08156c6c37e3) **常见的RocketMQ的问题...**
 
 ## 微服务班车在线预约系统
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
@@ -270,6 +271,7 @@
 - [MVCC的缺点](/Interview/codes/mysql/MVCC的缺点.md)
 - [MySQL读写分离主从复制原理](/Interview/codes/mysql/MySQL读写分离主从复制原理.md)
 - [查看Redis吐血系列](/Interview/crazy/个人吐血系列-总结Redis.md)
+- [深究Redis的底层结构](/Interview/codes/redis/深究Redis的底层结构.md)
 - [查看计算机网络吐血系列](/Interview/crazy/个人吐血系列-总结计算机网络.md)
 
 
