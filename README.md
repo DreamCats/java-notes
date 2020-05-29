@@ -272,6 +272,7 @@
 - [MySQL读写分离主从复制原理](/Interview/codes/mysql/MySQL读写分离主从复制原理.md)
 - [查看Redis吐血系列](/Interview/crazy/个人吐血系列-总结Redis.md)
 - [深究Redis的底层结构](/Interview/codes/redis/深究Redis的底层结构.md)
+- [Redis做延迟队列](/Interview/codes/redis/Redis做延迟队列.md)
 - [查看计算机网络吐血系列](/Interview/crazy/个人吐血系列-总结计算机网络.md)
 
 
