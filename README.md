@@ -274,6 +274,11 @@
 - [深究Redis的底层结构](/Interview/codes/redis/深究Redis的底层结构.md)
 - [Redis做延迟队列](/Interview/codes/redis/Redis做延迟队列.md)
 - [查看计算机网络吐血系列](/Interview/crazy/个人吐血系列-总结计算机网络.md)
+- [查看Dubbo吐血系列](/Interview/crazy/个人吐血系列-总结Dubbo.md)
+- [Dubbo的负载均衡](http://dubbo.apache.org/zh-cn/blog/dubbo-loadbalance.html)
+- [查看RocketMQ吐血系列](/Interview/crazy/个人吐血系列-总结RocketMQ.md)
+- [9种分布式唯一ID](https://zhuanlan.zhihu.com/p/107939861)
+
 
 
 ### 设计模式
