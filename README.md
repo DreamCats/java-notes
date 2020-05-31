@@ -280,6 +280,19 @@
 - [9种分布式唯一ID](https://zhuanlan.zhihu.com/p/107939861)
 
 
+### 项目
+- 项目地址：[微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus)
+ 
+- [环境搭建文档](/Interview/codes/bus/环境搭建文档.md)
+- [Redis绑定Token分析文档](/Interview/codes/bus/Redis绑定Token.md)
+- [用户服务所有接口分析文档](/Interview/codes/bus/用户服务.md)
+- [班车服务所有接口分析文档](/Interview/codes/bus/班车服务.md)
+- [订单服务所有接口分析文档](/Interview/codes/bus/订单服务.md)
+- [支付服务所有接口分析文档](/Interview/codes/bus/支付服务.md)
+- [添加订单、支付和退款的业务结合消息队列](/Interview/codes/bus/RocketMQ最终一致性.md)
+- [Redis的key过期事件结合自动取消订单业务](/Interview/codes/bus/Redis的key过期事件.md)
+- [Redis做延迟队列](/Interview/codes/redis/Redis做延迟队列.md)
+- [Zookeeper的bug之一](/Interview/codes/bus/上线遇到的bug.md)
 
 ### 设计模式
 - [单例模式](/Interview/codes/modes/单例模式.md)
