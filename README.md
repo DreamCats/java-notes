@@ -69,13 +69,15 @@
 - **个人吐血系列-Dubbo**: [本地阅读](/Interview/crazy/个人吐血系列-总结Dubbo.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)-> [掘金阅读](https://juejin.im/post/5eb11127f265da7bb46bce26)
 - **个人吐血系列-RocketMQ**: [本地阅读](/Interview/crazy/个人吐血系列-总结RocketMQ.md)->[博客阅读](http://dreamcat.ink/2020/04/01/ge-ren-tu-xie-xi-lie-zong-jie-rocketmq/)-> [掘金阅读](https://juejin.im/post/5ecf1f716fb9a047f338b972)
 
-## 面经
+## 面经汇总
 ### 美团
 - [美团-1](/Interview/mianjing/meituan/meituan01.md)
 - [美团-2](/Interview/mianjing/meituan/meituan02.md)
 - [美团-3](/Interview/mianjing/meituan/meituan03.md)
 - [美团-4](/Interview/mianjing/meituan/meituan04.md)
 - [美团-5](/Interview/mianjing/meituan/meituan05.md)
+
+- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
 
 ### 京东
 - [京东-1](/Interview/mianjing/jingdong/jingdong01.md)
@@ -278,6 +280,7 @@
 - [Dubbo的负载均衡](http://dubbo.apache.org/zh-cn/blog/dubbo-loadbalance.html)
 - [查看RocketMQ吐血系列](/Interview/crazy/个人吐血系列-总结RocketMQ.md)
 - [9种分布式唯一ID](https://zhuanlan.zhihu.com/p/107939861)
+- [分布式事务](https://juejin.im/post/5b5a0bf9f265da0f6523913b)
 
 
 ### 项目
@@ -291,7 +294,6 @@
 - [支付服务所有接口分析文档](/Interview/codes/bus/支付服务.md)
 - [添加订单、支付和退款的业务结合消息队列](/Interview/codes/bus/RocketMQ最终一致性.md)
 - [Redis的key过期事件结合自动取消订单业务](/Interview/codes/bus/Redis的key过期事件.md)
-- [Redis做延迟队列](/Interview/codes/redis/Redis做延迟队列.md)
 - [Zookeeper的bug之一](/Interview/codes/bus/上线遇到的bug.md)
 
 ### 设计模式
