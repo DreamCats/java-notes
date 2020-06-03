@@ -281,6 +281,7 @@
 - [查看RocketMQ吐血系列](/Interview/crazy/个人吐血系列-总结RocketMQ.md)
 - [9种分布式唯一ID](https://zhuanlan.zhihu.com/p/107939861)
 - [分布式事务](https://juejin.im/post/5b5a0bf9f265da0f6523913b)
+- [不会看 Explain执行计划，劝你简历别写熟悉 SQL优化](https://juejin.im/post/5ec4e4a5e51d45786973b357)
 
 
 ### 项目
