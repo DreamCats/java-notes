@@ -88,6 +88,7 @@
 - [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
 
 ### 拼多多
+- [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
 
 ## 刷题系列
 - [SwordOffer-书的顺序](/SwordOffer/README.md)
