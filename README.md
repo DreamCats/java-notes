@@ -284,6 +284,9 @@
 - [9种分布式唯一ID](https://zhuanlan.zhihu.com/p/107939861)
 - [分布式事务](https://juejin.im/post/5b5a0bf9f265da0f6523913b)
 - [不会看Explain执行计划，劝你简历别写熟悉SQL优化](https://juejin.im/post/5ec4e4a5e51d45786973b357)
+- [几种分布式锁的实现方式](https://juejin.im/post/5cff593c6fb9a07ec56e6ed4)
+- [七张图彻底讲清楚ZooKeeper分布式锁的实现原理](https://juejin.im/post/5c01532ef265da61362232ed)
+- [https://juejin.im/post/5cc165816fb9a03202221dd5](https://juejin.im/post/5cc165816fb9a03202221dd5)
 
 
 ### 项目
