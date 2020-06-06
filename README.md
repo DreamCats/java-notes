@@ -302,6 +302,7 @@
 - [Redis的key过期事件结合自动取消订单业务](/Interview/codes/bus/Redis的key过期事件.md)
 - [SQL语句调优](/Interview/codes/bus/业务逻辑SQL语句.md)
 - [Zookeeper的bug之一](/Interview/codes/bus/上线遇到的bug.md)
+- [Sentinel相关概念](/Interview/codes/other/Sentinel相关概念.md)
 
 ### 设计模式
 - [单例模式](/Interview/codes/modes/单例模式.md)
