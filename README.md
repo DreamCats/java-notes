@@ -289,6 +289,7 @@
 - [基于Redis实现的分布式锁](https://juejin.im/post/5cc165816fb9a03202221dd5)
 - [Sentinel相关概念](/Interview/codes/other/Sentinel相关概念.md)
 - [分布式事务的相关概念](https://www.infoq.cn/article/g1avP9FUA6CDOYRAlv4R)
+- [RocketMQ做延迟队列](https://blog.csdn.net/itanping/article/details/101070156)
 
 
 ### 项目
