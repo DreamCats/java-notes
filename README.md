@@ -287,6 +287,8 @@
 - [几种分布式锁的实现方式](https://juejin.im/post/5cff593c6fb9a07ec56e6ed4)
 - [七张图彻底讲清楚ZooKeeper分布式锁的实现原理](https://juejin.im/post/5c01532ef265da61362232ed)
 - [基于Redis实现的分布式锁](https://juejin.im/post/5cc165816fb9a03202221dd5)
+- [Sentinel相关概念](/Interview/codes/other/Sentinel相关概念.md)
+- [分布式事务的相关概念](https://www.infoq.cn/article/g1avP9FUA6CDOYRAlv4R)
 
 
 ### 项目
@@ -302,7 +304,6 @@
 - [Redis的key过期事件结合自动取消订单业务](/Interview/codes/bus/Redis的key过期事件.md)
 - [SQL语句调优](/Interview/codes/bus/业务逻辑SQL语句.md)
 - [Zookeeper的bug之一](/Interview/codes/bus/上线遇到的bug.md)
-- [Sentinel相关概念](/Interview/codes/other/Sentinel相关概念.md)
 
 ### 设计模式
 - [单例模式](/Interview/codes/modes/单例模式.md)
