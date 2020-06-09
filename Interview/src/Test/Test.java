@@ -17,5 +17,10 @@ public class Test {
         if (s1.length == 1 && s1[0] == "") System.out.println("hhh");
         System.out.println(s1.length);
         System.out.println(Arrays.toString(s1));
+        int i = 012;
+        char a = 'a';
+        System.out.println((i > 11) ? i : a);
+        System.out.println((i > 11) ? 65 : a);
+        System.out.println((i > 11) ? 65.0 : a);
     }
 }
