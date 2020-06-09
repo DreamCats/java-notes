@@ -266,6 +266,7 @@
 - [MySQL是如何执行一条SQL语句的](/Interview/codes/mysql/MySQL是如何执行一条SQL语句的.md)
 - [InnoDB和MyISAM](/Interview/codes/mysql/InnoDB和MyISAM.md)
 - [红黑树、B树和B+树](/Interview/codes/mysql/红黑树、B树和B+树.md)
+- [MySQL中索引的保存机制与B- B+树](https://blog.csdn.net/TaoTaoFu/article/details/69376320)
 - [MySQL索引原理](https://juejin.im/post/5a6873fbf265da3e393a97fa)
 - [索引种类](/Interview/codes/mysql/索引种类.md)
 - [MySQL的ACID原理](/Interview/codes/mysql/MySQL的ACID原理.md)
