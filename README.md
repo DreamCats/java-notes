@@ -31,7 +31,6 @@
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
 ## Java面试思维导图(包括分布式架构)
-- [自我体系-带注释](https://www.processon.com/view/link/5ee45ab8e401fd1fd28d9b63)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
 - [Java常见基础问题](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad) **常见的基础问题，这是必须要掌握。**
 - [Java常见集合问题]() **还没总结，后续总结...**
