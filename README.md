@@ -77,16 +77,17 @@
 - [美团-4](/Interview/mianjing/meituan/meituan04.md)
 - [美团-5](/Interview/mianjing/meituan/meituan05.md)
 
+- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
+
 ### 京东
 - [京东-1](/Interview/mianjing/jingdong/jingdong01.md)
 - [京东-2](/Interview/mianjing/jingdong/jingdong02.md)
 - [京东-3](/Interview/mianjing/jingdong/jingdong03.md)
 - [京东-4](/Interview/mianjing/jingdong/jingdong04.md)
 - [京东-5](/Interview/mianjing/jingdong/jingdong05.md)
-
-### 面经汇总
-- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
 - [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
+
+### 拼多多
 - [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
 
 ## 刷题系列
@@ -102,6 +103,122 @@
 - [动态规划-专题](/LeetCode/数据结构-动态规划.md)
 - [排序-专题](/LeetCode/数据结构-排序.md)
 - [查找-专题](/LeetCode/数据结构-二分法.md)
+- [剑指offer-带注释](/SwordOffer/剑指offer.md)
+
+
+## 基础
+- [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
+- [Java面试基础知识](/Basics/Java面试基础知识.md)
+- [Java面试基础知识](/Basics/Java面试基础常见问题.md)
+
+### 基础图解
+- [异常分类图解](https://www.processon.com/view/link/5e404235e4b021dc289fbf72)
+
+## 集合源码
+- [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
+- [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
+- [Java面经-LinkedList源码解析](/Collections/Java面经-LinkedList源码解析.md)
+- [Java面经-HashSet-HashMap源码解析](/Collections/Java面经-HashSet-HashMap源码解析.md)
+- [Java面经-LinkedHashSet-Map源码解析](/Collections/Java面经-LinkedHashSet-Map源码解析.md)
+- [Java面经-TreeSet-TreeMap源码解析](/Collections/Java面经-TreeSet-TreeMap源码解析.md)
+- [Java面经-PriorityQueue源码解析](/Collections/Java面经-PriorityQueue源码解析.md)
+- [Java面经-Stack-Queue源码解析](/Collections/Java面经-Stack-Queue源码解析.md)
+- [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
+
+### 集合图解
+- [ArrayList源码分析](https://www.processon.com/view/link/5e13ddf5e4b07ae2d01c7369)
+- [LinkedList源码分析](https://www.processon.com/view/link/5e13e641e4b0c090e0b88a59)
+- [HashMap源码分析](https://www.processon.com/view/link/5e159150e4b07db4cfb0f418)
+
+## 多线程系列
+- [多线程思维导图](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf)
+- [Java多线程-并发基础常见面试题总结](/Multithread/Java多线程-并发基础常见面试题总结.md)
+- [Java多线程-Synchronized](/Multithread/Java多线程-synchronized.md)
+- [Java多线程-volatile](/Multithread/深刻理解volatile的一切.md)
+- [Java多线程-CAS](/Multithread/CAS底层解析.md)
+- [Java多线程-ThreadLocal](/Multithread/Java多线程-ThreadLocal.md)
+- [Java多线程-Atomic原子类](/Multithread/Java多线程-Atomic原子类.md)
+- [Java多线程-AQS](/Multithread/Java多线程-AQS.md)
+- [Java多线程-线程池](/Multithread/Java多线程-线程池.md)
+- [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
+- [多线程一些例子](/Multithread/README.md)
+- [Java多线程常见问题](/Multithread/Java多线程常见问题.md)
+
+### 多线程图解
+- [谈谈Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
+- [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
+- [线程的状态周期图](https://www.processon.com/view/link/5e16a379e4b0f5a7ed06d2fb)
+- [volatile保证内存可见性和避免重排](https://www.processon.com/view/link/5e12e591e4b061a80c683639)
+- [volatile不能保证原子性操作](https://www.processon.com/view/link/5e130e51e4b07db4cfac9d2c)
+- [无锁-偏向锁-轻量级锁-重量级锁](https://www.processon.com/view/link/5e1744a7e4b0f5a7ed086f4a)
+- [内存屏障](https://www.processon.com/view/link/5e4420bde4b06b291a6c463b)
+
+## JVM
+- [JVM面试思维导图](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44)
+- [JVM-类文件结构](/Jvm/JVM-类文件结构.md)
+- [JVM-类加载过程](/Jvm/JVM-类加载过程.md)
+- [JVM-类加载机制](/Jvm/Java面经-类加载机制.md)
+- [JVM-类加载器](/Jvm/JVM-类加载器.md)
+- [JVM-内存模型](/Jvm/Java面经-内存模型.md)
+- [JVM-对象创建](/Jvm/JVM-对象创建.md)
+- [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
+- [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
+- [JVM面试常见问题](/Jvm/JVM面试常见问题.md)
+
+### JVM例子
+- [引用计数的循环引用问题](/Jvm/src/T2.java)
+### JVM图解
+- [JVM整个流程](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
+
+## Spring系列
+### 参考笔记
+- [b站视频入口](https://www.bilibili.com/video/av32102436?p=1)
+- [代码资料](https://gitee.com/adanzzz/spring_source_parsing_data)
+- [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
+
+### 源码总结
+- [Spring和SpringAOP](/Spring和SpringAOP源码总结.md)
+- [参考这位大佬的MVC原理](https://snailclimb.gitee.io/javaguide/#/docs/system-design/framework/spring/SpringMVC-Principle) **这位大佬总结的不错，可参考**
+- [SpringMVC开发文档](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) **这里就不贴视频中的SpringMVC工程**
+
+### 手写简单的IOC和AOP
+- [手写简单的IOC](/spring-ioc) 非常简单，每行都有注释
+- [手写简单的AOP](/spring-aop2) 非常简单，每行都有注
+
+### SpringBoot
+**[参考这位大佬](https://snailclimb.gitee.io/springboot-guide/#/)**
+**项目结构过于具体简单的文件解释就不说了，主要是看细节和原理**
+- [SpringBoot启动流程分析](/SpringBoot启动流程分析.md)
+
+### 常见问题
+- [Spring面试常见问题](/Interview/spring/Spring面试常见问题.md)
+
+## MyBatis系列
+- [MyBatis常见问题的思维导图](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71)
+- [MyBatis面试相关系列](https://github.com/DreamCats/SpringBooks#mybatis)
+- [MyBatis源码](https://juejin.im/entry/5b9886735188255c960c1bec)
+- [MyBatis面试常见问题](/Interview/mybatis/MyBatis面试常见问题.md)
+    
+## 计算机网络
+- [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
+- [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
+- [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
+- [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
+- [计算机网络面试常见问题](Interview/network/计算机网络面试常见问题.md)
+
+## 数据库
+- [SQL-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
+- [MySQL中ACID的原理](/Interview/mysql/Mysql中ACID的原理.md)
+- [SQL-存储引擎](/Interview/mysql/sql-存储引擎.md)
+- [SQL-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
+- [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
+
+### Redis
+- [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
+
+## 分布式
+- [Dubbo-面试常见问题](/Interview/crazy/个人吐血系列-总结Dubbo.md)
+- [消息队列-RocketMQ面试常见问题](Interview/crazy/个人吐血系列-总结RocketMQ.md)
 
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
@@ -120,6 +237,14 @@
 - [Redis的key过期事件结合自动取消订单业务](/Interview/codes/bus/Redis的key过期事件.md)
 - [SQL语句调优](/Interview/codes/bus/业务逻辑SQL语句.md)
 - [Zookeeper的bug之一](/Interview/codes/bus/上线遇到的bug.md)
+
+### 设计模式
+- [单例模式](/Interview/codes/modes/单例模式.md)
+- [工厂模式](/Interview/codes/modes/工厂模式.md)
+- [代理模式](/Interview/codes/modes/代理模式.md)
+- [模版方法模式](/Interview/codes/modes/模板方法模式.md)
+- [观察者模式](/Interview/codes/modes/观察者模式.md)
+- [装饰器模式](/Interview/codes/modes/装饰器模式.md)
 
 
 ## 微信公众号推荐
