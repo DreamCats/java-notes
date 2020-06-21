@@ -19,7 +19,7 @@
 > - 常用工具
 >
 > **如果观看不流畅，可以去我的博客浏览面试知识点**
-> - [dreamcat.ink](http://dreamcat.ink/)
+> - [个人博客](http://dreamcat.ink/)
 > - [在线阅读](https://dreamcater.gitee.io/javabooks/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
@@ -29,6 +29,13 @@
 - [:sparkles:emoji集合](/Tools/network/github表情图标.md)
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
+
+## 面经汇总(持续...)
+- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
+
+- [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
+
+- [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
@@ -48,14 +55,6 @@
 - [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 - [BUG排查之一](https://github.com/DreamCats/school-bus/blob/master/doc/%E4%B8%8A%E7%BA%BF%E9%81%87%E5%88%B0%E7%9A%84bug.md)
 
-## 个人事迹
-
-**本来是不想贴的，之前做了图，见丑了...**
-
-- [本科事迹](https://www.processon.com/view/link/5e45532fe4b06b291a6e0d7c) **不是科班出身，专业是就不说啦...**
-- [研究生事迹](https://www.processon.com/view/link/5e455cbae4b06b291a6e1af0) **还未结束，后续继续补充...**
-- [个人博客](http://www.dreamcat.ink) **这是我个人博客，该项目的文章都在博客上有体现，github上若是阅读不佳，可以去博客上观看，时间紧迫，有些地方还没有细细的优化**
-
 ## 吐血系列
 - **个人吐血系列-总结Java基础**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java基础.md)->[博客阅读](http://dreamcat.ink/2020/03/27/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-chu/)-> [掘金阅读](https://juejin.im/post/5e7e0615f265da795568754b)
 - **个人吐血系列-总结Java集合**: [本地阅读](/Interview/crazy/个人吐血系列-总结Java集合.md)->[博客阅读](http://dreamcat.ink/2020/03/28/ge-ren-tu-xie-xi-lie-zong-jie-java-ji-he/)-> [掘金阅读](https://juejin.im/post/5e801e29e51d45470b4fce1c)
@@ -69,41 +68,8 @@
 - **个人吐血系列-Dubbo**: [本地阅读](/Interview/crazy/个人吐血系列-总结Dubbo.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)-> [掘金阅读](https://juejin.im/post/5eb11127f265da7bb46bce26)
 - **个人吐血系列-RocketMQ**: [本地阅读](/Interview/crazy/个人吐血系列-总结RocketMQ.md)->[博客阅读](http://dreamcat.ink/2020/04/01/ge-ren-tu-xie-xi-lie-zong-jie-rocketmq/)-> [掘金阅读](https://juejin.im/post/5ecf1f716fb9a047f338b972)
 
-## 面经汇总
-### 美团
-- [美团-1](/Interview/mianjing/meituan/meituan01.md)
-- [美团-2](/Interview/mianjing/meituan/meituan02.md)
-- [美团-3](/Interview/mianjing/meituan/meituan03.md)
-- [美团-4](/Interview/mianjing/meituan/meituan04.md)
-- [美团-5](/Interview/mianjing/meituan/meituan05.md)
-
-- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
-
-### 京东
-- [京东-1](/Interview/mianjing/jingdong/jingdong01.md)
-- [京东-2](/Interview/mianjing/jingdong/jingdong02.md)
-- [京东-3](/Interview/mianjing/jingdong/jingdong03.md)
-- [京东-4](/Interview/mianjing/jingdong/jingdong04.md)
-- [京东-5](/Interview/mianjing/jingdong/jingdong05.md)
-- [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
-
-### 拼多多
-- [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
-
 ## 刷题系列
-- [SwordOffer-书的顺序](/SwordOffer/README.md)
-- [SwordOffer-牛客网的顺序](https://github.com/DreamCats/LeetNiu#%E5%89%91%E6%8C%87offer-%E7%BD%91%E7%AB%99)
-- [LeetCode-正常顺序](/LeetCode/README.md)
-- [链表-专题](/LeetCode/数据结构-链表.md)
-- [树-专题](/LeetCode/数据结构-树-基础.md)
-- [栈和队列-专题](/LeetCode/数据结构-栈和队列.md)
-- [双指针-专题](/LeetCode/数据结构-双指针.md)
-- [哈希表-专题](/LeetCode/数据结构-哈希表.md)
-- [位运算-专题](/LeetCode/数据结构-位运算.md)
-- [动态规划-专题](/LeetCode/数据结构-动态规划.md)
-- [排序-专题](/LeetCode/数据结构-排序.md)
-- [查找-专题](/LeetCode/数据结构-二分法.md)
-- [剑指offer-带注释](/SwordOffer/剑指offer.md)
+- [推荐：CS-Notes]([https://cyc2018.github.io/CS-Notes/#/?id=%e2%9c%8f%ef%b8%8f-%e7%ae%97%e6%b3%95](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
 
 
 ## 基础
@@ -111,7 +77,6 @@
 - [Java面试基础知识](/Basics/Java面试基础知识.md)
 - [Java面试基础知识](/Basics/Java面试基础常见问题.md)
 
-### 基础图解
 - [异常分类图解](https://www.processon.com/view/link/5e404235e4b021dc289fbf72)
 
 ## 集合源码
@@ -125,10 +90,9 @@
 - [Java面经-Stack-Queue源码解析](/Collections/Java面经-Stack-Queue源码解析.md)
 - [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
 
-### 集合图解
-- [ArrayList源码分析](https://www.processon.com/view/link/5e13ddf5e4b07ae2d01c7369)
-- [LinkedList源码分析](https://www.processon.com/view/link/5e13e641e4b0c090e0b88a59)
-- [HashMap源码分析](https://www.processon.com/view/link/5e159150e4b07db4cfb0f418)
+- [ArrayList源码图解](https://www.processon.com/view/link/5e13ddf5e4b07ae2d01c7369)
+- [LinkedList源码图解](https://www.processon.com/view/link/5e13e641e4b0c090e0b88a59)
+- [HashMap源码图解](https://www.processon.com/view/link/5e159150e4b07db4cfb0f418)
 
 ## 多线程系列
 - [多线程思维导图](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf)
@@ -144,14 +108,13 @@
 - [多线程一些例子](/Multithread/README.md)
 - [Java多线程常见问题](/Multithread/Java多线程常见问题.md)
 
-### 多线程图解
-- [谈谈Java内存模型](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
-- [有个成员变量int a = 1,那么a和1分别在jvm哪里](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
+- [谈谈Java内存模型图解](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
+- [有个成员变量int a = 1,那么a和1分别在jvm哪里图解](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
 - [线程的状态周期图](https://www.processon.com/view/link/5e16a379e4b0f5a7ed06d2fb)
-- [volatile保证内存可见性和避免重排](https://www.processon.com/view/link/5e12e591e4b061a80c683639)
-- [volatile不能保证原子性操作](https://www.processon.com/view/link/5e130e51e4b07db4cfac9d2c)
-- [无锁-偏向锁-轻量级锁-重量级锁](https://www.processon.com/view/link/5e1744a7e4b0f5a7ed086f4a)
-- [内存屏障](https://www.processon.com/view/link/5e4420bde4b06b291a6c463b)
+- [volatile保证内存可见性和避免重排图](https://www.processon.com/view/link/5e12e591e4b061a80c683639)
+- [volatile不能保证原子性操作图](https://www.processon.com/view/link/5e130e51e4b07db4cfac9d2c)
+- [无锁-偏向锁-轻量级锁-重量级锁图](https://www.processon.com/view/link/5e1744a7e4b0f5a7ed086f4a)
+- [内存屏障图](https://www.processon.com/view/link/5e4420bde4b06b291a6c463b)
 
 ## JVM
 - [JVM面试思维导图](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44)
@@ -165,29 +128,24 @@
 - [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
 - [JVM面试常见问题](/Jvm/JVM面试常见问题.md)
 
-### JVM例子
-- [引用计数的循环引用问题](/Jvm/src/T2.java)
-### JVM图解
-- [JVM整个流程](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
+- [JVM整个流程图](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
 ## Spring系列
-### 参考笔记
 - [b站视频入口](https://www.bilibili.com/video/av32102436?p=1)
 - [代码资料](https://gitee.com/adanzzz/spring_source_parsing_data)
 - [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
 
-### 源码总结
 - [Spring和SpringAOP](/Spring和SpringAOP源码总结.md)
 - [参考这位大佬的MVC原理](https://snailclimb.gitee.io/javaguide/#/docs/system-design/framework/spring/SpringMVC-Principle) **这位大佬总结的不错，可参考**
 - [SpringMVC开发文档](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) **这里就不贴视频中的SpringMVC工程**
 
-### 手写简单的IOC和AOP
 - [手写简单的IOC](/spring-ioc) 非常简单，每行都有注释
 - [手写简单的AOP](/spring-aop2) 非常简单，每行都有注
 
 ### SpringBoot
 **[参考这位大佬](https://snailclimb.gitee.io/springboot-guide/#/)**
 **项目结构过于具体简单的文件解释就不说了，主要是看细节和原理**
+
 - [SpringBoot启动流程分析](/SpringBoot启动流程分析.md)
 
 ### 常见问题
@@ -198,7 +156,7 @@
 - [MyBatis面试相关系列](https://github.com/DreamCats/SpringBooks#mybatis)
 - [MyBatis源码](https://juejin.im/entry/5b9886735188255c960c1bec)
 - [MyBatis面试常见问题](/Interview/mybatis/MyBatis面试常见问题.md)
-    
+  
 ## 计算机网络
 - [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
 - [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
@@ -213,7 +171,6 @@
 - [SQL-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 - [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
 
-### Redis
 - [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
 
 ## 分布式
@@ -226,7 +183,7 @@
 
 ### 项目
 - 项目地址：[微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus)
- 
+
 - [环境搭建文档](/Interview/codes/bus/环境搭建文档.md)
 - [Redis绑定Token分析文档](/Interview/codes/bus/Redis绑定Token.md)
 - [用户服务所有接口分析文档](/Interview/codes/bus/用户服务.md)
@@ -245,18 +202,6 @@
 - [模版方法模式](/Interview/codes/modes/模板方法模式.md)
 - [观察者模式](/Interview/codes/modes/观察者模式.md)
 - [装饰器模式](/Interview/codes/modes/装饰器模式.md)
-
-
-## 微信公众号推荐
-
-- **JavaGuide**：大家都懂的，帮这位老哥宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
-- **程序员乔戈里**：我也经常浏览，大佬也非常勤奋，也宣传一下-->"开源项目—JavaGuide （56k+Star）作者运营维护。专注Java后端学习！内容涵盖Java面试指南、Spring Boot、Dubbo、Zookeeper、Redis、Nginx、消息队列、系统设计、架构、编程规范等内容。"
-- **帅地玩编程**：少不了**帅地呀**，hhh-->"本号专注于讲解数据结构与算法、计算机基础(如计算机网络+操作系统+数据库+Linux)等编程知识，期待你的关注。"
-- **GitHubDaily**：经常分享Github一些项目-->"专注于分享 Python、Java、Web、AI、数据分析等多个领域的优质学习资源、开源项目及开发者工具。"
-- **方志朋**：号主为BAT一线架构师，CSDN博客专家，博客访问量突破一千万，著有畅销书《深入理解SpringCloud与微服务构建》。主要分享Java、Python等技术，用大厂程序员的视角来探讨技术进阶、面试指南、职业规划等。15W技术人的选择！
-- **好好学java**：学习Java必备公众号，关注于Java、算法，公众号每日与您分享Java知识，定期的分享面试题，关注我们吧，和小海一起学习进步！
-- **小鹿动画学编程**：和小鹿同学一起用动画的方式从基础学编程，将 Web前端领域、数据结构与算法、网络原理等通俗易懂的呈献给小伙伴。先定个小目标，原创 1000 篇的动画技术文章，和各位小伙伴一起学习！
-- **Java3y**：看人家说的：”只有光头才能变强“，头像也是个光头呢。
 
 
 
