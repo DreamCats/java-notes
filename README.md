@@ -32,10 +32,12 @@
 
 ## 面经汇总(持续...)
 - [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
-
 - [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
-
 - [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
+
+## 笔试题汇总(持续...)
+
+- [拼多多牛客笔试题](/Interview/bishi/pdd.md)
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
