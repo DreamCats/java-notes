@@ -298,3 +298,77 @@ public class Main {
 }
 ```
 
+### 5、[种树](https://www.nowcoder.com/practice/52f25c8a8d414f8f8fe46d4e62ef732c?tpId=158&&tqId=34023&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking)
+
+```
+小多想在美化一下自己的庄园。他的庄园毗邻一条小河，他希望在河边种一排树，共 M 棵。小多采购了 N 个品种的树，每个品种的数量是 Ai (树的总数量恰好为 M)。但是他希望任意两棵相邻的树不是同一品种的。小多请你帮忙设计一种满足要求的种树方案。
+```
+
+**输入描述**：
+
+```
+第一行包含一个正整数 N，表示树的品种数量。
+第二行包含 N 个正整数，第 i (1 <= i <= N) 个数表示第 i 个品种的树的数量。
+数据范围：
+1 <= N <= 1000
+1 <= M <= 2000
+```
+
+**输出描述**：
+
+```
+输出一行，包含 M 个正整数，分别表示第 i 棵树的品种编号 (品种编号从1到 N)。若存在多种可行方案，则输出字典序最小的方案。若不存在满足条件的方案，则输出"-"。
+```
+
+```html
+3
+4 2 1
+```
+
+```html
+1 2 1 2 1 3 1
+```
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[n];
+        int total = 0;
+        for (int i = 0; i < n; i++) {
+            nums[i] = sc.nextInt();
+            total += nums[i];
+        }
+        int[] curr = new int[total];
+        if (!dfs(curr, 0, nums, -1)) {
+            System.out.println("-");
+        }
+    }
+    
+    private static boolean dfs(int[] curr, int index, int[] nums, int last) {
+        int rest = curr.length - index;
+        if (rest == 0) {
+            for (int i : curr) System.out.print(i + 1 + " ");
+            return true;
+        }
+        for (int tree : nums) {
+            if (tree > (rest + 1) / 2) return false;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0 && i != last) {
+                int[] temp = new int[nums.length];
+                System.arraycopy(nums, 0, temp, 0, nums.length);
+                temp[i]--;
+                int[] currTemp = new int[curr.length];
+                System.arraycopy(curr, 0, currTemp, 0, curr.length);
+                currTemp[index] = i;
+                if (dfs(currTemp, index + 1, temp, i)) return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
