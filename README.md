@@ -37,7 +37,7 @@
 - [招银所有问题汇总](/Interview/mianjing/zhaoyin/招银所有问题汇总.md)
 
 ## 笔试题汇总(持续...)
-
+- [LC-SQL](/Interview/mianjing/sql/sql.md)
 - [拼多多牛客笔试题](/Interview/bishi/pdd.md)
 
 ## Java面试思维导图(包括分布式架构)
