@@ -31,6 +31,10 @@
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
 ## 面经汇总(持续...)
+> 个人建议：首先自己先有个知识点体系，不管是思维导图也好，还是大纲也好。
+> 那么其次看大量的面经，可以将每个面经当作一次面试，查看自己是否能讲出来，查漏补缺！
+> 最后，不断沉淀即可。祝好运！！！
+
 - [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
 - [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
 - [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
@@ -72,7 +76,9 @@
 - **个人吐血系列-RocketMQ**: [本地阅读](/Interview/crazy/个人吐血系列-总结RocketMQ.md)->[博客阅读](http://dreamcat.ink/2020/04/01/ge-ren-tu-xie-xi-lie-zong-jie-rocketmq/)-> [掘金阅读](https://juejin.im/post/5ecf1f716fb9a047f338b972)
 
 ## 刷题系列
-- [推荐：CS-Notes]([https://cyc2018.github.io/CS-Notes/#/?id=%e2%9c%8f%ef%b8%8f-%e7%ae%97%e6%b3%95](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
+- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
+
+> 个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。 
 
 
 ## 基础
