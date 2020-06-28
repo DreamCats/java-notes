@@ -94,3 +94,33 @@ select Name Employee
 from Employee a
 where Salary > (select Salary from Employee where Id = a.ManagerId);
 ```
+
+## 4、[查找重复的电子邮箱](https://leetcode-cn.com/problems/duplicate-emails/)
+编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。
+
+```html
++----+---------+
+| Id | Email   |
++----+---------+
+| 1  | a@b.com |
+| 2  | c@d.com |
+| 3  | a@b.com |
++----+---------+
+```
+
+根据以上输入，你的查询应返回以下结果：
+
+```html
++---------+
+| Email   |
++---------+
+| a@b.com |
++---------+
+```
+```sql
+select email from Person group by email having count(email)>1;
+```
+```sql
+select distinct(p1.Email) from Person p1 
+join Person p2 on p1.email = p2.email and p1.Id != p2.Id;
+```
