@@ -40,6 +40,9 @@
 - [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
 - [招银所有问题汇总](/Interview/mianjing/zhaoyin/招银所有问题汇总.md)
 
+### 本人所经历的面经
+- [招银面经](/Interview/mianjing/zhaoyin/本人招银面经.md)
+
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
 - [拼多多牛客笔试题](/Interview/bishi/pdd.md)
