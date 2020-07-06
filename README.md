@@ -81,8 +81,10 @@
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
-
 > 个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。 
+
+- [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)
+> 有些套路挺实用的，推荐阅读...
 
 
 ## 基础
