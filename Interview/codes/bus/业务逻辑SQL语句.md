@@ -143,29 +143,30 @@ WHERE
 
 ```sql
 SELECT
-	so.uuid,
-	so.bus_status,
-	so.seats_ids,
-	so.order_user,
-	so.order_time,
-	sc.bus_id,
-	so.evaluate_status,
-	so.comment,
-	CONCAT(sc.begin_date, ' ', sc.begin_time) begin_time
+    so.uuid,
+    so.bus_status,
+    so.seats_ids,
+    so.order_user,
+    so.order_time,
+    sc.bus_id,
+    so.evaluate_status,
+    so.comment,
+    CONCAT(sc.begin_date, ' ', sc.begin_time) begin_time
 FROM
-	sb_order so
-	LEFT JOIN sb_count sc ON so.count_id = sc.uuid
+    sb_order so
+    LEFT JOIN sb_count sc ON so.count_id = sc.uuid
 WHERE
-	so.user_id = 4
-	AND so.order_status = "1"
-	AND (sc.begin_date = "2020-05-30" AND sc.begin_time < "21:00" OR sc.begin_date < "2020-05-30")
+    so.user_id = 4
+    AND so.evaluate_status = "1"
+    AND so.order_status = "1"
+    AND (sc.begin_date = "2020-05-30" AND sc.begin_time < "21:00" OR sc.begin_date < "2020-05-30")
 ```
 
 - 带了普通索引
 
 ```
-1	"SIMPLE"	"so"	"ref"	"order_status,user_id"	"order_status"	"152"	"const"	10	"Using index condition; Using where"
-1	"SIMPLE"	"sc"	"eq_ref"	"PRIMARY,begin_date,begin_time"	"PRIMARY"	"8"	"school_bus.so.count_id"	1	"Using where"
+1	"SIMPLE"	"so"	"ref"	"user_id_order_eval_status"	"user_id_order_eval_status"	"312"	"const,const,const"	1	"Using index condition"
+1	"SIMPLE"	"sc"	"eq_ref"	"PRIMARY"	"PRIMARY"	"8"	"school_bus.so.count_id"	1	"Using where"
 ```
 
 ### getNoPayOrdersById
