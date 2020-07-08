@@ -8,6 +8,7 @@
 package Test;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 
 public class Test {
 
@@ -15,6 +16,9 @@ public class Test {
         int[] a = new int[] {1,2,3};
         int b = Arrays.stream(a).max().orElse(0);
         System.out.println(b);
+        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
+        map.containsKey()
+        map
     }
 
 }
