@@ -45,6 +45,7 @@
 
 ### 本人所经历的面经
 - [招银面经](/Interview/mianjing/zhaoyin/本人招银面经.md)
+- [京东面经](/Interview/mianjing/jingdong/本人京东面经.md)
 
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
