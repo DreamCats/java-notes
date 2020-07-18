@@ -63,3 +63,75 @@ public class Main {
     }
 }
 ```
+
+### 2. 建物流中转站
+Shopee物流会有很多个中转站。在选址的过程中，会选择离用户最近的地方建一个物流中转站。
+
+假设给你一个二维平面网格，每个格子是房子则为1，或者是空地则为0。找到一个空地修建一个物流中转站，使得这个物流中转站到所有的房子的距离之和最小。 能修建，则返回最小的距离和。如果无法修建，则返回 -1。
+
+
+若范围限制在100*100以内的网格，如何计算出最小的距离和？
+
+当平面网格非常大的情况下，如何避免不必要的计算？
+
+```html
+4
+0 1 1 0
+1 1 0 1
+0 0 1 0
+0 0 0 0
+```
+
+```html
+8
+
+能修建，则返回最小的距离和。如果无法修建，则返回 -1。
+```
+
+```html
+4
+1 1 1 1
+1 1 1 1
+1 1 1 1
+1 1 1 1
+```
+
+```html
+-1
+```
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] nums = new int[n][n];
+        ArrayList<int[][]> list = new ArrayList<>();
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                nums[i][j] = sc.nextInt();
+                if (nums[i][j] == 1){
+                    int[][] xy = new int[1][2];
+                    xy[0][0] = i;
+                    xy[0][1] = j;
+                    list.add(xy);
+                }
+            }
+        }
+        int res = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                int t = 0;
+                if (nums[i][j] == 0){
+                    for (int k = 0; k < list.size(); k++){
+                        t += Math.abs(list.get(k)[0][0] - i) + Math.abs(list.get(k)[0][1] - j);
+                    }
+                    res = res > t ? t : res;
+                }
+            }
+        }
+        System.out.println(res == Integer.MAX_VALUE ? -1 : res);
+    }
+}
+```
