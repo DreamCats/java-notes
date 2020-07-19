@@ -31,41 +31,30 @@ public class Test {
 //        c[0] = 3;
 //        System.out.println(Arrays.toString(a));
 //        System.out.println(Arrays.toString(c));
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        sc.nextLine();
-        for (int k = 0; k < n; k++) {
-            String s = sc.nextLine();
-            // 双指针
-            boolean flag = true;
-            int i = 0, j = s.length() - 1;
-            while(i < j){
-                if (s.charAt(i) != s.charAt(j)){
-                    if(isVaild(s, i, j - 1)){
-                        System.out.println(j);
-                        flag = false;
-                        break;
-                    } else if(isVaild(s, i + 1, j)){
-                        System.out.println(i);
-                        flag = false;
-                        break;
-                    }
+        long[] nums = new long[n];
+        for (int i = 0; i < n; i++)
+            nums[i] = sc.nextInt();
+        long max = 0;
+        long b = 0, c = 0;
+        for(int i = 1; i < n; i++){
+            if (nums[i] > nums[i - 1]){
+                max += nums[i] - nums[i - 1];
+                if (c == 0){
+                    b++;
                 }
-                i++;
-                j--;
+                c = 1;
             }
-            if (flag)
-                System.out.println(-1);
+            if (nums[i] < nums[i - 1]){
+                b += c;
+                c = 0;
+            }
         }
+        b += c;
+        System.out.println(max + " " + b);
     }
-    public static boolean isVaild(String s, int i, int j){
-        while (i < j){
-            if (s.charAt(i) != s.charAt(j))
-                return false;
-            i++;
-            j--;
-        }
-        return true;
-    }
+
 
 }

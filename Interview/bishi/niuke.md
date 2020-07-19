@@ -99,3 +99,34 @@ public class Main{
     }
 }
 ```
+
+## 商品交易
+[https://www.nowcoder.com/practice/ce9d7cdac6e34e42919e787a8baf8a2b?tpId=182&&tqId=34889&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking](https://www.nowcoder.com/practice/ce9d7cdac6e34e42919e787a8baf8a2b?tpId=182&&tqId=34889&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long[] nums = new long[n];
+        for (int i = 0; i < n; i++)
+            nums[i] = sc.nextInt();
+        long max = 0;
+        long cnt = 0, deal = 0;
+        for(int i = 1; i < n; i++){
+            if (nums[i] > nums[i - 1]){
+                max += nums[i] - nums[i - 1];
+                if (deal == 0)
+                    cnt++;
+                deal = 1;
+            }
+            if (nums[i] < nums[i - 1]){
+                cnt += deal;
+                deal = 0;
+            }
+        }
+        System.out.println(max + " " + cnt + deal);
+    }
+}
+```
