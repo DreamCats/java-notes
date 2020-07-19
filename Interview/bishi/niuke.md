@@ -1,5 +1,6 @@
 ## 回文数索引
 [https://www.nowcoder.com/practice/b6edb5ca15d34b1eb42e4725a3c68eba?tpId=182&&tqId=34896&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking](https://www.nowcoder.com/practice/b6edb5ca15d34b1eb42e4725a3c68eba?tpId=182&&tqId=34896&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking)
+
 给定一个仅由小写字母组成的字符串。现在请找出一个位置，删掉那个字母之后，字符串变成回文。请放心总会有一个合法的解。如果给定的字符串已经是一个回文串，那么输出-1。
 
 输入：
@@ -70,6 +71,31 @@ public class Main{
             j--;
         }
         return true;
+    }
+}
+```
+
+## 字符串替换
+[https://www.nowcoder.com/practice/f409e49e3f3e4b68819ffceb50df7df5?tpId=182&&tqId=34891&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking](https://www.nowcoder.com/practice/f409e49e3f3e4b68819ffceb50df7df5?tpId=182&&tqId=34891&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int cnt = 0; // y cnt
+        int res = 0; // res
+        for (int i = s.length() - 1; i >= 0; i--){
+            if (s.charAt(i) == 'y')
+                cnt++;
+            if (s.charAt(i) == 'x'){
+                res = (res + cnt) % 1000000007;
+                cnt = (cnt * 2) % 1000000007;
+            }
+        }
+        System.out.println(res % 1000000007);
+        
     }
 }
 ```
