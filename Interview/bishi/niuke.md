@@ -130,3 +130,31 @@ public class Main{
     }
 }
 ```
+
+## 火车站台
+
+[https://www.nowcoder.com/practice/bade66d32ad8479fbcecc002ea983ff0?tpId=182&&tqId=34887&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking](https://www.nowcoder.com/practice/bade66d32ad8479fbcecc002ea983ff0?tpId=182&&tqId=34887&rp=1&ru=/ta/exam-all&qru=/ta/exam-all/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[100001];
+        for (int i = 0; i < n; i++){
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            nums[x]++;
+            nums[y]--;
+        }
+        int cnt = 0;
+        int res = 0;
+        for (int i = 1; i < nums.length; i++){
+            cnt += nums[i];
+            res = Math.max(res, cnt);
+        }
+        System.out.println(res);
+    }
+}
+```
