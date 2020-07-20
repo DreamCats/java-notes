@@ -50,9 +50,13 @@
 
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
-- [拼多多牛客笔试题](/Interview/bishi/pdd.md)
-- [Shopee牛客笔试题](/Interview/bishi/Shopee.md)
+- [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
+
+> 这里说一下， 图解SQL面试题，个人建议全部练习，也不难，但也的确面试高频手写SQL题
+
 - [牛客笔试题](/Interview/bishi/niuke.md)
+
+> 可以从牛客找笔试题的感觉，也可以练习输入输出，做多了，你就发现基本没有树和链表！
 
 ## Java面试思维导图(包括分布式架构)
 - [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
@@ -155,11 +159,9 @@
 - [b站视频入口](https://www.bilibili.com/video/av32102436?p=1)
 - [代码资料](https://gitee.com/adanzzz/spring_source_parsing_data)
 - [Spring注解驱动开发](https://www.processon.com/view/link/5e30213ae4b096de64c8e9bf)
-
 - [Spring和SpringAOP](/Spring和SpringAOP源码总结.md)
 - [参考这位大佬的MVC原理](https://snailclimb.gitee.io/javaguide/#/docs/system-design/framework/spring/SpringMVC-Principle) **这位大佬总结的不错，可参考**
 - [SpringMVC开发文档](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) **这里就不贴视频中的SpringMVC工程**
-
 - [手写简单的IOC](/spring-ioc) 非常简单，每行都有注释
 - [手写简单的AOP](/spring-aop2) 非常简单，每行都有注
 
