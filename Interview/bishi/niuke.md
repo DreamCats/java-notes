@@ -706,3 +706,80 @@ public class Main{
     }
 }
 ```
+
+## 0/1背包
+
+[https://www.nowcoder.com/questionTerminal/7e157ce9a8c249daa3ddafad322dbf1e?answerType=1&f=discussion](https://www.nowcoder.com/questionTerminal/7e157ce9a8c249daa3ddafad322dbf1e?answerType=1&f=discussion)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int W = sc.nextInt();
+        int[] ws = new int[n];
+        int[] vals = new int[n];
+        for (int i = 0; i < n; i++){
+            ws[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++){
+            vals[i] = sc.nextInt();
+        }
+        int[] dp = new int[W + 1];
+        for (int i = 1; i <= n; i++){
+            int w = ws[i - 1], v = vals[i - 1];
+            for (int j = W; j >=0; j--){
+                if (j >= w){
+                    dp[j] = Math.max(dp[j], dp[j - w] + v);
+                }
+            }
+        }
+        System.out.println(dp[W]);
+    }
+}
+```
+
+## 模数求和
+[https://www.nowcoder.com/practice/34dc8aef8295470ea536f1c9255fef7e?tpId=122&&tqId=33727&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/34dc8aef8295470ea536f1c9255fef7e?tpId=122&&tqId=33727&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += sc.nextInt() - 1;
+        }
+        System.out.println(sum);
+    }
+}
+```
+
+### 美妙的约会
+
+[https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=122&&tqId=33726&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=122&&tqId=33726&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = n * 2;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < m; i++)
+            list.add(sc.nextInt());
+        int idx = 0;
+        int sum = 0;
+        while (idx < list.size()){
+            int lastIdx = list.lastIndexOf(list.get(idx));
+            sum += (lastIdx - idx - 1);
+            list.remove(lastIdx);
+            idx++;
+        }
+        System.out.println(sum);
+    }
+}
+```
