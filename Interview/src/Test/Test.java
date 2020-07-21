@@ -7,25 +7,34 @@
 
 package Test;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int m = n * 2;
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < m; i++)
-            list.add(sc.nextInt());
-        int idx = 0;
-        int sum = 0;
-        while (idx < list.size()){
-            int lastIdx = list.lastIndexOf(list.get(i));
-            sum += (lastIdx - idx - 1);
-            list.remove(lastIdx);
-            idx++;
+        int m = sc.nextInt();
+        sc.nextLine();
+        int[] a = new int[26];
+        String s = sc.nextLine();
+        for(int i = 0; i < n; i++){
+            a[s.charAt(i) - 'A']++;
         }
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+        int sum = 0;
+        for (int i = a.length - 1; i >= 0; i--){
+            if (m >= a[i]){
+                sum += a[i] * a[i];
+                m -= a[i];
+            } else {
+                sum += m * m;
+                m -= m;
+            }
+        }
+
         System.out.println(sum);
     }
 

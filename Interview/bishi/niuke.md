@@ -783,3 +783,37 @@ public class Main{
     }
 }
 ```
+
+## 字母卡片
+
+[https://www.nowcoder.com/practice/9369f06924fa44a4ba2c462504c53297?tpId=122&&tqId=33722&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/9369f06924fa44a4ba2c462504c53297?tpId=122&&tqId=33722&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()){
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            sc.nextLine();
+            int[] a = new int[26];
+            String s = sc.nextLine();
+            for(int i = 0; i < n; i++){
+                a[s.charAt(i) - 'A']++;
+            }
+            Arrays.sort(a);
+            long sum = 0L;
+            int cnt = 0;
+            for (int i = a.length - 1; i >=0; i--){
+                if (cnt + a[i] > m)
+                    continue;
+                cnt += a[i];
+                sum += (long)a[i] * (long)a[i];
+            }
+            sum = cnt == m ? sum : sum + (m - cnt) * (m - cnt);
+            System.out.println(sum);
+        }
+    }
+}
+```
