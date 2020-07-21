@@ -7,35 +7,44 @@
 
 package Test;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        sc.nextLine();
-        int[] a = new int[26];
-        String s = sc.nextLine();
-        for(int i = 0; i < n; i++){
-            a[s.charAt(i) - 'A']++;
-        }
-        Arrays.sort(a);
-        System.out.println(Arrays.toString(a));
-        int sum = 0;
-        for (int i = a.length - 1; i >= 0; i--){
-            if (m >= a[i]){
-                sum += a[i] * a[i];
-                m -= a[i];
-            } else {
-                sum += m * m;
-                m -= m;
+        long n = sc.nextLong();
+        long start = 1;
+        long end = n;
+        long temp = 0;
+        // 二分法
+        while (start < end){
+            long mid = start + (end - start) / 2;
+            if (minNum(mid, n)){
+                temp = mid;
+                end = mid;
+            } else{
+                start = mid + 1;
             }
         }
+        System.out.println(temp);
+    }
 
-        System.out.println(sum);
+    public static boolean minNum(long m, long n){
+        long nums1 = 0;
+        long temp = n;
+        long mid = 0;
+        while (temp >= 0){
+            if (temp < m){
+                nums1 += temp;
+                break;
+            }
+            nums1 += m;
+            temp -= m;
+            temp -= temp / 10;
+        }
+        mid = n % 2 == 0 ? n / 2 : (n + 1) / 2;
+        return nums1 >= mid ? true : false;
     }
 
 }
