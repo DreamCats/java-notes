@@ -13,38 +13,23 @@ public class Test {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-        long n = sc.nextLong();
-        long start = 1;
-        long end = n;
-        long temp = 0;
-        // 二分法
-        while (start < end){
-            long mid = start + (end - start) / 2;
-            if (minNum(mid, n)){
-                temp = mid;
-                end = mid;
+        String s = sc.nextLine();
+        s += s;
+        int cur = 1, max = 0;
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) != s.charAt(i + 1)){
+                cur++;
             } else{
-                start = mid + 1;
+                max = Math.max(max, cur);
+                cur = 1;
             }
         }
-        System.out.println(temp);
+        if (cur == s.length())
+            System.out.println(max / 2);
+        else
+            System.out.println(max);
     }
 
-    public static boolean minNum(long m, long n){
-        long nums1 = 0;
-        long temp = n;
-        long mid = 0;
-        while (temp >= 0){
-            if (temp < m){
-                nums1 += temp;
-                break;
-            }
-            nums1 += m;
-            temp -= m;
-            temp -= temp / 10;
-        }
-        mid = n % 2 == 0 ? n / 2 : (n + 1) / 2;
-        return nums1 >= mid ? true : false;
-    }
+
 
 }

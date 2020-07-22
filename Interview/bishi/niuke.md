@@ -757,7 +757,7 @@ public class Main{
 }
 ```
 
-### 美妙的约会
+## 美妙的约会
 
 [https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=122&&tqId=33726&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=122&&tqId=33726&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
 
@@ -858,6 +858,35 @@ public class Main{
         }
         mid = n % 2 == 0 ? n / 2 : (n + 1) / 2;
         return nums1 >= mid ? true : false;
+    }
+}
+```
+
+## 橡皮泥斑马
+
+[https://www.nowcoder.com/practice/0277b16d84ae42888b0c80fe4e316968?tpId=122&&tqId=33720&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/0277b16d84ae42888b0c80fe4e316968?tpId=122&&tqId=33720&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        // 任意位置翻转，形成环
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        s += s;
+        int cur = 1, max = 0;
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) != s.charAt(i + 1)){
+                cur++;
+            } else{
+                max = Math.max(max, cur);
+                cur = 1;
+            }
+        }
+        if (cur == s.length())
+            System.out.println(max / 2);
+        else
+            System.out.println(max);
     }
 }
 ```
