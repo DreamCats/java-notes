@@ -916,3 +916,67 @@ public class Main {
     } 
 }
 ```
+
+## 访友
+
+[https://www.nowcoder.com/practice/b8e21f5816874425836b7d32011f46b0?tpId=122&&tqId=33715&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/b8e21f5816874425836b7d32011f46b0?tpId=122&&tqId=33715&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n <= 5)
+            System.out.println(1);
+        else {
+            int cnt = 0;
+            int t = 5;
+            while(n != 0 && t > 0){
+                int tmp = n / t;
+                n = n - tmp * t;
+                t--;
+                cnt += tmp;
+            }
+            System.out.println(cnt);
+        }
+
+    }
+}
+```
+
+## 塔
+
+[https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=122&&tqId=33712&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=122&&tqId=33712&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        ArrayList<Integer> towers = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            towers.add(sc.nextInt());
+        }
+        int cnt = 0;
+        ArrayList<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
+        int max = Collections.max(towers);
+        int min = Collections.min(towers);
+        while (max - min > 1 && cnt < k){
+            max = Collections.max(towers); min = Collections.min(towers);
+            list1.add(towers.indexOf(max) + 1); list2.add(towers.indexOf(min) + 1);
+            towers.set(towers.indexOf(min), min + 1);
+            towers.set(towers.indexOf(max), max - 1);
+            cnt++;
+        }
+        System.out.println(Collections.max(towers) - Collections.min(towers) + " " + cnt);
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.println(list1.get(i) + " " + list2.get(i));
+        }
+    }
+}
+
+```
