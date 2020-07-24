@@ -890,3 +890,29 @@ public class Main{
     }
 }
 ```
+
+## 买房
+
+[https://www.nowcoder.com/practice/edf9346066f047a9833b3284798d6c29?tpId=122&&tqId=33717&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/edf9346066f047a9833b3284798d6c29?tpId=122&&tqId=33717&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        sc.nextInt();
+        while (sc.hasNext()){
+            int n = sc.nextInt();
+            int k = sc.nextInt();
+            int ans = 0;
+            // 模拟
+            if (n < 3 || k == n || k < 1)
+                ans = 0;
+            else {
+                ans = Math.min(n - k, k - 1);
+            }
+            System.out.println(0 + " " + ans);
+        }
+    } 
+}
+```
