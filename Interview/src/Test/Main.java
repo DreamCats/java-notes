@@ -7,8 +7,6 @@
 
 package Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -16,25 +14,34 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int k = sc.nextInt();
-        ArrayList<Integer> towers = new ArrayList<>();
+        int[] nums1 = new int[n];
+        int[] nums2 = new int[n];
+        int[] sumInterest = new int[n];
         for (int i = 0; i < n; i++) {
-            towers.add(sc.nextInt());
+            nums1[i] = sc.nextInt();
         }
-        int cnt = 0;
-        ArrayList<Integer> list1 = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>();
-        int max = Collections.max(towers);
-        int min = Collections.min(towers);
-        while (max - min > 1 && cnt < k){
-            max = Collections.max(towers); min = Collections.min(towers);
-            list1.add(towers.indexOf(max) + 1); list2.add(towers.indexOf(min) + 1);
-            towers.set(towers.indexOf(min), min + 1);
-            towers.set(towers.indexOf(max), max - 1);
-            cnt++;
+        int sum0 = 0;
+        int sum1 = 0;
+        for (int i = 0; i < n; i++) {
+            nums2[i] = sc.nextInt();
+            if (nums2[i] == 1)
+                sum0 += nums1[i];
+            else
+                sum1 += nums1[i];
+            sumInterest[i] = sum1;
         }
-        System.out.println(Collections.max(towers) - Collections.min(towers) + " " + cnt);
-        for (int i = 0; i < list1.size(); i++) {
-            System.out.println(list1.get(i) + " " + list2.get(i));
+        int cur = 0;
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            if (nums2[i] == 0){
+                if (i + k - 1 <= n - 1) {
+                    cur = sumInterest[i + k - 1] - (i - 1 > 0 ? sumInterest[i - 1] : 0);
+                } else {
+                    cur = sumInterest[n - 1] - (i - 1 > 0 ? sumInterest[i - 1] : 0);
+                }
+            }
+            max = Math.max(cur, max);
         }
+        System.out.println(max + sum0);
     }
 }
