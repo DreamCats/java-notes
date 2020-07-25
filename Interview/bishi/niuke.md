@@ -1070,3 +1070,27 @@ public class Main {
 }
 
 ```
+
+## 代价
+
+[https://www.nowcoder.com/practice/b7985769dc434d85a16717908669bcab?tpId=122&&tqId=33714&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/b7985769dc434d85a16717908669bcab?tpId=122&&tqId=33714&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = 3;
+        int i = 0;
+        Integer[] nums = new Integer[n];
+        while (n-- > 0){
+            nums[i++] = sc.nextInt();
+        }
+        Arrays.sort(nums, (o1, o2) -> o2 - o1);
+        System.out.println((nums[0] - nums[1]) + (nums[1] - nums[2]));
+    }
+}
+
+```
