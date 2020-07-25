@@ -1094,3 +1094,95 @@ public class Main {
 }
 
 ```
+
+## 俄罗斯方块
+
+[https://www.nowcoder.com/practice/9407e24a70b04fedba4ab3bd3ae29704?tpId=122&&tqId=33707&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/9407e24a70b04fedba4ab3bd3ae29704?tpId=122&&tqId=33707&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        int n = sc.nextInt();
+        int[] a = new int[k + 1];
+        for (int i = 0; i < n; i++) {
+            a[sc.nextInt()]++;
+        }
+        Arrays.sort(a);
+        if (a[1] == 0)
+            System.out.println(0);
+        else
+            System.out.println(a[1]);
+    }
+}
+```
+
+## 一封奇怪的信
+
+[https://www.nowcoder.com/practice/d7764905e41a413c98900e22a9cc4ec3?tpId=122&&tqId=33699&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/d7764905e41a413c98900e22a9cc4ec3?tpId=122&&tqId=33699&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] a = new int[26];
+        for (int i = 0; i < 26; i++) {
+            a[i] = sc.nextInt();
+        }
+        sc.nextLine();
+        String s = sc.nextLine();
+        int cnt = 1;
+        int tmp = 100;
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int c = s.charAt(i) - 'a';
+            int w = a[c];
+            sum += w;
+            if (sum >= tmp){
+                sum = sum == tmp ? 0 : w;
+                cnt++;
+            }
+        }
+        System.out.println(cnt + " " + sum);
+    }
+}
+
+```
+
+## 计算糖果
+
+[https://www.nowcoder.com/practice/02d8d42b197646a5bbd0a98785bb3a34?tpId=122&&tqId=33679&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/02d8d42b197646a5bbd0a98785bb3a34?tpId=122&&tqId=33679&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = 0, b = 0, c = 0, d = 0;
+        int[] nums = new int[4];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextInt();
+        }
+        a = (nums[0] + nums[2]) / 2;
+        b = (nums[1] + nums[3]) / 2;
+        c = nums[3] - b;
+        if (b - c != nums[1])
+            System.out.println("No");
+        else if (a - b != nums[0])
+            System.out.println("No");
+        else if (a + b != nums[2])
+            System.out.println("No");
+        else
+            System.out.println(a + " " + b + " " + c);
+    }
+}
+
+```
+

@@ -7,19 +7,26 @@
 
 package Test;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = 3;
-        int i = 0;
-        Integer[] nums = new Integer[n];
-        while (n-- > 0){
-            nums[i++] = sc.nextInt();
+        int a = 0, b = 0, c = 0, d = 0;
+        int[] nums = new int[4];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextInt();
         }
-        Arrays.sort(nums, (o1, o2) -> o2 - o1);
-        System.out.println((nums[0] - nums[1]) + (nums[1] - nums[2]));
+        a = (nums[0] + nums[2]) / 2;
+        b = (nums[1] + nums[3]) / 2;
+        c = nums[3] - b;
+        if (b - c != nums[1])
+            System.out.println("No");
+        else if (a - b != nums[0])
+            System.out.println("No");
+        else if (a + b != nums[2])
+            System.out.println("No");
+        else
+            System.out.println(a + " " + b + " " + c);
     }
 }
