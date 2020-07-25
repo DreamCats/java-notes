@@ -1241,5 +1241,26 @@ public class Main {
         return res;
     }
 }
+```
 
+## 暗黑的字符串
+
+[https://www.nowcoder.com/practice/7e7ccd30004347e89490fefeb2190ad2?tpId=122&&tqId=33675&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/7e7ccd30004347e89490fefeb2190ad2?tpId=122&&tqId=33675&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        long[] dp = new long[x + 1];
+        dp[1] = 3;
+        dp[2] = 9;
+        for (int i = 3; i <= x; i++) {
+            dp[i] = 2 * dp[i - 1] + dp[i - 2]; // 把状态方程给忘了...可惜了
+        }
+        System.out.println(dp[x]);
+    }
+}
 ```

@@ -13,17 +13,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
-        int y = sc.nextInt();
-
-        System.out.println(reverse(reverse(x) + reverse(y)));
-    }
-
-    public static int reverse(int x) {
-        int res = 0;
-        while (x != 0){
-            res = res * 10 + x % 10;
-            x /= 10;
+        long[] dp = new long[x + 1];
+        dp[1] = 3;
+        dp[2] = 9;
+        for (int i = 3; i <= x; i++) {
+            dp[i] = 2 * dp[i - 1] + dp[i - 2];
         }
-        return res;
+        System.out.println(dp[x]);
     }
 }
