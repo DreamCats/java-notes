@@ -1186,3 +1186,32 @@ public class Main {
 
 ```
 
+## 买苹果
+
+[https://www.nowcoder.com/practice/61cfbb2e62104bc8aa3da5d44d38a6ef?tpId=122&&tqId=33678&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/61cfbb2e62104bc8aa3da5d44d38a6ef?tpId=122&&tqId=33678&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n % 8 == 0)
+            System.out.println(n / 8);
+        else {
+            int t = n / 8;
+            if (t == 0 && n % 6 == 0)
+                System.out.println(n / 6);
+            else {
+                n -= (t - 1) * 8;
+                if (n % 6 == 0)
+                    System.out.println(t - 1 + (n / 6));
+                else
+                    System.out.println(-1);
+            }
+        }
+    }
+}
+
+```
