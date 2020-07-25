@@ -1215,3 +1215,31 @@ public class Main {
 }
 
 ```
+
+## 数字翻转
+
+[https://www.nowcoder.com/practice/bc62febdd1034a73a62224affe8bddf2?tpId=122&&tqId=33676&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/bc62febdd1034a73a62224affe8bddf2?tpId=122&&tqId=33676&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        System.out.println(reverse(reverse(x) + reverse(y)));
+    }
+
+    public static int reverse(int x) {
+        int res = 0;
+        while (x != 0){
+            res = res * 10 + x % 10;
+            x /= 10;
+        }
+        return res;
+    }
+}
+
+```

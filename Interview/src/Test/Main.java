@@ -12,20 +12,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if (n % 8 == 0)
-            System.out.println(n / 8);
-        else {
-            int t = n / 8;
-            if (t == 0 && n % 6 == 0)
-                System.out.println(n / 6);
-            else {
-                n -= (t - 1) * 8;
-                if (n % 6 == 0)
-                    System.out.println(t - 1 + (n / 6));
-                else
-                    System.out.println(-1);
-            }
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        System.out.println(reverse(reverse(x) + reverse(y)));
+    }
+
+    public static int reverse(int x) {
+        int res = 0;
+        while (x != 0){
+            res = res * 10 + x % 10;
+            x /= 10;
         }
+        return res;
     }
 }
