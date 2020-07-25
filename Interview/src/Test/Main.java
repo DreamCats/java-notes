@@ -7,41 +7,40 @@
 
 package Test;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
         int k = sc.nextInt();
-        int[] nums1 = new int[n];
-        int[] nums2 = new int[n];
-        int[] sumInterest = new int[n];
-        for (int i = 0; i < n; i++) {
-            nums1[i] = sc.nextInt();
-        }
-        int sum0 = 0;
-        int sum1 = 0;
-        for (int i = 0; i < n; i++) {
-            nums2[i] = sc.nextInt();
-            if (nums2[i] == 1)
-                sum0 += nums1[i];
-            else
-                sum1 += nums1[i];
-            sumInterest[i] = sum1;
-        }
-        int cur = 0;
-        int max = 0;
-        for (int i = 0; i < n; i++) {
-            if (nums2[i] == 0){
-                if (i + k - 1 <= n - 1) {
-                    cur = sumInterest[i + k - 1] - (i - 1 > 0 ? sumInterest[i - 1] : 0);
-                } else {
-                    cur = sumInterest[n - 1] - (i - 1 > 0 ? sumInterest[i - 1] : 0);
-                }
+        while (k-- > 0) {
+            int n = sc.nextInt();
+            int[] nums = new int[n];
+            for (int i = 0; i < n; i++) {
+                nums[i] = sc.nextInt();
             }
-            max = Math.max(cur, max);
+            System.out.println(eql(nums));
         }
-        System.out.println(max + sum0);
+    }
+
+    public static String eql(int[] arr){
+        Arrays.sort(arr);
+        int a = arr[0];
+        int b = arr[arr.length-1];
+        if(arr.length == 2){
+            return "YES";
+        }
+        if((a+b) % 2 != 0){
+            return "NO";
+        }
+        int mid = (a+b)/2;
+        int offset = b - mid;
+        for(int i = 0;i < arr.length;i++){
+            if(!(arr[i] + offset == mid || arr[i] - offset == mid || arr[i] == mid)){
+                return "NO";
+            }
+        }
+        return "YES";
     }
 }
