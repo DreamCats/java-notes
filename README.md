@@ -49,6 +49,11 @@
 - [字节面经](/Interview/mianjing/zijie/本人字节面经.md)
 - [用友SP面经](/Interview/mianjing/yongyou/个人用友sp面经.md)
 
+## 我是这样回答的
+> 能力有限，但又想去钻研，面试中该怎么回答较好。
+
+- [谈谈异常机制](/Interview/sad/谈谈异常机制.md)
+
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
 - [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
