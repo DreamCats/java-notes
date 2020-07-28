@@ -7,19 +7,14 @@
 
 package Test;
 
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
-        String s = "   hello world!  ";
-        String[] ss = s.trim().split("\\s+");
-        System.out.println(Arrays.toString(ss));
-        StringBuffer sb = new StringBuffer();
-        for (int i = ss.length - 1; i > 0; i--) {
-            sb.append(ss[i]).append(" ");
-        }
-        sb.append(ss[0]);
-//        return sb.toString();
+        final Object o = new Object();
+        HashMap<Integer, Object> map = new HashMap<>();
+        System.out.println(map.put(1, o));
+        System.out.println(map.put(1, o));
     }
 }
