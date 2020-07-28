@@ -7,18 +7,19 @@
 
 package Test;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        long[] dp = new long[x + 1];
-        dp[1] = 3;
-        dp[2] = 9;
-        for (int i = 3; i <= x; i++) {
-            dp[i] = 2 * dp[i - 1] + dp[i - 2];
+//        Scanner sc = new Scanner(System.in);
+        String s = "   hello world!  ";
+        String[] ss = s.trim().split("\\s+");
+        System.out.println(Arrays.toString(ss));
+        StringBuffer sb = new StringBuffer();
+        for (int i = ss.length - 1; i > 0; i--) {
+            sb.append(ss[i]).append(" ");
         }
-        System.out.println(dp[x]);
+        sb.append(ss[0]);
+//        return sb.toString();
     }
 }
