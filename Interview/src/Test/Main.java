@@ -12,29 +12,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        int x = (int) Math.sqrt(num);
-        int l = 0, r = x;
-        int sum = 0;
-        while (l < r) {
-            if (l == 0 && r * r == num){
-                sum += 4;
-                l++;
-                r--;
-            }
-            else if ((l * l + r * r) == num) {
-                sum += 8;
-                l++;
-                r--;
-            }
-            else if ((l * l + r * r) < num)
-                l++;
-            else
-                r--;
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
         }
-        if (l == r)
-            System.out.println(sum += 4);
-        else
-            System.out.println(sum);
+        int l = 0, r = n - 1;
+        int cnt = 0;
+        while (l < r){
+            if (a[l] == a[r]){
+                l++;
+                r--;
+            } else if (a[l] < a[r]){
+                a[l + 1] = a[l] + a[l + 1];
+                l++;
+                cnt++;
+            } else {
+                a[r - 1] = a[r] + a[r - 1];
+                r--;
+                cnt++;
+            }
+        }
+        System.out.println(cnt);
     }
 }

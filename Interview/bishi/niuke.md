@@ -1301,3 +1301,40 @@ public class Main {
 }
 
 ```
+
+## 回文序列
+
+[https://www.nowcoder.com/practice/0147cbd790724bc9ae0b779aaf7c5b50?tpId=122&&tqId=33672&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/0147cbd790724bc9ae0b779aaf7c5b50?tpId=122&&tqId=33672&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        int l = 0, r = n - 1;
+        int cnt = 0;
+        while (l < r){
+            if (a[l] == a[r]){
+                l++;
+                r--;
+            } else if (a[l] < a[r]){
+                a[l + 1] = a[l] + a[l + 1];
+                l++;
+                cnt++;
+            } else {
+                a[r - 1] = a[r] + a[r - 1];
+                r--;
+                cnt++;
+            }
+        }
+        System.out.println(cnt);
+    }
+}
+
+```
