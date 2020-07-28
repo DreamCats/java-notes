@@ -1338,3 +1338,33 @@ public class Main {
 }
 
 ```
+
+## 数字游戏
+
+[https://www.nowcoder.com/practice/876e3c5fcfa5469f8376370d5de87c06?tpId=122&&tqId=33669&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/876e3c5fcfa5469f8376370d5de87c06?tpId=122&&tqId=33669&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        Arrays.sort(a);
+        int p = 1;
+        for (int i = 0; i < n; i++) {
+            if (a[i] > p)
+                break;
+            else
+                p += a[i];
+        }
+        System.out.println(p);
+    }
+}
+
+```
