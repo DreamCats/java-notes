@@ -55,6 +55,7 @@
 - [谈谈异常机制](/Interview/sad/谈谈异常机制.md)
 - [谈谈反射机制](/Interview/sad/谈谈反射机制.md)
 - [谈谈多态](/Interview/sad/谈谈多态.md)
+- [谈谈String](/Interview/sad/谈谈String.md)
 
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
