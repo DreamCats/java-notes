@@ -1145,3 +1145,41 @@ public class Main {
 }
 
 ```
+
+## 小易喜欢的单词
+
+[https://www.nowcoder.com/practice/ca7b8af83e2f4ec1af2f23d6733223b5?tpId=122&&tqId=33667&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/ca7b8af83e2f4ec1af2f23d6733223b5?tpId=122&&tqId=33667&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        if (isUpper(s) && secJudge(s) && thirdJudge(s))
+            System.out.println("Likes");
+        else
+            System.out.println("Dislikes");
+    }
+
+    public static boolean isUpper(String s){
+        return s.matches("[A-Z]+");
+    }
+
+    public static boolean secJudge(String s){
+        return !s.matches(".*(.)\\1.*");
+    }
+
+    public static boolean thirdJudge(String s){
+        return !s.matches(".*(.).*(.)\\1.*\\2.*");
+    }
+}
+
+// \1的意思是，和第一个()里的内容相同，注意转义字符的处理并且必须和()配套使用。
+// \2的用法同理。
+
+// .:匹配除换行符以外的任意字符
+// *:重复零次或更多次
+// +:重复一次或更多次
+```
