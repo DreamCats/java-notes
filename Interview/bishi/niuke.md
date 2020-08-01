@@ -1183,3 +1183,102 @@ public class Main {
 // *:重复零次或更多次
 // +:重复一次或更多次
 ```
+
+## 完全背包
+
+```html
+100
+5
+77 92
+22 22
+29 36
+50 46
+99 90
+
+输出
+114
+```
+
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // 完全背包
+        Scanner sc = new Scanner(System.in);
+        int W = sc.nextInt();
+        int n = sc.nextInt();
+        int[] ps = new int[n];
+        int[] vs = new int[n];
+        for (int i = 0; i < n; i++) {
+            ps[i] = sc.nextInt();
+            vs[i] = sc.nextInt();
+        }
+
+        int[] dp = new int[W + 1];
+        for (int i = 1; i <= n; i++) {
+            int p = ps[i - 1], v = vs[ i - 1];
+            for (int j = p; j <= W; j++) {
+                dp[j] = Math.max(dp[j], dp[j - p] + v);
+            }
+        }
+        System.out.println(dp[W]);
+    }
+}
+
+```
+
+## 找亲戚
+
+有重复的数字，如{1,1,2} 全排列， 符合亲7数{112, 112}两个
+
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    static ArrayList<String> ret = new ArrayList<>();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s  = sc.nextLine();
+        String ss = convertNumber(s);
+
+        char[] chars = ss.toCharArray();
+        dfs(chars, new boolean[chars.length], new StringBuilder());
+        int cnt = 0;
+        for (String s1 : ret) {
+            int num = Integer.parseInt(s1);
+            if (num % 7 == 0)
+                cnt++;
+        }
+        System.out.println(cnt);
+    }
+
+    public static void dfs(char[] chars, boolean[] marked, StringBuilder s){
+        if (s.length() == chars.length){
+            ret.add(s.toString());
+            return;
+        }
+        for (int i = 0; i < marked.length; i++) {
+            if (marked[i])
+                continue;
+
+            marked[i] = true;
+            s.append(chars[i]);
+            dfs(chars, marked, s);
+            marked[i] = false;
+            s.deleteCharAt(s.length() - 1);
+        }
+    }
+
+    public static String convertNumber(String s){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+                sb.append(s.charAt(i));
+        }
+        return sb.toString();
+    }
+}
+```

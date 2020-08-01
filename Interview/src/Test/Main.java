@@ -7,27 +7,50 @@
 
 package Test;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    static ArrayList<String> ret = new ArrayList<>();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        if (isUpper(s) && secJudge(s) && thirdJudge(s))
-            System.out.println("Likes");
-        else
-            System.out.println("Dislikes");
+        String s  = sc.nextLine();
+        String ss = convertNumber(s);
+
+        char[] chars = ss.toCharArray();
+        dfs(chars, new boolean[chars.length], new StringBuilder());
+        int cnt = 0;
+        for (String s1 : ret) {
+            int num = Integer.parseInt(s1);
+            if (num % 7 == 0)
+                cnt++;
+        }
+        System.out.println(cnt);
     }
 
-    public static boolean isUpper(String s){
-        return s.matches("[A-Z]+");
+    public static void dfs(char[] chars, boolean[] marked, StringBuilder s){
+        if (s.length() == chars.length){
+            ret.add(s.toString());
+            return;
+        }
+        for (int i = 0; i < marked.length; i++) {
+            if (marked[i])
+                continue;
+
+            marked[i] = true;
+            s.append(chars[i]);
+            dfs(chars, marked, s);
+            marked[i] = false;
+            s.deleteCharAt(s.length() - 1);
+        }
     }
 
-    public static boolean secJudge(String s){
-        return !s.matches(".*(.)\\1.*");
-    }
-
-    public static boolean thirdJudge(String s){
-        return !s.matches(".*(.).*(.)\\1.*\\2.*");
+    public static String convertNumber(String s){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+                sb.append(s.charAt(i));
+        }
+        return sb.toString();
     }
 }
