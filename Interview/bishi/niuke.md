@@ -1282,3 +1282,142 @@ public class Main {
     }
 }
 ```
+
+## 两种排序方法
+
+[https://www.nowcoder.com/practice/839f681bf36c486fbcc5fcb977ffe432?tpId=122&&tqId=33666&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/839f681bf36c486fbcc5fcb977ffe432?tpId=122&&tqId=33666&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+        boolean lenFlag = true;
+        List<String> v = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            v.add(sc.nextLine());
+        }
+        List<String> p = new ArrayList<>(v);
+        Collections.sort(p);
+        boolean dictFlag = p.equals(v);
+        for (int i = 1; i < n; i++) {
+            if (v.get(i).length() < v.get(i - 1).length()){
+                lenFlag = false;
+                break;
+            }
+        }
+
+        if (dictFlag && lenFlag)
+            System.out.println("both");
+        else if (lenFlag)
+            System.out.println("lengths");
+        else if (dictFlag)
+            System.out.println("lexicographically");
+        else
+            System.out.println("none");
+    }
+}
+
+```
+
+## 统计回文
+
+[https://www.nowcoder.com/practice/9d1559511b3849deaa71b576fa7009dc?tpId=122&&tqId=33664&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/9d1559511b3849deaa71b576fa7009dc?tpId=122&&tqId=33664&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        String b = sc.nextLine();
+        int cnt = 0;
+        for (int i = 0; i < a.length(); i++) {
+            String s = a.substring(0, i + 1) + b + a.substring(i + 1);
+            if (isSym(s))
+                cnt++;
+        }
+        if (isSym(b+a))
+            cnt++;
+        System.out.println(cnt);
+    }
+
+    public static boolean isSym(String s){
+        int l = 0, r = s.length() - 1;
+        while (l < r){
+            if (s.charAt(l) != s.charAt(r)){
+                return false;
+            }
+            l++;
+            r--;
+        }
+        return true;
+    }
+}
+
+```
+
+## 解救小易
+
+[https://www.nowcoder.com/practice/cd763d8541fc4243b8d3b967bb6d6b6a?tpId=122&&tqId=33663&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/cd763d8541fc4243b8d3b967bb6d6b6a?tpId=122&&tqId=33663&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] nums = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            nums[i][0] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            nums[i][1] = sc.nextInt();
+        }
+        Arrays.sort(nums, (a, b) -> (a[0] + a[1]) - (b[0] + b[1]));
+        System.out.println((nums[0][0] - 1) + nums[0][1] - 1);
+    }
+}
+
+```
+
+## 不要二
+
+[https://www.nowcoder.com/practice/1183548cd48446b38da501e58d5944eb?tpId=122&&tqId=33662&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/1183548cd48446b38da501e58d5944eb?tpId=122&&tqId=33662&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int w = sc.nextInt();
+        int h = sc.nextInt();
+        int[][] a = new int[w][h];
+        int cnt = 0;
+        for (int i = 0; i < w; i++) {
+            for (int j = 0; j < h; j++) {
+                if (a[i][j] == 0){
+                    cnt++;
+                    if ((i + 2) < w)
+                        a[i + 2][j] = -1;
+                    if ((j + 2) < h)
+                        a[i][j + 2] = -1;
+                }
+            }
+        }
+        System.out.println(cnt);
+    }
+}
+```
