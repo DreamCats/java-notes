@@ -1509,3 +1509,38 @@ public class Main {
 }
 
 ```
+
+## 六一儿童节
+
+[https://www.nowcoder.com/practice/d2dfc62bf1ba42679a0e358c57da9828?tpId=158&&tqId=34015&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking](https://www.nowcoder.com/practice/d2dfc62bf1ba42679a0e358c57da9828?tpId=158&&tqId=34015&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int h = sc.nextInt();
+        int[] hs = new int[h];
+        for (int i = 0; i < h; i++) {
+            hs[i] = sc.nextInt();
+        }
+        int w = sc.nextInt();
+        int[] ws = new int[w];
+        for (int i = 0; i < w; i++) {
+            ws[i] = sc.nextInt();
+        }
+        Arrays.sort(hs);
+        Arrays.sort(ws);
+        int i = 0, j = 0;
+        while (i < h && j < w){
+            if (hs[i] <= ws[j])
+                i++;
+            j++;
+        }
+        System.out.println(i);
+    }
+}
+
+```
