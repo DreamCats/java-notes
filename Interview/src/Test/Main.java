@@ -8,34 +8,32 @@
 package Test;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int sum = 0;
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
-            sum += a[i];
         }
-        System.out.println(minCount(a, sum));
+        System.out.println(min(a, n));
     }
 
-    public static int minCount(int[] a, int sum){
-        if (sum % a.length != 0)
-            return -1;
-        int avg = sum / a.length;
-        int cnt = 0;
-        for (int i = 0; i < a.length; i++) {
-            int sub = a[i] - avg;
-            if (sub > 0){
-                if (sub % 2 == 0)
-                    cnt += sub / 2;
-                else
-                    return -1;
+    public static int min(int[] a, int n){
+        for (int i = n - 1; i >= 0; i--) {
+            Arrays.sort(a);
+            for (int j = i - 1; j >= 0; j--) {
+                if ((a[i] ^ a[j]) < a[j])
+                    a[j] ^= a[i];
             }
-
+        }
+        int cnt = 0;
+        for (int i : a) {
+            if (i != 0)
+                cnt++;
         }
         return cnt;
     }

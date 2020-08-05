@@ -1614,3 +1614,40 @@ public class Main {
     }
 }
 ```
+
+## 混合颜料
+
+[https://www.nowcoder.com/practice/5b1116081ee549f882970eca84b4785a?tpId=122&&tqId=33660&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/5b1116081ee549f882970eca84b4785a?tpId=122&&tqId=33660&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        System.out.println(min(a, n));
+    }
+
+    public static int min(int[] a, int n){
+        for (int i = n - 1; i >= 0; i--) {
+            Arrays.sort(a);
+            for (int j = i - 1; j >= 0; j--) {
+                if ((a[i] ^ a[j]) < a[j])
+                    a[j] ^= a[i];
+            }
+        }
+        int cnt = 0;
+        for (int i : a) {
+            if (i != 0)
+                cnt++;
+        }
+        return cnt;
+    }
+}
+```
