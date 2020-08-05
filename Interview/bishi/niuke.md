@@ -1576,3 +1576,41 @@ public class Main {
 
 }
 ```
+
+## 分苹果
+
+[https://www.nowcoder.com/practice/a174820de48147d489f64103af152709?tpId=122&&tqId=33656&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/a174820de48147d489f64103af152709?tpId=122&&tqId=33656&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+            sum += a[i];
+        }
+        System.out.println(minCount(a, sum));
+    }
+
+    public static int minCount(int[] a, int sum){
+        if (sum % a.length != 0)
+            return -1;
+        int avg = sum / a.length;
+        int cnt = 0;
+        for (int i = 0; i < a.length; i++) {
+            int sub = a[i] - avg;
+            if (sub > 0){
+                if (sub % 2 == 0)
+                    cnt += sub / 2;
+                else
+                    return -1;
+            }
+        }
+        return cnt;
+    }
+}
+```
