@@ -1544,3 +1544,35 @@ public class Main {
 }
 
 ```
+
+## 藏宝图
+
+[nowcoder.com/practice/74475ee28edb497c8aa4f8c370f08c30?tpId=122&&tqId=33658&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](nowcoder.com/practice/74475ee28edb497c8aa4f8c370f08c30?tpId=122&&tqId=33658&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String t = sc.nextLine();
+        if (isSeq(s, t))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+
+    public static boolean isSeq(String s, String t){
+        if (t.equals(" "))
+            return true;
+        int inx = -1;
+        for (char c : t.toCharArray()) {
+            inx = s.indexOf(c, inx + 1);
+            if (inx == -1) return false;
+        }
+        return true;
+    }
+
+}
+```
