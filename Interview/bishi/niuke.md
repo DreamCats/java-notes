@@ -1709,3 +1709,56 @@ public class Main {
     }
 }
 ```
+
+## 被3整除
+
+[https://www.nowcoder.com/practice/51dcb4eef6004f6f8f44d927463ad5e8?tpId=122&&tqId=33692&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/51dcb4eef6004f6f8f44d927463ad5e8?tpId=122&&tqId=33692&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long l = sc.nextInt();
+        long r = sc.nextInt();
+        long lSum = 0;
+        for (int i = 1; i <= l; i++) {
+            lSum += i;
+        }
+        long rSum = lSum;
+        long cnt = rSum % 3 == 0 ? 1 : 0;
+        for (long i = l + 1; i <= r ; i++) {
+            rSum += i;
+            cnt = rSum % 3 == 0 ? cnt + 1 : cnt;
+        }
+        System.out.println(cnt);
+    }
+}
+```
+
+## 彩色的砖块
+
+[https://www.nowcoder.com/practice/8c29f4d1bea84d6ba2847e079b7420f7?tpId=122&&tqId=33680&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/8c29f4d1bea84d6ba2847e079b7420f7?tpId=122&&tqId=33680&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        HashSet<Character> set = new HashSet<Character>();
+        for (int i = 0; i < s.length(); i++) {
+            set.add(s.charAt(i));
+        }
+        if (set.size() == 2)
+            System.out.println(2);
+        else if (set.size() == 1)
+            System.out.println(1);
+        else
+            System.out.println(0);
+    }
+}
+```
