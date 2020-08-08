@@ -8,33 +8,25 @@
 package Test;
 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
+            sum += a[i];
+            min = Math.min(min, a[i]);
+            max = Math.max(max, a[i]);
         }
-        System.out.println(min(a, n));
-    }
-
-    public static int min(int[] a, int n){
-        for (int i = n - 1; i >= 0; i--) {
-            Arrays.sort(a);
-            for (int j = i - 1; j >= 0; j--) {
-                if ((a[i] ^ a[j]) < a[j])
-                    a[j] ^= a[i];
-            }
-        }
-        int cnt = 0;
-        for (int i : a) {
-            if (i != 0)
-                cnt++;
-        }
-        return cnt;
+        if (min == max || sum == (max + min) * n / 2)
+            System.out.println("Possible");
+        else
+            System.out.println("Impossible");
     }
 }

@@ -1651,3 +1651,34 @@ public class Main {
     }
 }
 ```
+
+## 等差数列
+
+[https://www.nowcoder.com/practice/e11bc3a213d24fc1989b21a7c8b50c3f?tpId=122&&tqId=33681&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/e11bc3a213d24fc1989b21a7c8b50c3f?tpId=122&&tqId=33681&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+            sum += a[i];
+            min = Math.min(min, a[i]);
+            max = Math.max(max, a[i]);
+        }
+        int total = (max + min) * n;
+        if ((total % 2 == 0) && (sum == total / 2))
+            System.out.println("Possible");
+        else
+            System.out.println("Impossible");
+    }
+}
+
+```
