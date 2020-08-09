@@ -8,38 +8,48 @@
 package Test;
 
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
-        }
-        System.out.println(maxSub(a));
+        int m = sc.nextInt();
+        System.out.println(minSkip(n, m));
     }
 
-    public static int maxSub(int[] a) {
-        Arrays.sort(a);
-        int n = a.length;
-        int[] b = new int[n];
-        int l = 0, r = n - 1;
-        int m = n / 2;
-        int p = m - 1;
-        while (l <= r || m < n || p > 0) {
-            if (m < n)
-                b[m++] = (m - 1) % 2 == 0 ? a[r--] : a[l++];
-            if (p >= 0)
-                b[p--] = (p + 1) % 2 == 0 ? a[r--] : a[l++];
+    public static int minSkip(int n, int m) {
+        if (n == m)
+            return 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        Queue<Integer> queue = new LinkedList<>();
+        map.put(n, 0);
+        queue.add(n);
+        while (!queue.isEmpty()) {
+            int num = queue.poll();
+            if (num == m)
+                return map.get(num);
+            if (num > m)
+                continue;
+            HashSet<Integer> set = new HashSet<>();
+            yueShu(num, set);
+            for (Integer item : set) {
+                if (!map.containsKey(num + item)) {
+                    map.put(num + item, map.get(num) + 1);
+                    queue.add(num + item);
+                }
+            }
         }
-        int max = 0;
-        for (int i = 1; i < n; i++) {
-            max += Math.abs(b[i] - b[i - 1]);
+        return -1;
+    }
+
+    private static void yueShu(int num, HashSet<Integer> set) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0){
+                set.add(i);
+                set.add(num / i);
+            }
         }
-        return max;
     }
 }
 

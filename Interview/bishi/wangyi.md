@@ -1134,55 +1134,7 @@ public class Main {
 }
 ```
 
-## 大整数相乘
 
-[https://www.nowcoder.com/practice/0f0badf5f2204a6bb968b0955a82779e?tpId=158&&tqId=34014&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking](https://www.nowcoder.com/practice/0f0badf5f2204a6bb968b0955a82779e?tpId=158&&tqId=34014&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking)
-
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] ss = sc.nextLine().split(" ");
-        String s1 = ss[0];
-        String s2 = ss[1];
-        int len = s2.length() - 1;
-        String pre = "0";
-        for (int i = len; i >= 0; i--) {
-            String s = calc1(s1, s2.charAt(i), len - i);
-            String curS  = calc2(s, pre);
-            pre = curS;
-        }
-        System.out.println(pre);
-    }
-
-    public static String calc1(String s1, char c, int idx){
-        StringBuilder sb = new StringBuilder();
-        int carry = 0, i = s1.length() - 1;
-        while (idx-- > 0)
-            sb.append('0');
-        while (carry != 0 || i >= 0){
-            int x = i < 0 ? 0 : s1.charAt(i--) - '0';
-            int y = c - '0';
-            sb.append(((x * y + carry) % 10));
-            carry = (x * y + carry) / 10;
-        }
-        return sb.reverse().toString();
-    }
-
-    public static String calc2(String s1, String s2) {
-        StringBuilder sb = new StringBuilder();
-        int carry = 0, i = s1.length() - 1, j = s2.length() - 1;
-        while (carry != 0 || i >= 0 || j >= 0){
-            int x = i < 0 ? 0 : s1.charAt(i--) - '0';
-            int y = j < 0 ? 0 : s2.charAt(j--) - '0';
-            sb.append(((x + y + carry) % 10));
-            carry = (x + y + carry) / 10;
-        }
-        return sb.reverse().toString();
-    }
-}
 
 ```
 
@@ -1475,12 +1427,9 @@ public class Main {
 }
 ```
 
+---
 
-
-
-
-
-
+网易8.8笔试(题目改天整理)
 
 ```java
 class Main1 {
@@ -1545,9 +1494,7 @@ class Main2 {
     }
 }
 ```
----
 
-网易8.8笔试(题目改天整理)
 
 ```java
 class Main3 {
@@ -1627,7 +1574,7 @@ public class Main {
         int l = 0, r = n - 1;
         int m = n / 2;
         int p = m - 1;
-        while (l <= r || m < n || p > 0) {
+        while (l <= r) {
             if (m < n)
                 b[m++] = (m - 1) % 2 == 0 ? a[r--] : a[l++];
             if (p >= 0)
@@ -1641,4 +1588,56 @@ public class Main {
     }
 }
 
+```
+
+## 跳石板
+
+[https://www.nowcoder.com/practice/4284c8f466814870bae7799a07d49ec8?tpId=122&&tqId=33674&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/4284c8f466814870bae7799a07d49ec8?tpId=122&&tqId=33674&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+// bfs
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        System.out.println(minSkip(n, m));
+    }
+
+    public static int minSkip(int n, int m) {
+        if (n == m)
+            return 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        Queue<Integer> queue = new LinkedList<>();
+        map.put(n, 0);
+        queue.add(n);
+        while (!queue.isEmpty()) {
+            int num = queue.poll();
+            if (num == m)
+                return map.get(num);
+            if (num > m)
+                continue;
+            HashSet<Integer> set = new HashSet<>();
+            yueShu(num, set);
+            for (Integer item : set) {
+                if (!map.containsKey(num + item)) {
+                    map.put(num + item, map.get(num) + 1);
+                    queue.add(num + item);
+                }
+            }
+        }
+        return -1;
+    }
+
+    private static void yueShu(int num, HashSet<Integer> set) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0){
+                set.add(i);
+                set.add(num / i);
+            }
+        }
+    }
+}
 ```

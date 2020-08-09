@@ -202,3 +202,53 @@ public class Main {
     }
 }
 ```
+
+## 大整数相乘
+
+[https://www.nowcoder.com/practice/0f0badf5f2204a6bb968b0955a82779e?tpId=158&&tqId=34014&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking](https://www.nowcoder.com/practice/0f0badf5f2204a6bb968b0955a82779e?tpId=158&&tqId=34014&rp=1&ru=/ta/exam-pdd&qru=/ta/exam-pdd/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] ss = sc.nextLine().split(" ");
+        String s1 = ss[0];
+        String s2 = ss[1];
+        int len = s2.length() - 1;
+        String pre = "0";
+        for (int i = len; i >= 0; i--) {
+            String s = calc1(s1, s2.charAt(i), len - i);
+            String curS  = calc2(s, pre);
+            pre = curS;
+        }
+        System.out.println(pre);
+    }
+
+    public static String calc1(String s1, char c, int idx){
+        StringBuilder sb = new StringBuilder();
+        int carry = 0, i = s1.length() - 1;
+        while (idx-- > 0)
+            sb.append('0');
+        while (carry != 0 || i >= 0){
+            int x = i < 0 ? 0 : s1.charAt(i--) - '0';
+            int y = c - '0';
+            sb.append(((x * y + carry) % 10));
+            carry = (x * y + carry) / 10;
+        }
+        return sb.reverse().toString();
+    }
+
+    public static String calc2(String s1, String s2) {
+        StringBuilder sb = new StringBuilder();
+        int carry = 0, i = s1.length() - 1, j = s2.length() - 1;
+        while (carry != 0 || i >= 0 || j >= 0){
+            int x = i < 0 ? 0 : s1.charAt(i--) - '0';
+            int y = j < 0 ? 0 : s2.charAt(j--) - '0';
+            sb.append(((x + y + carry) % 10));
+            carry = (x + y + carry) / 10;
+        }
+        return sb.reverse().toString();
+    }
+}
