@@ -1,24 +1,5 @@
 # JavaBooks
 ## 引言
-> 总结的知识点包括：
->
-> - Java基础
-> - Java集合
-> - Java多线程
-> - JVM虚拟机
-> - Spring系列(SpringIOC、SpringAOP、SpringMVC及SpringBoot)
-> - ORM(Mybatis)
-> - 数据库(Mysql和Redis)
-> - 微服务(Dubbo)
-> - 消息队列(RocketMQ)
-> - 计算机网络
-> - 操作系统(Linux系统)
-> - 微服务项目(SpringBoot+Mybatis+Dubbo+Mysql+Redis+RocketMQ)
-> - 数据结构与算法(Leetcode/剑指Offer)
-> - 设计模式
-> - 常用工具
->
-> **如果观看不流畅，可以去我的博客浏览面试知识点**
 > - [个人博客](http://dreamcat.ink/)
 > - [在线阅读](https://dreamcater.gitee.io/javabooks/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
