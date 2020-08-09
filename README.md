@@ -50,13 +50,20 @@
 - [用友SP面经](/Interview/mianjing/yongyou/个人用友sp面经.md)
 
 ## 我是这样回答的
-> 能力有限，但又想去钻研，面试中该怎么回答较好。
+> 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）
 
 - [谈谈异常机制](/Interview/sad/谈谈异常机制.md)
 - [谈谈反射机制](/Interview/sad/谈谈反射机制.md)
 - [谈谈多态](/Interview/sad/谈谈多态.md)
 - [谈谈String](/Interview/sad/谈谈String.md)
 - [谈谈集合](/Interview/sad/谈谈集合.md)
+
+## 刷题系列
+- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
+> 个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。 
+
+- [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)
+> 有些套路挺实用的，推荐阅读...
 
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
@@ -99,20 +106,11 @@
 - **个人吐血系列-Dubbo**: [本地阅读](/Interview/crazy/个人吐血系列-总结Dubbo.md)->[博客阅读](http://dreamcat.ink/2020/04/02/ge-ren-tu-xie-xi-lie-zong-jie-ji-suan-ji-wang-luo/)-> [掘金阅读](https://juejin.im/post/5eb11127f265da7bb46bce26)
 - **个人吐血系列-RocketMQ**: [本地阅读](/Interview/crazy/个人吐血系列-总结RocketMQ.md)->[博客阅读](http://dreamcat.ink/2020/04/01/ge-ren-tu-xie-xi-lie-zong-jie-rocketmq/)-> [掘金阅读](https://juejin.im/post/5ecf1f716fb9a047f338b972)
 
-## 刷题系列
-- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
-> 个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。 
-
-- [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)
-> 有些套路挺实用的，推荐阅读...
-
 
 ## 基础
 - [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
 - [Java面试基础知识](/Basics/Java面试基础知识.md)
 - [Java面试基础知识](/Basics/Java面试基础常见问题.md)
-
-- [异常分类图解](https://www.processon.com/view/link/5e404235e4b021dc289fbf72)
 
 ## 集合源码
 - [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
@@ -124,7 +122,6 @@
 - [Java面经-PriorityQueue源码解析](/Collections/Java面经-PriorityQueue源码解析.md)
 - [Java面经-Stack-Queue源码解析](/Collections/Java面经-Stack-Queue源码解析.md)
 - [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
-
 - [ArrayList源码图解](https://www.processon.com/view/link/5e13ddf5e4b07ae2d01c7369)
 - [LinkedList源码图解](https://www.processon.com/view/link/5e13e641e4b0c090e0b88a59)
 - [HashMap源码图解](https://www.processon.com/view/link/5e159150e4b07db4cfb0f418)
@@ -142,7 +139,6 @@
 - [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
 - [多线程一些例子](/Multithread/README.md)
 - [Java多线程常见问题](/Multithread/Java多线程常见问题.md)
-
 - [谈谈Java内存模型图解](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
 - [有个成员变量int a = 1,那么a和1分别在jvm哪里图解](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
 - [线程的状态周期图](https://www.processon.com/view/link/5e16a379e4b0f5a7ed06d2fb)
@@ -162,7 +158,6 @@
 - [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
 - [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
 - [JVM面试常见问题](/Jvm/JVM面试常见问题.md)
-
 - [JVM整个流程图](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
 ## Spring系列
@@ -174,36 +169,18 @@
 - [SpringMVC开发文档](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) **这里就不贴视频中的SpringMVC工程**
 - [手写简单的IOC](/spring-ioc) 非常简单，每行都有注释
 - [手写简单的AOP](/spring-aop2) 非常简单，每行都有注
-
-### SpringBoot
-**[参考这位大佬](https://snailclimb.gitee.io/springboot-guide/#/)**
-**项目结构过于具体简单的文件解释就不说了，主要是看细节和原理**
-
+- [Springboot](https://snailclimb.gitee.io/springboot-guide/#/)
 - [SpringBoot启动流程分析](/SpringBoot启动流程分析.md)
-
-### 常见问题
 - [Spring面试常见问题](/Interview/spring/Spring面试常见问题.md)
 
 ## MyBatis系列
-- [MyBatis常见问题的思维导图](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71)
-- [MyBatis面试相关系列](https://github.com/DreamCats/SpringBooks#mybatis)
-- [MyBatis源码](https://juejin.im/entry/5b9886735188255c960c1bec)
 - [MyBatis面试常见问题](/Interview/mybatis/MyBatis面试常见问题.md)
   
 ## 计算机网络
-- [计算机网络原理-DNS是干什么的?](/Interview/network/计算机网络原理-DNS是干什么的.md)
-- [计算机网络原理-http那些事儿](/Interview/network/计算机网络原理-http那些事儿.md)
-- [动画：用动画给面试官解释 TCP 三次握手过程](https://blog.csdn.net/qq_36903042/article/details/102513465)
-- [动画：用动画给女朋友讲解 TCP 四次分手过程](https://blog.csdn.net/qq_36903042/article/details/102656641)
 - [计算机网络面试常见问题](Interview/network/计算机网络面试常见问题.md)
 
 ## 数据库
-- [SQL-数据库系统原理](/Interview/mysql/sql-数据库系统原理.md)
-- [MySQL中ACID的原理](/Interview/mysql/Mysql中ACID的原理.md)
-- [SQL-存储引擎](/Interview/mysql/sql-存储引擎.md)
-- [SQL-索引(B+树)](/Interview/mysql/sql-索引-B-树.md)
 - [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
-
 - [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
 
 ## 分布式
@@ -212,7 +189,6 @@
 
 ## Linux
 - [linux-基础](/Interview/linux/linux-基础.md)
-
 
 ### 项目
 - 项目地址：[微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus)
