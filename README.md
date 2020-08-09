@@ -52,7 +52,10 @@
 
 > 这里说一下， 图解SQL面试题，个人建议全部练习，也不难，但也的确面试高频手写SQL题
 
-- [牛客笔试题](/Interview/bishi/niuke.md)
+- [pdd](/Interview/bishi/pdd.md)
+- [网易](/Interview/bishi/wangyi.md)
+- [shopee](/Interview/bishi/shopee.md)
+- [老虎](/Interview/bishi/laohu.md)
 
 > 可以从牛客找笔试题的感觉，也可以练习输入输出，做多了，你就发现基本没有树和链表！
 
