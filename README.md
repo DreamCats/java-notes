@@ -51,6 +51,7 @@
 - [谈谈AQS](/Interview/sad/谈谈AQS.md)
 - [谈谈死锁](/Interview/sad/谈谈死锁.md)
 - [生产者消费者模型](/Interview/sad/生产者消费者模型.md)
+- [类文件结构](/Interview/sad/类文件结构.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
