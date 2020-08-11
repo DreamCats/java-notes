@@ -34,6 +34,7 @@
 ## 我是这样回答的
 > 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）
 
+- [hashcode、equals](/Interview/sad/hashcode、equals.md)
 - [谈谈异常机制](/Interview/sad/谈谈异常机制.md)
 - [谈谈反射机制](/Interview/sad/谈谈反射机制.md)
 - [谈谈多态](/Interview/sad/谈谈多态.md)

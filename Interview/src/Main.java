@@ -1,20 +1,13 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-        Integer a = new Integer(5);
-        Integer b = new Integer(5);
-        if (a == b)
-            System.out.println("true");
-        else
-            System.out.println("false， 比的是内存地址啊，兄弟");
-
-        if (a.equals(b))
-            System.out.println("True，这就对了嘛，equals干嘛使用？");
-        else
-            System.out.println("False");
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(1);
+        System.out.println(set.toString());
     }
-
-
 }
 
 
