@@ -44,10 +44,11 @@
 - [线程与进程的区别](/Interview/sad/线程与进程的区别.md)
 - [线程的创建方式](/Interview/sad/线程的创建方式.md)
 - [谈谈线程池](/Interview/sad/谈谈线程池.md)
-- [谈谈volatile.md](/Interview/sad/谈谈volatile.md.md)
+- [谈谈volatile](/Interview/sad/谈谈volatile.md)
+- [谈谈synchronized](/Interview/sad/谈谈synchronized.md)
 
 ## 刷题系列
-- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法))
+- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
 > 个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。 
 
 - [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)
