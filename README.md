@@ -69,6 +69,7 @@
 - [网易](/Interview/bishi/wangyi.md)
 - [shopee](/Interview/bishi/shopee.md)
 - [老虎](/Interview/bishi/laohu.md)
+- [贝壳](/Interview/bishi/beike.md)
 
 > 可以从牛客找笔试题的感觉，也可以练习输入输出，做多了，你就发现基本没有树和链表！
 
