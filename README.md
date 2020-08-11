@@ -46,6 +46,7 @@
 - [谈谈线程池](/Interview/sad/谈谈线程池.md)
 - [谈谈volatile](/Interview/sad/谈谈volatile.md)
 - [谈谈synchronized](/Interview/sad/谈谈synchronized.md)
+- [谈谈CAS](/Interview/sad/谈谈CAS.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
