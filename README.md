@@ -49,6 +49,7 @@
 - [谈谈CAS](/Interview/sad/谈谈CAS.md)
 - [谈谈ThreadLocal](/Interview/sad/谈谈ThreadLocal.md)
 - [谈谈AQS](/Interview/sad/谈谈AQS.md)
+- [谈谈死锁](/Interview/sad/谈谈死锁.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
