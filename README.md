@@ -30,6 +30,7 @@
 - [京东面经](/Interview/mianjing/jingdong/本人京东面经.md)
 - [字节面经](/Interview/mianjing/zijie/本人字节面经.md)
 - [用友SP面经](/Interview/mianjing/yongyou/个人用友sp面经.md)
+- [百度面经](/Interview/mianjing/baidu/本人百度面经.md)
 
 ## 我是这样回答的
 > 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）
@@ -52,7 +53,7 @@
 - [谈谈死锁](/Interview/sad/谈谈死锁.md)
 - [生产者消费者模型](/Interview/sad/生产者消费者模型.md)
 - [类文件结构](/Interview/sad/类文件结构.md)
-- [类加载器](/Interview/sad/类加载器.md)
+- [类加载过程](/Interview/sad/类加载过程.md)
 - [类加载器](/Interview/sad/类加载器.md)
 
 ## 刷题系列
