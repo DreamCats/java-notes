@@ -26,11 +26,12 @@
 - [百度所有问题汇总](/Interview/mianjing/baidu/百度所有问题汇总.md)
 
 ### 本人所经历的面经
-- [招银面经](/Interview/mianjing/zhaoyin/本人招银面经.md)
-- [京东面经](/Interview/mianjing/jingdong/本人京东面经.md)
-- [字节面经](/Interview/mianjing/zijie/本人字节面经.md)
-- [用友SP面经](/Interview/mianjing/yongyou/个人用友sp面经.md)
-- [百度面经](/Interview/mianjing/baidu/本人百度面经.md)
+- [招银面经](/Interview/mianjing/zhaoyin/my.md)
+- [京东面经](/Interview/mianjing/jingdong/my.md)
+- [字节面经](/Interview/mianjing/zijie/my.md)
+- [用友SP面经](/Interview/mianjing/yongyou/my.md)
+- [百度面经](/Interview/mianjing/baidu/mmy.md)
+- [网易面经](/Interview/mianjing/wangyi/my.md)
 
 ## 我是这样回答的
 > 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）

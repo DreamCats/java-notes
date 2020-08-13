@@ -1136,7 +1136,7 @@ public class Main {
 
 
 
-```
+
 
 ## 最大乘积
 
@@ -1542,6 +1542,56 @@ class Main3 {
         }
         return sum;
     }
+}
+```
+
+```java
+import java.util.*;
+
+public class Main3 {
+    static Set<List<Integer>> marked = new HashSet<>();
+    static List<Integer> listSum = new ArrayList<>();
+    static int sum = 0;
+    public static void main(String[] args) {
+        int[] nums = {5, 15, 20, 40, 60, 80, 100, 5, 5, 5, 5, 5, 5, 10, 10, 25};
+        sum = Arrays.stream(nums).sum();
+        Arrays.sort(nums);
+        for (int i = 2; i <= nums.length; i++) {
+            dfs(0, nums, new ArrayList<Integer>(), i);
+        }
+        System.out.println(listSum.stream().min(Comparator.comparingInt(Integer::intValue)).get());
+    }
+
+    private static void dfs(int start, int[] nums, ArrayList<Integer>list, int size) {
+        if (list.size() == size) {
+            if (!marked.contains(list))
+                marked.add(list);
+                if (canPartition(list.stream().mapToInt(Integer::valueOf).toArray())) {
+                    listSum.add(sum - list.stream().mapToInt(Integer::valueOf).sum());
+                    return;
+                }
+        }
+        for (int i = start; i < nums.length; i++) {
+            list.add(nums[i]);
+            dfs(i + 1, nums, list, size);
+            list.remove(list.size() - 1);
+        }
+    }
+
+    public static boolean canPartition(int[] nums) {
+        int sum = Arrays.stream(nums).sum();
+        if (sum % 2 != 0) return false;
+        int w = sum / 2;
+        boolean[] dp = new boolean[w + 1];
+        dp[0] = true;
+        for (int num : nums) {
+            for (int i = w; i >= num; i--) {
+                dp[i] = dp[i] || dp[i - num];
+            }
+        }
+        return dp[w];
+    }
+
 }
 ```
 

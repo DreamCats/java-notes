@@ -1,9 +1,9 @@
+
 public class Main {
     public static void main(String[] args) {
-
+        
     }
 }
-
 /**
  * nk没有Pair的包
  * 自己提前写一个，方便使用
