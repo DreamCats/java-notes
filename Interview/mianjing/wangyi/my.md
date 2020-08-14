@@ -37,7 +37,7 @@
 14. AOP源码
 15. Spring事务原理，以及失效
 16. 如何也让受检异常，事务不失效
-17. 并发下for和iterator的区别，并且for会出什么错误
+17. for和iterator的区别，并且for会出什么错误
 18. 有没有看过iterator的源码
 19. 反问
 
