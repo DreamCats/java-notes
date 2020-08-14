@@ -18,3 +18,26 @@
 14. 平时如何学习的？
 
 
+二面
+时间：8.14 19:20 时长：35min
+
+1. 自我介绍
+2. 谈一谈深度学习
+3. 为何选择Java
+4. 如何学习Java
+5. Java都看过哪些源码
+6. 谈一谈HashMap
+7. 谈一谈ConcurrentHashMap
+8. 为何选择网易
+9. JavaSPI机制
+10. Spring SPI机制
+11. 如何是你，你会怎么设计SPI
+12. 怎么学习Dubbo和RocketMQ的
+13. 从源码上讲以下Spring bean的初始化前后所有过程(我没讲循环依赖，可惜了)
+14. AOP源码
+15. Spring事务原理，以及失效
+16. 如何也让受检异常，事务不失效
+17. 并发下for和iterator的区别，并且for会出什么错误
+18. 有没有看过iterator的源码
+19. 反问
+
