@@ -23,21 +23,23 @@
 
 1. 自我介绍
 2. 谈一谈深度学习
-3. 为何选择Java
-4. 如何学习Java
-5. Java都看过哪些源码
-6. 谈一谈HashMap
-7. 谈一谈ConcurrentHashMap
-8. 为何选择网易
-9. JavaSPI机制
-10. Spring SPI机制
-11. 如何是你，你会怎么设计SPI
-12. 怎么学习Dubbo和RocketMQ的
-13. 从源码上讲以下Spring bean的初始化前后所有过程(我没讲循环依赖，可惜了)
-14. AOP源码
-15. Spring事务原理，以及失效
-16. 如何也让受检异常，事务不失效
-17. for和iterator的区别，并且for会出什么错误
-18. 有没有看过iterator的源码
-19. 反问
+3. 简单聊以下项目
+4. 为什么用分布式事务
+5. 为何选择Java
+6. 如何学习Java
+7. Java都看过哪些源码
+8. 谈一谈HashMap
+9. 谈一谈ConcurrentHashMap
+10. 为何选择网易
+11. JavaSPI机制
+12. Spring SPI机制
+13. 如何是你，你会怎么设计SPI
+14. 怎么学习Dubbo和RocketMQ的
+15. 从源码上讲以下Spring bean的初始化前后所有过程(我没讲循环依赖，可惜了)
+16. AOP源码
+17. Spring事务原理，以及失效
+18. 如何也让受检异常，事务不失效
+19. for和iterator的区别，并且for会出什么错误
+20. 有没有看过iterator的源码
+21. 反问
 
