@@ -1761,3 +1761,40 @@ public class Main {
     }
 }
 ```
+
+## 操作序列
+
+[https://www.nowcoder.com/practice/b53bda356a494154b6411d80380295f5?tpId=122&&tqId=33683&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/b53bda356a494154b6411d80380295f5?tpId=122&&tqId=33683&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        if (n == 1)
+            System.out.println(a[0]);
+        if (n % 2 == 0) {
+            for (int i = n - 1; i >= 0; i -=2)
+                System.out.print(a[i] + " ");
+            for (int i = 0; i < n - 2; i += 2)
+                System.out.print(a[i] + " ");
+            System.out.print(a[n - 2]);
+        }
+        else {
+            for (int i = n - 1; i >= 0; i -= 2) {
+                System.out.print(a[i] + " ");
+            }
+            for (int i = 1; i < n - 2; i += 2) 
+                System.out.print(a[i] + " ");
+            System.out.print(a[n-2]);
+        }
+    }
+}
+
+```
