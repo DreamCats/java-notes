@@ -5,7 +5,7 @@
 2. Object所有的方法以及作用
 3. CMS收集器的原理和过程及优缺点
 4. HashMap和ConcurrentHashMap的区别（扯细一点）
-5. 项目（20min）
+5. 项目（20min，我太熟悉了）
 6. 反问
 
 

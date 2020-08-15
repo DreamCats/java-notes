@@ -1691,3 +1691,73 @@ public class Main {
     }
 }
 ```
+
+## 牛牛的背包问题
+
+[https://www.nowcoder.com/practice/bf877f837467488692be703735db84e6?tpId=122&&tqId=33698&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/bf877f837467488692be703735db84e6?tpId=122&&tqId=33698&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    static int res = 1;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long w = sc.nextInt();
+        long[] v = new long[n];
+        long sum = 0;
+        for (int i = 0; i < n; i++) {
+            v[i] = sc.nextInt();
+            sum += v[i];
+        }
+        if (sum <= w) {
+            System.out.println((int) Math.pow(2, n));
+        } else {
+            dfs(v, 0, w, 0);
+            System.out.println(res);
+        }
+    }
+
+    public static void dfs(long[] v, int idx, long w, long cur) {
+        if (idx == v.length)
+            return;
+        if (v[idx] + cur <= w) {
+            res++;
+            dfs(v, idx + 1, w, cur + v[idx]);
+        }
+        dfs(v, idx + 1, w, cur);
+    }
+}
+```
+
+## 交错01串
+
+[https://www.nowcoder.com/practice/3fbd8fe929ea4eb3a254c0ed34ac993a?tpId=122&&tqId=33682&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking](https://www.nowcoder.com/practice/3fbd8fe929ea4eb3a254c0ed34ac993a?tpId=122&&tqId=33682&rp=1&ru=/ta/exam-wangyi&qru=/ta/exam-wangyi/question-ranking)
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    static int res = 1;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        if (s.length() == 0 || s.length() == 1) {
+            System.out.println(0);
+            return;
+        }
+        int len = 1;
+        int res = 1;
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) != s.charAt(i - 1)) {
+                len++;
+                res = Math.max(len, res);
+            } else {
+                len = 1;
+            }
+        }
+        System.out.println(res);
+    }
+}
+```
