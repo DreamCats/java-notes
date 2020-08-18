@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -10,14 +9,25 @@ public class Main {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            list.add(a[i]);
-            Collections.reverse(list);
-        }
-        StringBuilder sb = new StringBuilder();
-        list.forEach(o -> sb.append(o + " "));
-        System.out.println(sb.substring(0, sb.length() - 1));
+        Arrays.sort(a);
+        System.out.println(dfs(a, 0, 0, 1));
+    }
 
+    public static int dfs(int[] a, int start, long sum, long multi) {
+        int cnt = 0;
+        for (int i = start; i < a.length; i++) {
+            sum += a[i];
+            multi *= a[i];
+            if (sum > multi)
+                cnt += 1 + dfs(a, i + 1, sum, multi);
+            else if (a[i] == 1)
+                cnt += dfs(a, i + 1, sum, multi);
+            else
+                break;
+            sum -= a[i];
+            multi /= a[i];
+            while (i < a.length - 1 && a[i] == a[i + 1]) i++;
+        }
+        return cnt;
     }
 }
