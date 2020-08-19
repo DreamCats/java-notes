@@ -3,25 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] a = new int[5];
-        for (int i = 0; i < 5; i++) {
-            a[i] = sc.nextInt();
-        }
-        int c = 1;
-        boolean flag = false;
-        while (!flag){
-            int cnt = 0;
-            for (int i = 0; i < 5; i++) {
-                if (c / a[i] != 0 && c % a[i] == 0) {
-                    cnt++;
-                    if (cnt == 3) {
-                        flag = true;
-                        break;
-                    }
-                }
-            }
-            c++;
-        }
-        System.out.println(c-1);
+        int x1 = sc.nextInt();
+        int y1 = sc.nextInt();
+        int x2 = sc.nextInt();
+        int y2 = sc.nextInt();
+        int sub = (x2 * 60 + y2) - (x1 * 60 + y1);
+        System.out.print(sub / 60 + " " + sub % 60);
     }
 }
