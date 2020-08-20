@@ -35,6 +35,7 @@
 - [网易面经](/Interview/mianjing/wangyi/my.md)
 - [shein面经](/Interview/mianjing/shein/my.md)
 - [贝壳面经](/Interview/mianjing/beike/my.md)
+- [腾讯面经](/Interview/mianjing/tx/my.md)
 
 ## 我是这样回答的
 > 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）
