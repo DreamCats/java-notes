@@ -1,13 +1,10 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(10, 20);
-        System.out.println(map.get(new Integer(10)));
-        System.out.println(map.get(new Long(10)));
-        System.out.println(new Long(10).hashCode() == new Integer(10).hashCode());
-
+        List<Integer> a = new ArrayList<>();
+        List<String> b = new ArrayList<>();
+        System.out.println(a.getClass() == b.getClass());
     }
 }
