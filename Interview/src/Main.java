@@ -1,5 +1,43 @@
-public class Main {
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
+public class Main {
+    private static int values = 0;
+    public static void main(String[] args) {
+        ReentrantLock lock = new ReentrantLock();
+        Condition conA = lock.newCondition();
+        Condition conB = lock.newCondition();
+        new Thread(() -> {
+            try {
+                lock.lock();
+                while (values <= 10) {
+                    System.out.println(Thread.currentThread().getName() + " " + values++);
+                    conB.signal();
+                    conA.await();
+                }
+                conB.signal();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                lock.unlock();
+            }
+        }, "偶数").start();
+        new Thread(() -> {
+            try {
+                lock.lock();
+                while (values <= 10) {
+                    System.out.println(Thread.currentThread().getName() + " " + values++);
+                    conA.signal();
+                    conB.await();
+                }
+                conA.signal();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                lock.unlock();
+            }
+        }, "奇数").start();
+    }
 }
 
 class TreeNode {
