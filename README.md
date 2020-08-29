@@ -68,6 +68,7 @@
 - [类加载过程](/Interview/sad/类加载过程.md)
 - [类加载器](/Interview/sad/类加载器.md)
 - [JVM内存区域](/Interview/sad/JVM内存区域.md)
+- [对象的创建过程](/Interview/sad/对象的创建过程.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
