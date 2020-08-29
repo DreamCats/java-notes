@@ -76,6 +76,9 @@
 - [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)
 > 有些套路挺实用的，推荐阅读...
 
+- [手写多线程编程面试题](/Interview/myself/多线程编程题.md)
+> 还在总结，但是都一样的套路...
+
 ## 笔试题汇总(持续...)
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
 - [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
