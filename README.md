@@ -70,6 +70,7 @@
 - [JVM内存区域](/Interview/sad/JVM内存区域.md)
 - [对象的创建过程](/Interview/sad/对象的创建过程.md)
 - [垃圾回收](/Interview/sad/垃圾回收.md)
+- [逃逸分析](/Interview/sad/逃逸分析.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
