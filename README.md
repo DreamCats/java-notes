@@ -51,6 +51,7 @@
 - [谈谈String](/Interview/sad/谈谈String.md)
 - [谈谈Java值传递](/Interview/sad/谈谈Java值传递.md)
 - [谈谈集合](/Interview/sad/谈谈集合.md)
+- [为什么增强for删除元素会异常](https://juejin.im/post/6844903794795347981)
 - [线程与进程的区别](/Interview/sad/线程与进程的区别.md)
 - [线程的创建方式](/Interview/sad/线程的创建方式.md)
 - [谈谈线程池](/Interview/sad/谈谈线程池.md)
