@@ -76,6 +76,7 @@
 - [MySQL的ACID和隔离级别](/Interview/sad/MySQL的ACID和隔离级别.md)
 - [MVCC,redolog,undolog,binlog](/Interview/sad/MVCC,redolog,undolog,binlog.md)
 - [MySQL索引](/Interview/sad/MySQL索引.md)
+- [MySQL数据库结构优化](/Interview/sad/MySQL数据库结构优化.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
