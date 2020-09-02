@@ -1,5 +1,10 @@
 
+public class Main {
 
+    public static void main(String[] args) {
+        final int a = 3;
+    }
+}
 
 
 class TreeNode {
