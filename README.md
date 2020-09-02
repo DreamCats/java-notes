@@ -74,6 +74,7 @@
 - [垃圾回收](/Interview/sad/垃圾回收.md)
 - [InnoDB和MyISAM](/Interview/sad/InnoDB和MyISAM.md)
 - [MySQL的ACID和隔离级别](/Interview/sad/MySQL的ACID和隔离级别.md)
+- [MVCC,redolog,undolog,binlog](/Interview/sad/MVCC,redolog,undolog,binlog.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
