@@ -83,6 +83,8 @@
 - [Redis持久化](/Interview/sad/Redis持久化.md)
 - [Redis内存淘汰机制](/Interview/sad/Redis内存淘汰机制.md)
 - [Redis缓存穿透和雪崩](/Interview/sad/Redis缓存穿透和雪崩.md)
+- [Redis与MySQL双写一致性方案](https://www.cnblogs.com/rjzheng/p/9041659.html)
+- [Redis并发竞争key的解决方案详解](https://juejin.im/post/6844903846750191630)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
