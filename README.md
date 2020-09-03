@@ -81,6 +81,7 @@
 - [Redis的模型](/Interview/sad/Redis的模型.md)
 - [Redis数据结构](/Interview/sad/Redis数据结构.md)
 - [Redis持久化](/Interview/sad/Redis持久化.md)
+- [Redis内存淘汰机制](/Interview/sad/Redis内存淘汰机制.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
