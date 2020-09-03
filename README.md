@@ -69,7 +69,7 @@
 - [类加载过程](/Interview/sad/类加载过程.md)
 - [类加载器](/Interview/sad/类加载器.md)
 - [JVM内存区域](/Interview/sad/JVM内存区域.md)
-- [逃逸分析](/Interview/sad/逃逸分析.md))
+- [逃逸分析](/Interview/sad/逃逸分析.md)
 - [对象的创建过程](/Interview/sad/对象的创建过程.md)
 - [垃圾回收](/Interview/sad/垃圾回收.md)
 - [InnoDB和MyISAM](/Interview/sad/InnoDB和MyISAM.md)
@@ -80,6 +80,7 @@
 - [MySQL的锁](/Interview/sad/MySQL的锁.md)
 - [Redis的模型](/Interview/sad/Redis的模型.md)
 - [Redis数据结构](/Interview/sad/Redis数据结构.md)
+- [Redis持久化](/Interview/sad/Redis持久化.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
