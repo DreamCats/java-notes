@@ -85,9 +85,10 @@
 - [Redis缓存穿透和雪崩](/Interview/sad/Redis缓存穿透和雪崩.md)
 - [Redis与MySQL双写一致性方案](https://www.cnblogs.com/rjzheng/p/9041659.html)
 - [Redis并发竞争key的解决方案详解](https://juejin.im/post/6844903846750191630)
-- [Redis分布式锁](https://juejin.im/post/5cc165816fb9a03202221dd5#heading-4)
+- [Redis分布式锁](/Interview/sad/Redis分布式锁.md)
 - [补充-Zookeeper锁的实现](https://juejin.im/post/5c01532ef265da61362232ed)
 - [数据库实现分布式锁](https://blog.csdn.net/u013256816/article/details/92854794)
+- [CAP和BASE](/Interview/sad/CAP和BASE.md)
 
 ## 刷题系列
 - [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)
