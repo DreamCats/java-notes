@@ -1,5 +1,41 @@
 
+// n m
+// 1 1
+// 2 2
+// 3 3
+// 4 4
+// 4 4
 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // n
+        int m = sc.nextInt(); // m
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            int id = sc.nextInt();
+            int score = sc.nextInt();
+            if (map.containsKey(id)) {
+                map.put(id, map.get(id) + score);
+            } else {
+                map.put(id, score);
+            }
+        }
+
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+        // 按照value排序
+        Collections.sort(list, (o1, o2) -> {
+            return o2.getValue() - o1.getValue();
+        });
+        for (int i = 0; i < m; i++) {
+            System.out.println(list.get(i).getKey());
+        }
+
+    }
+
+}
 
 class TreeNode {
     int val;
@@ -39,3 +75,9 @@ class ListNodeTools {
         System.out.println(s+"null");
     }
 }
+
+
+
+
+
+
