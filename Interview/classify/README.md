@@ -20,7 +20,7 @@
 - [谈谈集合](col/谈谈集合.md)
 
 ## Java多线程
-- [进程与线程](thread/进程与线程.md)
+- [进程与线程](thread/进程和线程.md)
 - [线程的创建方式](thread/线程的创建方式.md)
 - [死锁](thread/死锁.md)
 - [JMM内存模型](thread/JMM内存模型)
