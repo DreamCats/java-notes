@@ -1,0 +1,13 @@
+- [总体架构](https://www.processon.com/view/link/5e170217e4b0bcfb733ce553) **这边就不放图了，放图的字体小，放大可能模糊。该图还在持续总结中...**
+- [Java常见基础问题](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad) **常见的基础问题，这是必须要掌握。**
+- [Java常见集合问题]() **还没总结，后续总结...**
+- [Java常见多线程问题](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf) **常见的多线程问题，也是必须掌握...**
+- [JVM常见问题](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44) **常见的JVM要掌握的点...**
+- [Spring常见问题](https://www.processon.com/view/link/5e846de9e4b07b16dcdb63f0) **常见的Spring面试的问题...**
+- [Mybatis常见问题](https://www.processon.com/view/link/5e4e3b7ae4b0369b916b2e71) **常见的Mybatis面试的问题...**
+- [MySQL常见问题](https://www.processon.com/view/link/5e9b0cb15653bb1a686e17ea) **常见的MySQL面试的问题...**
+- [Redis常见问题](https://www.processon.com/view/link/5ea2da5907912948b0d89a0a) **常见的Redis面试的问题...**
+- [计算机网络常见问题](https://www.processon.com/view/link/5eb8c93be401fd16f42b5f77) **常见的计算机网络面试的问题...**
+- [Dubbo常见问题](https://www.processon.com/view/link/5eb8c9715653bb6f2aff7c11) **常见的Dubbo的问题...**
+- [RocketMQ常见问题](https://www.processon.com/view/link/5ecf208f7d9c08156c6c37e3) **常见的RocketMQ的问题...**
+- [微服务班车在线预约系统](https://github.com/DreamCats/SchoolBus) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。

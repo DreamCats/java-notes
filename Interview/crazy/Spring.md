@@ -77,10 +77,13 @@ public void refresh() throws BeansException, IllegalStateException {
 
       // 准备工作，记录下容器的启动时间、标记“已启动”状态、处理配置文件中的占位符
       prepareRefresh();
-
-      // 这步比较关键，这步完成后，配置文件就会解析成一个个 Bean 定义，注册到 BeanFactory 中，
-      // 当然，这里说的 Bean 还没有初始化，只是配置信息都提取出来了，
-      // 注册也只是将这些信息都保存到了注册中心(说到底核心是一个 beanName-> beanDefinition 的 map)
+      // Tell the subclass to refresh the internal bean factory.
+      //获得容器ApplicationContext的子类BeanFactory。步骤如下：
+      //1.如果已经有了BeanFactory就销毁它里面的单例Bean并关闭这个BeanFactory。
+      //2.创建一个新的BeanFactory。
+      //3.对这个BeanFactory进行定制（customize),如allowBeanDefinitionOverriding等参数
+      //4.转载BeanDefinitions(读取配置文件，将xml转换成对应得BeanDefinition)
+      //5.检查是否同时启动了两个BeanFactory。 
       ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
       // 设置 BeanFactory 的类加载器，添加几个 BeanPostProcessor，手动注册几个特殊的 bean
@@ -88,16 +91,14 @@ public void refresh() throws BeansException, IllegalStateException {
       prepareBeanFactory(beanFactory);
 
       try {
-         // 【这里需要知道 BeanFactoryPostProcessor 这个知识点，Bean 如果实现了此接口，
-         // 那么在容器初始化以后，Spring 会负责调用里面的 postProcessBeanFactory 方法。】
-
-         // 这里是提供给子类的扩展点，到这里的时候，所有的 Bean 都加载、注册完成了，但是都还没有初始化
+         // 设置beanFactory的后置处理器
          // 具体的子类可以在这步的时候添加一些特殊的 BeanFactoryPostProcessor 的实现类或做点什么事
          postProcessBeanFactory(beanFactory);
+         // 调用beanFactory的后置处理器
          // 调用 BeanFactoryPostProcessor 各个实现类的 postProcessBeanFactory(factory) 方法
          invokeBeanFactoryPostProcessors(beanFactory);
 
-         // 注册 BeanPostProcessor 的实现类，注意看和 BeanFactoryPostProcessor 的区别
+         // 注册 BeanPostProcessor 的实现类（bean的后置处理器）
          // 此接口两个方法: postProcessBeforeInitialization 和 postProcessAfterInitialization
          // 两个方法分别在 Bean 初始化之前和初始化之后得到执行。注意，到这里 Bean 还没初始化
          registerBeanPostProcessors(beanFactory);
@@ -108,7 +109,7 @@ public void refresh() throws BeansException, IllegalStateException {
          // 初始化当前 ApplicationContext 的事件广播器，这里也不展开了
          initApplicationEventMulticaster();
 
-         // 从方法名就可以知道，典型的模板方法(钩子方法)，
+         // 模板方法(钩子方法)，
          // 具体的子类可以在这里初始化一些特殊的 Bean（在初始化 singleton beans 之前）
          onRefresh();
 

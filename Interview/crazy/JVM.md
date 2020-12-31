@@ -195,11 +195,11 @@ public class ClassLoaderDemo {
 
 #### 1.8之前
 
-![参考-JavaGuide-内存区域](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3/JVM%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.png)
+![内存区域](http://media.dreamcat.ink/uPic/JVM内存模型-1.8之前.png)
 
 #### 1.8之后
 
-![参考-JavaGuide-内存区域](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9FJDK1.8.png)
+![参考-JavaGuide-内存区域](http://media.dreamcat.ink/uPic/JVM内存模型-1.8.png)
 
 按照1.8进行总结
 
@@ -255,7 +255,7 @@ Java 虚拟机所管理的内存中最大的一块，Java 堆是所有线程共�
 
 Java 堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（Garbage Collected Heap）**.从垃圾回收的角度，由于现在收集器基本都采用分代垃圾收集算法，所以 Java 堆还可以细分为：新生代和老年代：再细致一点有：Eden 空间、From Survivor、To Survivor 空间等。**进一步划分的目的是更好地回收内存，或者更快地分配内存。**
 
-![](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-3%E5%A0%86%E7%BB%93%E6%9E%84.png)
+![](http://media.dreamcat.ink/uPic/堆内存分区.png)
 
 上图所示的 eden 区、s0("From") 区、s1("To") 区都属于新生代，tentired 区属于老年代。大部分情况，对象都会首先在 Eden 区域分配，在一次新生代垃圾回收后，如果对象还存活，则会进入 s1("To")，并且对象的年龄还会加 1(Eden 区->Survivor 区后对象的初始年龄变为 1)，当它的年龄增加到一定程度（默认为 15 岁），就会被晋升到老年代中。对象晋升到老年代的年龄阈值，可以通过参数 `-XX:MaxTenuringThreshold` 来设置。经过这次GC后，Eden区和"From"区已经被清空。这个时候，"From"和"To"会交换他们的角色，也就是新的"To"就是上次GC前的“From”，新的"From"就是上次GC前的"To"。不管怎样，都会保证名为To的Survivor区域是空的。Minor GC会一直重复这样的过程，直到“To”区被填满，"To"区被填满之后，会将所有对象移动到年老代中。
 
@@ -275,7 +275,7 @@ JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1
 
 #### 对象创建
 
-![参考-JavaGuide-对象创建的过程](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/Java%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%87%E7%A8%8B.png)
+![对象创建的过程](http://media.dreamcat.ink/uPic/Java创建对象的过程.png)
 
 1. 类加载检查，虚拟机遇到一条 new 指令时，首先将去检查这个指令的参数是否能在常量池中定位到这个类的符号引用，并且检查这个符号引用代表的类是否已被加载过、解析和初始化过。如果没有，那必须先执行相应的类加载过程。
 
@@ -585,15 +585,6 @@ G1 收集器的运作大致分为以下几个步骤：
 -Xms128m -Xmx4096m -Xss1024K -XX:MetaspaceSize=512m -XX:+PrintCommandLineFlags -XX:+PrintGCDetails -XX:+UseSerialGC
 ```
 
-- -Xms:初始大小内存，默认为物理内存1/64，等价于-XX:InitialHeapSize
-- -Xmx:最大分配内存，默认物理内存1/4，等价于-XX:MaxHeapSize
-- -Xss:设置单个线程栈的大小，默认542K~1024K ，等价于-XX:ThreadStackSize
-- -Xmn:设置年轻代的大小
-- -XX:MetaspaceSize:设置元空间大小
-- -XX:+PrintGCDetails:输出详细GC收集日志信息，如[名称：GC前内存占用->GC后内存占用(该区内存总大小)]
-- -XX:SurvivorRatio:设置新生代中Eden和S0/S1空间的比例，默认-XX:SurvivorRatio=8,Eden:S0:S1=8:1:1
-- -XX:NewRatio:设置年轻代与老年代在堆结构的占比，如：默认-XX:NewRatio=2  新生代在1，老年代2，年轻代占整个堆的1/3，NewRatio值几句诗设置老年代的占比，剩下的1给新生代
-- -XX:MaxTenuringThreshold:设置垃圾的最大年龄，默认-XX:MaxTenuringThreshold=15
-- -XX:+UseSerialGC:串行垃圾回收器
-- -XX:+UseParallelGC:并行垃圾回收器
 
+
+![解释](http://media.dreamcat.ink/uPic/iShot2020-05-26上午09.58.16.png)
