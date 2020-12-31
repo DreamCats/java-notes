@@ -42,7 +42,7 @@
 - [猿辅导面经](/Interview/mianjing/yuanfudao/my.md)
 
 ## 我是这样回答的
-> 能力有限，但又想去钻研，面试中该怎么回答较好。（持续总结...）
+> 能力有限，但又想去钻研，面试中该怎么回答较好。（其中包含Java、数据库、计网、操作系统、分布式等持续总结...）
 - [知识分类](/Interview/classify/README.md)
 
 ## 刷题系列
@@ -130,27 +130,6 @@
 - [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
 - [JVM面试常见问题](/Jvm/JVM面试常见问题.md)
 - [JVM整个流程图](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
-
-## Spring系列
-- [切换Spring仓库](https://github.com/DreamCats/spring-books)
-- [Spring面试常见问题](/Interview/spring/Spring面试常见问题.md)
-
-## MyBatis系列
-- [MyBatis面试常见问题](/Interview/mybatis/MyBatis面试常见问题.md)
-  
-## 计算机网络
-- [计算机网络面试常见问题](Interview/network/计算机网络面试常见问题.md)
-
-## 数据库
-- [MySQL面试常见问题](Interview/mysql/MySQL面试常见问题.md)
-- [Redis-面试常见的问题](/Interview/redis/Redis-面试常见的问题.md)
-
-## 分布式
-- [Dubbo-面试常见问题](/Interview/crazy/个人吐血系列-总结Dubbo.md)
-- [消息队列-RocketMQ面试常见问题](Interview/crazy/个人吐血系列-总结RocketMQ.md)
-
-## Linux
-- [linux-基础](/Interview/linux/linux-基础.md)
 
 
 ## 设计模式
