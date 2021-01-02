@@ -3,7 +3,7 @@
 
 ## 总览
 
-几乎所有的 Markdown 引擎都支持 Markdown 发明者 John Gruber 所设计的[基本语法](https://daringfireball.net/projects/markdown/syntax)，但不同的 Markdown 处理引擎在细节表现方面略有不同，下面逐一介绍。
+几乎所有的 Markdown 引擎都支持 Markdown 发明者 John Gruber 所设计的[基本语法](Markdown基础语法)，但不同的 Markdown 处理引擎在细节表现方面略有不同，下面逐一介绍。
 
 ## 标题
 
@@ -262,7 +262,7 @@
 * 列表项一
 * 列表项二第一段
   
-   ```
+```
   这里是代码块
   echo 你好，世界！
    ```
@@ -335,7 +335,7 @@
 **推荐使用围栏代码块语法来排版代码块**，即使用 span</code> 来包裹代码块，并且指定语法高亮语言：
 
 ````markdown
-```html
+​```html
 <html>
   <head>
   </head>
@@ -347,7 +347,7 @@
 
 通过大于等于三个星号 `***`、短横线 `---` 或者下划线 `___` 来创建分隔线。
 
-```markdown
+​```markdown
 ***
 ---
 ___
