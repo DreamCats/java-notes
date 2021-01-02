@@ -11,7 +11,7 @@
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/network/Linux命令行的奇淫技巧.md)
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
-## 面经汇总(持续...)
+## 面经汇总
 > 个人建议：首先自己先有个知识点体系，不管是思维导图也好，还是大纲也好。
 > 那么其次看大量的面经，可以将每个面经当作一次面试，查看自己是否能讲出来，查漏补缺！
 > 最后，不断沉淀即可。祝好运！！！
@@ -32,7 +32,7 @@
 - [手写多线程编程面试题](/Interview/myself/多线程编程题.md)
 > 还在总结，但是都一样的套路...
 
-## 笔试题汇总(持续...)
+## 笔试题汇总
 - [LC-SQL](/Interview/mianjing/sql/sql.md)
 - [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
 
@@ -58,59 +58,9 @@
 ## 设计模式
 - [面试必问设计模式](/Interview/mode/README.md)
 
+## JDK源码
 
-## 基础
-- [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
-- [Java面试基础知识](/Basics/Java面试基础知识.md)
-- [Java面试基础知识](/Basics/Java面试基础常见问题.md)
-
-## 集合源码
-- [Java面经-Java集合框架](/Collections/Java面经-Java集合框架.md)
-- [Java面经-ArrayList源码解析](/Collections/Java面经-ArrayList源码解析.md)
-- [Java面经-LinkedList源码解析](/Collections/Java面经-LinkedList源码解析.md)
-- [Java面经-HashSet-HashMap源码解析](/Collections/Java面经-HashSet-HashMap源码解析.md)
-- [Java面经-LinkedHashSet-Map源码解析](/Collections/Java面经-LinkedHashSet-Map源码解析.md)
-- [Java面经-TreeSet-TreeMap源码解析](/Collections/Java面经-TreeSet-TreeMap源码解析.md)
-- [Java面经-PriorityQueue源码解析](/Collections/Java面经-PriorityQueue源码解析.md)
-- [Java面经-Stack-Queue源码解析](/Collections/Java面经-Stack-Queue源码解析.md)
-- [HashMap-ConcurrentHashMap面试必问](/Collections/HashMap-ConcurrentHashMap面试必问.md)
-- [ArrayList源码图解](https://www.processon.com/view/link/5e13ddf5e4b07ae2d01c7369)
-- [LinkedList源码图解](https://www.processon.com/view/link/5e13e641e4b0c090e0b88a59)
-- [HashMap源码图解](https://www.processon.com/view/link/5e159150e4b07db4cfb0f418)
-
-## 多线程系列
-- [多线程思维导图](https://www.processon.com/view/link/5e4ab92de4b0996b2ba505bf)
-- [Java多线程-并发基础常见面试题总结](/Multithread/Java多线程-并发基础常见面试题总结.md)
-- [Java多线程-Synchronized](/Multithread/Java多线程-synchronized.md)
-- [Java多线程-volatile](/Multithread/深刻理解volatile的一切.md)
-- [Java多线程-CAS](/Multithread/CAS底层解析.md)
-- [Java多线程-ThreadLocal](/Multithread/Java多线程-ThreadLocal.md)
-- [Java多线程-Atomic原子类](/Multithread/Java多线程-Atomic原子类.md)
-- [Java多线程-AQS](/Multithread/Java多线程-AQS.md)
-- [Java多线程-线程池](/Multithread/Java多线程-线程池.md)
-- [Java多线程-并发进阶常见面试题总结](/Multithread/Java多线程-并发进阶常见面试题总结.md)
-- [多线程一些例子](/Multithread/README.md)
-- [Java多线程常见问题](/Multithread/Java多线程常见问题.md)
-- [谈谈Java内存模型图解](https://www.processon.com/view/link/5e129d57e4b0da16bb11d127)
-- [有个成员变量int a = 1,那么a和1分别在jvm哪里图解](https://www.processon.com/view/link/5e13500de4b009af4a5fc40b)
-- [线程的状态周期图](https://www.processon.com/view/link/5e16a379e4b0f5a7ed06d2fb)
-- [volatile保证内存可见性和避免重排图](https://www.processon.com/view/link/5e12e591e4b061a80c683639)
-- [volatile不能保证原子性操作图](https://www.processon.com/view/link/5e130e51e4b07db4cfac9d2c)
-- [无锁-偏向锁-轻量级锁-重量级锁图](https://www.processon.com/view/link/5e1744a7e4b0f5a7ed086f4a)
-- [内存屏障图](https://www.processon.com/view/link/5e4420bde4b06b291a6c463b)
-
-## JVM
-- [JVM面试思维导图](https://www.processon.com/view/link/5e4c0704e4b00aefb7e74f44)
-- [JVM-类文件结构](/Jvm/JVM-类文件结构.md)
-- [JVM-类加载过程](/Jvm/JVM-类加载过程.md)
-- [JVM-类加载机制](/Jvm/Java面经-类加载机制.md)
-- [JVM-类加载器](/Jvm/JVM-类加载器.md)
-- [JVM-内存模型](/Jvm/Java面经-内存模型.md)
-- [JVM-对象创建](/Jvm/JVM-对象创建.md)
-- [JVM-垃圾回收](/Jvm/JVM-垃圾回收.md)
-- [JVM-调优参数](/Jvm/Java面经-JVM调优参数.md)
-- [JVM面试常见问题](/Jvm/JVM面试常见问题.md)
-- [JVM整个流程图](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
+- [JDK1.8部分源码](Interview/jdk/README.md)
 
 
 
