@@ -32,7 +32,7 @@
 > 以下是自己总结的算法题
 
 - [手写多线程编程面试题](/Interview/alg/多线程编程题.md)
-- [按热度总结lc](/Interview/alg/多线程编程题.md)
+- [按热度总结lc](/Interview/alg/按热度总结lc.md)
 - [剑指offer](/Interview/alg/剑指offer.md)
 - [个人刷熟题](/Interview/alg/个人刷熟题.md)
 
