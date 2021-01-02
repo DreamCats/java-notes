@@ -16,30 +16,7 @@
 > 那么其次看大量的面经，可以将每个面经当作一次面试，查看自己是否能讲出来，查漏补缺！
 > 最后，不断沉淀即可。祝好运！！！
 
-- [美团所有问题汇总](/Interview/mianjing/meituan/美团所有问题汇总.md)
-- [京东所有问题汇总](/Interview/mianjing/jingdong/京东所有问题汇总.md)
-- [拼多多所有问题汇总](/Interview/mianjing/pinxx/拼多多所有问题汇总.md)
-- [招银所有问题汇总](/Interview/mianjing/zhaoyin/招银所有问题汇总.md)
-- [网易所有问题汇总](/Interview/mianjing/wangyi/网易所有问题汇总.md)
-- [字节所有问题汇总](/Interview/mianjing/zijie/字节所有问题汇总.md)
-- [远景所有问题汇总](/Interview/mianjing/yuanjing/远景所有问题汇总.md)
-- [百度所有问题汇总](/Interview/mianjing/baidu/百度所有问题汇总.md)
-- [腾讯所有问题汇总](/Interview/mianjing/tx/腾讯所有问题汇总.md)
-- [阿里所有问题汇总](/Interview/mianjing/ali/阿里所有问题汇总.md)
-- [猿辅导所有问题汇总](/Interview/mianjing/yuanfudao/猿辅导所有问题汇总.md)
-
-### 本人所经历的面经
-- [招银面经](/Interview/mianjing/zhaoyin/my.md)
-- [京东面经](/Interview/mianjing/jingdong/my.md)
-- [字节面经](/Interview/mianjing/zijie/my.md)
-- [用友SP面经](/Interview/mianjing/yongyou/my.md)
-- [百度面经](/Interview/mianjing/baidu/mmy.md)
-- [网易面经](/Interview/mianjing/wangyi/my.md)
-- [shein面经](/Interview/mianjing/shein/my.md)
-- [贝壳面经](/Interview/mianjing/beike/my.md)
-- [腾讯面经](/Interview/mianjing/tx/my.md)
-- [作业帮面经](/Interview/mianjing/zuoyebang/my.md)
-- [猿辅导面经](/Interview/mianjing/yuanfudao/my.md)
+- [大厂面经以及自己所经历的面试](/Interview/mianjing/README.md)
 
 ## 我是这样回答的
 > 能力有限，但又想去钻研，面试中该怎么回答较好。（其中包含Java、数据库、计网、操作系统、分布式等持续总结...）
