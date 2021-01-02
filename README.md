@@ -5,9 +5,9 @@
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
 ## 常用网站
-- [:bookmark:开源项目总结](/Tools/network/开源的github项目总结.md)
-- [:fire:常用的在线网站](/Tools/network/收集常用的网站(持续更新...).md)
-- [:sparkles:emoji集合](/Tools/network/github表情图标.md)
+- [:bookmark:持续更新开源项目](/Tools/other/开源github.md)
+- [:fire:常用的在线网站](/Tools/other/常用网站.md)
+- [:sparkles:emoji集合](/Tools/other/github表情图标.md)
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/other/linux命令行.md)
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 

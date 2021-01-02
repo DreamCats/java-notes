@@ -1,36 +1,10 @@
-## 引言
-
 > **一些有趣的github项目总结，其中包括终端、Python、Java、笔试&面试、效率软件等。**
 
-## 终端
-
-- [The Art of Command Line](<https://github.com/jlevy/the-art-of-command-line>) :系统的学习命令行的用法。**star:57509**
-- [oh-my-zsh](<https://github.com/robbyrussell/oh-my-zsh>): 这玩意不用我简单介绍了吧？**star:90516**
-- [git-tips](https://github.com/521xueweihan/git-tips) Git的奇技淫巧 **star：11400**
-- [powerline-fonts](<https://github.com/supermarin/powerline-fonts>) : mac挺好用的一款终端字体。**star:169**
-- [powerlevel9k](<https://github.com/bhilburn/powerlevel9k>) : oh-my-zsh的一款皮肤。**star:9952**
-- [zsh-syntax-highlighting](<https://github.com/zsh-users/zsh-syntax-highlighting>) : 终端输入的命令有语法高亮效果。**star:7326**
-- [zsh-autosuggestions](<https://github.com/zsh-users/zsh-autosuggestions>) : 终端代码补全插件。**star:6662**
-
-<!-- more -->
-
-## Python
-
-- [awesome-python-login-model](<https://github.com/CriseLYJ/awesome-python-login-model>) : 模拟登陆一些大型网站的demo，个人觉得不错，值得学习。**star:8403**
-- [pyppeteer](<https://github.com/miyakogi/pyppeteer>) : 模拟动态加载js，比selenium稍微好用一些。**star:1924**
-- [requests](<https://github.com/psf/requests>) :Python HTTP Requests for Humans™ ✨🍰✨ **star:39860**
-- [requests-html](<https://github.com/psf/requests-html>) : Pythonic HTML Parsing for Humans™  **star:10111**
-- [httpx](<https://github.com/encode/httpx>) A next generation HTTP client for Python. 🦋 <https://www.encode.io/httpx> **star:1900**
-- [PySimpleGUI](<https://github.com/PySimpleGUI/PySimpleGUI>) : 做一些简单的GUI，可以用这个，简单应用。**star:1608**
-- [bokeh](<https://github.com/bokeh/bokeh>) Interactive Web Plotting for Python。 **star:10701**
-- [wxpy](<https://github.com/youfou/wxpy>) 微信机器人 / 可能是最优雅的微信个人号 API ✨✨ [http://wxpy.readthedocs.io](http://wxpy.readthedocs.io/) **star:10700**
 
 ## Java
 
 - [Awesome Java](<https://github.com/akullpp/awesome-java>) A curated list of awesome frameworks, libraries and software for the Java programming language. **star:21651**
-
-### 1. 后端
-
+- [CS-Notes](<https://github.com/CyC2018/CS-Notes>) : 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计。**star:67433**
 - [spring-boot-examples](<https://github.com/ityouknow/spring-boot-examples>) : 对于初学者学习Spring-boot，是个非常不错的例子。**star:16408**
 - [SpringAll](<https://github.com/wuyouzhuguli/SpringAll>)循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud、Spring Security & Spring Security OAuth2，博客Spring系列源码。**star:6181**
 - [interest](<https://github.com/Big-Chinese-Cabbage/interest>) : Vue+Spring boot前后端分离博客项目。**star:494**
@@ -55,12 +29,8 @@
 - [MeetingFilm](https://github.com/daydreamdev/MeetingFilm)基于微服务架构的在线电影购票平台 **star：111**
 - [guava](https://github.com/google/guava) Google core libraries for Java **star:36400**
 - [hutool](https://github.com/looly/hutool) A set of tools that keep Java sweet. [http://www.hutool.cn](http://www.hutool.cn/) **star:10800**
-
-### 2. 笔试&&面试
-
 - [JavaGuide](<https://github.com/Snailclimb/JavaGuide>) :一份涵盖大部分Java程序员所需要掌握的核心知识。**star:45159**
 - [advanced-java](<https://github.com/doocs/advanced-java>) :互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，后端同学必看，前端同学也可学习。**star:22747**
-- [LeetCodeAnimation](<https://github.com/MisterBooo/LeetCodeAnimation>) : LeetCode用动画的形式的呈现。**star:32650**
 - [technology-talk](<https://github.com/aalansehaiyang/technology-talk>) 汇总java生态圈常用技术框架等。**star:6229**
 - [interview_internal_reference](<https://github.com/0voice/interview_internal_reference>) 2019年最新总结，阿里，腾讯，百度，美团，头条等技术面试题目，以及答案，专家出题人分析汇总。 **star:14335**
 - [interviews](<https://github.com/kdn251/interviews>) Everything you need to know to get the job. **star:37598**
@@ -68,9 +38,16 @@
 - [leetcode](<https://github.com/azl397985856/leetcode>) LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
 - [reverse-interview-zh](<https://github.com/yifeikong/reverse-interview-zh>) 技术面试最后反问面试官的话 **star:4500**
 - [algo](https://github.com/wangzheng0822/algo) 数据结构和算法必知必会的50个代码实现 **star:10700**
-- [fucking-algorithm](https://github.com/labuladong/fucking-algorithm) 手把手撕LeetCode题目，扒各种算法套路的裤子，not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/ **star：4700**
 - [JavaFamily](https://github.com/AobingJava/JavaFamily)【互联网一线大厂面试+学习指南】进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，作者风格幽默，看起来津津有味，把学习当做一种乐趣，何乐而不为，后端同学必看，前端同学我保证你也看得懂，看不懂你加我微信骂我渣男就好了。 **star：7100**
 - [Java-Interview](https://github.com/gzc426/Java-Interview) Java 面试必会 直通BAT **star:3500**
+- [arthas](https://github.com/alibaba/arthas):Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas **star:24200**
+- [Sentinel](https://github.com/alibaba/Sentinel):A powerful flow control component enabling reliability, resilience and monitoring for microservices. (面向云原生微服务的高可用流控防护组件) **star:14900**
+
+## 算法
+- [LeetcodeTop](https://github.com/afatcoder/LeetcodeTop):About
+汇总各大互联网公司容易考察的高频leetcode题🔥 **star:5000**
+- [fucking-algorithm](https://github.com/labuladong/fucking-algorithm) 手把手撕LeetCode题目，扒各种算法套路的裤子，not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/ **star：78200**
+- [LeetCodeAnimation](<https://github.com/MisterBooo/LeetCodeAnimation>) : LeetCode用动画的形式的呈现。**star:32650**
 
 ## Vue&&前端
 
@@ -84,15 +61,24 @@
 - [gods-pen](https://github.com/ymm-tech/gods-pen) 基于vue的高扩展在线网页制作平台，可自定义组件，可添加脚本，可数据统计。A mobile page builder/editor, similar with amolink. [https://godspen.ymm56.com](https://godspen.ymm56.com/) **star:1200**
 - [Daily-Interview-Question](https://github.com/Advanced-Frontend/Daily-Interview-Question) 我是木易杨，公众号「高级前端进阶」作者，每天搞定一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。**star：17000**
 
-## 面试
-
-- [CS-Notes](<https://github.com/CyC2018/CS-Notes>) : 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计。**star:67433**
 
 ## Flutter
 
 - [Flutter_YYeTs](<https://github.com/popeyelau/Flutter_YYeTs>) : 基于Flutter的人人影视移动端。**star:233**
 - [Flutter-Notebook](<https://github.com/OpenFlutter/Flutter-Notebook>) 日更的FlutterDemo合集，今天你fu了吗 **star:3879**
 - [Best-Flutter-UI-Templates](<https://github.com/mitesh77/Best-Flutter-UI-Templates>) completely free for everyone. Its build-in Flutter Dart. **star:1261**
+
+## Python
+
+- [awesome-python-login-model](<https://github.com/CriseLYJ/awesome-python-login-model>) : 模拟登陆一些大型网站的demo，个人觉得不错，值得学习。**star:8403**
+- [pyppeteer](<https://github.com/miyakogi/pyppeteer>) : 模拟动态加载js，比selenium稍微好用一些。**star:1924**
+- [requests](<https://github.com/psf/requests>) :Python HTTP Requests for Humans™ ✨🍰✨ **star:39860**
+- [requests-html](<https://github.com/psf/requests-html>) : Pythonic HTML Parsing for Humans™  **star:10111**
+- [httpx](<https://github.com/encode/httpx>) A next generation HTTP client for Python. 🦋 <https://www.encode.io/httpx> **star:1900**
+- [PySimpleGUI](<https://github.com/PySimpleGUI/PySimpleGUI>) : 做一些简单的GUI，可以用这个，简单应用。**star:1608**
+- [bokeh](<https://github.com/bokeh/bokeh>) Interactive Web Plotting for Python。 **star:10701**
+- [wxpy](<https://github.com/youfou/wxpy>) 微信机器人 / 可能是最优雅的微信个人号 API ✨✨ [http://wxpy.readthedocs.io](http://wxpy.readthedocs.io/) **star:10700**
+
 
 ## 效率软件
 
@@ -114,8 +100,9 @@
 - [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) 一个基于 electron 的音乐软件 **star:1300**
 - [UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic) Revive unavailable songs for Netease Cloud Music **star:7900**
 - [CodeVar](https://github.com/xudaolong/CodeVar) 生成可用的代码变量 (CodeVar that return u a better variable from Chinese to English . ) **star：684**
+- [Bob](https://github.com/ripperhe/Bob) Bob 是一款 Mac 端翻译软件，支持划词翻译、截图翻译以及手动输入翻译。 **star:3100**
 
-## 有趣
+## 其他
 
 - [ChineseBQB](ChineseBQB)🇨🇳Chinese sticker pack,More joy / 中国表情包大集合,更欢乐 **star:2319**
 - [free-programming-books-zh_CN](<https://github.com/justjavac/free-programming-books-zh_CN>)📚 免费的计算机编程类中文书籍，欢迎投稿 **star:55296**
@@ -128,4 +115,13 @@
 - [marktext](https://github.com/marktext/marktext) A simple and elegant markdown editor, available for Linux, macOS and Windows. [https://marktext.app](https://marktext.app/) **star：14800**
 - [FreePAC](https://github.com/xiaoming2028/FreePAC) 科学上网/梯子/自由上网/翻墙 SS/SSR/V2Ray/Brook 搭建教程 **star：2146**
 
-## 持续更新...
+- [The Art of Command Line](<https://github.com/jlevy/the-art-of-command-line>) :系统的学习命令行的用法。**star:57509**
+- [oh-my-zsh](<https://github.com/robbyrussell/oh-my-zsh>): 这玩意不用我简单介绍了吧？**star:90516**
+- [git-tips](https://github.com/521xueweihan/git-tips) Git的奇技淫巧 **star：11400**
+- [powerline-fonts](<https://github.com/supermarin/powerline-fonts>) : mac挺好用的一款终端字体。**star:169**
+- [powerlevel9k](<https://github.com/bhilburn/powerlevel9k>) : oh-my-zsh的一款皮肤。**star:9952**
+- [zsh-syntax-highlighting](<https://github.com/zsh-users/zsh-syntax-highlighting>) : 终端输入的命令有语法高亮效果。**star:7326**
+- [zsh-autosuggestions](<https://github.com/zsh-users/zsh-autosuggestions>): 终端代码补全插件。**star:6662**
+- [howto-make-more-money](https://github.com/easychen/howto-make-more-money): 程序员如何优雅的挣零花钱，2.0版，升级为小书了。Most of this not work outside China , so no English translate **star:13800**
+- [yapi](https://github.com/YMFE/yapi):YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口管理平台 **star:19400**
+- [algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer):🎆Interactive Online Platform that Visualizes Algorithms from Code **star:33000**
