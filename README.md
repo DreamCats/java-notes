@@ -78,6 +78,9 @@
 ## 项目
 - [微服务班车在线预约系统](/Interview/bus/README.md) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 
+## 设计模式
+- [面试必问设计模式](/Interview/mode/README.md)
+
 ## 基础
 - [Java面试基础一些常见问题-思维导图](https://www.processon.com/view/link/5e457c32e4b05d0fd4e94cad)
 - [Java面试基础知识](/Basics/Java面试基础知识.md)
@@ -132,7 +135,6 @@
 - [JVM整个流程图](https://www.processon.com/view/link/5e1182afe4b009af4a5cc54d)
 
 
-## 设计模式
-- [面试必问设计模式](/Interview/mode/README.md)
+
 
 
