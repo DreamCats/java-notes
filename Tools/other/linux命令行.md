@@ -39,9 +39,9 @@
 
 ## 日常使用
 
-- 可以通过**Tab**键实现自动补全参数
-- **alt-b(Backward)**和**alt-f(Forward)**可以在以单词为单位移动光标
-- **ctrl-a(Ahead of line)**可以将光标移至行首，**ctrl-e(End of line)**可以将光标移至行尾
+- 可以通过`Tab`键实现自动补全参数
+- `alt-b(Backward)`和`alt-f(Forward)`可以在以单词为单位移动光标
+- `ctrl-a(Ahead of line)`可以将光标移至行首，`ctrl-e(End of line)`可以将光标移至行尾
 - 回到前一个工作路径：`cd -`
 - `pstree -p`以一种优雅的方式展示进程树
 - `kill -STOP[pid]`停止一个进程
@@ -84,5 +84,6 @@
 - `watch`重复运行同一个命令，展示结果有更改的部分
 
 ## 持续补充...
+
 
 
