@@ -1,10 +1,12 @@
+> frp内网穿透，非常详细的步骤说明。
+
 ## 1. 准备工作
 
 - vps（云服务器一台）
 - 访问目标设备（就是你最终要访问的设备）
 - 简单的Linux基础（会用cp等几个简单命令即可）
 
-<!-- more -->
+
 
 ## 2. 下载frp
 
@@ -199,5 +201,6 @@ systemctl status frps #查看状态
 systemctl enable frps #开机启动frp
 systemctl disable frps # 禁止启动
 ```
+
 
 

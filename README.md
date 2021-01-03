@@ -79,3 +79,10 @@
 - [git的一系列教程](Tools/git/README.md)
 
 - [安装node和vue的一系列教程](Tools/vue/README.md)
+
+- [uPic和gitee配置图床](Tools/other/uPic和gitee配置图床.md)
+
+- [frp内网穿透](Tools/other/frp内网穿透.md)
+
+- [iterm2&zsh](Tools/other/iterm2&zsh.md)
+
