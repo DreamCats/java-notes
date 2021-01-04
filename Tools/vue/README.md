@@ -2,4 +2,6 @@
 
 
 - [nvm](安装nvm.md)
-- [nodejs](安装nodejs)
+- [nodejs](安装nodejs.md)
+- [vue](安装vue.md)
+- [npm常用命令](npm常用命令.md)
