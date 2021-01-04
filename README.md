@@ -74,18 +74,12 @@
 ## 其他
 
 - [Markdown速查手册](Tools/md/README.md)
-
 - [常用软件介绍](Tools/software/README.md)
-
 - [三种搭建博客的工具](Tools/blog/README.md)
-
 - [git的一系列教程](Tools/git/README.md)
-
 - [安装node和vue的一系列教程](Tools/vue/README.md)
-
 - [uPic和gitee配置图床](Tools/other/uPic和gitee配置图床.md)
-
 - [frp内网穿透](Tools/other/frp内网穿透.md)
-
 - [iterm2&zsh](Tools/other/iterm2&zsh.md)
+- [各种数据库的安装](Tools/db/README.md)
 
