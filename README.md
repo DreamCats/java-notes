@@ -1,4 +1,4 @@
-# DC-Notes
+# Dc-Notes
 ## 引言
 > - [个人博客](http://dreamcat.ink/)
 > - [在线阅读](http://dsystem.dreamcat.ink/#/)
