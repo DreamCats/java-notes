@@ -5,3 +5,4 @@
 - [nodejs](安装nodejs.md)
 - [vue](安装vue.md)
 - [npm常用命令](npm常用命令.md)
+- [npm镜像源](npm镜像源.md)
