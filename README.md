@@ -83,3 +83,4 @@
 - [iterm2&zsh](Tools/other/iterm2&zsh.md)
 - [各种数据库的安装](Tools/db/README.md)
 - [Java一系列的安装](Tools/java/README.md)
+- [vscode配置主题、字体和常用插件](Tools/other/vscode配置主题、字体和常用插件.md)
