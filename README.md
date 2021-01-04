@@ -82,4 +82,4 @@
 - [frp内网穿透](Tools/other/frp内网穿透.md)
 - [iterm2&zsh](Tools/other/iterm2&zsh.md)
 - [各种数据库的安装](Tools/db/README.md)
-
+- [Java一系列的安装](Tools/java/README.md)
