@@ -31,7 +31,7 @@
 - [按热度总结lc](/Java/alg/按热度总结lc.md)
 - [剑指offer](/Java/alg/剑指offer.md)
 - [个人刷熟题](/Java/alg/个人刷熟题.md)
-- [总结的一套秋招常考的热点](alg/README.md)
+- [总结的一套秋招常考的热点](Java/alg/README.md)
 
 
 ### 笔试题汇总
