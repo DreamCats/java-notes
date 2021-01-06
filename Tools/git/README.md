@@ -2,5 +2,6 @@
 
 
 - [安装git](安装git.md)
+- [注册github](注册github.md)
 - [git配置多用户](git配置多用户.md)
 - [创建github pages](创建githubpages.md)
