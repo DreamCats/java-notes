@@ -28,3 +28,8 @@ git config --global --list    # 查看当前用户配置
 git config --local --list     # 查看当前仓库配置
 git config --list             # 查看全部配置
 ```
+
+## 总结
+
+- 对于想使用git工具的同学，这部分内容还是需要了解一下。
+- 了解这部分的目的可以为配置单用户和多用户做铺垫和基础。
