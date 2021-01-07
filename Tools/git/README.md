@@ -6,4 +6,6 @@
 - [git配置文件详解](git配置文件.md)
 - [git配置单用户](git配置单用户.md)
 - [git配置多用户](git配置多用户.md)
+- [git常用命令](git常用命令.md)
 - [创建github pages](创建githubpages.md)
+
