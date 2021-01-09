@@ -3,6 +3,7 @@
 
 ## mac
 ### 编程工具
+- [x] Brew[->文档](mac安装brew.md)
 - [ ] Idea
 - [ ] Goland
 - [ ] WebStorm
@@ -15,7 +16,7 @@
 
 ### 文档工具
 - [ ] Office三件套
-- [ ] Typora
+- [x] Typora[->文档](typora软件介绍.md)
 - [ ] 思源笔记
 - [ ] XMind2020
 - [ ] OmniGraffle
