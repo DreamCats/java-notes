@@ -9,7 +9,7 @@
 - [ ] WebStorm
 - [ ] TablePlus
 - [ ] RDM
-- [ ] vscode
+- [x] vscode[->文档](../other/vscode配置主题、字体和常用插件.md)
 - [ ] iTerm
 - [ ] Transmit: 有打算换
 
@@ -28,7 +28,7 @@
 - [ ] Magnet
 - [ ] isShot
 - [ ] 超级右键
-- [ ] uPic
+- [x] uPic[->文档](../other/uPic和gitee配置图床.md)
 - [ ] Yoink
 - [ ] App Cleaner & Uninstaller
 - [ ] Bartender 4
