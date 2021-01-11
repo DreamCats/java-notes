@@ -29,7 +29,7 @@
 - [ ] isShot
 - [ ] 超级右键
 - [x] uPic[->文档](../other/uPic和gitee配置图床.md)
-- [ ] Yoink
+- [x] Yoink[->文档](yoink软件介绍.md)
 - [ ] App Cleaner & Uninstaller
 - [ ] Bartender 4
 - [ ] MacZip
