@@ -1,7 +1,7 @@
 # Dc-Notes
 ## 引言
 > - [个人博客](http://dreamcat.ink/blog)
-> - [在线阅读](http://dsystem.dreamcat.ink/#/)
+> - [在线阅读](http://dreamcat.ink/dsystem/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
 ## 常用网站
