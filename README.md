@@ -18,7 +18,7 @@
 - [大厂面经](/Java/mianjing/README.md)
 
 ### 知识体系
-- [Java后端知识分类](/Java/classify/README.md)：
+- [Java后端知识分类](/Java/classify/README.md)
 
 ### 刷题系列 
 - [推荐：CS-Notes](http://www.cyc2018.xyz/)：个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。
@@ -59,6 +59,7 @@
 ## 前端面试
 
 - [前端面试大纲](Front/前端面试.md)
+- [班车前端项目解读](Front/班车项目要点.md)
 
 ## 其他
 
