@@ -19,7 +19,7 @@
   那么其次看大量的面经，可以将每个面经当作一次面试，查看自己是否能讲出来，查漏补缺！
   最后，不断沉淀即可。祝好运！！！
 
-### 我是这样回答的
+### 知识体系
 - [知识分类](/Java/classify/README.md)：能力有限，但又想去钻研，面试中该怎么回答较好。（其中包含Java、数据库、计网、操作系统、分布式等持续总结...）
 
 ### 刷题系列 
@@ -34,11 +34,11 @@
 - [总结的一套秋招常考的热点题](Java/alg/README.md)
 
 
-### 笔试题汇总
+### 笔试题
 
 - [LC-SQL](/Java/bishi/sql.md)：这里说一下， 图解SQL面试题，个人建议全部练习，也不难，但也的确面试高频手写SQL题
 - [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
-- [常用sql语句](Java/other/常用sql.md)
+- [常用SQL语句](Java/other/常用sql.md)
 
 - [部分笔试题](/Java/bishi/README.md)：可以从牛客找笔试题的感觉，也可以练习输入输出，做多了，你就发现基本没有树和链表！
 
@@ -51,16 +51,16 @@
 ### 项目
 - [微服务班车在线预约系统](/Java/bus/README.md) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
 
-### 设计模式
+### 其他
 - [面试必问设计模式](/Java/mode/README.md)
-
-### JDK源码
 
 - [JDK1.8部分源码](Java/jdk/README.md)
 
-### 书籍
-
 - [相应阅读的书籍](Java/other/books.md)
+
+## 前端面试
+
+- [前端面试大纲](Front/前端面试.md)
 
 ## 其他
 
