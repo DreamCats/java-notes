@@ -15,15 +15,13 @@
 > 校招Java职位面试经历
 
 ### 面经汇总
-- [大厂面经以及自己所经历的面试](/Java/mianjing/README.md)：个人建议：首先自己先有个知识点体系，不管是思维导图也好，还是大纲也好。
-  那么其次看大量的面经，可以将每个面经当作一次面试，查看自己是否能讲出来，查漏补缺！
-  最后，不断沉淀即可。祝好运！！！
+- [大厂面经](/Java/mianjing/README.md)
 
 ### 知识体系
-- [知识分类](/Java/classify/README.md)：能力有限，但又想去钻研，面试中该怎么回答较好。（其中包含Java、数据库、计网、操作系统、分布式等持续总结...）
+- [Java后端知识分类](/Java/classify/README.md)：
 
 ### 刷题系列 
-- [推荐：CS-Notes](https://cyc2018.github.io/CS-Notes/#/?id=✏️-算法)：个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。
+- [推荐：CS-Notes](http://www.cyc2018.xyz/)：个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。
 
 - [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)：有些套路挺实用的，推荐阅读...
 
@@ -49,7 +47,7 @@
 - [疯狂吐血系列](Java/crazy/README.md)
 
 ### 项目
-- [微服务班车在线预约系统](/Java/bus/README.md) 个人撸的项目是基于微服务架构的班车预约系统，采用**springboot+mybatis+dubbo+rocketmq+mysql+redis等**。当然，该项目也是前后端分离，前端采用比较流行的vue框架。
+- [微服务班车在线预约系统](/Java/bus/README.md) 
 
 ### 其他
 - [面试必问设计模式](/Java/mode/README.md)
