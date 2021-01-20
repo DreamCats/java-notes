@@ -4,6 +4,7 @@
 > - [在线阅读](http://dreamcat.ink/dsystem/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
+
 ## 常用网站
 - [:bookmark:持续更新开源项目](/Tools/other/开源github.md)
 - [:fire:常用的在线网站](/Tools/other/常用网站.md)
@@ -81,3 +82,9 @@
 ## 额外
 
 - [看我这份总结，程序员拿驾照岂不是非常容易？](Other/bus/README.md)
+
+
+## 面经助手
+> 包含面经和算法题，持续维护
+
+<img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes小程序-体验版-lln2vy.jpg" alt="Dc-Notes小程序-体验版-lln2vy" style="zoom:50%;" />
