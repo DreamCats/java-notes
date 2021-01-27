@@ -16,7 +16,7 @@
 > 包含面经和算法题，持续维护
 
 <div align=center> 
-<img src="ttps://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes小程序-体验版-lln2vy" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes-small-OlULPl" style="zoom:50%;" />
 </div>
 
 ## 秋招经历
