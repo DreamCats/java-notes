@@ -12,6 +12,13 @@
 - [:smiling_imp:Linux命令行的奇淫技巧](/Tools/other/linux命令行.md)
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
+## 面经助手
+> 包含面经和算法题，持续维护
+
+<div align=center> 
+<img src="ttps://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes小程序-体验版-lln2vy" style="zoom:50%;" />
+</div>
+
 ## 秋招经历
 > 校招Java职位面试经历
 
@@ -84,9 +91,5 @@
 - [看我这份总结，程序员拿驾照岂不是非常容易？](Other/bus/README.md)
 
 
-## 面经助手
-> 包含面经和算法题，持续维护
 
-<div align=center> 
-<img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes小程序-体验版-lln2vy.jpg" alt="Dc-Notes小程序-体验版-lln2vy" style="zoom:50%;" />
-</div>
+
