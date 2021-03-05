@@ -14,6 +14,8 @@
 
 ## 面经助手
 > 包含面经和算法题，持续维护
+>
+> 小程序涉及的源文件->[在此处](Tools/wx/README.md)
 
 <div align=center> 
 <img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes-small-OlULPl" style="zoom:50%;" />
