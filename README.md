@@ -1,7 +1,7 @@
 # Dc-Notes
 ## 引言
 > - [个人博客](http://dreamcat.ink/blog)
-> - [在线阅读](http://dreamcat.ink/dsystem/)
+> - [在线面试阅读](http://dreamcat.ink/dsystem/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
 
@@ -13,7 +13,7 @@
 - [📖今日热榜](https://tophub.today/)：一款新闻聚合的产品，个人感觉还不错，闲时可以看一下新闻，可选择订阅哦
 
 ## 面经助手
-> 包含面经和算法题，持续维护
+> 包含面经、算法题和知识点，持续维护
 >
 > 小程序涉及的源文件->[在此处](Tools/wx/README.md)
 
@@ -61,9 +61,7 @@
 
 ### 其他
 - [面试必问设计模式](/Java/mode/README.md)
-
 - [JDK1.8部分源码](Java/jdk/README.md)
-
 - [相应阅读的书籍](Java/other/books.md)
 
 ## 前端面试
