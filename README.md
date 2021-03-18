@@ -76,14 +76,12 @@
 - [三种搭建博客的工具](Tools/blog/README.md)
 - [git的一系列教程](Tools/git/README.md)
 - [安装node和vue的一系列教程](Tools/vue/README.md)
-- [uPic和gitee配置图床](Tools/other/uPic和gitee配置图床.md)
 - [frp内网穿透](Tools/other/frp内网穿透.md)
 - [iterm2&zsh](Tools/other/iterm2&zsh.md)
 - [各种数据库的安装](Tools/db/README.md)
 - [Java一系列的安装](Tools/java/README.md)
 - [vscode配置主题、字体和常用插件](Tools/other/vscode配置主题、字体和常用插件.md)
-- [Typora软件介绍](Tools/software/typora软件介绍.md)
-- [Yoink软件介绍](Tools/software/yoink软件介绍.md)
+
 
 
 ## 额外
