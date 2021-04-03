@@ -1,4 +1,4 @@
-# Dc-Notes
+# java-notes
 ## 引言
 > - [个人博客](http://dreamcat.ink/blog)
 > - [在线面试阅读](http://dreamcat.ink/java-interview/)
