@@ -66,7 +66,11 @@
 
 > 有比较好的技术团队写的文章，值得大家阅读，受益匪浅。比如：阿里技术、美团技术团队等。
 
-| 类型 | 题目                                                         | 来源         |
-| ---- | ------------------------------------------------------------ | ------------ |
-| Java | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](https://www.toutiao.com/a6940243711880364577/?timestamp=1616741169&app=news_article_social&use_new_style=1&req_id=20210326144609010212061195590D105F&share_token=7F2390B3-5F20-477A-9AB7-53FC0724A210&group_id=6940243711880364577) | Java码农之路 |
+| 类型  | 题目                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
+| Java  | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](https://www.toutiao.com/a6940243711880364577/?timestamp=1616741169&app=news_article_social&use_new_style=1&req_id=20210326144609010212061195590D105F&share_token=7F2390B3-5F20-477A-9AB7-53FC0724A210&group_id=6940243711880364577) | Java码农之路   |
+| Java  | [JVM如何判断哪些对象可以回收？](https://mp.weixin.qq.com/s/4D49dPEfGlTV04vso3VT5Q) | 大鱼仙人       |
+| Java  | [Java Map中那些巧妙的设计](https://mp.weixin.qq.com/s/7UTEHA6pdHeitg1htzdcRw) | 阿里技术团队   |
+| Java  | [JDK 16 中的 ZGC：平均暂停时间 0.05 毫秒](https://zhuanlan.zhihu.com/p/359249269?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=797049999853756416) | Glavo          |
+| MySQL | [分页场景（limit,offset）为什么会慢？](https://mp.weixin.qq.com/s/CfcU1rde3SkDlvCJGXnK7A) | Java学习者社区 |
 
