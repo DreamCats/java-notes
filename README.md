@@ -73,4 +73,4 @@
 | Java  | [Java Map中那些巧妙的设计](https://mp.weixin.qq.com/s/7UTEHA6pdHeitg1htzdcRw) | 阿里技术团队   |
 | Java  | [JDK 16 中的 ZGC：平均暂停时间 0.05 毫秒](https://zhuanlan.zhihu.com/p/359249269?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=797049999853756416) | Glavo          |
 | MySQL | [分页场景（limit,offset）为什么会慢？](https://mp.weixin.qq.com/s/CfcU1rde3SkDlvCJGXnK7A) | Java学习者社区 |
-
+| Java  | [再谈synchronized锁升级](https://mp.weixin.qq.com/s/G4z08HfiqJ4qm3th0KtovA) | 码农参上       |
