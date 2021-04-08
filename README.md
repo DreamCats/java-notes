@@ -76,3 +76,5 @@
 | Java  | [JDK 16 中的 ZGC：平均暂停时间 0.05 毫秒](https://zhuanlan.zhihu.com/p/359249269?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=797049999853756416) | Glavo          |
 | MySQL | [分页场景（limit,offset）为什么会慢？](https://mp.weixin.qq.com/s/CfcU1rde3SkDlvCJGXnK7A) | Java学习者社区 |
 | Java  | [再谈synchronized锁升级](https://mp.weixin.qq.com/s/G4z08HfiqJ4qm3th0KtovA) | 码农参上       |
+| Java  | [Java线程池源码解析](https://juejin.cn/post/6946087172143317023) | Xiao镔         |
+| 算法  | [常见的初级排序算法，这次全搞懂](https://mp.weixin.qq.com/s/neol2vvmA_uXGbndKec1hw) | XSliently9527  |
