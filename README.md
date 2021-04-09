@@ -78,3 +78,7 @@
 | Java  | [再谈synchronized锁升级](https://mp.weixin.qq.com/s/G4z08HfiqJ4qm3th0KtovA) | 码农参上       |
 | Java  | [Java线程池源码解析](https://juejin.cn/post/6946087172143317023) | Xiao镔         |
 | 算法  | [常见的初级排序算法，这次全搞懂](https://mp.weixin.qq.com/s/neol2vvmA_uXGbndKec1hw) | XSliently9527  |
+| 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
+| Java  | [String 的不可变真的是因为 final 吗？](https://www.cnblogs.com/cswiki/p/14628286.html) | 飞天小牛肉     |
+| Java  | [假期后来一波干货：一文理清JVM和GC](https://www.toutiao.com/a6947938522997342734/?tt_from=copy_link&utm_campaign=client_share&timestamp=1617761751&app=news_article_social&utm_source=copy_link&utm_medium=toutiao_ios&use_new_style=1&req_id=202104071015510102120862234025725B&share_token=F3C3386B-990D-4357-B259-85CEBB91C34C&group_id=6947938522997342734) | Java架构师联盟 |
+
