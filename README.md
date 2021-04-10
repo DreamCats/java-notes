@@ -81,4 +81,6 @@
 | 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
 | Java  | [String 的不可变真的是因为 final 吗？](https://www.cnblogs.com/cswiki/p/14628286.html) | 飞天小牛肉     |
 | Java  | [假期后来一波干货：一文理清JVM和GC](https://www.toutiao.com/a6947938522997342734/?tt_from=copy_link&utm_campaign=client_share&timestamp=1617761751&app=news_article_social&utm_source=copy_link&utm_medium=toutiao_ios&use_new_style=1&req_id=202104071015510102120862234025725B&share_token=F3C3386B-990D-4357-B259-85CEBB91C34C&group_id=6947938522997342734) | Java架构师联盟 |
-
+| Java  | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
+| Java  | [**java**高并发情况下**sychronized**有什么问题？](http://mtw.so/6svoUV) | Jian           |
+| Java  | [Java 并发高频面试题：聊聊你对 AQS 的理解？](http://mrw.so/6bwBMh) | 敖丙           |
