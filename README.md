@@ -85,4 +85,4 @@
 | Java  | [**java**高并发情况下**sychronized**有什么问题？](http://mtw.so/6svoUV) | Jian           |
 | Java  | [Java 并发高频面试题：聊聊你对 AQS 的理解？](http://mrw.so/6bwBMh) | 敖丙           |
 | Java  | [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s/E2fOUHOabm10k_EVugX08g) | 美团技术团队   |
-
+| Java  | [并发下的 HashMap 为什么会引起死循环？？？](https://mp.weixin.qq.com/s/2lkfnQCi-_Lc3bUUD_i_ag) | Java学习者社区   |
