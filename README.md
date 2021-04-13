@@ -88,3 +88,6 @@
 | Java  | [并发下的 HashMap 为什么会引起死循环？？？](https://mp.weixin.qq.com/s/2lkfnQCi-_Lc3bUUD_i_ag) | Java学习者社区   |
 | Java  | [两次被裁之后，我终于解决了数据库缓存一致性问题](https://mp.weixin.qq.com/s/Ie2jGnRqv0vGgWvrKU0tMA) | 码农小说家  |
 | Java  | [别再纠结线程池大小/线程数量了，没有固定公式的](https://juejin.cn/post/6948034657321484318) | 空无  |
+| Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
+| 数据结构  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
+| MySQL | [谈谈 MySQL 锁](https://toutiao.io/k/z5c0vp0) |  郭儿的跋涉  |
