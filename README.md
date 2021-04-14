@@ -91,3 +91,6 @@
 | Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
 | 数据结构  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
 | MySQL | [谈谈 MySQL 锁](https://toutiao.io/k/z5c0vp0) |  郭儿的跋涉  |
+| Redis | [好代码实践：基于Redis的轻量级分布式均衡消费队列](https://mp.weixin.qq.com/s/2cOhU3L88E3_ZV3ywl136A) |  阿里技术团队  |
+| Java | [Spring 拦截器和过滤器的区别？](http://mtw.so/5QnbxF) |  华为云开发者社区  |
+| Java | [面试官：能说出 Synchronized 同步方法的八种使用场景吗](https://mp.weixin.qq.com/s/zTKcixJ6CUC-oq7VJMjYEA) |  我是程序汪  |
