@@ -97,3 +97,4 @@
 | Redis | [Redis 入门：Redis 概念和基础 (查看原文)](https://toutiao.io/k/47fg3nq) |  Java全栈知识体系  |
 | Java | [Java内存访问重排序的研究](https://tech.meituan.com/2014/09/23/java-memory-reordering.html) |  美团技术团队  |
 | MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
+| Java | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](http://mrw.so/5suJqN) |  Java码农之路  |
