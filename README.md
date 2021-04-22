@@ -99,3 +99,4 @@
 | MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
 | Java | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](http://mrw.so/5suJqN) |  Java码农之路  |
 | MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
+| 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
