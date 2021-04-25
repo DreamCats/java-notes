@@ -99,6 +99,7 @@
 | Java | [Java内存访问重排序的研究](https://tech.meituan.com/2014/09/23/java-memory-reordering.html) |  美团技术团队  |
 | Java | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](http://mrw.so/5suJqN) |  Java码农之路  |
 | Java | [Java NIO浅析](https://tech.meituan.com/2016/11/04/nio.html) |  美团技术团队  |
+| Java | [Java Hotspot G1 GC的一些关键技术](https://tech.meituan.com/2016/09/23/g1.html) |  美团技术团队  |
 
 ### 数据库
 
