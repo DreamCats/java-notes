@@ -66,41 +66,65 @@
 
 > 有比较好的技术团队写的文章，值得大家阅读，受益匪浅。比如：阿里技术、美团技术团队等。
 
+### 其他
+
 | 类型  | 题目                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
 | Other | [持续更新非常优秀的Github项目](Java/other/开源github.md)     | Dreamcats      |
 | Other | [计算机专业电子书下载](https://tanqingbo.cn/CSBook001/)      | IT码农         |
 | Other | [计算机专业电子书下载-2](https://tanqingbo.cn/CSBook001/)    | javaer-roadmap |
-| Other | [计算机专业电子书下载-3](http://www.forbooks.xyz/) | forbooks免费资源网 |
+| Other | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
+| Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
+
+### Java
+
+| 类型  | 题目                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
 | Java  | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](https://www.toutiao.com/a6940243711880364577/?timestamp=1616741169&app=news_article_social&use_new_style=1&req_id=20210326144609010212061195590D105F&share_token=7F2390B3-5F20-477A-9AB7-53FC0724A210&group_id=6940243711880364577) | Java码农之路   |
 | Java  | [JVM如何判断哪些对象可以回收？](https://mp.weixin.qq.com/s/4D49dPEfGlTV04vso3VT5Q) | 大鱼仙人       |
 | Java  | [Java Map中那些巧妙的设计](https://mp.weixin.qq.com/s/7UTEHA6pdHeitg1htzdcRw) | 阿里技术团队   |
 | Java  | [JDK 16 中的 ZGC：平均暂停时间 0.05 毫秒](https://zhuanlan.zhihu.com/p/359249269?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=797049999853756416) | Glavo          |
-| MySQL | [分页场景（limit,offset）为什么会慢？](https://mp.weixin.qq.com/s/CfcU1rde3SkDlvCJGXnK7A) | Java学习者社区 |
 | Java  | [再谈synchronized锁升级](https://mp.weixin.qq.com/s/G4z08HfiqJ4qm3th0KtovA) | 码农参上       |
 | Java  | [Java线程池源码解析](https://juejin.cn/post/6946087172143317023) | Xiao镔         |
-| 算法  | [常见的初级排序算法，这次全搞懂](https://mp.weixin.qq.com/s/neol2vvmA_uXGbndKec1hw) | XSliently9527  |
-| 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
 | Java  | [String 的不可变真的是因为 final 吗？](https://www.cnblogs.com/cswiki/p/14628286.html) | 飞天小牛肉     |
 | Java  | [假期后来一波干货：一文理清JVM和GC](https://www.toutiao.com/a6947938522997342734/?tt_from=copy_link&utm_campaign=client_share&timestamp=1617761751&app=news_article_social&utm_source=copy_link&utm_medium=toutiao_ios&use_new_style=1&req_id=202104071015510102120862234025725B&share_token=F3C3386B-990D-4357-B259-85CEBB91C34C&group_id=6947938522997342734) | Java架构师联盟 |
-| Other | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
 | Java  | [**java**高并发情况下**sychronized**有什么问题？](http://mtw.so/6svoUV) | Jian           |
 | Java  | [Java 并发高频面试题：聊聊你对 AQS 的理解？](http://mrw.so/6bwBMh) | 敖丙           |
 | Java  | [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s/E2fOUHOabm10k_EVugX08g) | 美团技术团队   |
 | Java  | [并发下的 HashMap 为什么会引起死循环？？？](https://mp.weixin.qq.com/s/2lkfnQCi-_Lc3bUUD_i_ag) | Java学习者社区   |
 | Java  | [两次被裁之后，我终于解决了数据库缓存一致性问题](https://mp.weixin.qq.com/s/Ie2jGnRqv0vGgWvrKU0tMA) | 码农小说家  |
 | Java  | [别再纠结线程池大小/线程数量了，没有固定公式的](https://juejin.cn/post/6948034657321484318) | 空无  |
-| Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
-| 数据结构  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
-| MySQL | [谈谈 MySQL 锁](https://toutiao.io/k/z5c0vp0) |  郭儿的跋涉  |
-| Redis | [好代码实践：基于Redis的轻量级分布式均衡消费队列](https://mp.weixin.qq.com/s/2cOhU3L88E3_ZV3ywl136A) |  阿里技术团队  |
 | Java | [Spring 拦截器和过滤器的区别？](http://mtw.so/5QnbxF) |  华为云开发者社区  |
 | Java | [面试官：能说出 Synchronized 同步方法的八种使用场景吗](https://mp.weixin.qq.com/s/zTKcixJ6CUC-oq7VJMjYEA) |  我是程序汪  |
-| Redis | [Redis 入门：Redis 概念和基础 (查看原文)](https://toutiao.io/k/47fg3nq) |  Java全栈知识体系  |
 | Java | [Java内存访问重排序的研究](https://tech.meituan.com/2014/09/23/java-memory-reordering.html) |  美团技术团队  |
-| MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
 | Java | [面试官：谈谈JVM垃圾回收的三色标记，避坑建议看这篇就够了](http://mrw.so/5suJqN) |  Java码农之路  |
-| MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
-| 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
 | Java | [Java NIO浅析](https://tech.meituan.com/2016/11/04/nio.html) |  美团技术团队  |
+
+### 数据库
+
+| 类型  | 题目                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
+| MySQL | [分页场景（limit,offset）为什么会慢？](https://mp.weixin.qq.com/s/CfcU1rde3SkDlvCJGXnK7A) | Java学习者社区 |
+| MySQL | [谈谈 MySQL 锁](https://toutiao.io/k/z5c0vp0) |  郭儿的跋涉  |
+| Redis | [好代码实践：基于Redis的轻量级分布式均衡消费队列](https://mp.weixin.qq.com/s/2cOhU3L88E3_ZV3ywl136A) |  阿里技术团队  |
+| Redis | [Redis 入门：Redis 概念和基础 (查看原文)](https://toutiao.io/k/47fg3nq) |  Java全栈知识体系  |
+| MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
+| MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
+
+### 分布式
+
+| 类型  | 题目                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
 | 分布式 | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) |  美团技术团队  |
+
+### 数据结构
+
+
+| 类型  | 题目                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
+| 算法  | [常见的初级排序算法，这次全搞懂](https://mp.weixin.qq.com/s/neol2vvmA_uXGbndKec1hw) | XSliently9527  |
+| 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
+| 算法  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
+| 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
+
+
