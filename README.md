@@ -101,6 +101,8 @@
 | Java | [Java NIO浅析](https://tech.meituan.com/2016/11/04/nio.html) |  美团技术团队  |
 | Java | [Java Hotspot G1 GC的一些关键技术](https://tech.meituan.com/2016/09/23/g1.html) |  美团技术团队  |
 | Java | [Java 8系列之重新认识HashMap](https://tech.meituan.com/2016/06/24/java-hashmap.html) |  美团技术团队  |
+| Java | [新一代垃圾回收器ZGC的探索与实践](https://tech.meituan.com/2020/08/06/new-zgc-practice-in-meituan.html) | 美团技术团队 |
+| Java | [Java线程池实现原理及其在美团业务中的实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html) | 美团技术团队 |
 
 ### 数据库
 
@@ -128,5 +130,4 @@
 | 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
 | 算法  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
-
 
