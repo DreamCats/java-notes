@@ -115,6 +115,7 @@
 | MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
 | MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
 | MySQL | [浅谈分库分表那些事儿](https://mp.weixin.qq.com/s/X6FI9Ci7ZXGDNDCkh2VnNA) | 阿里技术团队 |
+| MySQL | [MySQL 与 Redis 缓存的同步方案](https://segmentfault.com/a/1190000039915710) | 民大哥 |
 
 ### 分布式&&中间件
 
@@ -131,6 +132,7 @@
 | 算法  | [字节跳动最爱考的 64 道算法题（JS版）](https://juejin.cn/post/6947842412102287373) | 图雀社区       |
 | 算法  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
+| 算法 | [牛逼哄哄的 BitMap，到底牛逼在哪？](https://juejin.cn/post/6953821179836629005) | ITl老哥 |
 
 ### 计算机网络
 
