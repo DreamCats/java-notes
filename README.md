@@ -114,8 +114,9 @@
 | Redis | [Redis 入门：Redis 概念和基础 (查看原文)](https://toutiao.io/k/47fg3nq) |  Java全栈知识体系  |
 | MySQL | [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html) |  美团技术团队  |
 | MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
+| MySQL | [浅谈分库分表那些事儿](https://mp.weixin.qq.com/s/X6FI9Ci7ZXGDNDCkh2VnNA) | 阿里技术团队 |
 
-### 分布式
+### 分布式&&中间件
 
 | 类型  | 题目                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
@@ -131,3 +132,8 @@
 | 算法  | [MySQL索引底层：B+树详解](https://mp.weixin.qq.com/s/JqaN_1GPiqRQzXt2AizmdA) | Java3y  |
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
 
+### 计算机网络
+
+| 类型 | 题目                                                         | 来源     |
+| ---- | ------------------------------------------------------------ | -------- |
+| 计网 | [GET 和 POST请求的本质区别是什么？原来我一直理解错了](https://segmentfault.com/a/1190000039905721) | 码农突围 |
