@@ -103,6 +103,7 @@
 | Java | [Java 8系列之重新认识HashMap](https://tech.meituan.com/2016/06/24/java-hashmap.html) |  美团技术团队  |
 | Java | [新一代垃圾回收器ZGC的探索与实践](https://tech.meituan.com/2020/08/06/new-zgc-practice-in-meituan.html) | 美团技术团队 |
 | Java | [Java线程池实现原理及其在美团业务中的实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html) | 美团技术团队 |
+| Spring | [盘点 SpringIOC : 循环依赖](https://juejin.cn/post/6953623068568715294) | 苦逼的程序源 |
 
 ### 数据库
 
@@ -119,9 +120,10 @@
 
 ### 分布式&&中间件
 
-| 类型  | 题目                                                         | 来源           |
-| ----- | ------------------------------------------------------------ | -------------- |
-| 分布式 | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) |  美团技术团队  |
+| 类型     | 题目                                                         | 来源         |
+| -------- | ------------------------------------------------------------ | ------------ |
+| 分布式   | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队 |
+| 分布式锁 | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ) | 架构精进之路 |
 
 ### 数据结构
 
