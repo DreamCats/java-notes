@@ -66,7 +66,7 @@
 
 > 有比较好的技术团队写的文章，值得大家阅读，受益匪浅。比如：阿里技术、美团技术团队等。
 
-### 其他
+###  🔖其他
 
 | 类型  | 题目                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
@@ -76,7 +76,7 @@
 | Other | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
 | Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
 
-### Java
+### 📉Java
 
 | 类型  | 题目                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
@@ -104,8 +104,9 @@
 | Java | [新一代垃圾回收器ZGC的探索与实践](https://tech.meituan.com/2020/08/06/new-zgc-practice-in-meituan.html) | 美团技术团队 |
 | Java | [Java线程池实现原理及其在美团业务中的实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html) | 美团技术团队 |
 | Spring | [盘点 SpringIOC : 循环依赖](https://juejin.cn/post/6953623068568715294) | 苦逼的程序源 |
+| Java | [类加载常见错误总结，写得非常好！](https://mp.weixin.qq.com/s/tu90FNXKSQUID2l1dSZyJg) | Java之道 |
 
-### 数据库
+### 📚数据库
 
 | 类型  | 题目                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
@@ -118,14 +119,14 @@
 | MySQL | [浅谈分库分表那些事儿](https://mp.weixin.qq.com/s/X6FI9Ci7ZXGDNDCkh2VnNA) | 阿里技术团队 |
 | MySQL | [MySQL 与 Redis 缓存的同步方案](https://segmentfault.com/a/1190000039915710) | 民大哥 |
 
-### 分布式&&中间件
+### 🧾分布式&&中间件
 
 | 类型     | 题目                                                         | 来源         |
 | -------- | ------------------------------------------------------------ | ------------ |
 | 分布式   | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队 |
 | 分布式锁 | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ) | 架构精进之路 |
 
-### 数据结构
+### 🎈数据结构
 
 
 | 类型  | 题目                                                         | 来源           |
@@ -136,7 +137,7 @@
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
 | 算法 | [牛逼哄哄的 BitMap，到底牛逼在哪？](https://juejin.cn/post/6953821179836629005) | ITl老哥 |
 
-### 计算机网络
+### 📖计算机网络
 
 | 类型 | 题目                                                         | 来源     |
 | ---- | ------------------------------------------------------------ | -------- |
