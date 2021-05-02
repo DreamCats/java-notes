@@ -126,6 +126,7 @@
 | 分布式   | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队 |
 | 分布式锁 | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ) | 架构精进之路 |
 | 分布式   | [【万级并发】电商库存扣减如何设计？不超卖！](https://mp.weixin.qq.com/s/jJTIBL8unJ-IRbDqgREsCw) | TomGE        |
+| 分布式   | [七种分布式事务的解决方案，一次讲给你听](http://mrw.so/5WvneB) | moon聊技术   |
 
 ### 🎈数据结构
 
