@@ -122,12 +122,14 @@
 
 ### 🧾分布式&&中间件
 
-| 类型     | 题目                                                         | 来源         |
-| -------- | ------------------------------------------------------------ | ------------ |
-| 分布式   | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队 |
-| 分布式锁 | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ) | 架构精进之路 |
-| 分布式   | [【万级并发】电商库存扣减如何设计？不超卖！](https://mp.weixin.qq.com/s/jJTIBL8unJ-IRbDqgREsCw) | TomGE        |
-| 分布式   | [七种分布式事务的解决方案，一次讲给你听](http://mrw.so/5WvneB) | moon聊技术   |
+| 类型       | 题目                                                         | 来源         |
+| ---------- | ------------------------------------------------------------ | ------------ |
+| 分布式     | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队 |
+| 分布式锁   | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ) | 架构精进之路 |
+| 并发       | [【万级并发】电商库存扣减如何设计？不超卖！](https://mp.weixin.qq.com/s/jJTIBL8unJ-IRbDqgREsCw) | TomGE        |
+| 分布式事务 | [七种分布式事务的解决方案，一次讲给你听](http://mrw.so/5WvneB) | moon聊技术   |
+| 分布式     | [服务端如何防止重复支付](https://juejin.cn/post/6956790589606068232) | Markerhub    |
+| 限流       | [为什么大厂服务并发高却很稳定？分布式服务熔断降级限流利器至Hystrix](https://juejin.cn/post/6955201079017472014) | zxhtom       |
 
 ### 🎈数据结构
 
