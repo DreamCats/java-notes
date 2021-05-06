@@ -106,6 +106,7 @@
 | Spring | [盘点 SpringIOC : 循环依赖](https://juejin.cn/post/6953623068568715294) | 苦逼的程序源 |
 | Java | [类加载常见错误总结，写得非常好！](https://mp.weixin.qq.com/s/tu90FNXKSQUID2l1dSZyJg) | Java之道 |
 | Java | [Java双刃剑之Unsafe类详解](https://mp.weixin.qq.com/s/K5JrXsKVWoJ5JF3P95_P3w) | Dr Hydra |
+| Java | [有了CopyOnWrite为何又要有ReadWriteLock？](https://mp.weixin.qq.com/s/4-U7SpexOR331zVd3FnWuQ) | java金融 |
 
 ### 📚数据库
 
