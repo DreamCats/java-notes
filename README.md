@@ -120,6 +120,7 @@
 | MySQL | [MySQL索引原理及慢查询优化](https://tech.meituan.com/2014/06/30/mysql-index.html) |  美团技术团队  |
 | MySQL | [浅谈分库分表那些事儿](https://mp.weixin.qq.com/s/X6FI9Ci7ZXGDNDCkh2VnNA) | 阿里技术团队 |
 | MySQL | [MySQL 与 Redis 缓存的同步方案](https://segmentfault.com/a/1190000039915710) | 民大哥 |
+| MySQL | [我面试几乎必问：你设计索引的原则是什么？怎么避免索引失效？](https://www.cnblogs.com/hollischuang/p/14749826.html) | Hollischuang |
 
 ### 🧾分布式&&中间件
 
