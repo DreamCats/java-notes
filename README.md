@@ -134,6 +134,7 @@
 | 分布式     | [服务端如何防止重复支付](https://juejin.cn/post/6956790589606068232) | Markerhub    |
 | 限流       | [为什么大厂服务并发高却很稳定？分布式服务熔断降级限流利器至Hystrix](https://juejin.cn/post/6955201079017472014) | zxhtom       |
 | 微服务     | [微服务设计原则](https://mp.weixin.qq.com/s?__biz=MzA4Nzc4MjI4MQ==&mid=2652404378&idx=1&sn=dcdb4bb2d1358357748a788c8f5aed1f&chksm=8bd8fc7cbcaf756ae8854b093918fd46efe6e7549d5415b5e296fd3688056e402c9550ee1ebc&token=1408495670&lang=zh_CN#rd) | 性能于架构   |
+| 分布式锁   | [SpringBoot + Redis 分布式锁：模拟抢单](https://mp.weixin.qq.com/s/g7NbrelsUhYg8pVO96Ui1g) | JAVA小咖秀   |
 
 ### 🎈数据结构
 
