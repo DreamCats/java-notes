@@ -108,6 +108,7 @@
 | Java | [Java双刃剑之Unsafe类详解](https://mp.weixin.qq.com/s/K5JrXsKVWoJ5JF3P95_P3w) | Dr Hydra |
 | Java | [有了CopyOnWrite为何又要有ReadWriteLock？](https://mp.weixin.qq.com/s/4-U7SpexOR331zVd3FnWuQ) | java金融 |
 | Java | [ThreadLocal使用与原理](https://juejin.cn/post/6959333602748268575) | 敖丙 |
+| Java | [动态代理总结，你要知道的都在这里，无废话！](https://juejin.cn/post/6963050105893027871) | 月伴飞鱼 |
 
 ### 📚数据库
 
