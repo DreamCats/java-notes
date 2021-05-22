@@ -126,6 +126,7 @@
 | MySQL | [我面试几乎必问：你设计索引的原则是什么？怎么避免索引失效？](https://www.cnblogs.com/hollischuang/p/14749826.html) | Hollischuang |
 | MySQL | [分区取模分库分表策略：多表事务分库内闭环解决方案](https://mp.weixin.qq.com/s/4S_BhPtIMikefPJLo5498Q) | 阿里技术 |
 | Redis | [亿级系统的Redis缓存如何设计？？？](https://mp.weixin.qq.com/s/mc1zzjy5fEbXCxwhJoWA2Q) | TomGE |
+| MySQL | [美团二面：Redis与MySQL双写一致性如何保证？](https://juejin.cn/post/6964531365643550751) | 捡田螺的小男孩 |
 
 ### 🧾分布式&&中间件
 
