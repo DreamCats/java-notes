@@ -128,6 +128,7 @@
 | Redis | [亿级系统的Redis缓存如何设计？？？](https://mp.weixin.qq.com/s/mc1zzjy5fEbXCxwhJoWA2Q) | TomGE |
 | MySQL | [美团二面：Redis与MySQL双写一致性如何保证？](https://juejin.cn/post/6964531365643550751) | 捡田螺的小男孩 |
 | MySQL | [索引失效的场景有哪些？索引何时会失效？](https://segmentfault.com/a/1190000040066409) | 民工哥 |
+| MySQL | [看完这篇还不懂 MySQL 主从复制，可以回家躺平了～](https://www.cnblogs.com/qianyueric/p/14822012.html) | 小羽 |
 
 ### 🧾分布式&&中间件
 
