@@ -110,6 +110,7 @@
 | Java | [ThreadLocal使用与原理](https://juejin.cn/post/6959333602748268575) | 敖丙 |
 | Java | [动态代理总结，你要知道的都在这里，无废话！](https://juejin.cn/post/6963050105893027871) | 月伴飞鱼 |
 | Java | [Java并发-线程池篇-附场景分析](https://mp.weixin.qq.com/s/3uSBmQJcv9eEWs-mHl0Ifw) | 汤圆 |
+| Java | [从源码角度学习Java动态代理](https://mp.weixin.qq.com/s/jaLvb21yVHg2R_gJ-JSeVA) | 盖伦专治花里胡哨 |
 
 ### 📚数据库
 
