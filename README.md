@@ -113,6 +113,7 @@
 | Java | [从源码角度学习Java动态代理](https://mp.weixin.qq.com/s/jaLvb21yVHg2R_gJ-JSeVA) | 盖伦专治花里胡哨 |
 | Java | [现在已经卷到需要问三色标记了吗？](https://juejin.cn/post/6967184141833994248) | 艾小仙 |
 | Java | [一文理解JVM线程属于用户态还是内核态](https://mp.weixin.qq.com/s/afr-S_hpuidUHDOSVxjjcw) | 全菜工程师小辉 |
+| Java | [一文理解Java中的SPI机制](https://mp.weixin.qq.com/s/EvVSyJYtI2kNe7DNw-q38A) | 全菜工程师小辉 |
 
 ### 📚数据库
 
