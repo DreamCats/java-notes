@@ -134,6 +134,7 @@
 | MySQL | [索引失效的场景有哪些？索引何时会失效？](https://segmentfault.com/a/1190000040066409) | 民工哥 |
 | MySQL | [看完这篇还不懂 MySQL 主从复制，可以回家躺平了～](https://www.cnblogs.com/qianyueric/p/14822012.html) | 小羽 |
 | Redis | [快速了解缓存穿透与缓存雪崩](https://blog.csdn.net/y277an/article/details/97457358?spm=1001.2014.3001.5501) | 全菜工程师小辉 |
+| MySQL | [面试题：mysql 一棵 B+ 树能存多少条数据？](https://mp.weixin.qq.com/s/IdpY7CPxyqRNx3BYYxl2Ow) | TomGE |
 
 ### 🧾分布式&&中间件
 
