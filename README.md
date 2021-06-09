@@ -114,6 +114,7 @@
 | Java | [现在已经卷到需要问三色标记了吗？](https://juejin.cn/post/6967184141833994248) | 艾小仙 |
 | Java | [一文理解JVM线程属于用户态还是内核态](https://mp.weixin.qq.com/s/afr-S_hpuidUHDOSVxjjcw) | 全菜工程师小辉 |
 | Java | [一文理解Java中的SPI机制](https://mp.weixin.qq.com/s/EvVSyJYtI2kNe7DNw-q38A) | 全菜工程师小辉 |
+| Spring | [给老板解释解释，为什么要用SpringCloud alibaba作为微服务开发框架？？？](https://mp.weixin.qq.com/s/AYCSL5BhfOcH-HpE1VP-mg) | 票飘沙Jam |
 
 ### 📚数据库
 
