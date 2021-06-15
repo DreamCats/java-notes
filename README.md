@@ -138,6 +138,7 @@
 | MySQL | [看完这篇还不懂 MySQL 主从复制，可以回家躺平了～](https://www.cnblogs.com/qianyueric/p/14822012.html) | 小羽 |
 | Redis | [快速了解缓存穿透与缓存雪崩](https://blog.csdn.net/y277an/article/details/97457358?spm=1001.2014.3001.5501) | 全菜工程师小辉 |
 | MySQL | [面试题：mysql 一棵 B+ 树能存多少条数据？](https://mp.weixin.qq.com/s/IdpY7CPxyqRNx3BYYxl2Ow) | TomGE |
+| MySQL | [为什么磁盘存储引擎用 b+树来作为索引结构？](https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug) | 腾讯技术工程 |
 
 ### 🧾分布式&&中间件
 
