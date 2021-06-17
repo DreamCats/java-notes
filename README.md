@@ -154,6 +154,7 @@
 | 分布式锁   | [SpringBoot + Redis 分布式锁：模拟抢单](https://mp.weixin.qq.com/s/g7NbrelsUhYg8pVO96Ui1g) | JAVA小咖秀   |
 | 消息队列   | [消息队列如何确保消息的有序性？](https://mp.weixin.qq.com/s?__biz=MzA4Nzc4MjI4MQ==&mid=2652404530&idx=1&sn=92db6edce9e4eb88d53e4e1b496d83a6&chksm=8bd8fdd4bcaf74c205d899ebb086fd7c64ca3cf527fdbea92349e44ea3cc0f82a2de2a42ddb7&token=1080400861&lang=zh_CN#rd) | 杜亦舒       |
 | 消息队列   | [听叔一句劝，消息队列的水太深，你把握不住！](https://mp.weixin.qq.com/s/E5FWKPPhRBNhWaOiu2cXsQ) | 单一色调     |
+| 分布式锁   | [丢，隔壁的老哥又让我用分布式锁](https://mp.weixin.qq.com/s/v7xpp9Iu8apgsSOf2xkyyA) | Java3y       |
 
 ### 🎈数据结构
 
