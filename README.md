@@ -118,7 +118,7 @@
 | Spring | [给老板解释解释，为什么要用SpringCloud alibaba作为微服务开发框架？？？](https://mp.weixin.qq.com/s/AYCSL5BhfOcH-HpE1VP-mg) | 票飘沙Jam |
 | Spring | [如何实现一个简易版的 Spring - 如何实现 AOP（终结篇）](https://www.cnblogs.com/mghio/p/14881156.html) | mghio |
 | Java | [高频面试题-请把Java的双亲委派机制说清楚！](https://juejin.cn/post/6974405506630680590) | Ijiran |
-| Java | [Java进阶 \| 泛型机制与反射原理](https://segmentfault.com/a/1190000040222761) | 知了一笑 |
+|  |  |  |
 
 ### 📚数据库
 
@@ -141,6 +141,7 @@
 | Redis | [快速了解缓存穿透与缓存雪崩](https://blog.csdn.net/y277an/article/details/97457358?spm=1001.2014.3001.5501) | 全菜工程师小辉 |
 | MySQL | [面试题：mysql 一棵 B+ 树能存多少条数据？](https://mp.weixin.qq.com/s/IdpY7CPxyqRNx3BYYxl2Ow) | TomGE |
 | MySQL | [为什么磁盘存储引擎用 b+树来作为索引结构？](https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug) | 腾讯技术工程 |
+| Redis | [源码级别了解 Redis 持久化](https://segmentfault.com/a/1190000040186654) | 蘑菇睡不着 |
 
 ### 🧾分布式&&中间件
 
