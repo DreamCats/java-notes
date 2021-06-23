@@ -118,6 +118,7 @@
 | Spring | [给老板解释解释，为什么要用SpringCloud alibaba作为微服务开发框架？？？](https://mp.weixin.qq.com/s/AYCSL5BhfOcH-HpE1VP-mg) | 票飘沙Jam |
 | Spring | [如何实现一个简易版的 Spring - 如何实现 AOP（终结篇）](https://www.cnblogs.com/mghio/p/14881156.html) | mghio |
 | Java | [高频面试题-请把Java的双亲委派机制说清楚！](https://juejin.cn/post/6974405506630680590) | Ijiran |
+| Java | [Java进阶 \| 泛型机制与反射原理](https://segmentfault.com/a/1190000040222761) | 知了一笑 |
 
 ### 📚数据库
 
