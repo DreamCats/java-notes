@@ -158,6 +158,7 @@
 | 消息队列   | [消息队列如何确保消息的有序性？](https://mp.weixin.qq.com/s?__biz=MzA4Nzc4MjI4MQ==&mid=2652404530&idx=1&sn=92db6edce9e4eb88d53e4e1b496d83a6&chksm=8bd8fdd4bcaf74c205d899ebb086fd7c64ca3cf527fdbea92349e44ea3cc0f82a2de2a42ddb7&token=1080400861&lang=zh_CN#rd) | 杜亦舒       |
 | 消息队列   | [听叔一句劝，消息队列的水太深，你把握不住！](https://mp.weixin.qq.com/s/E5FWKPPhRBNhWaOiu2cXsQ) | 单一色调     |
 | 分布式锁   | [丢，隔壁的老哥又让我用分布式锁](https://mp.weixin.qq.com/s/v7xpp9Iu8apgsSOf2xkyyA) | Java3y       |
+| Dubbo      | [详解Apache Dubbo的SPI实现机制](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247491344&idx=2&sn=0ac23704bc0f1e66d065240e2538f89d&chksm=ebd86f82dcafe69499cf6dab34431a9102ed78cca2dc45c4e7172248ee605b8d0f0b1a1fadd0&token=2046348471&lang=zh_CN#rd) | Ning Peng    |
 
 ### 🎈数据结构
 
