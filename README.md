@@ -143,6 +143,7 @@
 | MySQL | [为什么磁盘存储引擎用 b+树来作为索引结构？](https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug) | 腾讯技术工程 |
 | Redis | [源码级别了解 Redis 持久化](https://segmentfault.com/a/1190000040186654) | 蘑菇睡不着 |
 | Redis | [大厂经典面试题：Redis为什么这么快？](https://juejin.cn/post/6978280894704386079) | 捡田螺的小男孩 |
+| MySQL | [一文了解数据拆分与分库分表](https://mp.weixin.qq.com/s/LDUWmEb8z5mTjPZLlJ1iVw) | 全菜工程师小辉 |
 
 ### 🧾分布式&&中间件
 
