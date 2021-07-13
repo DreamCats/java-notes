@@ -163,6 +163,7 @@
 | Dubbo      | [详解Apache Dubbo的SPI实现机制](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247491344&idx=2&sn=0ac23704bc0f1e66d065240e2538f89d&chksm=ebd86f82dcafe69499cf6dab34431a9102ed78cca2dc45c4e7172248ee605b8d0f0b1a1fadd0&token=2046348471&lang=zh_CN#rd) | Ning Peng    |
 | 分布式     | [干货 \|携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q) | GSF          |
 | 分布式锁   | [基于Redis的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html) | xiaoxiaotank |
+| 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html) | 码辣架构     |
 
 ### 🎈数据结构
 
