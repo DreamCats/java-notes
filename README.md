@@ -145,6 +145,7 @@
 | Redis | [源码级别了解 Redis 持久化](https://segmentfault.com/a/1190000040186654) | 蘑菇睡不着 |
 | Redis | [大厂经典面试题：Redis为什么这么快？](https://juejin.cn/post/6978280894704386079) | 捡田螺的小男孩 |
 | MySQL | [一文了解数据拆分与分库分表](https://mp.weixin.qq.com/s/LDUWmEb8z5mTjPZLlJ1iVw) | 全菜工程师小辉 |
+| Redis | [【redis前传】zset如何解决内部链表查找效率低下\|跳表构建](https://juejin.cn/post/6983810713055658015) | zxhtom |
 
 ### 🧾分布式&&中间件
 
