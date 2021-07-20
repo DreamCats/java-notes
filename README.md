@@ -147,6 +147,7 @@
 | MySQL | [一文了解数据拆分与分库分表](https://mp.weixin.qq.com/s/LDUWmEb8z5mTjPZLlJ1iVw) | 全菜工程师小辉 |
 | Redis | [【redis前传】zset如何解决内部链表查找效率低下\|跳表构建](https://juejin.cn/post/6983810713055658015) | zxhtom |
 | MySQL | [值得收藏，揭秘 MySQL 多版本并发控制实现原理](https://mp.weixin.qq.com/s/OYDfxgzNAOUGFILGk__CBQ) | 架构精进之路 |
+| MySQL | [慢SQL排查思路？就这。](https://mp.weixin.qq.com/s/3yki4dljbLMgnOVrsqbk8w) | yes的练级攻略 |
 
 ### 🧾分布式&&中间件
 
