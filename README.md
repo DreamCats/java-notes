@@ -194,8 +194,9 @@
 
 ### ✉️操作系统
 
-| 类型 | 题目                                                         | 来源        |
-| ---- | ------------------------------------------------------------ | ----------- |
-| 系统 | [逛到底层看NIO的零拷贝](https://mp.weixin.qq.com/s/Oc787q5cK_83t5B6h631DQ) | 皇甫嗷嗷叫  |
-| 系统 | [进程、线程与协程傻傻分不清？一文带你吃透！](https://mp.weixin.qq.com/s/jhOSjVyRA6rNKqVT2pKMIQ) | 程序猿阿星  |
-| 系统 | [虚拟内存的那点事儿](https://juejin.cn/post/6844903507594575886) | Sylvanassun |
+| 类型 | 题目                                                         | 来源           |
+| ---- | ------------------------------------------------------------ | -------------- |
+| 系统 | [逛到底层看NIO的零拷贝](https://mp.weixin.qq.com/s/Oc787q5cK_83t5B6h631DQ) | 皇甫嗷嗷叫     |
+| 系统 | [进程、线程与协程傻傻分不清？一文带你吃透！](https://mp.weixin.qq.com/s/jhOSjVyRA6rNKqVT2pKMIQ) | 程序猿阿星     |
+| 系统 | [虚拟内存的那点事儿](https://juejin.cn/post/6844903507594575886) | Sylvanassun    |
+| 系统 | [今晚：**CPU** 核数与线程数有什么关系？](https://mp.weixin.qq.com/s/Tp680dfOB7Zb6xlXSay7XA) | 码农的荒岛求生 |
