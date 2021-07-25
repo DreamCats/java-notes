@@ -28,6 +28,7 @@
 
 ### 知识体系
 - [Java后端知识分类](/Java/classify/README.md)
+- [定时推送后端面经题目脚本](https://github.com/DreamCats/dream-script/blob/master/notify_know.py)
 
 ### 刷题系列 
 - [推荐：CS-Notes](http://www.cyc2018.xyz/)：个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。
