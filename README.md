@@ -38,7 +38,7 @@
 - [剑指offer](/Java/alg/剑指offer.md)
 - [个人刷熟题](/Java/alg/个人刷熟题.md)
 - [总结的一套秋招常考的热点题](Java/alg/README.md)
-- [定时每日推送leetcode脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.pyscript)
+- [定时每日推送leetcode脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.py)
 
 ### 笔试题
 - [LC-SQL](/Java/bishi/sql.md)：这里说一下， 图解SQL面试题，个人建议全部练习，也不难，但也的确面试高频手写SQL题
