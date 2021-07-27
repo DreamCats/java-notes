@@ -11,3 +11,4 @@ public final native void notifyAll(); // 唤醒正在该对象的监视器上等
 public final native void wait(); // 使当前线程等待，直到另一个线程调用此对象的方法或方法。
 protected void finalize(); // 当垃圾回收确定不再有对对象的引用时，由对象上的垃圾回收器调用。
 ```
+
