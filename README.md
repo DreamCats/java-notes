@@ -148,6 +148,7 @@
 | Redis | [【redis前传】zset如何解决内部链表查找效率低下\|跳表构建](https://juejin.cn/post/6983810713055658015) | zxhtom |
 | MySQL | [值得收藏，揭秘 MySQL 多版本并发控制实现原理](https://mp.weixin.qq.com/s/OYDfxgzNAOUGFILGk__CBQ) | 架构精进之路 |
 | MySQL | [慢SQL排查思路？就这。](https://mp.weixin.qq.com/s/3yki4dljbLMgnOVrsqbk8w) | yes的练级攻略 |
+| MySQL | [42 张图带你撸完 MySQL 优化](https://www.cnblogs.com/cxuanBlog/p/15059928.html) | 程序员cxuan |
 
 ### 🧾分布式&&中间件
 
