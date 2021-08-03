@@ -120,6 +120,7 @@
 | Spring | [如何实现一个简易版的 Spring - 如何实现 AOP（终结篇）](https://www.cnblogs.com/mghio/p/14881156.html) | mghio |
 | Java | [高频面试题-请把Java的双亲委派机制说清楚！](https://juejin.cn/post/6974405506630680590) | Ijiran |
 | Spring | [北京某大公司：SpringBean生命周期](https://juejin.cn/post/6979398918429736996) | Java3y |
+| Java | [通俗易懂的ReentrantLock，不懂你来砍我](https://mp.weixin.qq.com/s/ks1-_tsTdWm1FEux42rgZw) | 程序猿阿星 |
 
 ### 📚数据库
 
@@ -148,7 +149,7 @@
 | Redis | [【redis前传】zset如何解决内部链表查找效率低下\|跳表构建](https://juejin.cn/post/6983810713055658015) | zxhtom |
 | MySQL | [值得收藏，揭秘 MySQL 多版本并发控制实现原理](https://mp.weixin.qq.com/s/OYDfxgzNAOUGFILGk__CBQ) | 架构精进之路 |
 | MySQL | [慢SQL排查思路？就这。](https://mp.weixin.qq.com/s/3yki4dljbLMgnOVrsqbk8w) | yes的练级攻略 |
-| MySQL | [42 张图带你撸完 MySQL 优化](https://www.cnblogs.com/cxuanBlog/p/15059928.html) | 程序员cxuan |
+| MySQL | [42 张图带你撸完 MySQL 优化](https://www.cnblogs.com/cxuanBlog/p/15059928.html) | 程序员emcxuan |
 
 ### 🧾分布式&&中间件
 
