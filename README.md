@@ -121,6 +121,7 @@
 | Java | [高频面试题-请把Java的双亲委派机制说清楚！](https://juejin.cn/post/6974405506630680590) | Ijiran |
 | Spring | [北京某大公司：SpringBean生命周期](https://juejin.cn/post/6979398918429736996) | Java3y |
 | Java | [通俗易懂的ReentrantLock，不懂你来砍我](https://mp.weixin.qq.com/s/ks1-_tsTdWm1FEux42rgZw) | 程序猿阿星 |
+| Java | [面试官："遇到过死锁问题吗？怎么发生的？如何解决呢？"](https://mp.weixin.qq.com/s/qSkRtwH_jUjXHPxu0KDQxA) | 承香墨影 |
 
 ### 📚数据库
 
