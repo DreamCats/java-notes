@@ -69,11 +69,12 @@
 
 ###  🔖其他
 
-| 类型  | 题目                                                         | 来源           |
+| 类型  | 名称                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
 | Other | [持续更新非常优秀的Github项目](Java/other/开源github.md)     | Dreamcats      |
 | Other | [计算机专业电子书下载](https://tanqingbo.cn/CSBook001/)      | IT码农         |
 | Other | [计算机专业电子书下载-2](https://tanqingbo.cn/CSBook001/)    | javaer-roadmap |
+| Other | [各个技术开发文档](https://www.bookstack.cn/)    | 书栈网 |
 | Other | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
 | Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
 | Other | [性能优化：关于缓存的一些思考](https://mp.weixin.qq.com/s/9aUTvdKFbsi_fzuO0BjPvw) | 阿里技术 |
