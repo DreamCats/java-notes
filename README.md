@@ -4,63 +4,28 @@
 > - [在线面试阅读](http://dreamcat.ink/java-interview/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
-在线面试阅读：
+###  🔖DreamCats
 
-<img src="http://imgs.dreamcat.ink/uPic/java-interview-readme-1-qAdVxj.png" alt="java-interview-readme-1-qAdVxj" style="zoom:50%;" />
-
-<img src="http://imgs.dreamcat.ink/uPic/java-interview-readme-2-m0q7qX.png" alt="java-interview-readme-2-m0q7qX" style="zoom:50%;" />
-
-## 面经助手
-
-> 包含面经、算法题和知识点，持续维护
-
-<div align=center> 
-<img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes-small-OlULPl" style="zoom:50%;" />
-</div>
-
-## 秋招经历
-
-> 校招Java职位面试经历
-
-### 面经汇总
-- [大厂面经](/Java/mianjing/README.md)
-
-### 知识体系
-- [Java后端知识分类](/Java/classify/README.md)
-- [定时推送后端面经题目脚本](https://github.com/DreamCats/dream-script/blob/master/notify_know.py)
-
-### 刷题系列 
-- [推荐：CS-Notes](http://www.cyc2018.xyz/)：个人建议，如果时间不充足的情况下，将CS-Notes的Leetcode刷明白，毕竟200道经典的题，也都很有套路，其次剑指offer，刷到5分钟自己能写完为止。
-- [推荐：一写算法套路模版](https://github.com/labuladong/fucking-algorithm)：有些套路挺实用的，推荐阅读...
-- [手写多线程编程面试题](/Java/alg/多线程编程题.md)
-- [按热度总结lc](/Java/alg/按热度总结lc.md)
-- [剑指offer](/Java/alg/剑指offer.md)
-- [个人刷熟题](/Java/alg/个人刷熟题.md)
-- [总结的一套秋招常考的热点题](Java/alg/README.md)
-- [定时每日推送leetcode脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.py)
-
-### 笔试题
-- [LC-SQL](/Java/bishi/sql.md)：这里说一下， 图解SQL面试题，个人建议全部练习，也不难，但也的确面试高频手写SQL题
-- [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000)
-- [常用SQL语句](Java/other/常用sql.md)
-- [部分笔试题](/Java/bishi/README.md)：可以从牛客找笔试题的感觉，也可以练习输入输出，做多了，你就发现基本没有树和链表！
-
-### Java面试思维导图(包括分布式架构)
-- [知识架构思维导图](Java/mind/README.md)
-
-### 吐血系列
-- [疯狂吐血系列](Java/crazy/README.md)
-
-### 项目
-- [微服务班车在线预约系统](/Java/bus/README.md) 
-
-### 其他
-- [面试必问设计模式](/Java/mode/README.md)
-- [JDK1.8部分源码](Java/jdk/README.md)
-- [相应阅读的书籍](Java/other/books.md)
-
-
-
+| 类型  | 名称                                                         | 来源           |
+| ----- | ------------------------------------------------------------ | -------------- |
+| 小程序 | [在线面试助手-待定](wx.md)     | DreamCats      |
+| 面经   | [大厂面经汇总](Java/mianjing/README.md) | DreamCats |
+| 知识体系 | [Java后端知识分类](Java/classify/README.md) | DreamCats |
+|        | [疯狂吐血系列](Java/crazy/README.md) | DreamCats |
+|        | [知识架构思维导图](Java/mind/README.md) | DreamCats |
+| 刷题 | [CS-Notes](http://www.cyc2018.xyz/) | cyc |
+|     | [写算法套路模板](https://github.com/labuladong/fucking-algorithm) | labuladong |
+|     | [按热度总结lc](Java/alg/按热度总结lc.md) | DreamCats |
+|     | [剑指Offer](Java/alg/剑指offer.md) | DreamCats |
+|     | [个人秋招刷熟题](Java/alg/个人刷熟题.md) | DreamCats |
+|     | [秋招常考的热点题](Java/alg/README.md) | DreamCats |
+|     | [LC-SQL](Java/bishi/sql.md) | DreamCats |
+|     | [图解SQL面试题](https://zhuanlan.zhihu.com/p/38354000) | xxx |
+|     | [牛客走起来](https://www.nowcoder.com/contestRoom) | xxx |
+| 项目 | [微服务班车在线预约系统-文档](Java/bus/README.md) | DreamCats |
+|     | [微服务班车在线预约系统-项目地址](https://github.com/DreamCats/school-bus) | DreamCats |
+| 其他 | [JDK1.8部分源码](Java/jdk/README.md) | DreamCats |
+|     | [相应阅读的书籍](books.md) | DreamCats |
 
 
 ## 文章系列
@@ -75,7 +40,6 @@
 | Other | [计算机专业电子书下载](https://tanqingbo.cn/CSBook001/)      | IT码农         |
 | Other | [计算机专业电子书下载-2](https://tanqingbo.cn/CSBook001/)    | javaer-roadmap |
 | Other | [各个技术开发文档](https://www.bookstack.cn/)    | 书栈网 |
-| Other | [程序员写好技术文章的几点小技巧](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247503035&idx=1&sn=940e18795275cd0428c150822898f53a&chksm=e92af1b4de5d78a2b381cfc860f0ae000538432bd7a49d59c37bbb769784be6025d157962573#rd) | 阿里技术       |
 | Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
 | Other | [性能优化：关于缓存的一些思考](https://mp.weixin.qq.com/s/9aUTvdKFbsi_fzuO0BjPvw) | 阿里技术 |
 
