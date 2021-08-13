@@ -136,6 +136,7 @@
 | 分布式     | [干货 \|携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q) | GSF          |
 | 分布式锁   | [基于Redis的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html) | xiaoxiaotank |
 | 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html) | 码辣架构     |
+| 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 | 
 
 ### 🎈数据结构
 
