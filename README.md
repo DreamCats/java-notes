@@ -8,7 +8,7 @@
 
 | 类型  | 名称                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
-| 小程序 | [在线面试助手-待定](wx.md)     | DreamCats      |
+| 小程序 | [在线面试助手](wx.md)     | DreamCats      |
 | 面经   | [大厂面经汇总](Java/mianjing/README.md) | DreamCats |
 | 知识体系 | [Java后端知识分类](Java/classify/README.md) | DreamCats |
 |        | [疯狂吐血系列](Java/crazy/README.md) | DreamCats |
@@ -36,7 +36,6 @@
 
 | 类型  | 名称                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
-| Other | [持续更新非常优秀的Github项目](Java/other/开源github.md)     | Dreamcats      |
 | Other | [计算机专业电子书下载](https://tanqingbo.cn/CSBook001/)      | IT码农         |
 | Other | [计算机专业电子书下载-2](https://tanqingbo.cn/CSBook001/)    | javaer-roadmap |
 | Other | [各个技术开发文档](https://www.bookstack.cn/)    | 书栈网 |
@@ -136,6 +135,7 @@
 | 分布式     | [干货 \|携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q) | GSF          |
 | 分布式锁   | [基于Redis的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html) | xiaoxiaotank |
 | 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html) | 码辣架构     |
+| 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 | 
 
 ### 🎈数据结构
 
