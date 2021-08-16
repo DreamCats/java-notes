@@ -1,0 +1,11 @@
+<beans>
+    <bean id="wheel" class="Wheel">
+        <property name="brand" value="heheda" />
+        <property name="specification" value="265/60 R18" />
+    </bean>
+
+    <bean id="car" class="Car">
+        <property name="name" value="falali" />
+        <property name="wheel" ref="wheel" />
+    </bean>
+</beans>
