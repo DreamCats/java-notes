@@ -28,3 +28,5 @@ out
 
 # iml
 *.iml
+
+.DS_Store
