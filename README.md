@@ -26,7 +26,9 @@
 |     | [微服务班车在线预约系统-项目地址](https://github.com/DreamCats/school-bus) | DreamCats |
 | 其他 | [JDK1.8部分源码](Java/jdk/README.md) | DreamCats |
 |     | [相应阅读的书籍](books.md) | DreamCats |
-| | [Spring简要学习](Java/spring-books/README.md) | DreamCats |
+|     | [Spring简要学习](Java/spring-books/README.md) | DreamCats |
+|     | [在线推送lc脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.py) | DreamCats |
+|     | [在线推送知识点](https://github.com/DreamCats/dream-script/blob/master/notify_know.py) | DreamCats |
 
 
 ## 文章系列
@@ -87,7 +89,7 @@
 | Spring | [北京某大公司：SpringBean生命周期](https://juejin.cn/post/6979398918429736996) | Java3y |
 | Java | [通俗易懂的ReentrantLock，不懂你来砍我](https://mp.weixin.qq.com/s/ks1-_tsTdWm1FEux42rgZw) | 程序猿阿星 |
 | Java | [面试官："遇到过死锁问题吗？怎么发生的？如何解决呢？"](https://mp.weixin.qq.com/s/qSkRtwH_jUjXHPxu0KDQxA) | 承香墨影 |
-| Java | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A) | 码农参上 | 
+| Java | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A) | 码农参上 |
 
 ### 📚数据库
 
@@ -137,8 +139,8 @@
 | 分布式     | [干货 \|携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q) | GSF          |
 | 分布式锁   | [基于Redis的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html) | xiaoxiaotank |
 | 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html) | 码辣架构     |
-| 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 | 
-| 本地缓存 | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ) | 梓川 | 
+| 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 |
+| 本地缓存 | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ) | 梓川 |
 
 ### 🎈数据结构
 
