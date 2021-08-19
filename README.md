@@ -24,6 +24,7 @@
 |     | [牛客走起来](https://www.nowcoder.com/contestRoom) | xxx |
 | 项目 | [微服务班车在线预约系统-文档](Java/bus/README.md) | DreamCats |
 |     | [微服务班车在线预约系统-项目地址](https://github.com/DreamCats/school-bus) | DreamCats |
+|      | [B站淘了2个Java实战项目：选一个认真钻研即可](https://mp.weixin.qq.com/s/B-Gzw20xKIPC_w4b_8bJiA) | JavaGuide |
 | 其他 | [JDK1.8部分源码](Java/jdk/README.md) | DreamCats |
 |     | [相应阅读的书籍](books.md) | DreamCats |
 |     | [Spring简要学习](Java/spring-books/README.md) | DreamCats |
