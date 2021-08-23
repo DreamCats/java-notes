@@ -2,6 +2,7 @@
 ## 引言
 > - [个人博客](https://blog.dreamcat.ink/)
 > - [在线面试阅读](https://dreamcat.ink/java-interview/)
+> - [成长书籍](https://dreamcat.ink/book)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
 ###  🔖DreamCats
