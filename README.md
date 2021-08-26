@@ -143,6 +143,7 @@
 | 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html) | 码辣架构     |
 | 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 |
 | 本地缓存 | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ) | 梓川 |
+| 分布式锁 | [万字长文说透分布式锁](https://mp.weixin.qq.com/s/35aCS_5GqLyzZS3VobL6fg) | 多颗糖 |
 
 ### 🎈数据结构
 
@@ -176,4 +177,5 @@
 | 系统 | [虚拟内存的那点事儿](https://juejin.cn/post/6844903507594575886) | Sylvanassun    |
 | 系统 | [今晚：**CPU** 核数与线程数有什么关系？](https://mp.weixin.qq.com/s/Tp680dfOB7Zb6xlXSay7XA) | 码农的荒岛求生 |
 | 系统 | [谈谈操作系统的多进程](https://www.cnblogs.com/zhaozhibo/p/15109430.html) | ZhiboZhao |
+| 系统 | [阿里二面：什么是mmap？](https://mp.weixin.qq.com/s/czMlM6xuuyq2XlU_FB9aVQ) | 苏三说技术 |
 
