@@ -9,7 +9,7 @@
 
 | 类型  | 名称                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
-| 小程序 | [在线面试助手](wx.md)     | DreamCats      |
+| 小程序 | [在线面试助手](https://github.com/DreamCats/online-interview)     | DreamCats      |
 | 面经   | [大厂面经汇总](Java/mianjing/README.md) | DreamCats |
 | 知识体系 | [Java后端知识分类](Java/classify/README.md) | DreamCats |
 |        | [疯狂吐血系列](Java/crazy/README.md) | DreamCats |
