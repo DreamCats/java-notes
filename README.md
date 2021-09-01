@@ -46,6 +46,7 @@
 | Other | [各个技术开发文档](https://www.bookstack.cn/)    | 书栈网 |
 | Other  | [TikTok二面: 说下二维码登录的原理？](https://mp.weixin.qq.com/s/HUJxTbMr0mep9uxAOa4F0A) | 小哈学  |
 | Other | [性能优化：关于缓存的一些思考](https://mp.weixin.qq.com/s/9aUTvdKFbsi_fzuO0BjPvw) | 阿里技术 |
+| Other | [技术面试最后反问面试官的话](https://github.com/yifeikong/reverse-interview-zh)
 
 ### 📉Java
 
