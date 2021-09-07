@@ -159,6 +159,7 @@
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
 | 算法 | [牛逼哄哄的 BitMap，到底牛逼在哪？](https://juejin.cn/post/6953821179836629005) | ITl老哥 |
 | 算法 | [布隆过滤器](https://www.wolai.com/dreamcat/iPRdAMVPcCJqiZ9gBd3Jvd?theme=dark) | DreamCats |
+| 算法 | [实现LRU缓存机制](https://mp.weixin.qq.com/s/ZziTk_ZwHRRaIgorarJMhQ) | 郭儿的跋涉 | 
 
 ### 📖计算机网络
 
@@ -181,4 +182,5 @@
 | 系统 | [今晚：**CPU** 核数与线程数有什么关系？](https://mp.weixin.qq.com/s/Tp680dfOB7Zb6xlXSay7XA) | 码农的荒岛求生 |
 | 系统 | [谈谈操作系统的多进程](https://www.cnblogs.com/zhaozhibo/p/15109430.html) | ZhiboZhao |
 | 系统 | [阿里二面：什么是mmap？](https://mp.weixin.qq.com/s/czMlM6xuuyq2XlU_FB9aVQ) | 苏三说技术 |
+
 
