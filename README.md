@@ -171,6 +171,7 @@
 | 计网 | [超详细 DNS 协议解析](https://juejin.cn/post/6919755385330991112) | 飞天小牛肉 |
 | 计网 | [详细解析 HTTP 与 HTTPS 的区别](https://juejin.cn/post/6844903471565504526) | 坑队友     |
 | 计网 | [傻傻分不清之 Cookie、Session、Token、JWT](https://juejin.cn/post/6844904034181070861) | 秋天不落叶 |
+| 计网 | [简略图解：输入 url 到出现页面，浏览器做了什么？](https://zhuanlan.zhihu.com/p/402559256) | 又拍云 |
 
 ### ✉️操作系统
 
