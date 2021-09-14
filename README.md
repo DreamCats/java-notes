@@ -40,6 +40,7 @@
 
 | 类型  | 名称                                                         | 来源           |
 | ----- | ------------------------------------------------------------ | -------------- |
+| Other | [free-programming-books](https://github.com/EbookFoundation/free-programming-books) | EbookFoundation |
 | Other | [计算机专业电子书下载](https://tanqingbo.cn/CSBook001/)      | IT码农         |
 | Other | [计算机专业电子书下载-2](https://tanqingbo.cn/CSBook001/)    | javaer-roadmap |
 | Other | [各个技术开发文档](https://www.bookstack.cn/)    | 书栈网 |
