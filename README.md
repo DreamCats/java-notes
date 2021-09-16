@@ -163,6 +163,7 @@
 | 算法 | [牛逼哄哄的 BitMap，到底牛逼在哪？](https://juejin.cn/post/6953821179836629005) | ITl老哥 |
 | 算法 | [布隆过滤器](https://www.wolai.com/dreamcat/iPRdAMVPcCJqiZ9gBd3Jvd?theme=dark) | DreamCats |
 | 算法 | [实现LRU缓存机制](https://mp.weixin.qq.com/s/ZziTk_ZwHRRaIgorarJMhQ) | 郭儿的跋涉 | 
+| 算法 | [实现LFU缓存机制](https://mp.weixin.qq.com/s/Eyu1sKzrajttiQ0DxP5Q3w) | 郭儿的跋涉 |
 
 ### 📖计算机网络
 
