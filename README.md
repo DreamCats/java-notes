@@ -1,5 +1,7 @@
 # java-notes
+
 ## 引言
+
 > - [个人博客](https://tc.dreamcat.ink/)
 > - [在线面试阅读](https://dreamcat.ink/java-interview/)
 > - **Dreamcats的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
@@ -203,3 +205,14 @@
 | ---  | ---  | ---  |
 | nginx | [闲不下来-nginx是什么？（一）](https://juejin.cn/post/7012491394979725349) | 司司 |
 |nginx  | [闲不下来-nginx环境搭建（二）](https://juejin.cn/post/7012922394478116900) | 司司 |
+
+
+## 🙈与我联系
+
+- 公众号(Dreamcats)：沉淀、分享、成长，专注于原创专题案例，以最易学习编程的方式分享知识，让自己和他人都能有所收获。个人秋招经历、🐂客面经问题按照频率总结、Java一系列知识、数据库、分布式、微服务、前端、技术面试、每日文章等(持续更新)
+
+![wx-gzh](http://imgs.dreamcat.ink/blog/wxgzh.jpg)
+
+- 小程序(在线面试助手)：包含各个大厂的面经、算法题、知识点，并且小程序包含长按复制和点击图片预览功能，同时小程序继续优化和开发。
+
+![wx-xcx](http://imgs.dreamcat.ink/blog/online-interview-qr.jpg)
