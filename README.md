@@ -198,6 +198,7 @@
 | 写作 | [图床，uPic和阿里oss搭建与使用](https://juejin.cn/post/7010985866185146399) | 司司 |
 | Git  | [你的文件需要 git，详细安装与使用（一）](https://juejin.cn/post/7011413073881727013) | 司司 |
 | Git  | [你的文件需要 git，常用命令（二）](https://tc.dreamcat.ink/archives/18.html) | 司司 |
+| 文件 | [mac解决移动文件的痛点-yoink](https://juejin.cn/post/7017382028865699877) | 司司 |
 
 ### 😣源码阅读
 
