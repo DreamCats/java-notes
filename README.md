@@ -205,7 +205,8 @@
 | 类型 | 题目 | 来源 | 
 | ---  | ---  | ---  |
 | nginx | [闲不下来-nginx是什么？（一）](https://juejin.cn/post/7012491394979725349) | 司司 |
-|nginx  | [闲不下来-nginx环境搭建（二）](https://juejin.cn/post/7012922394478116900) | 司司 |
+| nginx  | [闲不下来-nginx环境搭建（二）](https://juejin.cn/post/7012922394478116900) | 司司 |
+| nginx | [闲不下来-nginx源码全局认知（三）](https://juejin.cn/post/7018372907780800526) | 司司 |
 
 
 ## 🙈与我联系
