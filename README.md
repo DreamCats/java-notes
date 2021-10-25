@@ -152,6 +152,7 @@
 | 本地缓存 | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ) | 梓川 |
 | 分布式锁 | [万字长文说透分布式锁](https://mp.weixin.qq.com/s/35aCS_5GqLyzZS3VobL6fg) | 多颗糖 |
 | 降级限流 | [高并发整体可用性：一文详解降级、限流和熔断](https://mp.weixin.qq.com/s/-E3RupBNVia0qfph-iOo1w) | Coder的技术之路 | 
+| kafka    | [Kafka 为什么要放弃 Zookeeper](https://mp.weixin.qq.com/s/0dHPu8O70v69mVuM4--HfA) | 捉虫大师 | 
 
 ### 🎈数据结构
 
