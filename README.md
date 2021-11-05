@@ -95,7 +95,7 @@
 | Java | [通俗易懂的ReentrantLock，不懂你来砍我](https://mp.weixin.qq.com/s/ks1-_tsTdWm1FEux42rgZw) | 程序猿阿星 |
 | Java | [面试官："遇到过死锁问题吗？怎么发生的？如何解决呢？"](https://mp.weixin.qq.com/s/qSkRtwH_jUjXHPxu0KDQxA) | 承香墨影 |
 | Java | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A) | 码农参上 |
-| Java | [聊聊spring事务失效的12种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ) | 苏三说技术 | 
+| Java | [聊聊spring事务失效的12种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ) | 苏三说技术 |
 
 ### 📚数据库
 
@@ -151,8 +151,8 @@
 | 消息      | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg) | JAVA日知录 |
 | 本地缓存 | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ) | 梓川 |
 | 分布式锁 | [万字长文说透分布式锁](https://mp.weixin.qq.com/s/35aCS_5GqLyzZS3VobL6fg) | 多颗糖 |
-| 降级限流 | [高并发整体可用性：一文详解降级、限流和熔断](https://mp.weixin.qq.com/s/-E3RupBNVia0qfph-iOo1w) | Coder的技术之路 | 
-| kafka    | [Kafka 为什么要放弃 Zookeeper](https://mp.weixin.qq.com/s/0dHPu8O70v69mVuM4--HfA) | 捉虫大师 | 
+| 降级限流 | [高并发整体可用性：一文详解降级、限流和熔断](https://mp.weixin.qq.com/s/-E3RupBNVia0qfph-iOo1w) | Coder的技术之路 |
+| kafka    | [Kafka 为什么要放弃 Zookeeper](https://mp.weixin.qq.com/s/0dHPu8O70v69mVuM4--HfA) | 捉虫大师 |
 
 ### 🎈数据结构
 
@@ -165,7 +165,7 @@
 | 算法 | [红黑树深入剖析及Java实现](https://tech.meituan.com/2016/12/02/redblack-tree.html) |  美团技术团队  |
 | 算法 | [牛逼哄哄的 BitMap，到底牛逼在哪？](https://juejin.cn/post/6953821179836629005) | ITl老哥 |
 | 算法 | [布隆过滤器](https://www.wolai.com/dreamcat/iPRdAMVPcCJqiZ9gBd3Jvd?theme=dark) | DreamCats |
-| 算法 | [实现LRU缓存机制](https://mp.weixin.qq.com/s/ZziTk_ZwHRRaIgorarJMhQ) | 郭儿的跋涉 | 
+| 算法 | [实现LRU缓存机制](https://mp.weixin.qq.com/s/ZziTk_ZwHRRaIgorarJMhQ) | 郭儿的跋涉 |
 | 算法 | [实现LFU缓存机制](https://mp.weixin.qq.com/s/Eyu1sKzrajttiQ0DxP5Q3w) | 郭儿的跋涉 |
 
 ### 📖计算机网络
@@ -192,26 +192,27 @@
 | 系统 | [阿里二面：什么是mmap？](https://mp.weixin.qq.com/s/czMlM6xuuyq2XlU_FB9aVQ) | 苏三说技术 |
 
 
-### 🍎效率工具
+### [🍎效率工具](🍎效率工具)
 
-| 类型 | 题目 | 来源 |
-| ---- | ------------------------------------------------------------ | -------------- |
-| 写作 | [图床，uPic和阿里oss搭建与使用](https://juejin.cn/post/7010985866185146399) | 司司 |
-| Git  | [你的文件需要 git，详细安装与使用（一）](https://juejin.cn/post/7011413073881727013) | 司司 |
-| Git  | [你的文件需要 git，常用命令（二）](https://tc.dreamcat.ink/archives/18.html) | 司司 |
-| 文件 | [mac解决移动文件的痛点-yoink](https://juejin.cn/post/7017382028865699877) | 司司 |
-| 图床 | [管理图床-oss-browser ](https://juejin.cn/post/7026587086920613896/) | 司司 |  
+| 类型 | 题目                                                                                 | 来源           |
+| ---- | ------------------------------------------------------------                         | -------------- |
+| 写作 | [图床，uPic和阿里oss搭建与使用](https://juejin.cn/post/7010985866185146399)          | 司司           |
+| Git  | [你的文件需要 git，详细安装与使用（一）](https://juejin.cn/post/7011413073881727013) | 司司           |
+| Git  | [你的文件需要 git，常用命令（二）](https://tc.dreamcat.ink/archives/18.html)         | 司司           |
+| 文件 | [mac解决移动文件的痛点-yoink](https://juejin.cn/post/7017382028865699877)            | 司司           |
+| 图床 | [管理图床-oss-browser ](https://juejin.cn/post/7026587086920613896/)                 | 司司           |
+| 终端 | [时而花里胡哨，时而朴实无华-iterm2 ](https://juejin.cn/post/7026924031056019486/)    | 司司           |
 
 ### 😣源码阅读
 
-| 类型 | 题目 | 来源 | 
+| 类型 | 题目 | 来源 |
 | ---  | ---  | ---  |
 | nginx | [闲不下来-nginx是什么？（一）](https://juejin.cn/post/7012491394979725349) | 司司 |
 | nginx  | [闲不下来-nginx环境搭建（二）](https://juejin.cn/post/7012922394478116900) | 司司 |
 | nginx | [闲不下来-nginx源码全局认知（三）](https://juejin.cn/post/7018372907780800526) | 司司 |
 | nginx | [闲不下来-nginx配置文件（四）](https://juejin.cn/user/2928754709248584) | 司司 |
 | nginx | [闲不下来-nginx基本数据结构（五）](https://juejin.cn/post/7025426746228867102/) | 司司 |
-| nginx | [闲不下来-nginx数组结构（六）](https://juejin.cn/post/7026253473184219150/) | 司司 | 
+| nginx | [闲不下来-nginx数组结构（六）](https://juejin.cn/post/7026253473184219150/) | 司司 |
 
 ### 👽我学设计模式
 
