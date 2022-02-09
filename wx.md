@@ -5,7 +5,7 @@ weight: 1
 
 # 互联网面试题助手
 
-<div align=center> 
+<div align=center>
 <img src="https://cdn.jsdelivr.net/gh/DreamCats/imgs@main/uPic/Dc-Notes-small-OlULPl.jpg" alt="Dc-Notes-small-OlULPl" style="zoom:50%;" />
 </div>
 
@@ -94,17 +94,14 @@ weight: 1
 # 页面
 页面虽然比较简单，但功能实用，将面经、算法和知识点集合在一起方便背诵。
 ## 面经页面
-![互联网助手-面经页面-iPhoneX-BQQ9MQ](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E9%A1%B5%E9%9D%A2-iPhone%20X-BQQ9MQ.png)
-![互联网助手-面经列表页面-iPhoneX-AkQP0V](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2-iPhone%20X-AkQP0V.png)
-![互联网助手-面经详情页面-iPhoneX-mTPXPt](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-mTPXPt.png)
+![互联网助手-面经页面-iPhoneX-BQQ9MQ](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E9%A1%B5%E9%9D%A2-iPhone%20X-BQQ9MQ.png)
+![互联网助手-面经列表页面-iPhoneX-AkQP0V](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2-iPhone%20X-AkQP0V.png)
+![互联网助手-面经详情页面-iPhoneX-mTPXPt](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E9%9D%A2%E7%BB%8F%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-mTPXPt.png)
 ## 算法页面
 
 
-![互联网助手-算法页面-iPhoneX-tMYxJj](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%AE%97%E6%B3%95%E9%A1%B5%E9%9D%A2-iPhone%20X-tMYxJj.png)
-![互联网助手-算法详情页面-iPhoneX-hJwWLu](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%AE%97%E6%B3%95%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-hJwWLu.png)
+![互联网助手-算法页面-iPhoneX-tMYxJj](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%AE%97%E6%B3%95%E9%A1%B5%E9%9D%A2-iPhone%20X-tMYxJj.png)
+![互联网助手-算法详情页面-iPhoneX-hJwWLu](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%AE%97%E6%B3%95%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-hJwWLu.png)
 ## 知识页面
-![互联网助手-知识页面-iPhoneX-l1D7Q9](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%9F%A5%E8%AF%86%E9%A1%B5%E9%9D%A2-iPhone%20X-l1D7Q9.png)
-![互联网助手-知识详情页面-iPhoneX-SPF7m9](http://imgs.dreamcat.ink/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%9F%A5%E8%AF%86%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-SPF7m9.png)
-
-
-
+![互联网助手-知识页面-iPhoneX-l1D7Q9](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%9F%A5%E8%AF%86%E9%A1%B5%E9%9D%A2-iPhone%20X-l1D7Q9.png)
+![互联网助手-知识详情页面-iPhoneX-SPF7m9](http://imgs.heiye.site/uPic/%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E6%89%8B-%E7%9F%A5%E8%AF%86%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-iPhone%20X-SPF7m9.png)
