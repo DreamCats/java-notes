@@ -127,7 +127,8 @@
 | MySQL | [42 张图带你撸完 MySQL 优化](https://www.cnblogs.com/cxuanBlog/p/15059928.html) | 程序员emcxuan |
 | MySQL | [容易引起雪崩的两个处理](http://mtw.so/6iZInk) | 编程一生 |
 | MySQL | [一个MySQL锁和面试官大战三十回合，我霸中霸！](https://mp.weixin.qq.com/s/VjsQR_co2oM11EywegZrMw) | yes的练级攻略 |
-| MySQl | [五分钟搞懂MySQL索引下推](https://mp.weixin.qq.com/s/iQnArUNIsZFzVCj90MZjyg) | 老三 |
+| MySQl | [五分钟搞懂MySQL索引下推](https://mp.weixin.qq.com/s/iQnArUNIsZFzVCj90MZjyg)                     | 老三          |
+| Redis | [干货-16张图吃透 Redis 架构演进](https://jishuin.proginn.com/p/763bfbd4d516)                     | IT            |
 
 ### 🧾分布式&&中间件
 
