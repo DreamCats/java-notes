@@ -96,6 +96,7 @@
 | Java   | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A)                              | 码农参上         |
 | Java   | [聊聊 spring 事务失效的 12 种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ)                                | 苏三说技术       |
 | Java   | [慢 sql 治理经典案例分享](https://mp.weixin.qq.com/s/WyfRV-7sK_O8pxDZbPXQtQ)                                                 | 阿里技术         |
+| Java   | [Java 8系列之重新认识HashMap](https://tech.meituan.com/2016/06/24/java-hashmap.html)                                         | 美团技术团队     |
 
 ### 📚 数据库
 
