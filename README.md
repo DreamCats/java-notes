@@ -95,7 +95,6 @@
 | Java   | [面试官："遇到过死锁问题吗？怎么发生的？如何解决呢？"](https://mp.weixin.qq.com/s/qSkRtwH_jUjXHPxu0KDQxA)                    | 承香墨影         |
 | Java   | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A)                              | 码农参上         |
 | Java   | [聊聊 spring 事务失效的 12 种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ)                                | 苏三说技术       |
-| Java   | [慢 sql 治理经典案例分享](https://mp.weixin.qq.com/s/WyfRV-7sK_O8pxDZbPXQtQ)                                                 | 阿里技术         |
 
 ### 📚 数据库
 
@@ -129,6 +128,7 @@
 | MySQL | [一个 MySQL 锁和面试官大战三十回合，我霸中霸！](https://mp.weixin.qq.com/s/VjsQR_co2oM11EywegZrMw)                 | yes 的练级攻略    |
 | MySQl | [五分钟搞懂 MySQL 索引下推](https://mp.weixin.qq.com/s/iQnArUNIsZFzVCj90MZjyg)                                     | 老三              |
 | Redis | [干货-16 张图吃透 Redis 架构演进](https://jishuin.proginn.com/p/763bfbd4d516)                                      | IT                |
+| Java   | [慢 sql 治理经典案例分享](https://mp.weixin.qq.com/s/WyfRV-7sK_O8pxDZbPXQtQ)                                                 | 阿里技术         |
 
 ### 🧾 分布式&&中间件
 
