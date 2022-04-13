@@ -225,6 +225,17 @@
 | 设计模式 | [我学设计模式-单例模式](https://juejin.cn/post/7016615747073867784) | 司司 |
 | 设计模式 | [我学设计模式-工厂模式](https://juejin.cn/post/7020608341969731591) | 司司 |
 
+### 💌场景题
+
+| 类型     | 题目                                                                        | 来源 |
+| ---      | ---                                                                         | ---- |
+| 数据结构 | [如何设计一个 map（一）](https://blog.heiye.site/article/5d07538f.html)     | 黑夜 |
+| 数据结构 | [如何设计一个并发map（二）](https://blog.heiye.site/article/e46dcc51.html)  | 黑夜 |
+| 数据结构 | [如何设计一个LRU（三）](https://blog.heiye.site/article/bb676e1b.html)      | 黑夜 |
+| 数据结构 | [如何设计一个布隆过滤器（四](https://blog.heiye.site/article/4662309e.html) | 黑夜 |
+| 系统设计 | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)  | 黑夜 |
+
+
 ## 🙈 与我联系
 
 - 公众号(Dreamcats)：沉淀、分享、成长，专注于原创专题案例，以最易学习编程的方式分享知识，让自己和他人都能有所收获。个人秋招经历、🐂 客面经问题按照频率总结、Java 一系列知识、数据库、分布式、微服务、前端、技术面试、每日文章等(持续更新)
