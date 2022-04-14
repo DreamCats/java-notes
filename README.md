@@ -64,7 +64,7 @@
 | Java   | [**java**高并发情况下**sychronized**有什么问题？](http://mtw.so/6svoUV)                                                      | Jian             |
 | Java   | [Java 并发高频面试题：聊聊你对 AQS 的理解？](http://mrw.so/6bwBMh)                                                           | 敖丙             |
 | Java   | [【基本功】不可不说的 Java“锁”事](https://mp.weixin.qq.com/s/E2fOUHOabm10k_EVugX08g)                                         | 美团技术团队     |
-| Java   | [并发下的 HashMap 为什么会引起死循环？？？](https://mp.weixin.qq.com/s/2lkfnQCi-_Lc3bUUD_i_ag)                               | Java 学习者社区  |
+| Java   | [并发下的 HashMap 为什么会引起死循环？？？](http://mtw.so/5EG54Nhttp://mtw.so/5EG54N)                                        | Java 学习者社区  |
 | Java   | [两次被裁之后，我终于解决了数据库缓存一致性问题](https://mp.weixin.qq.com/s/Ie2jGnRqv0vGgWvrKU0tMA)                          | 码农小说家       |
 | Java   | [别再纠结线程池大小/线程数量了，没有固定公式的](https://juejin.cn/post/6948034657321484318)                                  | 空无             |
 | Java   | [Spring 拦截器和过滤器的区别？](http://mtw.so/5QnbxF)                                                                        | 华为云开发者社区 |
@@ -91,11 +91,11 @@
 | Spring | [如何实现一个简易版的 Spring - 如何实现 AOP（终结篇）](https://www.cnblogs.com/mghio/p/14881156.html)                        | mghio            |
 | Java   | [高频面试题-请把 Java 的双亲委派机制说清楚！](https://juejin.cn/post/6974405506630680590)                                    | Ijiran           |
 | Spring | [北京某大公司：SpringBean 生命周期](https://juejin.cn/post/6979398918429736996) k                                            | Java3y           |
-| Java   | [通俗易懂的 ReentrantLock，不懂你来砍我](https://mp.weixin.qq.com/s/ks1-_tsTdWm1FEux42rgZw)                                  | 程序猿阿星       |
+| Java   | [通俗易懂的 ReentrantLock，不懂你来砍我](http://mtw.so/5x9ScQ)                                                               | 程序猿阿星       |
 | Java   | [面试官："遇到过死锁问题吗？怎么发生的？如何解决呢？"](https://mp.weixin.qq.com/s/qSkRtwH_jUjXHPxu0KDQxA)                    | 承香墨影         |
 | Java   | [String s="a"+"b"+"c"，到底创建了几个对象？](https://mp.weixin.qq.com/s/IVmVdCQCKOXk8NnHNcFz4A)                              | 码农参上         |
-| Java   | [聊聊 spring 事务失效的 12 种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ)                                                           | 苏三说技术       |
-| Java   | [面渣逆袭：JVM经典五十问，这下面试稳了！](https://mp.weixin.qq.com/s/XYsEJyIo46jXhHE1sOR_0Q)                                                            | 老三             |
+| Java   | [聊聊 spring 事务失效的 12 种场景，太坑了](https://mp.weixin.qq.com/s/4M4rePjjy8-UBVvCzHchTQ)                                | 苏三说技术       |
+| Java   | [面渣逆袭：JVM 经典五十问，这下面试稳了！](https://mp.weixin.qq.com/s/XYsEJyIo46jXhHE1sOR_0Q)                                | 老三             |
 
 ### 📚 数据库
 
@@ -129,32 +129,31 @@
 | MySQL | [一个 MySQL 锁和面试官大战三十回合，我霸中霸！](https://mp.weixin.qq.com/s/VjsQR_co2oM11EywegZrMw)                 | yes 的练级攻略    |
 | MySQl | [五分钟搞懂 MySQL 索引下推](https://mp.weixin.qq.com/s/iQnArUNIsZFzVCj90MZjyg)                                     | 老三              |
 | Redis | [干货-16 张图吃透 Redis 架构演进](https://jishuin.proginn.com/p/763bfbd4d516)                                      | IT                |
-| Java   | [慢 sql 治理经典案例分享](https://mp.weixin.qq.com/s/WyfRV-7sK_O8pxDZbPXQtQ)                                                 | 阿里技术         |
+| Java  | [慢 sql 治理经典案例分享](https://mp.weixin.qq.com/s/WyfRV-7sK_O8pxDZbPXQtQ)                                       | 阿里技术          |
 
 ### 🧾 分布式&&中间件
 
-| 类型       | 题目                                                                                                                                                                                                                                                              | 来源             |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| 分布式     | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html)                                                                                                              | 美团技术团队     |
-| 分布式锁   | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ)                                                                                                                                                                                 | 架构精进之路     |
-| 并发       | [【万级并发】电商库存扣减如何设计？不超卖！](https://mp.weixin.qq.com/s/jJTIBL8unJ-IRbDqgREsCw)                                                                                                                                                                   | TomGE            |
-| 分布式事务 | [七种分布式事务的解决方案，一次讲给你听](http://mrw.so/5WvneB)                                                                                                                                                                                                    | moon 聊技术      |
-| 分布式     | [服务端如何防止重复支付](https://juejin.cn/post/6956790589606068232)                                                                                                                                                                                              | Markerhub        |
-| 限流       | [为什么大厂服务并发高却很稳定？分布式服务熔断降级限流利器至 Hystrix](https://juejin.cn/post/6955201079017472014)                                                                                                                                                  | zxhtom           |
-| 微服务     | [微服务设计原则](https://mp.weixin.qq.com/s?__biz=MzkzNjI5NjI3Mw==&idx=1&sn=1e94b8ede4d1fb5539e646144ddf283e&source=41)                                                                                                                                           | 性能于架构       |
-| 分布式锁   | [SpringBoot + Redis 分布式锁：模拟抢单](https://mp.weixin.qq.com/s/g7NbrelsUhYg8pVO96Ui1g)                                                                                                                                                                        | JAVA 小咖秀      |
-| 消息队列   | [消息队列如何确保消息的有序性？](https://mp.weixin.qq.com/s?__biz=Mzg5ODYyNTExNw==&mid=2247487254&idx=1&sn=584c3df2cac5c0b1ba757fdbb093bba0&source=41)                                                                                                            | 杜亦舒           |
-| 消息队列   | [听叔一句劝，消息队列的水太深，你把握不住！](https://mp.weixin.qq.com/s/E5FWKPPhRBNhWaOiu2cXsQ)                                                                                                                                                                   | 单一色调         |
-| 分布式锁   | [丢，隔壁的老哥又让我用分布式锁](https://mp.weixin.qq.com/s/v7xpp9Iu8apgsSOf2xkyyA)                                                                                                                                                                               | Java3y           |
-| Dubbo      | [详解 Apache Dubbo 的 SPI 实现机制](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247491344&idx=2&sn=0ac23704bc0f1e66d065240e2538f89d&chksm=ebd86f82dcafe69499cf6dab34431a9102ed78cca2dc45c4e7172248ee605b8d0f0b1a1fadd0&token=2046348471&lang=zh_CN#rd) | Ning Peng        |
-| 分布式     | [干货 \|携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q)                                                                                                                                                                        | GSF              |
-| 分布式锁   | [基于 Redis 的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html)                                                                                                                                                                                 | xiaoxiaotank     |
-| 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html)                                                                                                                                                                                      | 码辣架构         |
-| 消息       | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg)                                                                                                                                                                   | JAVA 日知录      |
-| 本地缓存   | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ)                                                                                                                                                                               | 梓川             |
-| 分布式锁   | [万字长文说透分布式锁](https://mp.weixin.qq.com/s/35aCS_5GqLyzZS3VobL6fg)                                                                                                                                                                                         | 多颗糖           |
-| 降级限流   | [高并发整体可用性：一文详解降级、限流和熔断](https://mp.weixin.qq.com/s/-E3RupBNVia0qfph-iOo1w)                                                                                                                                                                   | Coder 的技术之路 |
-| kafka      | [Kafka 为什么要放弃 Zookeeper](https://mp.weixin.qq.com/s/0dHPu8O70v69mVuM4--HfA)                                                                                                                                                                                 | 捉虫大师         |
+| 类型       | 题目                                                                                                                                                 | 来源             |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 分布式     | [分布式系统互斥性与幂等性问题的分析与解决](https://tech.meituan.com/2016/09/29/distributed-system-mutually-exclusive-idempotence-cerberus-gtis.html) | 美团技术团队     |
+| 分布式锁   | [一文搞懂分布式锁的原理与实现](https://mp.weixin.qq.com/s/CiqQT4U3_NPbrBhGR6wAvQ)                                                                    | 架构精进之路     |
+| 并发       | [【万级并发】电商库存扣减如何设计？不超卖！](https://mp.weixin.qq.com/s/jJTIBL8unJ-IRbDqgREsCw)                                                      | TomGE            |
+| 分布式事务 | [七种分布式事务的解决方案，一次讲给你听](http://mrw.so/5WvneB)                                                                                       | moon 聊技术      |
+| 分布式     | [服务端如何防止重复支付](https://juejin.cn/post/6956790589606068232)                                                                                 | Markerhub        |
+| 限流       | [为什么大厂服务并发高却很稳定？分布式服务熔断降级限流利器至 Hystrix](https://juejin.cn/post/6955201079017472014)                                     | zxhtom           |
+| 分布式锁   | [SpringBoot + Redis 分布式锁：模拟抢单](https://mp.weixin.qq.com/s/g7NbrelsUhYg8pVO96Ui1g)                                                           | JAVA 小咖秀      |
+| 消息队列   | [消息队列如何确保消息的有序性？](http://mtw.so/69rjv8)                                                                                               | 杜亦舒           |
+| 消息队列   | [听叔一句劝，消息队列的水太深，你把握不住！](https://mp.weixin.qq.com/s/E5FWKPPhRBNhWaOiu2cXsQ)                                                      | 单一色调         |
+| 分布式锁   | [丢，隔壁的老哥又让我用分布式锁](https://mp.weixin.qq.com/s/v7xpp9Iu8apgsSOf2xkyyA)                                                                  | Java3y           |
+| Dubbo      | [详解 Apache Dubbo 的 SPI 实现机制](http://mtw.so/6vZwy9)                                                                                            | Ning Peng        |
+| 分布式     | [携程最终一致和强一致性缓存实践](https://mp.weixin.qq.com/s/E-chAZyHtaZOdA19mW59-Q)                                                                  | GSF              |
+| 分布式锁   | [基于 Redis 的分布式锁设计](https://www.cnblogs.com/xiaoxiaotank/p/14982602.html)                                                                    | xiaoxiaotank     |
+| 分布式     | [分布式系统中一致性哈希算法](https://www.cnblogs.com/jajian/p/10896624.html)                                                                         | 码辣架构         |
+| 消息       | [消息幂等（去重）如何解决？来看看这个方案！](https://mp.weixin.qq.com/s/kLb1pweomL19aGaiHjO3Fg)                                                      | JAVA 日知录      |
+| 本地缓存   | [Guava Cache 原理分析与最佳实践](https://mp.weixin.qq.com/s/ADcu_XKTJxXectMQ8S20SQ)                                                                  | 梓川             |
+| 分布式锁   | [万字长文说透分布式锁](https://mp.weixin.qq.com/s/35aCS_5GqLyzZS3VobL6fg)                                                                            | 多颗糖           |
+| 降级限流   | [高并发整体可用性：一文详解降级、限流和熔断](https://mp.weixin.qq.com/s/-E3RupBNVia0qfph-iOo1w)                                                      | Coder 的技术之路 |
+| kafka      | [Kafka 为什么要放弃 Zookeeper](https://mp.weixin.qq.com/s/0dHPu8O70v69mVuM4--HfA)                                                                    | 捉虫大师         |
 
 ### 🎈 数据结构
 
@@ -174,7 +173,7 @@
 | 类型 | 题目                                                                                                | 来源       |
 | ---- | --------------------------------------------------------------------------------------------------- | ---------- |
 | 计网 | [GET 和 POST 请求的本质区别是什么？原来我一直理解错了](https://segmentfault.com/a/1190000039905721) | 码农突围   |
-| 计网 | [懵了！有了 HTTP，为什么还要 RPC](https://mp.weixin.qq.com/s/_kIlERTAgXHc1nWXwkHNHQ)                | 小哈学     |
+| 计网 | [懵了！有了 HTTP，为什么还要 RPC](http://mtw.so/6otjBG)                                             | 小哈学     |
 | 计网 | [“三次握手，四次挥手”这么讲，保证你忘不了](https://mp.weixin.qq.com/s/QxY2Y8BhGTaGgOG1dyRuFg)       | 三分恶     |
 | 计网 | [超详细 DNS 协议解析](https://juejin.cn/post/6919755385330991112)                                   | 飞天小牛肉 |
 | 计网 | [傻傻分不清之 Cookie、Session、Token、JWT](https://juejin.cn/post/6844904034181070861)              | 秋天不落叶 |
@@ -225,16 +224,15 @@
 | 设计模式 | [我学设计模式-单例模式](https://juejin.cn/post/7016615747073867784) | 司司 |
 | 设计模式 | [我学设计模式-工厂模式](https://juejin.cn/post/7020608341969731591) | 司司 |
 
-### 💌场景题
+### 💌 场景题
 
-| 类型     | 题目                                                                        | 来源 |
-| ---      | ---                                                                         | ---- |
-| 数据结构 | [如何设计一个 map（一）](https://blog.heiye.site/article/5d07538f.html)     | 黑夜 |
-| 数据结构 | [如何设计一个并发map（二）](https://blog.heiye.site/article/e46dcc51.html)  | 黑夜 |
-| 数据结构 | [如何设计一个LRU（三）](https://blog.heiye.site/article/bb676e1b.html)      | 黑夜 |
-| 数据结构 | [如何设计一个布隆过滤器（四](https://blog.heiye.site/article/4662309e.html) | 黑夜 |
-| 系统设计 | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)  | 黑夜 |
-
+| 类型     | 题目                                                                          | 来源 |
+| -------- | ----------------------------------------------------------------------------- | ---- |
+| 数据结构 | [如何设计一个 map（一）](https://blog.heiye.site/article/5d07538f.html)       | 黑夜 |
+| 数据结构 | [如何设计一个并发 map（二）](https://blog.heiye.site/article/e46dcc51.html)   | 黑夜 |
+| 数据结构 | [如何设计一个 LRU（三）](https://blog.heiye.site/article/bb676e1b.html)       | 黑夜 |
+| 数据结构 | [如何设计一个布隆过滤器（四）](https://blog.heiye.site/article/4662309e.html) | 黑夜 |
+| 系统设计 | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)    | 黑夜 |
 
 ## 🙈 与我联系
 
