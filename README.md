@@ -233,6 +233,9 @@
 | 数据结构 | [如何设计一个 LRU（三）](https://blog.heiye.site/article/bb676e1b.html)       | 黑夜 |
 | 数据结构 | [如何设计一个布隆过滤器（四）](https://blog.heiye.site/article/4662309e.html) | 黑夜 |
 | 系统设计 | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)    | 黑夜 |
+| 锁       | [如何设计一个读写锁（六）](https://blog.heiye.site/article/cec40f04.html)     | 黑夜 |
+| 锁       | [如何设计一个分布式锁（七）](https://blog.heiye.site/article/aa3f1514.html)   | 黑夜 |
+| 锁       | [如何设计一个乐观锁（八）](https://blog.heiye.site/article/f57ca5bc.html)     | 黑夜 |
 
 ## 🙈 与我联系
 
