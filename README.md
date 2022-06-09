@@ -226,28 +226,31 @@
 
 ### 💌 场景题
 
-| 类型      | 题目                                                                                | 来源 |
-| --------  | -----------------------------------------------------------------------------       | ---- |
-| 数据结构  | [如何设计一个 map（一）](https://blog.heiye.site/article/5d07538f.html)             | 黑夜 |
-| 数据结构  | [如何设计一个并发 map（二）](https://blog.heiye.site/article/e46dcc51.html)         | 黑夜 |
-| 数据结构  | [如何设计一个 LRU（三）](https://blog.heiye.site/article/bb676e1b.html)             | 黑夜 |
-| 数据结构  | [如何设计一个布隆过滤器（四）](https://blog.heiye.site/article/4662309e.html)       | 黑夜 |
-| 系统设计  | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)          | 黑夜 |
-| 锁        | [如何设计一个读写锁（六）](https://blog.heiye.site/article/cec40f04.html)           | 黑夜 |
-| 锁        | [如何设计一个分布式锁（七）](https://blog.heiye.site/article/aa3f1514.html)         | 黑夜 |
-| 锁        | [如何设计一个乐观锁（八）](https://blog.heiye.site/article/f57ca5bc.html)           | 黑夜 |
-| 登录      | [二维码扫描登录的原理（九）](https://blog.heiye.site/article/6f6c8f0a.html)         | 黑夜 |
-| 登录      | [手机验证码登录原理（十）](https://blog.heiye.site/article/b0bd063d.html)           | 黑夜 |
-| 登录      | [手机号码一键登录原理（十一）](https://blog.heiye.site/article/de27e5eb.html)       | 黑夜 |
-| 登录      | [app手机号码登录区分新用户（十二）](https://blog.heiye.site/article/d3bfb199.html)  | 黑夜 |
-| 订单      | [订单过期自动更新状态（十三）](https://blog.heiye.site/article/f567d34f.html)       | 黑夜 |
-| 计数器    | [基于Redis计数器的实现（十四）](https://blog.heiye.site/article/5fc6d5d6.html)      | 黑夜 |
-| MySQL分页 | [MySQL分页查询优化（十五）](https://blog.heiye.site/article/121835cc.html)          | 黑夜 |
-| 限流算法  | [基于Golang实现的漏桶算法（十六）](https://blog.heiye.site/article/7c4f38da.html)   | 黑夜 |
-| 限流算法  | [基于Golang实现的令牌桶算法（十七）](https://blog.heiye.site/article/112f9fb6.html) | 黑夜 |
-| 系统设计  | [如何设计拼单服务（十八）](https://blog.heiye.site/article/7bba2c37.html)           | 黑夜 |
-| 系统设计  | [如何设计短链服务（十九）](https://blog.heiye.site/article/7de561a6.html)           | 黑夜 |
-| 系统设计  | [如何设计视频弹幕服务（二十）](https://blog.heiye.site/article/9a691261.html)       | 黑夜 |
+| 类型      | 题目                                                                                 | 来源 |
+| --------  | -----------------------------------------------------------------------------        | ---- |
+| 数据结构  | [如何设计一个 map（一）](https://blog.heiye.site/article/5d07538f.html)              | 黑夜 |
+| 数据结构  | [如何设计一个并发 map（二）](https://blog.heiye.site/article/e46dcc51.html)          | 黑夜 |
+| 数据结构  | [如何设计一个 LRU（三）](https://blog.heiye.site/article/bb676e1b.html)              | 黑夜 |
+| 数据结构  | [如何设计一个布隆过滤器（四）](https://blog.heiye.site/article/4662309e.html)        | 黑夜 |
+| 系统设计  | [如何设计一个幂等方案（五）](https://blog.heiye.site/article/792e9ab.html)           | 黑夜 |
+| 锁        | [如何设计一个读写锁（六）](https://blog.heiye.site/article/cec40f04.html)            | 黑夜 |
+| 锁        | [如何设计一个分布式锁（七）](https://blog.heiye.site/article/aa3f1514.html)          | 黑夜 |
+| 锁        | [如何设计一个乐观锁（八）](https://blog.heiye.site/article/f57ca5bc.html)            | 黑夜 |
+| 登录      | [二维码扫描登录的原理（九）](https://blog.heiye.site/article/6f6c8f0a.html)          | 黑夜 |
+| 登录      | [手机验证码登录原理（十）](https://blog.heiye.site/article/b0bd063d.html)            | 黑夜 |
+| 登录      | [手机号码一键登录原理（十一）](https://blog.heiye.site/article/de27e5eb.html)        | 黑夜 |
+| 登录      | [app手机号码登录区分新用户（十二）](https://blog.heiye.site/article/d3bfb199.html)   | 黑夜 |
+| 订单      | [订单过期自动更新状态（十三）](https://blog.heiye.site/article/f567d34f.html)        | 黑夜 |
+| 计数器    | [基于Redis计数器的实现（十四）](https://blog.heiye.site/article/5fc6d5d6.html)       | 黑夜 |
+| MySQL分页 | [MySQL分页查询优化（十五）](https://blog.heiye.site/article/121835cc.html)           | 黑夜 |
+| 限流算法  | [基于Golang实现的漏桶算法（十六）](https://blog.heiye.site/article/7c4f38da.html)    | 黑夜 |
+| 限流算法  | [基于Golang实现的令牌桶算法（十七）](https://blog.heiye.site/article/112f9fb6.html)  | 黑夜 |
+| 系统设计  | [如何设计拼单服务（十八）](https://blog.heiye.site/article/7bba2c37.html)            | 黑夜 |
+| 系统设计  | [如何设计短链服务（十九）](https://blog.heiye.site/article/7de561a6.html)            | 黑夜 |
+| 系统设计  | [如何设计视频弹幕服务（二十）](https://blog.heiye.site/article/9a691261.html)        | 黑夜 |
+| MySQL     | [MySQL并发事务写引发的问题（二十一）](https://blog.heiye.site/article/3e3b3d85.html) | 黑夜 |
+| 热key     | [高并发热key的问题（二十二）](https://blog.heiye.site/article/d2e3e1b2.html)         | 黑夜 |
+| 库存      | [高并发情况下如何扣减库存（二十三） ](https://blog.heiye.site/article/6d6a84b3.html) | 黑夜 |
 
 ## 🙈 与我联系
 
