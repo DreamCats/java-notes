@@ -30,3 +30,5 @@ out
 *.iml
 
 .DS_Store
+.aider*
+.env
